@@ -1,0 +1,13 @@
+			<!-- right railing -->
+	<railing refx="inrun" refz="inrun-right" x1="0" x2="100" h="0.97" h2="0.82" d="-3.6" w="0.05" l="10" t="Textures\wood5b.png" m="Materials\material1.xml" c="0x947046"/>
+	<railing refx="inrun" refz="inrun-right" x1="0" x2="100" h="0.72" h2="0.57" d="-3.6" w="0.05" l="10" t="Textures\wood5b.png" m="Materials\material1.xml" c="0x947046"/>
+	<railing refx="inrun" refz="inrun-right" x1="0" x2="100" h="0.47" h2="0.32" d="-3.6" w="0.05" l="10" t="Textures\wood5b.png" m="Materials\material1.xml" c="0x947046"/>
+		
+		
+	<!-- right railing beams -->
+	<beamgroup refx="inrun" refz="inrun-right" refy1="inrun-top" refy2="inrun-top" 
+		last="true" end2="true" 
+		x1="0" x2="100" step="1.5" stepper="3" fitstep="false"
+		dx1="0.0" dx2="0.0" dy1="-0.25" dy2="0.9" dz1="-3.6" dz2="-3.6" 
+		r1="0.035" r2="0.035" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x947046"/>
+</hill>
