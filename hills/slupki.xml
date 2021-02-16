@@ -1,0 +1,7 @@
+    <!-- dhill supports -->
+    <pillar refx1="dhill" count="9" step="5" refx2="dhill" x1="2.55" x2="2.6" lz="2" rz="1.7" trefy="dhill-top" brefy="terrain" ty="-0.1" by="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x808080" bottom="false" />
+    <pillar refx1="dhill" count="9" step="5" refx2="dhill" x1="2.55" x2="2.6" lz="-1.7" rz="-2" trefy="dhill-top" brefy="terrain" ty="-0.1" by="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x808080" bottom="false" />
+
+ <!-- dhill floor -->
+    <pillar refx1="dhill" refx2="dhill" x1="0" x2="76" reflz="dhill-left" refrz="dhill-right" lz="0.1" rz="-0.1" trefy="dhill-top" brefy="dhill-top" ty="0" by="-0.2" t="Textures\concrete3.png" m="Materials\material1.xml" c="0xfaf7f2" scale="0.8" top="false" front="false"/>
+	
