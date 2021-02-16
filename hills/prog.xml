@@ -1,0 +1,5 @@
+		<!-- próg -->
+	<pillar bottom="true" refx="dhill" x1="-5.7" x2="-1.4" lz="6.3" rz="-6.3" ty="3.25" by="2.8" t="Textures\concrete6.png" m="Materials\material1.xml" c="0xadadad" pt="true"  scale="0.6"/>
+	<pillar bottom="true" refx="dhill" x1="-1.7" x2="-1.6" lz="6.3" rz="-6.3" ty="2.8" by="0" t="Textures\wood7.png" m="Materials\material1.xml" c="0x1e9f13" pt="true"  scale="0.6"/>
+	<pillar bottom="true" refx="dhill" x1="-5.7" x2="-1.71" lz="6.3" rz="-6.3" ty="2.8" by="0" t="Textures\stone1.jpg" m="Materials\material1.xml" c="0x707070" pt="true"  scale="0.6"/>
+	
