@@ -1,0 +1,7 @@
+	<!-- dach -->
+	<pillar refx="inrun" x1="-9" x2="1.6" rz="1.1" lz="4.7" refy="inrun-top" tly="2.65" bly="2.5" try="4.65" bry="4.5" t="Textures\wood4.png" m="Materials\material1.xml" c="0x51300e"/>	
+	<pillar refx="inrun" x1="-9" x2="1.6" rz="-2.7" lz="1.1" refy="inrun-top" try="2.65" bry="2.5" tly="4.65" bly="4.5" t="Textures\wood4.png" m="Materials\material1.xml" c="0x51300e"/>	
+
+	<!-- œciany -->
+	<pillar refx="inrun" x1="-7.7" x2="0" rz="1.1" lz="4.25" top="false" bottom="false" right="false" refy="inrun-top" try="4.5" tly="2.70455" t="Textures\wood3.png" m="Materials\material1.xml" c="0xb46718"/>
+	<pillar refx="inrun" x1="-7.7" x2="0" rz="-2.5" lz="1.1" top="false" bottom="false" left="false" refy="inrun-top" try="2.70455" tly="4.6" t="Textures\wood3.png" m="Materials\material1.xml" c="0xb46718"/>
