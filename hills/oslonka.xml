@@ -1,0 +1,29 @@
+		<profile id="inrun-top-extended" refx="inrun">
+		<start x="-0.66" y="0.945280" refy="inrun-top"/>
+		<line x="0" y="0.945280" refy="inrun-top" corner="true"/>
+		<line x="1.32" y="0" refy="inrun-top"/>
+		<profile id="inrun-top"/>
+	</profile>	
+
+
+		
+	<!-- hut left pedestal railing -->
+	<railing refx="inrun" refy="inrun-top-extended" h="0.85" h2="0.80" d="10.0" w="0.045" x="20.7" z1="2.2" z2="10.05" t="Textures\wood4.png" m="Materials\material1.xml" c="0x4d3d30"/>
+	<railing rear="false" front="false" refx="inrun" refy="inrun-top-extended" h="-0.15" h2="-1" d="10.0" w="0.035" x="20.7" z1="2.2" z2="10.05" t="Textures\wood4.png" m="Materials\material1.xml" c="0x4d3d30"/>
+	
+	<railing refx="inrun" refy="inrun-top-extended" h="0.85" h2="0.80" d="10.0" w="0.045" x="20.7" z1="-2.2" z2="-10.05" t="Textures\wood4.png" m="Materials\material1.xml" c="0x4d3d30"/>
+	<railing rear="false" front="false" refx="inrun" refy="inrun-top-extended" h="-0.15" h2="-1" d="10.0" w="0.035" x="20.7" z1="-2.2" z2="-10.05" t="Textures\wood4.png" m="Materials\material1.xml" c="0x4d3d30"/>
+	
+	
+	<beamgroup refx="inrun" refy="inrun-top-extended" 
+		last="false" end1="true" rect="true"
+		x="20.7" z1="2.2" z2="12" step="2" stepper="1" fitstep="true"
+		dy1="0.85" dy2="-0.9" dz="0"
+		r="0.02" edges="4" smooth="false" t="Textures\wood4.png" m="Materials\material1.xml" c="0x4d3d30"/>	
+
+<beamgroup refx="inrun" refy="inrun-top-extended" 
+		last="false" end1="true" rect="true"
+		x="20.7" z1="-2.2" z2="-12" step="2" stepper="1" fitstep="true"
+		dy1="0.85" dy2="-0.9" dz="0"
+		r="0.02" edges="4" smooth="false" t="Textures\wood4.png" m="Materials\material1.xml" c="0x4d3d30"/>	
+
