@@ -68,7 +68,7 @@
     </profile>
     <terrain>
         <profile in="1" a0="5.0" l0="50.0" y0="-25" hd="13.5" dd="75.0" sd="20" fd="600" sc="0.000012" sm="0.65" rs="1820" c1="0x443920" c2="0x5D603A" tsc="0.008" tsm="0.4" />
-        <trees count="10000" minheight="10" maxheight="25" fractalthreshold="0.8" maxaltitude="1600" normalaltitude="1000" seed="142" />
+        <trees count="700" minheight="10" maxheight="25" fractalthreshold="0.8" maxaltitude="1600" normalaltitude="1000" seed="142" />
         <blocks count="10" minsaturation="0.0" maxsaturation="0.1" minfloors="1" maxfloors="4" maxaltitude="1300" normalaltitude="1000" fractalthreshold="0.3" seed="258" />
         <houses count="900" minsaturation="0.0" maxsaturation="0.2" minfloors="1" maxfloors="2" maxaltitude="1600" normalaltitude="1000" fractalthreshold="0.5" seed="156" />
         <audience count="1" d="10" x0="78" seed="3" />
