@@ -1,0 +1,677 @@
+<hill version="DSJ4-1.7.0" author="Mateusz Korduła">
+    <location latitude="51.229" longitude="17.07" orientation="174" timezone="1" altitude="225"/>
+    <weather pollution="0.0" firstsnow="300" lastsnow="90" maxsnow="1.5" precipitationprobability="0.1" fogprobability="0.1"/>
+    <inrun>
+        <profile e="55" es="10" t="6.43" gamma="33" alpha="12" r1="75" s="2" b1="2.0" z0="0" l="6.5" f="3.0" />
+        <guardrail z1="100" z2="1000" x="3"/>
+        <startgate default="6" min="1" max="47" step="0.3" wind="1" z1="-0.9" z2="0.9" pz1="-0.8" pz2="0.8" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0xaaaaaa" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x999999" t3="Textures\metal.png" m3="Materials\material1.xml" c3="0x858585"/>
+        <gatenumbers z="1.3" y="0.01" c1="0xff000000" c2="0xffffffff" size="0.10"/>
+        <startbanner z="0" text="Żory" textsize="0.14"/>
+        <frame bh="100.0" pt="true" snow="false" t="Textures\wood1.png" m="Materials\material1.xml" c0="0xff0000" c1="0xff0000" c="0xff0000" c2="0xff0000"/>
+        <track type="glass" snow="true"/>
+        <twigs lz="0.81" rz="-0.81"/>
+        <guardrail x="40" z1="-1.5" z2="1.5"/>
+        <flag x="0" z="5" hf="1.35" pf="1.5" hp="38" rb="0.05" rt="0.04" tf="Textures\flag-pol.png" mf="Materials\flag.xml" tp="Textures\wood1.png" mp="Materials\material1.xml" cp="0xffffff"/>
+    </inrun>
+    <dhill>
+        <profile alpha="27" h="50" n="75" l1="18.30" l2="7.40" a="50" beta-p="35.5" beta="32.5" beta-l="30" rl="500" r2="100" b0="8" bk="14" ba="15.4" hr="10" nr="50" ar="1" k="85" hs="85" x0="1"/>
+        <fence type="glass" h="0.6" t="Textures\rust1.png" m="Materials\window.xml" c="0x964900"/>
+        <judgetower d="50" q="8" h="+0" t1="Textures\wood3.png" m1="Materials\wood.xml" c1="0xa1a1a1" t2="Textures\wood3.png" m2="Materials\wood.xml" c2="0xa1a1a1"/>
+        <lights side="right" step="40" size="2" h="6" d="7.5" r="1.0" g="1.0" b="1.0" attn="0.0002" range="35" t="Textures\rust1.png" m="Materials\metal.xml" c="0xa1a1a1"/>
+         <lights side="left" step="40" size="2" h="6" d="1" r="1.0" g="1.0" b="1.0" attn="0.0002" range="35" t="Textures\rust1.png" m="Materials\metal.xml" c="0xa1a1a1"/>
+        <windflags h="-5.5" l="5.0" d="1.2" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999"/>
+        <label summer-d="35" winter-d="35" text="ZORY" textsize="2.6" />
+        <measurers side="right" c1="0x578ad1" c2="0xeeeeee"/>
+        <measurers side="left" c1="0x578ad1" c2="0xeeeeee"/>
+        <plastic c="0x769391"/>
+        <lines summer-min="40" summer-max="100" winter-min="40" winter-max="100"/>
+    </dhill>
+    
+    
+
+    <profile id="inrun-terrain">
+        <start x="-23" y="7.2"/>
+        <line x="-18" y="5.9"/>
+        <line x="-15" y="1.6"/>
+        <line x="-8" y="0.9"/>
+        <line x="-4" y="0.2"/>
+        <line x="-1" y="0.5"/>
+        <line x="0" y="0"/>
+    </profile>
+
+    <profile id="inrun-left" side="left" maxstep="1">
+        <start x="-11" y="1.0" refx="inrun"/>
+        <line x="0" y="1.0" refx="dhill"/>
+    </profile>
+    
+    <profile id="inrun-right" side="right" maxstep="1000">
+        <start x="-11" y="-1.0" refx="inrun"/>
+        <line x="0" y="-1.0" refx="dhill"/>
+    </profile>
+    <profile id="inrun-terrain">
+        <start x="-90" y="-1.5"/>
+        <line x="-10" y="-5"/>
+        <line x="-10" y="-5"/>
+        <line x="0" y="-1"/>
+    </profile>
+    <terrain>
+        <profile in="0" a0="0" l0="0" y0="-70" hd="0" dd="0" sd="10000" fd="10000" sc="0" sm="0" rs="0" c1="0x443920" c2="0x5D603A" tsc="0.000" tsm="0.0"/>
+        <trees count="10000" minheight="5" maxheight="5" fractalthreshold="1000" maxaltitude="6000" normalaltitude="6000" seed="244"/>
+        <blocks count="1" minsaturation="0.9" maxsaturation="1" minfloors="20" maxfloors="30" maxaltitude="750" normalaltitude="200" fractalthreshold="0.5" seed="424"/>
+        <houses count="0" minsaturation="0.0" maxsaturation="0.2" minfloors="20" maxfloors="30" maxaltitude="1200" normalaltitude="200" fractalthreshold="0.5" seed="163"/>
+        <audience count="5000" d="500" x0="1000" seed="512"/>
+    </terrain>
+    <railing refx1="inrun" refx2="dhill" refz="inrun-right" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="0" x2="0" d="0.1" w="0.01"  t="Textures\railing-glass.png" m="Materials\plastic.xml" c="0x8a8a8a"/>
+     <railing refx1="inrun" refx2="dhill" refz="inrun-right" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="17" x2="0" d="2" w="0.01"  t="Textures\railing-glass.png" m="Materials\plastic.xml" c="0x8a8a8a"/>
+    <railing refx1="inrun" refx2="dhill" refz="inrun-left" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="62.4" x2="0" d="0" w="-1"  t="Textures\flag-pol.png" m="Materials\window.xml" c="0x8a8a8a"/>
+    <railing refx1="inrun" refx2="dhill" refz="inrun-left" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="62.4" x2="0" d="3" w="-1"  t="Textures\flag-pol.png" m="Materials\window.xml" c="0x8a8a8a"/>
+
+
+    <lights refz="inrun-left" refy="inrun-top" step="2" l="1.9" h="0.5" refx="inrun" x1="17" x2="115" d="0.12" r="0.70" g="0.65" b="0.60" attn="0.5" range="7"/>
+	<lights refz="inrun-right" refy="inrun-top" step="2" l="1.9" h="0.5" refx="inrun" x1="3" x2="115" d="0.12" r="0.70" g="0.65" b="0.60" attn="0.5" range="7"/>
+   
+    <lights refz="inrun-right" refy="inrun-top" step="2" l="1.9" h="0" refx="inrun" x1="3" x2="115" d="1" r="242" g="0" b="255" attn="10" range="0.1"/>
+    <lights refz="inrun-right" refy="inrun-top" step="2" l="1.9" h="0" refx="inrun" x1="3" x2="115" d="1.1" r="242" g="0" b="255" attn="10" range="0.1"/>
+     <lights refz="inrun-right" refy="inrun-top" step="2" l="1.9" h="0" refx="inrun" x1="3" x2="115" d="0.9" r="242" g="0" b="255" attn="10" range="0.1"/>
+     <lights refz="inrun-right" refy="inrun-top" step="2" l="1.9" h="0" refx="inrun" x1="3" x2="115" d="0.8" r="242" g="0" b="255" attn="10" range="0.1"/>
+    <lights refz="inrun-right" refy="inrun-top" step="2" l="1.9" h="0" refx="inrun" x1="3" x2="115" d="1.2" r="242" g="0" b="255" attn="10" range="0.1"/>
+
+
+
+    <pillar refx1="inrun" refx2="dhill" x1="0" x2="0" rz="-1.65" lz="1.65" top="false" bottom="true" brefy="inrun-top" trefy="inrun-top" ty="0" by="-2.6" t="Textures\stone1.jpg" m="Materials\material1.xml" c="0x8a8a8a" />
+    <pillar refx="inrun" x1="0" x2="62" rz="-1.5" lz="1.5" top="false" bottom="true" brefy="terrain" trefy="inrun-top" ty="0" by="0" t="Textures\grid2.png" m="Materials\material1.xml" c="0xc9a904" />
+    <pillar refx="inrun" x1="0.5" x2="6" rz="-1.5" lz="1.5" top="false" bottom="true" brefy="terrain" trefy="inrun-top" ty="0" by="0" t="Textures\grid2.png" m="Materials\material1.xml" c="0xc9a904" />
+   	<pillar refx="inrun" x1="35" x2="38" rz="-1.5" lz="1.5" top="false" bottom="true" brefy="terrain" trefy="inrun-top" ty="0" by="0" t="Textures\grid2.png" m="Materials\material1.xml" c="0xc9a904" />
+   	<pillar refx="inrun" x1="39" x2="42" rz="-1.5" lz="1.5" top="false" bottom="true" brefy="terrain" trefy="inrun-top" ty="0" by="0" t="Textures\grid2.png" m="Materials\material1.xml" c="0xc9a904" />	
+   	<pillar refx="inrun" x1="43" x2="46" rz="-1.5" lz="1.5" top="false" bottom="true" brefy="terrain" trefy="inrun-top" ty="0" by="0" t="Textures\grid2.png" m="Materials\material1.xml" c="0xc9a904" />	
+    <stairs s="0.3" c2="0xa1a1a1" m2="Materials\material1.xml" t2="Textures\wood2.png" c1="0xa1a1a1" m1="Materials\material1.xml" t1="Textures\rubbermat.png" rz="-2.0" lz="-1.0" d="6" x2="62.4" x1="0.0" refx2="inrun" refx1="inrun"/>
+    <stairs s="0.3" c2="0xa1a1a1" m2="Materials\material1.xml" t2="Textures\wood2.png" c1="0xa1a1a1" m1="Materials\material1.xml" t1="Textures\rubbermat.png" rz="1.0" lz="2.0" d="0.3" x2="62.4" x1="17" refx2="inrun" refx1="inrun"/>
+     <stairs s="0.3" c2="0xa1a1a1" m2="Materials\material1.xml" t2="Textures\wood2.png" c1="0xa1a1a1" m1="Materials\material1.xml" t1="Textures\rubbermat.png" rz="-2.0" lz="-1" d="6" x2="62.4" x1="0.0" refx2="inrun" refx1="inrun"/>   
+    <stairs s="0.3" c2="0xa1a1a1" m2="Materials\material1.xml" t2="Textures\wood2.png" c1="0xa1a1a1" m1="Materials\material1.xml" t1="Textures\rubbermat.png" rz="1.0" lz="3.0" d="0.3" x2="17" x1="0.0" refx2="inrun" refx1="inrun"/>
+    
+    <railing y="-3" z="20" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="0" x2="64" d="-1" w="6"  t="Textures\wood2.png" m="Materials\window.xml" c="0x7d5700"/>
+    <railing y="-1.9" z="20.7" guard="false" bottom="true" zbias="1" pt="true" h="0.01" x1="3" x2="63.5" d="-1" w="0.5"  t="Textures\grid2.png" m="Materials\window.xml" c="0xffffff"/>
+    <railing y="-1.9" z="19.2" guard="false" bottom="true" zbias="1" pt="true" h="0.01" x1="3" x2="63.5" d="-1" w="0.5"  t="Textures\grid2.png" m="Materials\window.xml" c="0xffffff"/>
+    <railing type="glass" y="-2" z="17"guard="false" bottom="true" zbias="1" pt="true" h="1" x1="0" x2="64" d="-1" w="0.01" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xfffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+    <railing y="-2" z="23"guard="false" bottom="true" zbias="1" pt="true" h="1" x1="0" x2="64" d="-1" w="0.01" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xfffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+    <railing y="-60" z="20"guard="false" bottom="true" zbias="1" pt="true" h="57" x1="0" x2="5" d="-1" w="5"  t="Textures\grid2.png" m="Materials\window.xml" c="0x593e00"/>
+    <railing y="-34" z="20"guard="false" bottom="true" zbias="1" pt="true" h="31" x1="20" x2="25" d="-1" w="5"  t="Textures\grid2.png" m="Materials\window.xml" c="0x593e00"/>
+    <railing y="-30" z="20"guard="false" bottom="true" zbias="1" pt="true" h="27" x1="40" x2="42" d="-1" w="5"  t="Textures\grid2.png" m="Materials\window.xml" c="0x593e00"/>
+    <stairs y="-1.9" z="24" s="0.3" c2="0xa1a1a1" m2="Materials\material1.xml" t2="Textures\wood2.png" c1="0xa1a1a1" m1="Materials\material1.xml" t1="Textures\rubbermat.png" rz="-2.5" lz="-1.0" d="6" x2="64" x1="0.0"/>
+    <stairs y="-1.9" z="19.5" s="0.3" c2="0xa1a1a1" m2="Materials\material1.xml" t2="Textures\wood2.png" c1="0xa1a1a1" m1="Materials\material1.xml" t1="Textures\rubbermat.png" rz="-2.5" lz="-1.0" d="6" x2="64" x1="0.0"/>
+    <railing y="-2" z="20"guard="false" bottom="true" zbias="1" pt="true" h="1" x1="0" x2="0.1" d="-1" w="6"  t="Textures\grid2.png" m="Materials\window.xml" c="0x593e00"/>
+    
+    <railing x="50" y="-1.9" z="20" guard="false" bottom="true" zbias="1" pt="true" h="100" d="0" w="6"  t="Textures\flag-pol.png" m="Materials\window.xml" c="0x8a8a8a"/>
+    
+    <lights refz="inrun-right" refy="inrun-top" step="2" l="1.9" h="-1.5" refx="inrun" x1="3" x2="115" d="18.1" r="0.70" g="0.65" b="0.60" attn="0.5" range="2000"/>
+    <lights refz="inrun-right" refy="inrun-top" step="2" l="1.9" h="-1.5" refx="inrun" x1="3" x2="115" d="23.9" r="0.70" g="0.65" b="0.60" attn="0.5" range="2000"/>
+    
+    <railing y="0.1" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="0.1" x1="0" x2="62" d="-1" w="0.01"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.3" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="0.1" x1="0" x2="62" d="-1" w="0.01"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.5" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="0.1" x1="0" x2="62" d="-1" w="0.01"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/> 
+    <railing y="0.7" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="0.1" x1="0" x2="62" d="-1" w="0.01"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.9" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="0.1" x1="0" x2="62" d="-1" w="0.01"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    
+    <railing y="0.1" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="1" x2="2" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="4" x2="5" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="7" x2="8" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="10" x2="11" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="13" x2="14" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="16" x2="17" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="19" x2="20" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="22" x2="23" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="25" x2="26" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="28" x2="29" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="31" x2="32" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="34" x2="35" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="37" x2="38" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="40" x2="41" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="43" x2="44" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="46" x2="47" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="49" x2="50" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="52" x2="53" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="55" x2="56" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="58" x2="59" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="-2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="61" x2="62" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    
+    <railing y="0.1" z="3" guard="false" bottom="true" zbias="1" pt="true" h="0.1" x1="0" x2="17" d="-1" w="0.01"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.3" z="3" guard="false" bottom="true" zbias="1" pt="true" h="0.1" x1="0" x2="17" d="-1" w="0.01"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.5" z="3" guard="false" bottom="true" zbias="1" pt="true" h="0.1" x1="0" x2="17" d="-1" w="0.01"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/> 
+    <railing y="0.7" z="3" guard="false" bottom="true" zbias="1" pt="true" h="0.1" x1="0" x2="17" d="-1" w="0.01"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.9" z="3" guard="false" bottom="true" zbias="1" pt="true" h="0.1" x1="0" x2="17" d="-1" w="0.01"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    
+    <railing y="0.1" z="3" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="1" x2="2" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="3" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="4" x2="5" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="3" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="7" x2="8" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="3" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="10" x2="11" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="3" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="13" x2="14" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="2.5" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="16" x2="17" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    
+    <railing y="0.1" z="2" guard="false" bottom="true" zbias="1" pt="true" h="0.1" x1="17" x2="62" d="-1" w="0.01"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.3" z="2" guard="false" bottom="true" zbias="1" pt="true" h="0.1" x1="17" x2="62" d="-1" w="0.01"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.5" z="2" guard="false" bottom="true" zbias="1" pt="true" h="0.1" x1="17" x2="62" d="-1" w="0.01"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/> 
+    <railing y="0.7" z="2" guard="false" bottom="true" zbias="1" pt="true" h="0.1" x1="17" x2="62" d="-1" w="0.01"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.9" z="2" guard="false" bottom="true" zbias="1" pt="true" h="0.1" x1="17" x2="62" d="-1" w="0.01"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    
+    <railing y="0.1" z="2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="19" x2="20" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="22" x2="23" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="25" x2="26" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="28" x2="29" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="31" x2="32" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="34" x2="35" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="37" x2="38" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="40" x2="41" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="43" x2="44" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="46" x2="47" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="49" x2="50" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="52" x2="53" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="55" x2="56" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="58" x2="59" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing y="0.1" z="2" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="61" x2="62" d="-1" w="0.2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-2" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="1" x2="2" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-2.5" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="2" x2="3" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-3" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="3" x2="4" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-3.5" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="4" x2="5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-4" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="5" x2="6" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-4.5" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="6" x2="7" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-5" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="7" x2="8" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-5.5" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="8" x2="9" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-6" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="9" x2="10" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-6.5" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="10" x2="11" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-7" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="11" x2="12" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-7.5" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="12" x2="13" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-8" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="13" x2="14" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-8.5" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="14" x2="15" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-9" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="15" x2="16" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-9.5" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="16" x2="17" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-10" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="17" x2="18" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-10.5" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="18" x2="19" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-11" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="19" x2="20" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-11.5" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="20" x2="21" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-12" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="21" x2="22" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-12.5" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="22" x2="23" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-13" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="23" x2="24" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-13.5" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="24" x2="25" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-14" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="25" x2="26" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-14.5" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="26" x2="27" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-15" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="27" x2="28" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-15.5" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="28" x2="29" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-16" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="29" x2="30" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-16.5" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="30" x2="31" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="31" x2="32" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-2" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="1" x2="2" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-2.5" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="2" x2="3" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-3" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="3" x2="4" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-3.5" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="4" x2="5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-4" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="5" x2="6" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-4.5" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="6" x2="7" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-5" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="7" x2="8" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-5.5" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="8" x2="9" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-6" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="9" x2="10" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-6.5" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="10" x2="11" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-7" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="11" x2="12" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-7.5" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="12" x2="13" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-8" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="13" x2="14" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-8.5" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="14" x2="15" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-9" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="15" x2="16" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-9.5" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="16" x2="17" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-10" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="17" x2="18" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-10.5" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="18" x2="19" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-11" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="19" x2="20" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-11.5" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="20" x2="21" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-12" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="21" x2="22" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-12.5" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="22" x2="23" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-13" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="23" x2="24" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-13.5" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="24" x2="25" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-14" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="25" x2="26" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-14.5" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="26" x2="27" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-15" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="27" x2="28" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-15.5" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="28" x2="29" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-16" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="29" x2="30" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-16.5" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="30" x2="31" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="31" x2="32" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    
+     <railing  refx1="dhill" refx2="dhill" y="-20" z="20" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="32" x2="70" d="-1" w="10"  t="Textures\snow.png" m="Materials\window.xml" c="0xffffff"/>
+    
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="32" x2="33" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="33" x2="34" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="34" x2="35" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="35" x2="36" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="36" x2="37" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="37" x2="38" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="38" x2="39" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="39" x2="40" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="40" x2="41" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="41" x2="42" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="42" x2="43" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="43" x2="44" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="44" x2="45" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing  refx1="dhill" refx2="dhill" y="-19" z="25" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="45" x2="46" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing  refx1="dhill" refx2="dhill" y="-19" z="25" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="46" x2="47" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing  refx1="dhill" refx2="dhill" y="-19" z="25" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="47" x2="48" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing  refx1="dhill" refx2="dhill" y="-19" z="25" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="48" x2="49" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing  refx1="dhill" refx2="dhill" y="-19" z="25" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="49" x2="50" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing  refx1="dhill" refx2="dhill" y="-19" z="25" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="50" x2="51" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing  refx1="dhill" refx2="dhill" y="-19" z="25" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="51" x2="52" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing  refx1="dhill" refx2="dhill" y="-19" z="25" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="52" x2="53" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing  refx1="dhill" refx2="dhill" y="-19" z="25" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="53" x2="54" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-19" z="25" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="54" x2="55" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing  refx1="dhill" refx2="dhill" y="-19" z="25" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="55" x2="56" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing  refx1="dhill" refx2="dhill" y="-19" z="25" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="56" x2="57" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing  refx1="dhill" refx2="dhill" y="-19" z="25" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="57" x2="58" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing  refx1="dhill" refx2="dhill" y="-19" z="25" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="58" x2="59" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing  refx1="dhill" refx2="dhill" y="-19" z="25" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="59" x2="60" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing  refx1="dhill" refx2="dhill" y="-19" z="25" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="60" x2="61" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="61" x2="62" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="62" x2="63" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="63" x2="64" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="64" x2="65" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="65" x2="66" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="66" x2="67" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="67" x2="68" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="68" x2="69" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/> 
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="25" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="69" x2="70" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="16" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="70" x2="71" d="-1" w="4"  t="Textures\wood2.png" m="Materials\window.xml" c="0x855703"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="24" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="70" x2="71" d="-1" w="4"  t="Textures\wood2.png" m="Materials\window.xml" c="0x855703"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-19" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="70" x2="71.6" d="-1" w="4"  t="Textures\wood2.png" m="Materials\window.xml" c="0x855703"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-28" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="90" x2="91.6" d="-1" w="4"  t="Textures\wood2.png" m="Materials\window.xml" c="0x855703"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-36" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="105" x2="106.6" d="-1" w="4"  t="Textures\wood2.png" m="Materials\window.xml" c="0x855703"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-45.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="120" x2="121.6" d="-1" w="4"  t="Textures\wood2.png" m="Materials\window.xml" c="0x855703"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-51" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="135" x2="136.6" d="-1" w="4"  t="Textures\wood2.png" m="Materials\window.xml" c="0x855703"/>
+    
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="32" x2="33" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="33" x2="34" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="34" x2="35" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="35" x2="36" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="36" x2="37" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="37" x2="38" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="38" x2="39" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="39" x2="40" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="40" x2="41" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="41" x2="42" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="42" x2="43" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="43" x2="44" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="44" x2="45" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing  refx1="dhill" refx2="dhill" y="-19" z="15" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="45" x2="46" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing  refx1="dhill" refx2="dhill" y="-19" z="15" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="46" x2="47" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing  refx1="dhill" refx2="dhill" y="-19" z="15" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="47" x2="48" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing  refx1="dhill" refx2="dhill" y="-19" z="15" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="48" x2="49" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing  refx1="dhill" refx2="dhill" y="-19" z="15" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="49" x2="50" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing  refx1="dhill" refx2="dhill" y="-19" z="15" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="50" x2="51" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing  refx1="dhill" refx2="dhill" y="-19" z="15" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="51" x2="52" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing  refx1="dhill" refx2="dhill" y="-19" z="15" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="52" x2="53" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing  refx1="dhill" refx2="dhill" y="-19" z="15" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="53" x2="54" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-19" z="15" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="54" x2="55" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing  refx1="dhill" refx2="dhill" y="-19" z="15" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="55" x2="56" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing  refx1="dhill" refx2="dhill" y="-19" z="15" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="56" x2="57" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing  refx1="dhill" refx2="dhill" y="-19" z="15" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="57" x2="58" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing  refx1="dhill" refx2="dhill" y="-19" z="15" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="58" x2="59" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing  refx1="dhill" refx2="dhill" y="-19" z="15" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="59" x2="60" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing  refx1="dhill" refx2="dhill" y="-19" z="15" guard="false" bottom="true" zbias="1" pt="true" h="2.6" x1="60" x2="61" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="61" x2="62" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="62" x2="63" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="63" x2="64" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="64" x2="65" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="65" x2="66" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="66" x2="67" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="67" x2="68" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="68" x2="69" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/> 
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-17" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="69" x2="70" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+
+<pillar refx="inrun" x1="-4" x2="0" lz="3" rz="-2" trefy="inrun-top" brefy="terrain" ty="5" by="0" t="Textures\metal.png" m="Materials\material1.xml" c="0xe3e3e3" bottom="false" />
+<pillar refx="inrun" x1="-3" x2="0.1" lz="3.1" rz="-2.1" trefy="inrun-top" brefy="inrun-top" ty="4" by="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x737373" />
+    
+    <railing y="-1.9" z="20" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="0.1" x2="32" d="-1" w="3"  t="Textures\wood2.png" m="Materials\window.xml" c="0x737373"/>
+    <railing y="-1.9" z="20" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="33" x2="33.2" d="-1" w="3"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd1d1d1"/>
+    
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-20" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="44.8" x2="47" d="-1" w="9"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-20" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="60.8" x2="61" d="-1" w="9"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-31" z="47" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="40" x2="60.9" d="-1" w="65"  t="Textures\wood2.png" m="Materials\window.xml" c="0x8a8a8a"/>
+    
+    <railing refx1="dhill" refx2="dhill" y="-30.5" z="52" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="47" x2="47.1" d="-1" w="55"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing refx1="dhill" refx2="dhill" y="-29.5" z="52" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="47" x2="47.1" d="-1" w="55"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing refx1="dhill" refx2="dhill" y="-28.5" z="52" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="47" x2="47.1" d="-1" w="55"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing refx1="dhill" refx2="dhill" y="-27.5" z="52" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="47" x2="47.1" d="-1" w="55"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    
+    <railing refx1="dhill" refx2="dhill" y="-30.5" z="25" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="46.8" x2="47.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="28" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="46.8" x2="47.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="31" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="46.8" x2="47.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="34" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="46.8" x2="47.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="37" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="46.8" x2="47.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="40" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="46.8" x2="47.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="43" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="46.8" x2="47.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="46" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="46.8" x2="47.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="49" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="46.8" x2="47.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="52" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="46.8" x2="47.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="55" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="46.8" x2="47.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="58" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="46.8" x2="47.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="61" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="46.8" x2="47.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="64" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="46.8" x2="47.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="67" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="46.8" x2="47.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="70" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="46.8" x2="47.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+      <railing refx1="dhill" refx2="dhill" y="-30.5" z="73" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="46.8" x2="47.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="76" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="46.8" x2="47.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="79" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="46.8" x2="47.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+    
+    <railing refx1="dhill" refx2="dhill" y="-30.5" z="52" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="61" x2="61.1" d="-1" w="55"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing refx1="dhill" refx2="dhill" y="-29.5" z="52" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="61" x2="61.1" d="-1" w="55"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing refx1="dhill" refx2="dhill" y="-28.5" z="52" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="61" x2="61.1" d="-1" w="55"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing refx1="dhill" refx2="dhill" y="-27.5" z="52" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="61" x2="61.1" d="-1" w="55"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    
+    <railing refx1="dhill" refx2="dhill" y="-30.5" z="26" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="60.8" x2="61.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="29" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="60.8" x2="61.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="32" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="60.8" x2="61.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="35" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="60.8" x2="61.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="38" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="60.8" x2="61.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="41" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="60.8" x2="61.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="44" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="60.8" x2="61.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="47" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="60.8" x2="61.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="50" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="60.8" x2="61.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="53" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="60.8" x2="61.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="56" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="60.8" x2="61.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="59" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="60.8" x2="61.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="62" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="60.8" x2="61.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="65" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="60.8" x2="61.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="68" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="60.8" x2="61.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="71" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="60.8" x2="61.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+      <railing refx1="dhill" refx2="dhill" y="-30.5" z="74" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="60.8" x2="61.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="77" guard="false" bottom="true" zbias="1" pt="true" h="4" x1="60.8" x2="61.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+    
+     <railing refx1="dhill" refx2="dhill" y="-30.4" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="45" x2="61" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-29.4" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="45" x2="61" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing refx1="dhill" refx2="dhill" y="-28.4" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="45" x2="61" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    
+    <railing refx1="dhill" refx2="dhill" y="-30.4" z="15" guard="false" bottom="true" zbias="1" pt="true" h="3" x1="45.8" x2="46.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+    <railing refx1="dhill" refx2="dhill" y="-30.4" z="15" guard="false" bottom="true" zbias="1" pt="true" h="3" x1="47.8" x2="48.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+    <railing refx1="dhill" refx2="dhill" y="-30.4" z="15" guard="false" bottom="true" zbias="1" pt="true" h="3" x1="49.8" x2="50.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+    <railing refx1="dhill" refx2="dhill" y="-30.4" z="15" guard="false" bottom="true" zbias="1" pt="true" h="3" x1="51.8" x2="52.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+    <railing refx1="dhill" refx2="dhill" y="-30.4" z="15" guard="false" bottom="true" zbias="1" pt="true" h="3" x1="53.8" x2="54.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+    <railing refx1="dhill" refx2="dhill" y="-30.4" z="15" guard="false" bottom="true" zbias="1" pt="true" h="3" x1="55.8" x2="56.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+    <railing refx1="dhill" refx2="dhill" y="-30.4" z="15" guard="false" bottom="true" zbias="1" pt="true" h="3" x1="57.8" x2="58.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+    <railing refx1="dhill" refx2="dhill" y="-30.4" z="15" guard="false" bottom="true" zbias="1" pt="true" h="3" x1="59.8" x2="60.6" d="-1" w="2"  t="Textures\wood2.png" m="Materials\window.xml" c="0xd9d9d9"/>
+    
+    <!--Schody-->
+    
+  <railing refx1="dhill" refx2="dhill" y="-18" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="71" x2="72.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing refx1="dhill" refx2="dhill" y="-18.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="72" x2="73.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-19" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="73" x2="74.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-19.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="74" x2="75.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-20" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="75" x2="76.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-20.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="76" x2="77.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-21" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="77" x2="78.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-21.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="78" x2="79.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-22" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="79" x2="80.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-22.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="80" x2="81.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-23" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="81" x2="82.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-23.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="82" x2="83.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-24" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="83" x2="84.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-24.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="84" x2="85.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-25" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="85" x2="86.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-25.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="86" x2="87.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-26" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="87" x2="88.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-26.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="88" x2="89.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-27" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="89" x2="90.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-27.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="90" x2="91.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-28" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="91" x2="92.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-28.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="92" x2="93.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-29" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="93" x2="94.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-29.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="94" x2="95.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-30" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="95" x2="96.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-30.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="96" x2="97.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-31" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="97" x2="98.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-31.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="98" x2="99.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-32" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="99" x2="100.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-32.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="100" x2="101.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-33" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="101" x2="102.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-33.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="102" x2="103.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-34" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="103" x2="104.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-34.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="104" x2="105.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-35" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="105" x2="106.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-35.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="106" x2="107.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-36" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="107" x2="108.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-36.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="108" x2="109.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-37" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="109" x2="110.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-37.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="110" x2="111.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-38" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="111" x2="112.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-38.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="112" x2="113.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-39" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="113" x2="114.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-39.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="114" x2="115.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-40" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="115" x2="116.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-40.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="116" x2="117.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-41" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="117" x2="118.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-41.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="118" x2="119.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-42" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="119" x2="120.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-42.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="120" x2="121.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing refx1="dhill" refx2="dhill" y="-43" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="121" x2="122.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-43.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="122" x2="123.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-44" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="123" x2="124" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-44.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="124" x2="125.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-45" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="125" x2="126.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-45.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="126" x2="127.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-46" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="127" x2="128.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-46.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="128" x2="129.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-47" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="129" x2="130.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-47.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="130" x2="131.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-48" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="131" x2="132.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-48.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="132" x2="133.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-49" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="133" x2="134.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-49.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="134" x2="135.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-50" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="135" x2="136.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-50.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="136" x2="137.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-51" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="137" x2="138.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-51.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="138" x2="139.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-52" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="139" x2="140.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-52.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="140" x2="141.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-53" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="141" x2="142.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-53.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="142" x2="143.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-54" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="143" x2="144.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-54.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="144" x2="145.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-55" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="145" x2="146.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-55.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="146" x2="147.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-56" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="147" x2="148.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-56.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="148" x2="149.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-57" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="149" x2="150.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-57.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="150" x2="151.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-58" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="151" x2="152.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    <railing refx1="dhill" refx2="dhill" y="-58.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="152" x2="153.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-59" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="153" x2="154.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-59.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="154" x2="155.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-60" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="155" x2="156.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-60.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="156" x2="157.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-61" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="157" x2="158.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-61.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="158" x2="159.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-62" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="159" x2="160.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-62.5" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="160" x2="161.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+     <railing refx1="dhill" refx2="dhill" y="-63" z="20" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="161" x2="162.5" d="-1" w="10"  t="Textures\wood2.png" m="Materials\window.xml" c="0xb3b3b3"/>
+    
+    <!--Schody porecz lewo-->
+    
+  <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="71" x2="72.6" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="72" x2="73.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="73" x2="74.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="74" x2="75.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="75" x2="76.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="76" x2="77.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="77" x2="78.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="78" x2="79.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="79" x2="80.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="80" x2="81.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="81" x2="82.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="82" x2="83.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="83" x2="84.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="84" x2="85.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="85" x2="86.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="86" x2="87.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="87" x2="88.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="88" x2="89.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="89" x2="90.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="90" x2="91.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="91" x2="92.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="92" x2="93.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="93" x2="94.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="94" x2="95.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="95" x2="96.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="96" x2="97.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="97" x2="98.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="98" x2="99.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="99" x2="100.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="100" x2="101.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="101" x2="102.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="102" x2="103.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="103" x2="104.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="104" x2="105.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="105" x2="106.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="106" x2="107.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="107" x2="108.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="108" x2="109.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="109" x2="110.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="110" x2="111.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="111" x2="112.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="112" x2="113.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="113" x2="114.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="114" x2="115.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="115" x2="116.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="116" x2="117.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="117" x2="118.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="118" x2="119.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="119" x2="120.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="120" x2="121.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="121" x2="122.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="122" x2="123.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="123" x2="124" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="124" x2="125.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="125" x2="126.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="126" x2="127.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="127" x2="128.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="128" x2="129.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="129" x2="130.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="130" x2="131.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="131" x2="132.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="132" x2="133.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="133" x2="134.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="134" x2="135.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="135" x2="136.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="136" x2="137.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="137" x2="138.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="138" x2="139.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="139" x2="140.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="140" x2="141.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="141" x2="142.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="142" x2="143.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="143" x2="144.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="144" x2="145.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="145" x2="146.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="146" x2="147.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="147" x2="148.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="148" x2="149.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="149" x2="150.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="150" x2="151.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="151" x2="152.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="152" x2="153.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="153" x2="154.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="154" x2="155.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="155" x2="156.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="156" x2="157.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="157" x2="158.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="158" x2="159.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="159" x2="160.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="160" x2="161.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="15" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="161" x2="162.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+    
+    <!--Schody poręcz prawo-->
+    
+      <railing  refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="1" x1="71" x2="72.6" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+    <railing  refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="72" x2="73.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing  refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="73" x2="74.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing  refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="74" x2="75.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing  refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="75" x2="76.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing  refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="76" x2="77.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing  refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="77" x2="78.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing  refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="78" x2="79.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="79" x2="80.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="80" x2="81.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="81" x2="82.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="82" x2="83.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="83" x2="84.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="84" x2="85.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="85" x2="86.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="86" x2="87.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="87" x2="88.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="88" x2="89.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="89" x2="90.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="90" x2="91.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="91" x2="92.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="92" x2="93.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="93" x2="94.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="94" x2="95.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="95" x2="96.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="96" x2="97.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="97" x2="98.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="98" x2="99.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="99" x2="100.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="100" x2="101.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="101" x2="102.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="102" x2="103.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="103" x2="104.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="104" x2="105.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="105" x2="106.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="106" x2="107.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="107" x2="108.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="108" x2="109.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="109" x2="110.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="110" x2="111.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="111" x2="112.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="112" x2="113.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="113" x2="114.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="114" x2="115.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="115" x2="116.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="116" x2="117.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="117" x2="118.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="118" x2="119.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="119" x2="120.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="120" x2="121.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="121" x2="122.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="122" x2="123.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="123" x2="124" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="124" x2="125.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="125" x2="126.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="126" x2="127.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="127" x2="128.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="128" x2="129.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="129" x2="130.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="130" x2="131.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="131" x2="132.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="132" x2="133.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="133" x2="134.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="134" x2="135.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="135" x2="136.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="136" x2="137.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="137" x2="138.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="138" x2="139.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="139" x2="140.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="140" x2="141.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="141" x2="142.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="142" x2="143.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="143" x2="144.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="144" x2="145.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="145" x2="146.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="146" x2="147.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="147" x2="148.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="148" x2="149.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="149" x2="150.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="150" x2="151.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="151" x2="152.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+    <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="152" x2="153.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="153" x2="154.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="154" x2="155.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="155" x2="156.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="156" x2="157.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="157" x2="158.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="158" x2="159.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="159" x2="160.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="160" x2="161.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+     <railing brefy="terrain" refx1="dhill" refx2="dhill" y="-18" z="25.5" guard="false" bottom="true" zbias="1" pt="true" h="0.6" x1="161" x2="162.5" d="-1" w="1"  t="Textures\wood2.png" m="Materials\window.xml" c="0xff0000"/>
+</hill>
