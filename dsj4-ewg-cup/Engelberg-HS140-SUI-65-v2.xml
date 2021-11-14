@@ -1,0 +1,2129 @@
+<hill version="DSJ4-1.7.0" author="Jussi Koskela
+Maciej Sylwestrzuk">
+	<location latitude="46.814574" longitude="8.404036" orientation="92" timezone="1" altitude="1091"/>
+	<weather pollution="0.0" firstsnow="300" lastsnow="90" maxsnow="1.5" precipitationprobability="0.1" fogprobability="0.1"/>
+	<time minhour="11" maxhour="19"/>
+	<inrun>
+		<profile e="90.6" es="22" t="7" gamma="36" alpha="11" r1="101.1" s="3.15" b1="2.5" z0="0" l="1.2" f="2.0"/>
+		<startgate default="12" max="31" step="0.57" wind="1.7" z1="-1.42" z2="1.62" pz1="-1.3" pz2="1.61" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0x707070" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x707070"/>
+		<gatenumbers z="1.8" y="-0.11" size="0.22" c1="0xff000000" c2="0xffffffff" min="1" max="32"/>
+		<startbanner z="0" text="ENGELBERG" textsize="0.1"/>
+		<frame bh="1.2" bdlz="1" bdrz="-1" snow="false" t="Textures\concrete5.png" m="Materials\material1.xml" c="0xaaaaaa"/>
+		<track type="ceramic" snow="false"/>
+		<flag x="12" z="6" hf="1.9" pf="1.35" hp="8" rb="0.05" rt="0.04" tf="Textures\flag-sui2.png" mf="Materials\flag.xml" tp="Textures\wood1.png" mp="Materials\material1.xml" cp="0xffffff"/>
+		<guardrail z1="-1.4" z2="1.4" x="22" l="0"/>
+		<twigs lz="0.9" rz="-0.9"/>
+	</inrun>
+	<dhill>
+		<profile alpha="6.3" h="62.48" n="107.54" l1="16.2" l2="14.2" a="110" beta-p="37.8" beta="34.8" beta-l="32.2" rl="310" r2x="58.42" r2y="17.62" b0="11" bk="25" ba="27.5" hr="1" nr="110" ar="4" k="125" hs="140"/>
+		<fence t="Textures\fenceback.png" m="Materials\material1.xml" c="0xffffff" h="0.01"/>
+		<judgetower d="72" q="-28" h="+9" t1="Textures\wood3.png" m1="Materials\wood.xml" c1="0x764b34" t2="Textures\wood3.png" m2="Materials\wood.xml" c2="0x613e2b"/>
+		<lights x0="5" step="40" size="4" h="30" d="20" r="0.65" g="0.65" b="0.65" attn="0.001" range="250" side="right" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999"/>
+		<windflags t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999" count="4"/>
+		<measurers c1="0xeeeeee" c2="0xed2939"/>
+		<label d="70" text="ENGELBERG" textsize="2.5"/>
+		<plastic c="0x328c62"/>
+		<lines summer-min="80" summer-max="145" winter-min="80" winter-max="150"/>
+		<numbers min="60" max="150" h1="0" h2="0"/>
+	</dhill>
+	
+	
+	<profile id="inrun-terrain">
+		<start x="-50" y="50" refx="inrun"/>
+		<line x="-2" y="5" refx="inrun"/>
+		<line x="5" y="3" refx="inrun"/>
+		<line x="-3" y="2.2"/>
+		<line x="0" y="-1"/>
+	</profile>
+	
+	<profile id="dhill-terrain">
+		<start x="0" y="-1"/>
+		<line x="1" y="-1"/>
+		<line x="10" y="-3"/>
+		<line x="40" y="-0.01"/>
+	</profile>
+
+	<profile id="inrun-left" side="left" maxstep="1000">
+		<start x="0" y="3.5" refx="inrun"/>
+		<line x="2.569" y="3.5" refx="inrun" corner="true"/>
+		<line x="2.57" y="4.75" refx="inrun" corner="true"/>
+		<line x="20.81" y="4.75" refx="inrun" corner="true"/>
+		<line x="20.81001" y="1.4" refx="inrun" corner="true"/>
+		<line x="50" y="1.4" refx="inrun" corner="true"/>
+		<line x="0" y="1.4" refx="dhill"/>
+	</profile>
+	
+	<profile id="inrun-right" side="right" maxstep="1000">
+		<start x="0" y="-1.425" refx="inrun" corner="true"/>
+		<line x="2.569" y="-1.425" refx="inrun" corner="true"/>
+		<line x="2.57" y="-1.4" refx="inrun" corner="true"/>
+		<line x="22" y="-1.4" refx="inrun" corner="true"/>
+		<line x="50" y="-1.4" refx="inrun" corner="true"/>
+		<line x="0" y="-1.4" refx="dhill"/>
+	</profile>	
+
+	<profile id="inrun-left-guard" side="left" maxstep="1000">
+		<start x="0" y="1.08" refx="inrun"/>
+		<line x="22" y="1.08" refx="inrun"/>
+		<line x="50" y="1.68" refx="inrun"/>
+		<line x="0" y="1.68" refx="dhill"/>
+	</profile>	
+
+	<profile id="inrun-right-guard" side="right" maxstep="1000">
+		<start x="0" y="-1.08" refx="inrun"/>
+		<line x="22" y="-1.08" refx="inrun"/>
+		<line x="50" y="-1.68" refx="inrun"/>
+		<line x="0" y="-1.68" refx="dhill"/>
+	</profile>	
+
+	<refx id="building-x0" value="0" refx="inrun"/>
+	<refx id="elevator-x0" value="0" refx="inrun"/>
+	
+	<profile id="building-floor" maxstep="1000">
+		<start x="0" y="0" refx="building-x0" refy="inrun-top"/>
+		<line x="10" y="0" refx="building-x0" refy="inrun-top" refyx="0"/>
+	</profile>
+
+	<profile id="elevator-floor" maxstep="1000">
+		<start x="0" y="0" refx="elevator-x0" refy="inrun-top"/>
+		<line x="10" y="0" refx="elevator-x0" refy="inrun-top" refyx="0"/>
+	</profile>
+	
+	
+	<terrain>
+		<profile in="1.0" x0="-200" x1="-100" y0="-50.0" sd="20" fd="300" sc="0.1" sm="0.55" rs="4225" c1="0x443920" c2="0x5D603A" tsc="0.01" tsm="0.4"/>
+		<trees count="10000" minheight="10" maxheight="20" fractalthreshold="0.5" maxaltitude="1500" normalaltitude="1100" seed="3"/>
+		<blocks count="30" minsaturation="0.0" maxsaturation="0.1" minfloors="2" maxfloors="6" maxaltitude="1200" normalaltitude="1000" fractalthreshold="0.3" seed="515"/>
+		<houses count="400" minsaturation="0.0" maxsaturation="0.2" minfloors="1" maxfloors="3" maxaltitude="1200" normalaltitude="1000" fractalthreshold="0.3" seed="542"/>
+		<audience count="5000" d="35" x0="0" seed="423"/>
+	</terrain>
+	
+	
+	<!-- frame -->
+	<pillar refx="inrun" x1="0" x2="2.6" rz="1.4" lz="3.5" refy="inrun-top" by="-0.25" top="false" t="Textures\concrete5.png" m="Materials\material1.xml" c="0xbcbcbc"/>
+	<pillar refx="inrun" x1="2.6" x2="21" rz="1.4" lz="4.75" refy="inrun-top" by="-0.25" top="false" t="Textures\concrete5.png" m="Materials\material1.xml" c="0xbcbcbc"/>
+	<pillar refx="inrun" x1="0" x2="2" rz="-2.2" lz="-1.425" refy="inrun-top" top="true" by="-0.1" t="Textures\concrete5.png" m="Materials\material1.xml" c="0xbcbcbc"/>
+	<pillar refx="inrun" x1="0" x2="2" rz="-1.425" lz="3.5" refy="inrun-top" top="false" by="-10" t="Textures\concrete5.png" m="Materials\material1.xml" c="0xbcbcbc"/>
+	<pillar refx="inrun" x1="2" x2="3.85" rz="-1.425" lz="-1.4" refy="inrun-top" top="true" by="-10" t="Textures\concrete5.png" m="Materials\material1.xml" c="0xbcbcbc"/>
+	<pillar refx1="inrun" refx2="dhill" x1="2" x2="-0.75" rz="-1.4" lz="1.4" trefy="inrun-top" brefy="terrain" top="false" t="Textures\concrete5.png" m="Materials\material1.xml" c="0xbcbcbc"/>
+	<pillar refx="dhill" x1="-0.75" x2="0" reflz="inrun-left" refrz="inrun-right" refy="inrun-top" by="-0.25" top="false" t="Textures\concrete5.png" m="Materials\material1.xml" c="0xbcbcbc"/>
+	<pillar refx="dhill" x1="-7" x2="0" lz="-1.4" rz="-2.3" refy="inrun-top" by="-0.21" top="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x939aac"/>
+	<pillar refx="dhill" x1="-7" x2="0" lz="2.3" rz="1.4" refy="inrun-top" by="-0.21" top="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x939aac"/>
+	<pillar refx="dhill" x1="-0.75" x2="0" reflz="dhill-left" refrz="dhill-right" refy="dhill-top" by="-0.21" top="true" t="Textures\concrete5.png" m="Materials\material1.xml" c="0xbcbcbc"/>
+	<pillar refx="dhill" x1="0" x2="40" reflz="dhill-left" refrz="dhill-right" refy="dhill-top" by="-0.25" top="false" t="Textures\concrete5.png" m="Materials\material1.xml" c="0xbcbcbc"/>
+	
+	<pillar refx1="inrun" refx2="dhill" x1="3.85" x2="-7" rz="-2.3" lz="-1.4" refy="inrun-top" by="-0.21" top="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x939aac"/>
+	<pillar refx1="inrun" refx2="dhill" x1="21" x2="-7" rz="1.4" lz="2.3" refy="inrun-top" by="-0.21" top="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x939aac"/>
+	
+	
+	<!-- old takeoff board -->
+	<pillar bottom="false" refx="dhill" x1="1.1" x2="3.3" lz="5.8" rz="-5.8" refy="dhill-top" by="-3" ty="-2" t="Textures\stone1.jpg" m="Materials\material1.xml" c="0x6f6d59" pt="true" scale="0.85"/>
+	<pillar bottom="false" refx="dhill" x1="1.1" x2="3.13" lz="4.8" rz="-4.8" refy="dhill-top" by="-2" ty="-1" t="Textures\stone1.jpg" m="Materials\material1.xml" c="0x6f6d59" pt="true" scale="0.85"/>
+	<pillar bottom="false" refx="dhill" x1="2.1" x2="3.13" lz="3.8" rz="-3.8" refy="dhill-top" by="-1" ty="0" top="false" t="Textures\stone1.jpg" m="Materials\material1.xml" c="0x6f6d59" pt="true" scale="0.85"/>
+	
+	<!-- takeoff stairs -->
+	<stairs refx="dhill" refy="inrun-top" x1="-5.5" x2="-0.75" rz="-3" lz="-2.3" s="0.18" y1="0" y2="-3.25" t1="Textures\grid2.png" m1="Materials\material1.xml" c1="0x999999" t2="Textures\grid2.png" m2="Materials\material1.xml" c2="0x999999"/>
+	<stairs refx="dhill" refy="inrun-top" x1="-5.5" x2="-0.75" rz="-2.3" lz="-3" s="0.18" y1="0" y2="-3.25" t1="Textures\grid2.png" m1="Materials\material1.xml" c1="0x999999" t2="Textures\grid2.png" m2="Materials\material1.xml" c2="0x999999"/>
+	
+	<railing refx="dhill" refy="inrun-top" h="0.18" h2="-0.16" w="0.05" x1="-5.5" x2="-0.75" z="-3" y1="0" y2="-3.25" bottom="true" top="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xa9a9a9"/>
+	
+	<railing refx="dhill" refy="inrun-top" h2="0.95" h="1" w="0.025" x1="-3.525" x2="-0.775" z="-3" y1="-1.35" y2="-3.239" bottom="true" top="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xa9a9a9"/>
+    <railing refx="dhill" refy="inrun-top" h2="0.5" h="0.55" w="0.025" x1="-3.525" x2="-0.775" z="-3" y1="-1.35" y2="-3.239" bottom="true" top="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xa9a9a9"/>
+	
+	<beamgroup refx="dhill" z1="-3" z2="-3" refy="inrun-top"
+		last="true" y1="-1.368" y2="-3.237"
+		x1="-3.5" x2="-0.8" step="1" stepper="1" fitstep="true"
+		dx1="0.0" dx2="0.0" dy1="0.98" dy2="0" dz1="0" dz2="0" 
+		r1="0.0125" r2="0.0125" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0xa9a9a9"/>
+	
+	<pillar refx="dhill" x1="-6.5" x2="-5.5" rz="-3" lz="-2.3" refy="inrun-top" ty="0" by="-0.16" t="Textures\grid2.png" m="Materials\material1.xml" c="0xa9a9a9" top="true" front="true" bottom="true" back="true"/>
+	<railing refx="dhill" refy="inrun-top" h="0.18" h2="-0.16" w="0.05" x1="-6.525" x2="-5.5" z="-3" bottom="true" top="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xa9a9a9"/>
+	<railing refx="dhill" refy="inrun-top" h="0.18" h2="-0.16" w="0.05" x="-6.5" z1="-3" z2="-2.3" bottom="true" top="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xa9a9a9"/>
+	
+	<!-- guard rails -->
+	<railing refx1="inrun" refx2="dhill" guard="false" type="glass" bottom="false" pt="true" h="0.45" x1="20.82" x2="0" z="1.4" w="0.025" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	<railing refx1="inrun" refx2="dhill" guard="false" type="glass" bottom="false" pt="true" h="0.45" x1="20.82" x2="0" z="-1.4" w="0.025" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+	
+	
+	<!-- inrun railing -->
+	<railing refx1="inrun" refx2="dhill" z="-2.2" refy="inrun-top" guard="false" pt="true" h="1.05" h2="0.9" x1="3.85" x2="-15.05" w="0.125" d="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x999999" />
+	<railing refx1="inrun" refx2="dhill" z="2.2" refy="inrun-top" guard="false" pt="true" h="1.05" h2="0.9" x1="20.85" x2="-15.05" w="0.125" d="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x999999" />
+	
+	<beamgroup refx1="inrun" refx2="dhill" z1="-2.2" z2="-2.2" refy1="inrun-top" refy2="inrun-top"
+		last="true" 
+		x1="3.9" x2="-15.1" step="1.9" stepper="1" fitstep="true"
+		dx1="0.0" dx2="0.0" dy1="-0.15" dy2="0.975" dz1="0.0" dz2="0.0" 
+		r1="0.075" r2="0.075" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x999999"/>
+		
+	<beamgroup refx1="inrun" refx2="dhill" z1="2.2" z2="2.2" refy1="inrun-top" refy2="inrun-top"
+		last="true" 
+		x1="20.9" x2="-15.1" step="1.9" stepper="1" fitstep="true"
+		dx1="0.0" dx2="0.0" dy1="-0.15" dy2="0.975" dz1="0.0" dz2="0.0" 
+		r1="0.075" r2="0.075" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x999999"/>
+		
+	<railing refx="inrun" z1="2.2" z2="4.5" refy="inrun-top" guard="false" pt="true" h="0.925" h2="0.9" x1="20.9" x2="20.9" w="0.025" d="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x999999" />
+	<railing refx="inrun" z1="2.2" z2="4.5" refy="inrun-top" guard="false" pt="true" h="0.625" h2="0.6" x1="20.9" x2="20.9" w="0.025" d="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x999999" />
+		
+	<beamgroup refx="inrun" z1="2.2" z2="4.5" refy1="inrun-top" refy2="inrun-top"
+		last="true" 
+		x1="20.9" x2="20.9" step="2.3" stepper="1" fitstep="true"
+		dx1="0.0" dx2="0.0" dy1="-0.15" dy2="0.9375" dz1="0.0" dz2="0.0" 
+		r1="0.025" r2="0.025" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x999999"/>
+		
+	
+	<railing refx="inrun" z="4.65" refy="inrun-top" guard="false" pt="true" h="1.4" h2="1.25" x1="5.3875" x2="20.8375" w="0.125" d="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x999999" />
+	<railing refx="inrun" z="4.65" refy="inrun-top" guard="false" pt="true" h="0.9" h2="0.85" x1="5.375" x2="20.825" w="0.025" d="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x999999" />
+	
+	<railing refx="inrun" z="4.65" refy="inrun-top" guard="false" pt="true" h="3.2" h2="3.05" x1="5.375" x2="20.825" w="0.05" d="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x999999" />
+		
+	<lights refz="inrun-left" refx="inrun" x1="5.5" x2="20.8" step="2.5" l="2.25" h="1.325" d="0.175" r="0.3" g="0.3" b="0.3" attn="0.15" range="10"/>
+	
+	<beamgroup refx="inrun" z1="4.65" z2="4.65" refy1="inrun-top" refy2="inrun-top"
+		last="true" 
+		x1="5.4" x2="20.8" step="1.9" stepper="1" fitstep="true"
+		dx1="0.0" dx2="0.0" dy1="-0.05" dy2="3.175" dz1="0.0" dz2="0.0" 
+		r1="0.05" r2="0.05" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x999999"/>
+		
+	<beamgroup refx="inrun" refy="inrun-top" 
+		last="true" 
+		x1="5.4" x2="20.8" y1="2.75" y2="2.75" z1="0" z2="0" step="2.4" stepper="0" fitstep="true" end1="true" end2="true"
+		dx1="0" dx2="0" dy1="0.85" dy2="0.4" dz1="2.5" dz2="4.65" 
+		r="0.05" rect="true" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x999999"/>
+		
+	<railing refx="inrun" z="3.95" y1="3.25" y2="3.25" refy="inrun-top" guard="false" pt="true" h="0.05" h2="0" x1="5.45" x2="20.75" w="0.05" d="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x999999" />
+	<railing refx="inrun" z="3.25" y1="3.25" y2="3.25" refy="inrun-top" guard="false" pt="true" h="0.2" h2="0.15" x1="5.45" x2="20.75" w="0.05" d="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x999999" />
+	<railing refx="inrun" z="2.55" y1="3.25" y2="3.25" refy="inrun-top" guard="false" pt="true" h="0.35" h2="0.3" x1="5.34" x2="20.75" w="0.05" d="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x999999" />
+		
+	
+	<railing refx1="inrun" refx2="dhill" z="-2.2" refy="inrun-top" guard="false" pt="true" h="0.55" h2="0.525" x1="3.85" x2="-15.05" w="0.025" d="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x999999" />
+	<railing refx1="inrun" refx2="dhill" z="2.2" refy="inrun-top" guard="false" pt="true" h="0.55" h2="0.525" x1="20.9" x2="0.05" w="0.025" d="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x999999" />
+	<railing refx1="inrun" refx2="dhill" z="-2.2" refy="inrun-top" guard="false" pt="true" h="0.275" h2="0.25" x1="3.85" x2="-15.05" w="0.025" d="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x999999" />
+	<railing refx1="inrun" refx2="dhill" z="2.2" refy="inrun-top" guard="false" pt="true" h="0.275" h2="0.25" x1="20.9" x2="0.05" w="0.025" d="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x999999" />
+		
+		
+	<beamgroup refx="dhill" z1="2.2" z2="2.2" refy1="inrun-top" refy2="inrun-top"
+		last="true" end1="true" end2="true"
+		x1="-15.1" x2="0" step="1.9" stepper="1" fitstep="true"
+		dx1="0.0" dx2="0.0" dy1="-0.2" dy2="0.5375" dz1="0.0" dz2="0.0" 
+		r1="0.05" r2="0.05" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x999999"/>
+	
+	
+	<beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" z1="0" z2="0" 
+		last="true" end1="true" end2="true"
+		x1="3.9" x2="0" step="1.9" stepper="1" fitstep="true"
+		dx1="0" dx2="0" dy1="-0.225" dy2="-0.225" dz1="-2.25" dz2="2.25" 
+		r1="0.05" r2="0.07" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x999999"/>
+		
+	<!-- lights -->
+	<lights refz="inrun-right" refx1="inrun" refx2="dhill" x1="3.9" x2="-15.1" step="2.5" l="2.25" h="0.975" d="-0.725" r="0.3" g="0.3" b="0.3" attn="0.15" range="10"/>
+	<lights refz="inrun-left" refx1="inrun" refx2="dhill" x1="20.95" x2="-15.1" step="2.5" l="2.25" h="0.975" d="-0.725" r="0.3" g="0.3" b="0.3" attn="0.15" range="10"/>
+
+		
+	<!-- startgate stairs -->
+	<stairs refx="inrun" x1="2" x2="20.24" rz="1.4" lz="2" s="0.57" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0x211718" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x211718"/>
+	<stairs refx="inrun" x1="20.24" x2="20.81" rz="1.4" lz="2.15" s="0.57" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0x211718" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x211718"/>
+	
+	<stairs refx="inrun" x1="2" x2="2.57" rz="3.4" lz="3.45" s="0.57" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0x211718" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x211718"/>
+	<stairs refx="inrun" x1="2.57" x2="20.81" rz="3.85" lz="3.9" s="0.57" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0x211718" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x211718"/>
+	<stairs refx="inrun" x1="20.24" x2="20.81" rz="1.4" lz="1.6" s="0.57" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0x211718" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x211718"/>
+	
+	<stairs refx="inrun" x1="2" x2="20.81" rz="-1.425" lz="-1.375" s="0.57" y="0.07" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0x211718" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x211718"/>
+	<railing refx="inrun" x1="2" x2="20.81" h="0.07" z="-1.4" d="0.0" w="0.05" l="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x939aac"/>
+	
+	<pillar refx="inrun" zbias="1" step="0.57" count="1" x1="2" x2="2.57" rz="1.4" lz="3.45" ty1="0.07" by1="0" ty2="0.484" by2="0.414" refy="inrun-top" t="Textures\grid2.png" m="Materials\material1.xml" c="0x939aac"/>
+	<pillar refx="inrun" zbias="1" step="0.57" count="32" x1="2.57" x2="3.14" rz="1.4" lz="3.9" ty1="0.07" by1="0" ty2="0.484" by2="0.414" refy="inrun-top" t="Textures\grid2.png" m="Materials\material1.xml" c="0x939aac"/>
+	
+	
+	<!-- inrun stairs -->
+	<stairs refx="inrun" x1="2.57" x2="20.81" rz="3.9" lz="4.56" s="0.285" y="0.277" t1="Textures\grid2.png" m1="Materials\material1.xml" c1="0x939aac" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x939aac"/>
+	<railing refx="inrun" x1="2.57" x2="20.81" h="0.277" z="4.23" d="0.0" w="0.66" l="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x939aac"/>
+	
+	<railing refx="inrun" zbias="1" x1="2.57" x2="21" h="0.5" z="4.675" d="0.0" w="0.15" l="0" t="Textures\concrete5.png" m="Materials\material1.xml" c="0xbcbcbc"/>
+	<railing refx="inrun" zbias="1" x="20.925" h="0.5" z1="4.6" z2="2.15" d="0.0" w="0.15" l="0" t="Textures\concrete5.png" m="Materials\material1.xml" c="0xbcbcbc"/>
+	
+	<stairs refx1="inrun" refx2="dhill" x1="3.85" x2="0" lz="-1.425" rz="-2.125" s="0.19" t1="Textures\grid2.png" m1="Materials\material1.xml" c1="0x939aac" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x939aac"/>
+	<stairs refx="inrun" x1="20.81" x2="23.47" rz="1.425" lz="2.125" s="0.19" y1="0.29" y2="0" t1="Textures\grid2.png" m1="Materials\material1.xml" c1="0x939aac" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x939aac"/>
+	<stairs refx1="inrun" refx2="dhill" x1="23.47" x2="0" rz="1.425" lz="2.125" s="0.19" t1="Textures\grid2.png" m1="Materials\material1.xml" c1="0x939aac" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x939aac"/>
+	
+	<railing refx="inrun" x1="20.81" x2="23.47" h="0.29" z="1.775" y1="0" y2="-0.29" d="0.0" w="0.7" l="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x939aac"/>
+	
+	<!-- building -->
+	<!-- floor -->
+	<pillar refx="building-x0" x1="0" x2="8" lz="-2.2" rz="-8.6" refy="building-floor" ty="0" by="-0.1" t="Textures\concrete5.png" m="Materials\material1.xml" c="0x717b7f"/>
+	<!-- walls -->
+	<pillar refx="building-x0" x1="0.05" x2="7.95" lz="-3.55" rz="-8.55" refy="building-floor" ty="2.4" by="0" t="Textures\concrete5.png" m="Materials\material1.xml" c="0x4e5651"/>
+	<!-- roof -->
+	<pillar refx="building-x0" x1="0" x2="8" lz="-3.5" rz="-8.6" refy="building-floor" ty="2.5" by="2.4" t="Textures\concrete5.png" m="Materials\material1.xml" c="0x64605b"/>
+	<!-- lippa -->
+	<pillar refx="building-x0" x1="0" x2="2" lz="-2.2" rz="-4" refy="building-floor" ty="2.5" by="2.4" t="Textures\concrete5.png" m="Materials\material1.xml" c="0x64605b"/>
+	<beam refx="building-x0" refy="building-floor" x="0.1" y1="0" y2="2.4" z="-2.3" r="0.05" rect="true" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0x797f8b"/>
+	<beam refx="building-x0" refy="building-floor" x="1.9" y1="0" y2="2.4" z="-2.3" r="0.05" rect="true" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0x797f8b"/>
+	<!-- door -->
+	<pillar refx="building-x0" x1="0.5" x2="1.5" lz="-3.53" rz="-3.55" refy="building-floor" ty="2.0" by="0.0" zbias="2" right="false" bottom="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x616467"/>
+
+	<!-- windows -->
+	<pillar refx="building-x0" x1="7.95" x2="7.97" rz="-8.25" lz="-7.35" refy="building-floor" ty="1.85" by="0.75" zbias="2" rear="false" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+	<pillar refx="building-x0" x1="7.95" x2="7.97" rz="-8.2" lz="-7.4" refy="building-floor" ty="1.8" by="0.8" zbias="4" rear="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x333333"/>
+
+	<pillar refx="building-x0" x1="7.95" x2="7.97" rz="-7.1" lz="-6.2" refy="building-floor" ty="1.85" by="0.75" zbias="2" rear="false" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+	<pillar refx="building-x0" x1="7.95" x2="7.97" rz="-7.05" lz="-6.25" refy="building-floor" ty="1.8" by="0.8" zbias="4" rear="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x333333"/>
+
+	<pillar refx="building-x0" x1="7.95" x2="7.97" rz="-5.9" lz="-5.0" refy="building-floor" ty="1.85" by="0.75" zbias="2" rear="false" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+	<pillar refx="building-x0" x1="7.95" x2="7.97" rz="-5.85" lz="-5.05" refy="building-floor" ty="1.8" by="0.8" zbias="4" rear="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x333333"/>
+
+	<pillar refx="building-x0" x1="7.95" x2="7.97" rz="-4.75" lz="-3.85" refy="building-floor" ty="1.85" by="0.75" zbias="2" rear="false" t="Textures\metal.png" m="Materials\material1.xml" c="0xffffff"/>
+	<pillar refx="building-x0" x1="7.95" x2="7.97" rz="-4.7" lz="-3.9" refy="building-floor" ty="1.8" by="0.8" zbias="4" rear="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x333333"/>
+
+	
+	
+	
+	<!-- railing -->
+	<railing refx="building-x0" refy="building-floor" x1="2" x2="8" z="-2.225" h="1.0" h2="0.95" d="0.0" w="0.05" t="Textures\metal.png" m="Materials\material1.xml" c="0x848890"/>
+	<railing refx="building-x0" refy="building-floor" x1="2.05" x2="7.95" z="-2.225" h="0.5" h2="0.45" d="0.0" w="0.04" t="Textures\metal.png" m="Materials\material1.xml" c="0x848890"/>
+	<railing refx="building-x0" refy="building-floor" x="7.975" z1="-2.25" z2="-3.55" h="1.0" h2="0.95" d="0.0" w="0.05" t="Textures\metal.png" m="Materials\material1.xml" c="0x848890"/>
+	<railing refx="building-x0" refy="building-floor" x="7.975" z1="-2.25" z2="-3.50" h="0.5" h2="0.45" d="0.0" w="0.04" t="Textures\metal.png" m="Materials\material1.xml" c="0x848890"/>
+
+	<beamgroup refx="building-x0" refy="building-floor" 
+		last="true" rect="true" end2="true"
+		x1="2.025" x2="7.975" z="-2.225" step="1.2" stepper="1" fitstep="true"
+		dx1="0.0" dx2="0.0" dy1="0.0" dy2="0.95" dz1="0.0" dz2="0.0" 
+		r="0.025" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x848890"/>
+
+	<beamgroup refx="building-x0" refy="building-floor" 
+		last="false" rect="true" end2="true"
+		x="7.975" z1="-3.525" z2="-2.15" step="1.5" stepper="1" fitstep="true"
+		dx1="0.0" dx2="0.0" dy1="0.0" dy2="0.95" dz1="0.0" dz2="0.0" 
+		r="0.025" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x848890"/>
+		
+		
+	
+	<!-- horizontal beam -->
+	<beam refx="building-x0" refy="building-floor" x="7.9" y="-0.2" z1="-2.2" z2="-8.6" r="0.1" end1="true" end2="true" rect="true" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0x545f6a"/>
+	<beam refx="building-x0" refy="building-floor" x1="0" x2="8" y="-0.2" z="-7.9" r="0.1" end1="true" end2="true" rect="true" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0x545f6a"/>
+	<beam refx="building-x0" refy="building-floor" x1="0" x2="8" y="-0.2" z="-6.05" r="0.1" end1="true" end2="true" rect="true" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0x545f6a"/>
+	<beam refx="building-x0" refy="building-floor" x1="0" x2="8" y="-0.2" z="-4.2" r="0.1" end1="true" end2="true" rect="true" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0x545f6a"/>
+
+	<!-- building support -->
+	<pillar refx="building-x0" x1="6.95" x2="7.55" lz="-7.6" rz="-8.2" refy="building-floor" ty="-3.05" by="-8" t="Textures\concrete5.png" m="Materials\material1.xml" c="0x83898d"/>
+	<pillar refx="building-x0" x1="6.95" x2="7.55" lz="-3.9" rz="-4.5" refy="building-floor" ty="-3.05" by="-8" t="Textures\concrete5.png" m="Materials\material1.xml" c="0x83898d"/>
+	
+	<!-- main beams -->
+	<beam refx="building-x0" refy="building-floor" x1="7.9" x2="7.27" y1="-0.1" y2="-3.08" z="-7.9" r="0.1" rect="true" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0x545f6a"/>
+	<beam refx="building-x0" refy="building-floor" x1="7.9" x2="7.27" y1="-0.1" y2="-3.08" z="-4.2" r="0.1" rect="true" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0x545f6a"/>
+	
+	<!-- cross beams -->
+	<beam refx="building-x0" refy="building-floor" x1="7.93" x2="7.3" y1="-0.18" y2="-3.03" z1="-7.9" z2="-4.2" r="0.06" rect="true" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0x545f6a"/>
+	<beam refx="building-x0" refy="building-floor" x1="7.93" x2="7.3" y1="-0.18" y2="-3.03" z1="-4.2" z2="-7.9" r="0.06" rect="true" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0x545f6a"/>
+
+	<!-- elevator -->
+	<!-- floor -->
+	<pillar refx="elevator-x0" x1="0" x2="5" lz="9.5" rz="3.5" refy="elevator-floor" ty="0" by="-0.1" t="Textures\metal.png" m="Materials\material1.xml" c="0x717b7f"/>
+	<!-- walls -->
+	<pillar refx="elevator-x0" x1="0.05" x2="3.45" lz="9.45" rz="5.35" refy="elevator-floor" ty="3.0" by="0" t="Textures\corrugated.png" m="Materials\material1.xml" c="0xb0b2b4"/>
+	<!-- roof -->
+	<pillar refx="elevator-x0" x1="0" x2="3.5" lz="9.5" rz="4.5" refy="elevator-floor" ty="3.2" by="3.0" t="Textures\metal.png" m="Materials\material1.xml" c="0x64605b"/>
+
+	<!-- horizontal beam -->
+	<beam refx="elevator-x0" refy="elevator-floor" x="4.9" y="-0.2" z1="3.5" z2="9.45" r="0.1" end1="true" end2="true" rect="true" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0x545f6a"/>
+	<beam refx="elevator-x0" refy="elevator-floor" x1="0.05" x2="4.9" y="-0.2" z="5.85" r="0.1" end1="true" end2="true" rect="true" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0x545f6a"/>
+	<beam refx="elevator-x0" refy="elevator-floor" x1="0.05" x2="4.9" y="-0.2" z="7.4" r="0.1" end1="true" end2="true" rect="true" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0x545f6a"/>
+	<beam refx="elevator-x0" refy="elevator-floor" x1="0.05" x2="4.9" y="-0.2" z="8.95" r="0.1" end1="true" end2="true" rect="true" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0x545f6a"/>
+
+	<!-- elevator support -->
+	<pillar refx="elevator-x0" x1="4.4" x2="4.9" lz="6.15" rz="5.55" refy="elevator-floor" ty="-1.55" by="-8" t="Textures\concrete5.png" m="Materials\material1.xml" c="0x83898d"/>
+	<pillar refx="elevator-x0" x1="4.4" x2="4.9" lz="9.25" rz="8.65" refy="elevator-floor" ty="-1.55" by="-8" t="Textures\concrete5.png" m="Materials\material1.xml" c="0x83898d"/>
+	
+	<!-- main beams -->
+	<beam refx="elevator-x0" refy="elevator-floor" x1="4.9" x2="4.67" y1="-0.1" y2="-1.58" z="5.85" r="0.1" rect="true" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0x545f6a"/>
+	<beam refx="elevator-x0" refy="elevator-floor" x1="4.9" x2="4.67" y1="-0.1" y2="-1.58" z="8.95" r="0.1" rect="true" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0x545f6a"/>
+	
+	<!-- cross beams -->
+	<beam refx="elevator-x0" refy="elevator-floor" x1="4.93" x2="4.65" y1="-0.18" y2="-1.58" z1="5.85" z2="8.95" r="0.06" rect="true" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0x545f6a"/>
+	<beam refx="elevator-x0" refy="elevator-floor" x1="4.93" x2="4.65" y1="-0.18" y2="-1.58" z1="8.95" z2="5.85" r="0.06" rect="true" edges="4" t="Textures\metal.png" m="Materials\material1.xml" c="0x545f6a"/>
+	
+	<!-- windows -->
+	<pillar refx="elevator-x0" x1="3.45" x2="3.47" rz="6.7" lz="7.3" refy="elevator-floor" ty="2.7" by="2.0" zbias="4" rear="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x333333"/>
+	<pillar refx="elevator-x0" x1="3.45" x2="3.47" rz="7.4" lz="8.0" refy="elevator-floor" ty="2.7" by="2.0" zbias="4" rear="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x333333"/>
+
+	<!-- door -->
+	<pillar refx="elevator-x0" x1="0.5" x2="1.5" lz="5.35" rz="5.32" refy="elevator-floor" ty="2.0" by="0.0" zbias="2" left="false" bottom="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x939699"/>
+	
+	<railing refx="elevator-x0" refy="elevator-floor" x1="2" x2="4.95" z="3.525" h="1.0" h2="0.95" d="0.0" w="0.05" t="Textures\metal.png" m="Materials\material1.xml" c="0x848890"/>
+	<railing refx="elevator-x0" refy="elevator-floor" x1="2.05" x2="4.9" z="3.525" h="0.5" h2="0.45" d="0.0" w="0.04" t="Textures\metal.png" m="Materials\material1.xml" c="0x848890"/>
+	<railing refx="elevator-x0" refy="elevator-floor" x="4.975" z1="3.55" z2="9.45" h="0.5" h2="0.45" d="0.0" w="0.04" t="Textures\metal.png" m="Materials\material1.xml" c="0x848890"/>
+	<railing refx="elevator-x0" refy="elevator-floor" x="4.975" z1="3.5" z2="9.5" h="1.0" h2="0.95" d="0.0" w="0.05" t="Textures\metal.png" m="Materials\material1.xml" c="0x848890"/>
+	<railing refx="elevator-x0" refy="elevator-floor" x1="3.45" x2="4.95" z="9.475" h="1.0" h2="0.95" d="0.0" w="0.05" t="Textures\metal.png" m="Materials\material1.xml" c="0x848890"/>
+	<railing refx="elevator-x0" refy="elevator-floor" x1="3.5" x2="4.95" z="9.475" h="0.5" h2="0.45" d="0.0" w="0.04" t="Textures\metal.png" m="Materials\material1.xml" c="0x848890"/>
+
+	<beamgroup refx="building-x0" refy="building-floor" 
+		last="false" rect="true" end2="true"
+		x1="2.025" x2="4.95" z="3.525" step="1.2" stepper="1" fitstep="true"
+		dx1="0.0" dx2="0.0" dy1="0.0" dy2="0.95" dz1="0.0" dz2="0.0" 
+		r="0.025" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x848890"/>
+
+	<beamgroup refx="building-x0" refy="building-floor" 
+		last="false" rect="true" end2="true"
+		x="4.975" z1="3.525" z2="9.475" step="1.5" stepper="1" fitstep="true"
+		dx1="0.0" dx2="0.0" dy1="0.0" dy2="0.95" dz1="0.0" dz2="0.0" 
+		r="0.025" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x848890"/>
+
+	<beamgroup refx="building-x0" refy="building-floor" 
+		last="true" rect="true" end2="true"
+		x1="4.975" x2="3.475" z="9.475" step="1.2" stepper="1" fitstep="true"
+		dx1="0.0" dx2="0.0" dy1="0.0" dy2="0.95" dz1="0.0" dz2="0.0" 
+		r="0.025" edges="4" smooth="false" t="Textures\metal.png" m="Materials\material1.xml" c="0x848890"/>
+	
+	<!-- landing zone bands -->
+	<railing refx="dhill" refy="dhill-top" guard="true" bottom="false" pt="true" h="0.89" x1="4" x2="145.6" refz="dhill-right" w="0.15" scale="0.7" t="Textures\wood4.png" m="Materials\material1.xml" c="0x665f4f"/>
+	<railing refx="dhill" refy="dhill-top" guard="true" bottom="false" pt="true" h="0.89" x1="4" x2="145.6" refz="dhill-left" w="0.15" scale="0.7" t="Textures\wood4.png" m="Materials\material1.xml" c="0x665f4f"/>
+	
+	<railing refx="dhill" refy="dhill-top" bottom="false" pt="true" h="0.87" h2="-0.5" x1="145.6" x2="287.799" refz="dhill-right" w="0.05" scale="1" t="Textures\rust1.png" m="Materials\material1.xml" c="0x909090"/>
+	<railing refx="dhill" refy="dhill-top" bottom="false" pt="true" h="0.87" h2="-0.5" x1="145.6" x2="287.799" refz="dhill-left" w="0.05" scale="1" t="Textures\rust1.png" m="Materials\material1.xml" c="0x909090"/>
+	
+	
+	
+<!-- Distance markers generated by an application created by Marcin Przybyła -->
+
+<!-- 3D models of numbers -->
+
+<3dmodel id="font-zero-l1">
+<batch id="zero-l" zbias="2" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="0.01696968" y="0.03478776000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="2" x="0.012303200000000002" y="0.0211484" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="3" x="0" y="0.01629096" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="4" x="-0.012303200000000002" y="0.0211484" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="5" x="-0.01696968" y="0.03478776000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="6" x="-0.01696968" y="0.08603616" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="7" x="-0.012303200000000002" y="0.09967552000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="8" x="0" y="0.10453352" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="9" x="0.012303200000000002" y="0.09967552000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="10" x="0.01696968" y="0.08603616" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="11" x="-0.034278720000000006" y="0.03376968" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="12" x="-0.02382128" y="0.00803936" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="13" x="0" y="-0.00101808" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="14" x="0.02382128" y="0.00803936" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="15" x="0.034278720000000006" y="0.03376968" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="16" x="0.034278720000000006" y="0.08705480000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="17" x="0.02382128" y="0.11278456" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="18" x="0" y="0.12184256" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="19" x="-0.02382128" y="0.11278456" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="20" x="-0.034278720000000006" y="0.08705480000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<face v3="19" v2="17" v1="18" />
+<face v3="20" v2="7" v1="19" />
+<face v3="7" v2="8" v1="19" />
+<face v3="8" v2="17" v1="19" />
+<face v3="8" v2="9" v1="17" />
+<face v3="9" v2="16" v1="17" />
+<face v3="20" v2="6" v1="7" />
+<face v3="10" v2="16" v1="9" />
+<face v3="11" v2="6" v1="20" />
+<face v3="10" v2="15" v1="16" />
+<face v3="11" v2="5" v1="6" />
+<face v3="1" v2="15" v1="10" />
+<face v3="11" v2="4" v1="5" />
+<face v3="2" v2="15" v1="1" />
+<face v3="12" v2="4" v1="11" />
+<face v3="2" v2="14" v1="15" />
+<face v3="12" v2="3" v1="4" />
+<face v3="3" v2="14" v1="2" />
+<face v3="12" v2="14" v1="3" />
+<face v3="12" v2="13" v1="14" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-zero-r1">
+<batch id="zero-r" zbias="2" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="0.01696968" y="0.03478776000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="2" x="0.012303200000000002" y="0.0211484" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="3" x="0" y="0.01629096" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="4" x="-0.012303200000000002" y="0.0211484" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="5" x="-0.01696968" y="0.03478776000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="6" x="-0.01696968" y="0.08603616" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="7" x="-0.012303200000000002" y="0.09967552000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="8" x="0" y="0.10453352" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="9" x="0.012303200000000002" y="0.09967552000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="10" x="0.01696968" y="0.08603616" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="11" x="-0.034278720000000006" y="0.03376968" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="12" x="-0.02382128" y="0.00803936" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="13" x="0" y="-0.00101808" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="14" x="0.02382128" y="0.00803936" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="15" x="0.034278720000000006" y="0.03376968" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="16" x="0.034278720000000006" y="0.08705480000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="17" x="0.02382128" y="0.11278456" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="18" x="0" y="0.12184256" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="19" x="-0.02382128" y="0.11278456" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="20" x="-0.034278720000000006" y="0.08705480000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<face v1="19" v2="17" v3="18" />
+<face v1="20" v2="7" v3="19" />
+<face v1="7" v2="8" v3="19" />
+<face v1="8" v2="17" v3="19" />
+<face v1="8" v2="9" v3="17" />
+<face v1="9" v2="16" v3="17" />
+<face v1="20" v2="6" v3="7" />
+<face v1="10" v2="16" v3="9" />
+<face v1="11" v2="6" v3="20" />
+<face v1="10" v2="15" v3="16" />
+<face v1="11" v2="5" v3="6" />
+<face v1="1" v2="15" v3="10" />
+<face v1="11" v2="4" v3="5" />
+<face v1="2" v2="15" v3="1" />
+<face v1="12" v2="4" v3="11" />
+<face v1="2" v2="14" v3="15" />
+<face v1="12" v2="3" v3="4" />
+<face v1="3" v2="14" v3="2" />
+<face v1="12" v2="14" v3="3" />
+<face v1="12" v2="13" v3="14" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-one-r1">
+<batch id="one-r" zbias="2" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="0.0078058400000000005" y="0" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="2" x="-0.0095032" y="0" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="3" x="-0.0095032" y="0.12082448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="4" x="0.0078058400000000005" y="0.12082448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="5" x="0.024945200000000004" y="0.10826648000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="6" x="0.024945200000000004" y="0.08993936000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="7" x="0.0078058400000000005" y="0.10249680000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<face v3="5" v2="3" v1="4"/>
+<face v3="5" v2="7" v1="3"/>
+<face v3="7" v2="2" v1="3"/>
+<face v3="6" v2="7" v1="5"/>
+<face v3="1" v2="2" v1="7"/>
+</batch>
+</3dmodel>
+
+<3dmodel id="font-one-l1">
+<batch id="one-l" zbias="2" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="-0.0078058400000000005" y="0" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="2" x="0.0095032" y="0" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="3" x="0.0095032" y="0.12082448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="4" x="-0.0078058400000000005" y="0.12082448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="5" x="-0.024945200000000004" y="0.10826648000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="6" x="-0.024945200000000004" y="0.08993936000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="7" x="-0.0078058400000000005" y="0.10249680000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<face v3="5" v2="3" v1="4"/>
+<face v3="5" v2="7" v1="3"/>
+<face v3="7" v2="2" v1="3"/>
+<face v3="6" v2="7" v1="5"/>
+<face v3="1" v2="2" v1="7"/>
+</batch>
+</3dmodel>
+	 
+<3dmodel id="font-two-l1">
+<batch id="two-l" zbias="2" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0" staticligthing="true">
+<vertex id="1" x="-0.0352968" y="0" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="2" x="0.033600000000000005" y="0" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="3" x="0.033600000000000005" y="0.01730904" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="4" x="-0.012557440000000001" y="0.01730904" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="5" x="0.026303200000000002" y="0.06601224" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="6" x="0.03186064" y="0.07598192000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="7" x="0.033600000000000005" y="0.08722448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="8" x="0.02352448" y="0.11172448" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="9" x="-0.0016968000000000003" y="0.12184256" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="10" x="-0.02524256" y="0.11183032000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="11" x="-0.0352968" y="0.08705480000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="12" x="-0.01798776" y="0.08705480000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="13" x="-0.0123452" y="0.09986648000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="14" x="-0.00033936000000000003" y="0.10453352" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="15" x="0.01185744" y="0.09914520000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="16" x="0.01629096" y="0.08739416000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="17" x="0.015485120000000002" y="0.08181488" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="18" x="0.011878720000000002" y="0.0753452" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="19" x="-0.0352968" y="0.01629096" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<face v3="10" v2="8" v1="9" />
+<face v3="11" v2="13" v1="10" />
+<face v3="13" v2="14" v1="10" />
+<face v3="14" v2="8" v1="10" />
+<face v3="14" v2="15" v1="8" />
+<face v3="15" v2="7" v1="8" />
+<face v3="11" v2="12" v1="13" />
+<face v3="16" v2="7" v1="15" />
+<face v3="17" v2="7" v1="16" />
+<face v3="17" v2="6" v1="7" />
+<face v3="18" v2="6" v1="17" />
+<face v3="18" v2="5" v1="6" />
+<face v3="19" v2="5" v1="18" />
+<face v3="19" v2="4" v1="5" />
+<face v3="19" v2="3" v1="4" />
+<face v3="19" v2="2" v1="3" />
+<face v3="1" v2="2" v1="19" />
+</batch>
+</3dmodel>
+ 
+<3dmodel id="font-two-r1">
+<batch id="two-r" zbias="2" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0" staticligthing="true">
+<vertex id="1" x="0.0352968" y="0" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="2" x="-0.033600000000000005" y="0" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="3" x="-0.033600000000000005" y="0.01730904" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="4" x="0.012557440000000001" y="0.01730904" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="5" x="-0.026303200000000002" y="0.06601224" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="6" x="-0.03186064" y="0.07598192000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="7" x="-0.033600000000000005" y="0.08722448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="8" x="-0.02352448" y="0.11172448" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="9" x="0.0016968000000000003" y="0.12184256" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="10" x="0.02524256" y="0.11183032000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="11" x="0.0352968" y="0.08705480000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="12" x="0.01798776" y="0.08705480000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="13" x="0.0123452" y="0.09986648000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="14" x="0.00033936000000000003" y="0.10453352" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="15" x="-0.01185744" y="0.09914520000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="16" x="-0.01629096" y="0.08739416000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="17" x="-0.015485120000000002" y="0.08181488" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="18" x="-0.011878720000000002" y="0.0753452" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="19" x="0.0352968" y="0.01629096" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<face v3="10" v2="8" v1="9" />
+<face v3="11" v2="13" v1="10" />
+<face v3="13" v2="14" v1="10" />
+<face v3="14" v2="8" v1="10" />
+<face v3="14" v2="15" v1="8" />
+<face v3="15" v2="7" v1="8" />
+<face v3="11" v2="12" v1="13" />
+<face v3="16" v2="7" v1="15" />
+<face v3="17" v2="7" v1="16" />
+<face v3="17" v2="6" v1="7" />
+<face v3="18" v2="6" v1="17" />
+<face v3="18" v2="5" v1="6" />
+<face v3="19" v2="5" v1="18" />
+<face v3="19" v2="4" v1="5" />
+<face v3="19" v2="3" v1="4" />
+<face v3="19" v2="2" v1="3" />
+<face v3="1" v2="2" v1="19" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-three-l1">
+<batch id="three-l" zbias="2" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="-0.010860640000000001" y="0.05464256" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="2" x="-0.0035638400000000004" y="0.05464256" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="3" x="0.00958776" y="0.04957288000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="4" x="0.015103200000000002" y="0.03546648" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="5" x="0.009566480000000002" y="0.021424480000000003" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="6" x="-0.0032244800000000005" y="0.01629096" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="7" x="-0.014700000000000001" y="0.020045200000000003" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="8" x="-0.021212240000000004" y="0.030036160000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="9" x="-0.038521280000000005" y="0.030036160000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="10" x="-0.026281920000000004" y="0.00693616" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="11" x="-0.00424256" y="-0.00101808" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="12" x="0.02178512" y="0.009078720000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="13" x="0.03241224" y="0.03597552" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="14" x="0.029103200000000003" y="0.05048512" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="15" x="0.018157440000000004" y="0.06244840000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="16" x="0.028360640000000003" y="0.07390320000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="17" x="0.0310548" y="0.08739416000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="18" x="0.02131808" y="0.11123616000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="19" x="-0.004581920000000001" y="0.12184256" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="20" x="-0.02713032" y="0.11231808000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="21" x="-0.037842560000000004" y="0.08993936000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="22" x="-0.02053352" y="0.08993936000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="23" x="-0.0142548" y="0.10092712000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="24" x="-0.0039032000000000003" y="0.10453352" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="25" x="0.008548400000000001" y="0.09948456000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="26" x="0.013745200000000003" y="0.08705480000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="27" x="0.008739360000000002" y="0.07479416000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="28" x="-0.004921280000000001" y="0.06991488000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="29" x="-0.010860640000000001" y="0.06991488000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<face v3="20" v2="18" v1="19" />
+<face v3="21" v2="23" v1="20" />
+<face v3="23" v2="24" v1="20" />
+<face v3="24" v2="18" v1="20" />
+<face v3="24" v2="25" v1="18" />
+<face v3="25" v2="17" v1="18" />
+<face v3="21" v2="22" v1="23" />
+<face v3="26" v2="17" v1="25" />
+<face v3="26" v2="16" v1="17" />
+<face v3="27" v2="16" v1="26" />
+<face v3="28" v2="16" v1="27" />
+<face v3="28" v2="15" v1="16" />
+<face v3="1" v2="28" v1="29" />
+<face v3="1" v2="15" v1="28" />
+<face v3="1" v2="2" v1="15" />
+<face v3="2" v2="14" v1="15" />
+<face v3="3" v2="14" v1="2" />
+<face v3="3" v2="13" v1="14" />
+<face v3="4" v2="13" v1="3" />
+<face v3="4" v2="12" v1="13" />
+<face v3="5" v2="12" v1="4" />
+<face v3="10" v2="8" v1="9" />
+<face v3="10" v2="7" v1="8" />
+<face v3="6" v2="12" v1="5" />
+<face v3="10" v2="6" v1="7" />
+<face v3="10" v2="12" v1="6" />
+<face v3="10" v2="11" v1="12" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-three-r1">
+<batch id="three-r" zbias="2" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="0.010860640000000001" y="0.05464256" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="2" x="0.0035638400000000004" y="0.05464256" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="3" x="-0.00958776" y="0.04957288000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="4" x="-0.015103200000000002" y="0.03546648" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="5" x="-0.009566480000000002" y="0.021424480000000003" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="6" x="0.0032244800000000005" y="0.01629096" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="7" x="0.014700000000000001" y="0.020045200000000003" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="8" x="0.021212240000000004" y="0.030036160000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="9" x="0.038521280000000005" y="0.030036160000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="10" x="0.026281920000000004" y="0.00693616" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="11" x="0.00424256" y="-0.00101808" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="12" x="-0.02178512" y="0.009078720000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="13" x="-0.03241224" y="0.03597552" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="14" x="-0.029103200000000003" y="0.05048512" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="15" x="-0.018157440000000004" y="0.06244840000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="16" x="-0.028360640000000003" y="0.07390320000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="17" x="-0.0310548" y="0.08739416000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="18" x="-0.02131808" y="0.11123616000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="19" x="0.004581920000000001" y="0.12184256" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="20" x="0.02713032" y="0.11231808000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="21" x="0.037842560000000004" y="0.08993936000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="22" x="0.02053352" y="0.08993936000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="23" x="0.0142548" y="0.10092712000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="24" x="0.0039032000000000003" y="0.10453352" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="25" x="-0.008548400000000001" y="0.09948456000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="26" x="-0.013745200000000003" y="0.08705480000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="27" x="-0.008739360000000002" y="0.07479416000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="28" x="0.004921280000000001" y="0.06991488000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="29" x="0.010860640000000001" y="0.06991488000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<face v3="20" v2="18" v1="19" />
+<face v3="21" v2="23" v1="20" />
+<face v3="23" v2="24" v1="20" />
+<face v3="24" v2="18" v1="20" />
+<face v3="24" v2="25" v1="18" />
+<face v3="25" v2="17" v1="18" />
+<face v3="21" v2="22" v1="23" />
+<face v3="26" v2="17" v1="25" />
+<face v3="26" v2="16" v1="17" />
+<face v3="27" v2="16" v1="26" />
+<face v3="28" v2="16" v1="27" />
+<face v3="28" v2="15" v1="16" />
+<face v3="1" v2="28" v1="29" />
+<face v3="1" v2="15" v1="28" />
+<face v3="1" v2="2" v1="15" />
+<face v3="2" v2="14" v1="15" />
+<face v3="3" v2="14" v1="2" />
+<face v3="3" v2="13" v1="14" />
+<face v3="4" v2="13" v1="3" />
+<face v3="4" v2="12" v1="13" />
+<face v3="5" v2="12" v1="4" />
+<face v3="10" v2="8" v1="9" />
+<face v3="10" v2="7" v1="8" />
+<face v3="6" v2="12" v1="5" />
+<face v3="10" v2="6" v1="7" />
+<face v3="10" v2="12" v1="6" />
+<face v3="10" v2="11" v1="12" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-four-l1">
+<batch id="four-l" zbias="2" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="-0.03869096" y="0.01798776" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="2" x="0.011709040000000002" y="0.01798776" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="3" x="0.011709040000000002" y="0" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="4" x="0.029018080000000005" y="0" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="5" x="0.029018080000000005" y="0.01798776" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="6" x="0.03869096" y="0.01798776" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="7" x="0.03869096" y="0.034278720000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="8" x="0.029018080000000005" y="0.034278720000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="9" x="0.029018080000000005" y="0.06906648" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="10" x="0.011709040000000002" y="0.06906648" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="11" x="0.011709040000000002" y="0.034278720000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="12" x="-0.019854800000000002" y="0.034278720000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="13" x="0.021042560000000002" y="0.12082448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="14" x="0.0016968000000000003" y="0.12082448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="15" x="-0.03869096" y="0.034278720000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<face v3="15" v2="13" v1="14" />
+<face v3="15" v2="12" v1="13" />
+<face v3="11" v2="9" v1="10" />
+<face v3="11" v2="8" v1="9" />
+<face v3="1" v2="12" v1="15" />
+<face v3="1" v2="11" v1="12" />
+<face v3="1" v2="8" v1="11" />
+<face v3="1" v2="7" v1="8" />
+<face v3="1" v2="6" v1="7" />
+<face v3="2" v2="6" v1="1" />
+<face v3="3" v2="5" v1="2" />
+<face v3="5" v2="6" v1="2" />
+<face v3="3" v2="4" v1="5" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-four-r1">
+<batch id="four-r" zbias="2" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="0.03869096" y="0.01798776" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="2" x="-0.011709040000000002" y="0.01798776" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="3" x="-0.011709040000000002" y="0" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="4" x="-0.029018080000000005" y="0" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="5" x="-0.029018080000000005" y="0.01798776" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="6" x="-0.03869096" y="0.01798776" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="7" x="-0.03869096" y="0.034278720000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="8" x="-0.029018080000000005" y="0.034278720000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="9" x="-0.029018080000000005" y="0.06906648" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="10" x="-0.011709040000000002" y="0.06906648" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="11" x="-0.011709040000000002" y="0.034278720000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="12" x="0.019854800000000002" y="0.034278720000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="13" x="-0.021042560000000002" y="0.12082448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="14" x="-0.0016968000000000003" y="0.12082448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="15" x="0.03869096" y="0.034278720000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<face v3="15" v2="13" v1="14" />
+<face v3="15" v2="12" v1="13" />
+<face v3="11" v2="9" v1="10" />
+<face v3="11" v2="8" v1="9" />
+<face v3="1" v2="12" v1="15" />
+<face v3="1" v2="11" v1="12" />
+<face v3="1" v2="8" v1="11" />
+<face v3="1" v2="7" v1="8" />
+<face v3="1" v2="6" v1="7" />
+<face v3="2" v2="6" v1="1" />
+<face v3="3" v2="5" v1="2" />
+<face v3="5" v2="6" v1="2" />
+<face v3="3" v2="4" v1="5" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-five-l1">
+<batch id="five-l" zbias="2" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="-0.03224256" y="0.055490960000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="2" x="-0.0159516" y="0.055490960000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="3" x="-0.0091" y="0.06323352" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="4" x="-0.00033936000000000003" y="0.06550320000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="5" x="0.013745200000000003" y="0.05890584000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="6" x="0.017139360000000003" y="0.0422548" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="7" x="0.015018080000000003" y="0.02500904" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="8" x="0.00016968000000000002" y="0.01629096" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="9" x="-0.011412240000000002" y="0.020087760000000003" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="10" x="-0.017139360000000003" y="0.030375520000000003" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="11" x="-0.034448400000000004" y="0.030375520000000003" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="12" x="-0.0217" y="0.006214880000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="13" x="0.0008484000000000001" y="-0.00101808" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="14" x="0.016587760000000003" y="0.0030755200000000004" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="15" x="0.026981920000000003" y="0.011878720000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="16" x="0.03268776" y="0.022824480000000005" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="17" x="0.034448400000000004" y="0.040896800000000004" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="18" x="0.03217872" y="0.06227872000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="19" x="0.024945200000000004" y="0.07398776" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="20" x="0.0159516" y="0.08018192" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="21" x="0.0033941600000000007" y="0.08281224000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="22" x="-0.006914880000000001" y="0.08122128" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="23" x="-0.0159516" y="0.07619416" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="24" x="-0.0159516" y="0.10351488000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="25" x="0.032072880000000005" y="0.10351488000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="26" x="0.032072880000000005" y="0.12082448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="27" x="-0.03224256" y="0.12082448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<face v3="1" v2="24" v1="27" />
+<face v3="24" v2="26" v1="27" />
+<face v3="24" v2="25" v1="26" />
+<face v3="1" v2="23" v1="24" />
+<face v3="22" v2="20" v1="21" />
+<face v3="23" v2="20" v1="22" />
+<face v3="23" v2="19" v1="20" />
+<face v3="1" v2="3" v1="23" />
+<face v3="3" v2="19" v1="23" />
+<face v3="3" v2="4" v1="19" />
+<face v3="4" v2="18" v1="19" />
+<face v3="5" v2="18" v1="4" />
+<face v3="1" v2="2" v1="3" />
+<face v3="5" v2="17" v1="18" />
+<face v3="6" v2="17" v1="5" />
+<face v3="7" v2="17" v1="6" />
+<face v3="7" v2="16" v1="17" />
+<face v3="12" v2="10" v1="11" />
+<face v3="12" v2="9" v1="10" />
+<face v3="8" v2="16" v1="7" />
+<face v3="8" v2="15" v1="16" />
+<face v3="12" v2="8" v1="9" />
+<face v3="12" v2="15" v1="8" />
+<face v3="12" v2="14" v1="15" />
+<face v3="13" v2="14" v1="12" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-five-r1">
+<batch id="five-r" zbias="2" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="0.03224256" y="0.055490960000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="2" x="0.0159516" y="0.055490960000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="3" x="0.0091" y="0.06323352" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="4" x="0.00033936000000000003" y="0.06550320000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="5" x="-0.013745200000000003" y="0.05890584000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="6" x="-0.017139360000000003" y="0.0422548" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="7" x="-0.015018080000000003" y="0.02500904" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="8" x="-0.00016968000000000002" y="0.01629096" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="9" x="0.011412240000000002" y="0.020087760000000003" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="10" x="0.017139360000000003" y="0.030375520000000003" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="11" x="0.034448400000000004" y="0.030375520000000003" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="12" x="0.0217" y="0.006214880000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="13" x="-0.0008484000000000001" y="-0.00101808" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="14" x="-0.016587760000000003" y="0.0030755200000000004" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="15" x="-0.026981920000000003" y="0.011878720000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="16" x="-0.03268776" y="0.022824480000000005" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="17" x="-0.034448400000000004" y="0.040896800000000004" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="18" x="-0.03217872" y="0.06227872000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="19" x="-0.024945200000000004" y="0.07398776" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="20" x="-0.0159516" y="0.08018192" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="21" x="-0.0033941600000000007" y="0.08281224000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="22" x="0.006914880000000001" y="0.08122128" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="23" x="0.0159516" y="0.07619416" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="24" x="0.0159516" y="0.10351488000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="25" x="-0.032072880000000005" y="0.10351488000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="26" x="-0.032072880000000005" y="0.12082448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="27" x="0.03224256" y="0.12082448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<face v3="1" v2="24" v1="27" />
+<face v3="24" v2="26" v1="27" />
+<face v3="24" v2="25" v1="26" />
+<face v3="1" v2="23" v1="24" />
+<face v3="22" v2="20" v1="21" />
+<face v3="23" v2="20" v1="22" />
+<face v3="23" v2="19" v1="20" />
+<face v3="1" v2="3" v1="23" />
+<face v3="3" v2="19" v1="23" />
+<face v3="3" v2="4" v1="19" />
+<face v3="4" v2="18" v1="19" />
+<face v3="5" v2="18" v1="4" />
+<face v3="1" v2="2" v1="3" />
+<face v3="5" v2="17" v1="18" />
+<face v3="6" v2="17" v1="5" />
+<face v3="7" v2="17" v1="6" />
+<face v3="7" v2="16" v1="17" />
+<face v3="12" v2="10" v1="11" />
+<face v3="12" v2="9" v1="10" />
+<face v3="8" v2="16" v1="7" />
+<face v3="8" v2="15" v1="16" />
+<face v3="12" v2="8" v1="9" />
+<face v3="12" v2="15" v1="8" />
+<face v3="12" v2="14" v1="15" />
+<face v3="13" v2="14" v1="12" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-six-l1">
+<batch id="six-l" zbias="2" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="-0.030036160000000006" y="0.05600000000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="2" x="-0.03347288" y="0.046285120000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="3" x="-0.03461808" y="0.03580584" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="4" x="-0.024118080000000004" y="0.008866480000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="5" x="-0.00101808" y="-0.0010136000000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="6" x="0.023545200000000002" y="0.007954800000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="7" x="0.03461808" y="0.037672880000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="8" x="0.025921280000000005" y="0.0632548" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="9" x="0.00576968" y="0.07127288000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="10" x="0.00106064" y="0.07089096000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="11" x="-0.0033941600000000007" y="0.06974520000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="12" x="-0.0037335200000000006" y="0.06974520000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="13" x="0.021721280000000003" y="0.12082448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="14" x="0.0023755200000000003" y="0.12082448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="15" x="0" y="0.05600000000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="16" x="0.012218080000000001" y="0.05116384" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="17" x="0.01730904" y="0.03614520000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="18" x="0.011645200000000001" y="0.02080904" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="19" x="0" y="0.01629096" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="20" x="-0.0126" y="0.02112712" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="21" x="-0.01730904" y="0.03614520000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="22" x="-0.012218080000000001" y="0.05116384" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<face v3="1" v2="13" v1="14" />
+<face v3="1" v2="12" v1="13" />
+<face v3="10" v2="8" v1="9" />
+<face v3="11" v2="8" v1="10" />
+<face v3="1" v2="11" v1="12" />
+<face v3="1" v2="8" v1="11" />
+<face v3="1" v2="15" v1="8" />
+<face v3="15" v2="16" v1="8" />
+<face v3="16" v2="7" v1="8" />
+<face v3="2" v2="15" v1="1" />
+<face v3="2" v2="22" v1="15" />
+<face v3="2" v2="21" v1="22" />
+<face v3="17" v2="7" v1="16" />
+<face v3="3" v2="21" v1="2" />
+<face v3="17" v2="6" v1="7" />
+<face v3="3" v2="20" v1="21" />
+<face v3="18" v2="6" v1="17" />
+<face v3="4" v2="20" v1="3" />
+<face v3="4" v2="19" v1="20" />
+<face v3="19" v2="6" v1="18" />
+<face v3="4" v2="6" v1="19" />
+<face v3="5" v2="6" v1="4" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-six-r1">
+<batch id="six-r" zbias="2"  texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="0.030036160000000006" y="0.05600000000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="2" x="0.03347288" y="0.046285120000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="3" x="0.03461808" y="0.03580584" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="4" x="0.024118080000000004" y="0.008866480000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="5" x="0.00101808" y="-0.0010136000000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="6" x="-0.023545200000000002" y="0.007954800000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="7" x="-0.03461808" y="0.037672880000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="8" x="-0.025921280000000005" y="0.0632548" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="9" x="-0.00576968" y="0.07127288000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="10" x="-0.00106064" y="0.07089096000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="11" x="0.0033941600000000007" y="0.06974520000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="12" x="0.0037335200000000006" y="0.06974520000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="13" x="-0.021721280000000003" y="0.12082448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="14" x="-0.0023755200000000003" y="0.12082448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="15" x="0" y="0.05600000000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="16" x="-0.012218080000000001" y="0.05116384" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="17" x="-0.01730904" y="0.03614520000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="18" x="-0.011645200000000001" y="0.02080904" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="19" x="0" y="0.01629096" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="20" x="0.0126" y="0.02112712" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="21" x="0.01730904" y="0.03614520000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="22" x="0.012218080000000001" y="0.05116384" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<face v3="1" v2="13" v1="14" />
+<face v3="1" v2="12" v1="13" />
+<face v3="10" v2="8" v1="9" />
+<face v3="11" v2="8" v1="10" />
+<face v3="1" v2="11" v1="12" />
+<face v3="1" v2="8" v1="11" />
+<face v3="1" v2="15" v1="8" />
+<face v3="15" v2="16" v1="8" />
+<face v3="16" v2="7" v1="8" />
+<face v3="2" v2="15" v1="1" />
+<face v3="2" v2="22" v1="15" />
+<face v3="2" v2="21" v1="22" />
+<face v3="17" v2="7" v1="16" />
+<face v3="3" v2="21" v1="2" />
+<face v3="17" v2="6" v1="7" />
+<face v3="3" v2="20" v1="21" />
+<face v3="18" v2="6" v1="17" />
+<face v3="4" v2="20" v1="3" />
+<face v3="4" v2="19" v1="20" />
+<face v3="19" v2="6" v1="18" />
+<face v3="4" v2="6" v1="19" />
+<face v3="5" v2="6" v1="4" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-seven-l1">
+<batch id="seven-l" zbias="2" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="-0.032072880000000005" y="0.08603616" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="2" x="-0.01476384" y="0.08603616" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="3" x="-0.01476384" y="0.10351488000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="4" x="0.01730904" y="0.10351488000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="5" x="-0.023587760000000003" y="0" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="6" x="-0.00424256" y="0" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="7" x="0.0366548" y="0.10351488000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="8" x="0.0366548" y="0.12082448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="9" x="-0.032072880000000005" y="0.12082448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<face v3="1" v2="3" v1="9" />
+<face v3="3" v2="8" v1="9" />
+<face v3="3" v2="7" v1="8" />
+<face v3="1" v2="2" v1="3" />
+<face v3="4" v2="7" v1="3" />
+<face v3="5" v2="7" v1="4" />
+<face v3="5" v2="6" v1="7" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-seven-r1">
+<batch id="seven-r" zbias="2" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="0.032072880000000005" y="0.08603616" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="2" x="0.01476384" y="0.08603616" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="3" x="0.01476384" y="0.10351488000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="4" x="-0.01730904" y="0.10351488000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="5" x="0.023587760000000003" y="0" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="6" x="0.00424256" y="0" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="7" x="-0.0366548" y="0.10351488000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="8" x="-0.0366548" y="0.12082448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="9" x="0.032072880000000005" y="0.12082448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<face v3="1" v2="3" v1="9" />
+<face v3="3" v2="8" v1="9" />
+<face v3="3" v2="7" v1="8" />
+<face v3="1" v2="2" v1="3" />
+<face v3="4" v2="7" v1="3" />
+<face v3="5" v2="7" v1="4" />
+<face v3="5" v2="6" v1="7" />
+</batch>
+</3dmodel>
+	
+<3dmodel id="font-eight-l1">
+<batch id="eight-l" zbias="2" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="-0.01730904" y="0.08722448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="2" x="-0.011963840000000002" y="0.10014256000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="3" x="0" y="0.10453352" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="4" x="0.011963840000000002" y="0.10014256000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="5" x="0.01730904" y="0.08722448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="6" x="0.011963840000000002" y="0.07430584000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="7" x="0" y="0.06991488000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="8" x="-0.011963840000000002" y="0.07430584000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="9" x="-0.03682448" y="0.0352968" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="10" x="-0.025921280000000005" y="0.00912128" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="11" x="0" y="-0.00101808" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="12" x="0.025921280000000005" y="0.00912128" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="13" x="0.03682448" y="0.0352968" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="14" x="0.03313352" y="0.05084520000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="15" x="0.02256968" y="0.06244840000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="16" x="0.031266480000000006" y="0.07313936" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="17" x="0.03461808" y="0.08688456000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="18" x="0.024627120000000002" y="0.11168192" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="19" x="0" y="0.12184256" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="20" x="-0.024627120000000002" y="0.11168192" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="21" x="-0.03461808" y="0.08688456000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="22" x="-0.031266480000000006" y="0.07313936" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="23" x="-0.02256968" y="0.06244840000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="24" x="-0.03313352" y="0.05084520000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="25" x="-0.019514880000000002" y="0.03546648" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="26" x="-0.013639360000000001" y="0.049190960000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="27" x="0" y="0.05464256" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="28" x="0.013639360000000001" y="0.049190960000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="29" x="0.019514880000000002" y="0.03546648" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="30" x="0.013639360000000001" y="0.02174256" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="31" x="0" y="0.01629096" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="32" x="-0.013639360000000001" y="0.02174256" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<face v3="20" v2="18" v1="19" />
+<face v3="21" v2="2" v1="20" />
+<face v3="2" v2="3" v1="20" />
+<face v3="3" v2="18" v1="20" />
+<face v3="3" v2="4" v1="18" />
+<face v3="4" v2="17" v1="18" />
+<face v3="21" v2="1" v1="2" />
+<face v3="5" v2="17" v1="4" />
+<face v3="21" v2="8" v1="1" />
+<face v3="6" v2="17" v1="5" />
+<face v3="22" v2="8" v1="21" />
+<face v3="6" v2="16" v1="17" />
+<face v3="22" v2="7" v1="8" />
+<face v3="7" v2="16" v1="6" />
+<face v3="23" v2="7" v1="22" />
+<face v3="7" v2="15" v1="16" />
+<face v3="23" v2="15" v1="7" />
+<face v3="24" v2="15" v1="23" />
+<face v3="24" v2="27" v1="15" />
+<face v3="27" v2="14" v1="15" />
+<face v3="24" v2="26" v1="27" />
+<face v3="28" v2="14" v1="27" />
+<face v3="9" v2="26" v1="24" />
+<face v3="28" v2="13" v1="14" />
+<face v3="9" v2="25" v1="26" />
+<face v3="29" v2="13" v1="28" />
+<face v3="9" v2="32" v1="25" />
+<face v3="30" v2="13" v1="29" />
+<face v3="10" v2="32" v1="9" />
+<face v3="30" v2="12" v1="13" />
+<face v3="10" v2="31" v1="32" />
+<face v3="31" v2="12" v1="30" />
+<face v3="10" v2="12" v1="31" />
+<face v3="10" v2="11" v1="12" />
+</batch>
+</3dmodel>
+	
+<3dmodel id="font-eight-r1">
+<batch id="eight-r" zbias="2" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="0.01730904" y="0.08722448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="2" x="0.011963840000000002" y="0.10014256000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="3" x="0" y="0.10453352" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="4" x="-0.011963840000000002" y="0.10014256000000002" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="5" x="-0.01730904" y="0.08722448000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="6" x="-0.011963840000000002" y="0.07430584000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="7" x="0" y="0.06991488000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="8" x="0.011963840000000002" y="0.07430584000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="9" x="0.03682448" y="0.0352968" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="10" x="0.025921280000000005" y="0.00912128" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="11" x="0" y="-0.00101808" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="12" x="-0.025921280000000005" y="0.00912128" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="13" x="-0.03682448" y="0.0352968" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="14" x="-0.03313352" y="0.05084520000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="15" x="-0.02256968" y="0.06244840000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="16" x="-0.031266480000000006" y="0.07313936" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="17" x="-0.03461808" y="0.08688456000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="18" x="-0.024627120000000002" y="0.11168192" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="19" x="0" y="0.12184256" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="20" x="0.024627120000000002" y="0.11168192" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="21" x="0.03461808" y="0.08688456000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="22" x="0.031266480000000006" y="0.07313936" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="23" x="0.02256968" y="0.06244840000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="24" x="0.03313352" y="0.05084520000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="25" x="0.019514880000000002" y="0.03546648" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="26" x="0.013639360000000001" y="0.049190960000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="27" x="0" y="0.05464256" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="28" x="-0.013639360000000001" y="0.049190960000000006" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="29" x="-0.019514880000000002" y="0.03546648" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="30" x="-0.013639360000000001" y="0.02174256" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="31" x="0" y="0.01629096" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="32" x="0.013639360000000001" y="0.02174256" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<face v3="20" v2="18" v1="19" />
+<face v3="21" v2="2" v1="20" />
+<face v3="2" v2="3" v1="20" />
+<face v3="3" v2="18" v1="20" />
+<face v3="3" v2="4" v1="18" />
+<face v3="4" v2="17" v1="18" />
+<face v3="21" v2="1" v1="2" />
+<face v3="5" v2="17" v1="4" />
+<face v3="21" v2="8" v1="1" />
+<face v3="6" v2="17" v1="5" />
+<face v3="22" v2="8" v1="21" />
+<face v3="6" v2="16" v1="17" />
+<face v3="22" v2="7" v1="8" />
+<face v3="7" v2="16" v1="6" />
+<face v3="23" v2="7" v1="22" />
+<face v3="7" v2="15" v1="16" />
+<face v3="23" v2="15" v1="7" />
+<face v3="24" v2="15" v1="23" />
+<face v3="24" v2="27" v1="15" />
+<face v3="27" v2="14" v1="15" />
+<face v3="24" v2="26" v1="27" />
+<face v3="28" v2="14" v1="27" />
+<face v3="9" v2="26" v1="24" />
+<face v3="28" v2="13" v1="14" />
+<face v3="9" v2="25" v1="26" />
+<face v3="29" v2="13" v1="28" />
+<face v3="9" v2="32" v1="25" />
+<face v3="30" v2="13" v1="29" />
+<face v3="10" v2="32" v1="9" />
+<face v3="30" v2="12" v1="13" />
+<face v3="10" v2="31" v1="32" />
+<face v3="31" v2="12" v1="30" />
+<face v3="10" v2="12" v1="31" />
+<face v3="10" v2="11" v1="12" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-nine-l1">
+<batch id="nine-l" zbias="2" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="0.030036160000000006" y="0.06482448" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="2" x="0.03347288" y="0.07453936000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="3" x="0.03461808" y="0.08501808000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="4" x="0.024118080000000004" y="0.11195744" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="5" x="0.00101808" y="0.12184256" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="6" x="-0.023545200000000002" y="0.11286968000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="7" x="-0.03461808" y="0.0831516" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="8" x="-0.025921280000000005" y="0.05756968000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="9" x="-0.00576968" y="0.0495516" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="10" x="-0.00106064" y="0.04993352" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="11" x="0.0033941600000000007" y="0.05107872000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="12" x="0.0037335200000000006" y="0.05107872000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="13" x="-0.021721280000000003" y="0" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="14" x="-0.0023755200000000003" y="0" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="15" x="0" y="0.06482448" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="16" x="-0.012218080000000001" y="0.06966064000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="17" x="-0.01730904" y="0.08467872000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="18" x="-0.011645200000000001" y="0.10001488000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="19" x="0" y="0.10453352" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="20" x="0.0126" y="0.0996968" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="21" x="0.01730904" y="0.08467872000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="22" x="0.012218080000000001" y="0.06966064000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<face v3="6" v2="4" v1="5" />
+<face v3="7" v2="18" v1="6" />
+<face v3="18" v2="19" v1="6" />
+<face v3="19" v2="4" v1="6" />
+<face v3="19" v2="20" v1="4" />
+<face v3="20" v2="3" v1="4" />
+<face v3="7" v2="17" v1="18" />
+<face v3="21" v2="3" v1="20" />
+<face v3="21" v2="2" v1="3" />
+<face v3="7" v2="16" v1="17" />
+<face v3="22" v2="2" v1="21" />
+<face v3="8" v2="16" v1="7" />
+<face v3="22" v2="1" v1="2" />
+<face v3="8" v2="15" v1="16" />
+<face v3="15" v2="1" v1="22" />
+<face v3="8" v2="1" v1="15" />
+<face v3="8" v2="12" v1="1" />
+<face v3="12" v2="14" v1="1" />
+<face v3="9" v2="11" v1="8" />
+<face v3="11" v2="12" v1="8" />
+<face v3="9" v2="10" v1="11" />
+<face v3="13" v2="14" v1="12" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-nine-r1">
+<batch id="nine-r" zbias="2" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="-0.030036160000000006" y="0.06482448" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="2" x="-0.03347288" y="0.07453936000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="3" x="-0.03461808" y="0.08501808000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="4" x="-0.024118080000000004" y="0.11195744" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="5" x="-0.00101808" y="0.12184256" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="6" x="0.023545200000000002" y="0.11286968000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="7" x="0.03461808" y="0.0831516" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="8" x="0.025921280000000005" y="0.05756968000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="9" x="0.00576968" y="0.0495516" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="10" x="0.00106064" y="0.04993352" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="11" x="-0.0033941600000000007" y="0.05107872000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="12" x="-0.0037335200000000006" y="0.05107872000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="13" x="0.021721280000000003" y="0" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="14" x="0.0023755200000000003" y="0" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="15" x="0" y="0.06482448" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="16" x="0.012218080000000001" y="0.06966064000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="17" x="0.01730904" y="0.08467872000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="18" x="0.011645200000000001" y="0.10001488000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="19" x="0" y="0.10453352" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="20" x="-0.0126" y="0.0996968" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<vertex id="21" x="-0.01730904" y="0.08467872000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" /> 
+<vertex id="22" x="-0.012218080000000001" y="0.06966064000000001" z="0" u1="0" v1="0" diffuse="0xff0a0a0a" />
+<face v3="6" v2="4" v1="5" />
+<face v3="7" v2="18" v1="6" />
+<face v3="18" v2="19" v1="6" />
+<face v3="19" v2="4" v1="6" />
+<face v3="19" v2="20" v1="4" />
+<face v3="20" v2="3" v1="4" />
+<face v3="7" v2="17" v1="18" />
+<face v3="21" v2="3" v1="20" />
+<face v3="21" v2="2" v1="3" />
+<face v3="7" v2="16" v1="17" />
+<face v3="22" v2="2" v1="21" />
+<face v3="8" v2="16" v1="7" />
+<face v3="22" v2="1" v1="2" />
+<face v3="8" v2="15" v1="16" />
+<face v3="15" v2="1" v1="22" />
+<face v3="8" v2="1" v1="15" />
+<face v3="8" v2="12" v1="1" />
+<face v3="12" v2="14" v1="1" />
+<face v3="9" v2="11" v1="8" />
+<face v3="11" v2="12" v1="8" />
+<face v3="9" v2="10" v1="11" />
+<face v3="13" v2="14" v1="12" />
+</batch>
+</3dmodel>
+
+<!-- Distance markers -->
+
+<!-- 70 m -->
+<3dmodel-instance id="font-seven-l1" refx="dhill" x="63.7080239582296" y="-26.695599097978874" z="9.46861991337568"/>
+<3dmodel-instance id="font-zero-l1" refx="dhill" x="63.792023958229606" y="-26.695599097978874" z="9.46861991337568"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="63.7080239582296" y="-26.695599097978874" z="-9.46861991337568"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="63.792023958229606" y="-26.695599097978874" z="-9.46861991337568"/>
+<beam refx="dhill" refy="dhill-top" x="63.750023958229605" y="0.64" z1="-9.474619913375678" z2="-9.49461991337568" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+<beam refx="dhill" refy="dhill-top" x="63.750023958229605" y="0.64" z1="9.474619913375678" z2="9.49461991337568" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+
+<!-- 71 m -->
+<3dmodel-instance id="font-seven-l1" refx="dhill" x="64.53876742296835" y="-27.252254553169838" z="9.52269488750163"/>
+<3dmodel-instance id="font-one-l1" refx="dhill" x="64.62276742296835" y="-27.252254553169838" z="9.52269488750163"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="64.53876742296835" y="-27.252254553169838" z="-9.52269488750163"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="64.62276742296835" y="-27.252254553169838" z="-9.52269488750163"/>
+<beam refx="dhill" refy="dhill-top" x="64.58076742296835" y="0.64" z1="-9.52869488750163" z2="-9.54869488750163" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="64.58076742296835" y="0.64" z1="9.52869488750163" z2="9.54869488750163" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 72 m -->
+<3dmodel-instance id="font-seven-l1" refx="dhill" x="65.36815250909763" y="-27.810918498632155" z="9.576681405552167"/>
+<3dmodel-instance id="font-two-l1" refx="dhill" x="65.45215250909763" y="-27.810918498632155" z="9.576681405552167"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="65.36815250909763" y="-27.810918498632155" z="-9.576681405552167"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="65.45215250909763" y="-27.810918498632155" z="-9.576681405552167"/>
+<beam refx="dhill" refy="dhill-top" x="65.41015250909763" y="0.64" z1="-9.582681405552165" z2="-9.602681405552167" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="65.41015250909763" y="0.64" z1="9.582681405552165" z2="9.602681405552167" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 73 m -->
+<3dmodel-instance id="font-seven-l1" refx="dhill" x="66.19407767571369" y="-28.374698259842365" z="9.630442617565595"/>
+<3dmodel-instance id="font-three-l1" refx="dhill" x="66.27807767571369" y="-28.374698259842365" z="9.630442617565595"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="66.19407767571369" y="-28.374698259842365" z="-9.630442617565595"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="66.27807767571369" y="-28.374698259842365" z="-9.630442617565595"/>
+<beam refx="dhill" refy="dhill-top" x="66.23607767571369" y="0.64" z1="-9.636442617565594" z2="-9.656442617565595" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="66.23607767571369" y="0.64" z1="9.636442617565594" z2="9.656442617565595" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 74 m -->
+<3dmodel-instance id="font-seven-l1" refx="dhill" x="67.02000284232975" y="-28.93847802105257" z="9.684203829579026"/>
+<3dmodel-instance id="font-four-l1" refx="dhill" x="67.10400284232975" y="-28.93847802105257" z="9.684203829579026"/>
+<3dmodel-instance id="font-four-r1" refx="dhill" x="67.02000284232975" y="-28.93847802105257" z="-9.684203829579026"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="67.10400284232975" y="-28.93847802105257" z="-9.684203829579026"/>
+<beam refx="dhill" refy="dhill-top" x="67.06200284232975" y="0.64" z1="-9.690203829579024" z2="-9.710203829579026" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="67.06200284232975" y="0.64" z1="9.690203829579024" z2="9.710203829579026" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 75 m -->
+<3dmodel-instance id="font-seven-l1" refx="dhill" x="67.84469001526375" y="-29.50405595347186" z="9.737884482136955"/>
+<3dmodel-instance id="font-five-l1" refx="dhill" x="67.92869001526375" y="-29.50405595347186" z="9.737884482136955"/>
+<3dmodel-instance id="font-five-r1" refx="dhill" x="67.84469001526375" y="-29.50405595347186" z="-9.737884482136955"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="67.92869001526375" y="-29.50405595347186" z="-9.737884482136955"/>
+<beam refx="dhill" refy="dhill-top" x="67.88669001526375" y="0.64" z1="-9.743884482136954" z2="-9.763884482136955" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+<beam refx="dhill" refy="dhill-top" x="67.88669001526375" y="0.64" z1="9.743884482136954" z2="9.763884482136955" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+
+<!-- 76 m -->
+<3dmodel-instance id="font-seven-l1" refx="dhill" x="68.66608634053205" y="-30.07441380327822" z="9.791350990713436"/>
+<3dmodel-instance id="font-six-l1" refx="dhill" x="68.75008634053205" y="-30.07441380327822" z="9.791350990713436"/>
+<3dmodel-instance id="font-six-r1" refx="dhill" x="68.66608634053205" y="-30.07441380327822" z="-9.791350990713436"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="68.75008634053205" y="-30.07441380327822" z="-9.791350990713436"/>
+<beam refx="dhill" refy="dhill-top" x="68.70808634053205" y="0.64" z1="-9.797350990713435" z2="-9.817350990713436" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="68.70808634053205" y="0.64" z1="9.797350990713435" z2="9.817350990713436" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 77 m -->
+<3dmodel-instance id="font-seven-l1" refx="dhill" x="69.48748266580034" y="-30.64477165308458" z="9.844817499289917"/>
+<3dmodel-instance id="font-seven-l1" refx="dhill" x="69.57148266580035" y="-30.64477165308458" z="9.844817499289917"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="69.48748266580034" y="-30.64477165308458" z="-9.844817499289917"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="69.57148266580035" y="-30.64477165308458" z="-9.844817499289917"/>
+<beam refx="dhill" refy="dhill-top" x="69.52948266580034" y="0.64" z1="-9.850817499289915" z2="-9.870817499289917" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="69.52948266580034" y="0.64" z1="9.850817499289915" z2="9.870817499289917" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 78 m -->
+<3dmodel-instance id="font-seven-l1" refx="dhill" x="70.30775344295324" y="-31.216737718227623" z="9.898210669174363"/>
+<3dmodel-instance id="font-eight-l1" refx="dhill" x="70.39175344295325" y="-31.216737718227623" z="9.898210669174363"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="70.30775344295324" y="-31.216737718227623" z="-9.898210669174363"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="70.39175344295325" y="-31.216737718227623" z="-9.898210669174363"/>
+<beam refx="dhill" refy="dhill-top" x="70.34975344295324" y="0.64" z1="-9.904210669174361" z2="-9.924210669174363" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="70.34975344295324" y="0.64" z1="9.904210669174361" z2="9.924210669174363" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 79 m -->
+<3dmodel-instance id="font-seven-l1" refx="dhill" x="71.12490672411326" y="-31.79315815080216" z="9.95140070862359"/>
+<3dmodel-instance id="font-nine-l1" refx="dhill" x="71.20890672411326" y="-31.79315815080216" z="9.95140070862359"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="71.12490672411326" y="-31.79315815080216" z="-9.95140070862359"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="71.20890672411326" y="-31.79315815080216" z="-9.95140070862359"/>
+<beam refx="dhill" refy="dhill-top" x="71.16690672411326" y="0.64" z1="-9.957400708623588" z2="-9.97740070862359" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="71.16690672411326" y="0.64" z1="9.957400708623588" z2="9.97740070862359" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 80 m -->
+<3dmodel-instance id="font-eight-l1" refx="dhill" x="71.94206000527328" y="-32.36957858337669" z="10.004590748072815"/>
+<3dmodel-instance id="font-zero-l1" refx="dhill" x="72.02606000527328" y="-32.36957858337669" z="10.004590748072815"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="71.94206000527328" y="-32.36957858337669" z="-10.004590748072815"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="72.02606000527328" y="-32.36957858337669" z="-10.004590748072815"/>
+<beam refx="dhill" refy="dhill-top" x="71.98406000527328" y="0.64" z1="-10.010590748072813" z2="-10.030590748072814" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+<beam refx="dhill" refy="dhill-top" x="71.98406000527328" y="0.64" z1="10.010590748072813" z2="10.030590748072814" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+
+<!-- 81 m -->
+<3dmodel-instance id="font-eight-l1" refx="dhill" x="72.7581927315618" y="-32.94743533765687" z="10.057714450717478"/>
+<3dmodel-instance id="font-one-l1" refx="dhill" x="72.84219273156181" y="-32.94743533765687" z="10.057714450717478"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="72.7581927315618" y="-32.94743533765687" z="-10.057714450717478"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="72.84219273156181" y="-32.94743533765687" z="-10.057714450717478"/>
+<beam refx="dhill" refy="dhill-top" x="72.80019273156181" y="0.64" z1="-10.063714450717477" z2="-10.083714450717478" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="72.80019273156181" y="0.64" z1="10.063714450717477" z2="10.083714450717478" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 82 m -->
+<3dmodel-instance id="font-eight-l1" refx="dhill" x="73.5713851082724" y="-33.529430319129894" z="10.110647028513549"/>
+<3dmodel-instance id="font-two-l1" refx="dhill" x="73.6553851082724" y="-33.529430319129894" z="10.110647028513549"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="73.5713851082724" y="-33.529430319129894" z="-10.110647028513549"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="73.6553851082724" y="-33.529430319129894" z="-10.110647028513549"/>
+<beam refx="dhill" refy="dhill-top" x="73.6133851082724" y="0.64" z1="-10.116647028513547" z2="-10.136647028513549" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="73.6133851082724" y="0.64" z1="10.116647028513547" z2="10.136647028513549" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 83 m -->
+<3dmodel-instance id="font-eight-l1" refx="dhill" x="74.38457748498298" y="-34.11142530060291" z="10.163579606309618"/>
+<3dmodel-instance id="font-three-l1" refx="dhill" x="74.46857748498299" y="-34.11142530060291" z="10.163579606309618"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="74.38457748498298" y="-34.11142530060291" z="-10.163579606309618"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="74.46857748498299" y="-34.11142530060291" z="-10.163579606309618"/>
+<beam refx="dhill" refy="dhill-top" x="74.42657748498299" y="0.64" z1="-10.169579606309616" z2="-10.189579606309618" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="74.42657748498299" y="0.64" z1="10.169579606309616" z2="10.189579606309618" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 84 m -->
+<3dmodel-instance id="font-eight-l1" refx="dhill" x="75.19684703950797" y="-34.69470114890139" z="10.216451977860343"/>
+<3dmodel-instance id="font-four-l1" refx="dhill" x="75.28084703950798" y="-34.69470114890139" z="10.216451977860343"/>
+<3dmodel-instance id="font-four-r1" refx="dhill" x="75.19684703950797" y="-34.69470114890139" z="-10.216451977860343"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="75.28084703950798" y="-34.69470114890139" z="-10.216451977860343"/>
+<beam refx="dhill" refy="dhill-top" x="75.23884703950797" y="0.64" z1="-10.222451977860342" z2="-10.242451977860343" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="75.23884703950797" y="0.64" z1="10.222451977860342" z2="10.242451977860343" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 85 m -->
+<3dmodel-instance id="font-eight-l1" refx="dhill" x="76.00635593239524" y="-35.28180876453622" z="10.269144239879168"/>
+<3dmodel-instance id="font-five-l1" refx="dhill" x="76.09035593239524" y="-35.28180876453622" z="10.269144239879168"/>
+<3dmodel-instance id="font-five-r1" refx="dhill" x="76.00635593239524" y="-35.28180876453622" z="-10.269144239879168"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="76.09035593239524" y="-35.28180876453622" z="-10.269144239879168"/>
+<beam refx="dhill" refy="dhill-top" x="76.04835593239524" y="0.64" z1="-10.275144239879166" z2="-10.295144239879168" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+<beam refx="dhill" refy="dhill-top" x="76.04835593239524" y="0.64" z1="10.275144239879166" z2="10.295144239879168" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+
+<!-- 86 m -->
+<3dmodel-instance id="font-eight-l1" refx="dhill" x="76.81586482528252" y="-35.868916380171065" z="10.321836501897993"/>
+<3dmodel-instance id="font-six-l1" refx="dhill" x="76.89986482528252" y="-35.868916380171065" z="10.321836501897993"/>
+<3dmodel-instance id="font-six-r1" refx="dhill" x="76.81586482528252" y="-35.868916380171065" z="-10.321836501897993"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="76.89986482528252" y="-35.868916380171065" z="-10.321836501897993"/>
+<beam refx="dhill" refy="dhill-top" x="76.85786482528252" y="0.64" z1="-10.327836501897991" z2="-10.347836501897993" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="76.85786482528252" y="0.64" z1="10.327836501897991" z2="10.347836501897993" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 87 m -->
+<3dmodel-instance id="font-eight-l1" refx="dhill" x="77.624542050747" y="-36.45716375427746" z="10.374474735977376"/>
+<3dmodel-instance id="font-seven-l1" refx="dhill" x="77.708542050747" y="-36.45716375427746" z="10.374474735977376"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="77.624542050747" y="-36.45716375427746" z="-10.374474735977376"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="77.708542050747" y="-36.45716375427746" z="-10.374474735977376"/>
+<beam refx="dhill" refy="dhill-top" x="77.666542050747" y="0.64" z1="-10.380474735977375" z2="-10.400474735977376" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="77.666542050747" y="0.64" z1="10.380474735977375" z2="10.400474735977376" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 88 m -->
+<3dmodel-instance id="font-eight-l1" refx="dhill" x="78.43064083992073" y="-37.04894474593961" z="10.426945466081069"/>
+<3dmodel-instance id="font-eight-l1" refx="dhill" x="78.51464083992073" y="-37.04894474593961" z="10.426945466081069"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="78.43064083992073" y="-37.04894474593961" z="-10.426945466081069"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="78.51464083992073" y="-37.04894474593961" z="-10.426945466081069"/>
+<beam refx="dhill" refy="dhill-top" x="78.47264083992073" y="0.64" z1="-10.432945466081067" z2="-10.452945466081069" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="78.47264083992073" y="0.64" z1="10.432945466081067" z2="10.452945466081069" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 89 m -->
+<3dmodel-instance id="font-eight-l1" refx="dhill" x="79.23673962909446" y="-37.640725737601755" z="10.479416196184763"/>
+<3dmodel-instance id="font-nine-l1" refx="dhill" x="79.32073962909446" y="-37.640725737601755" z="10.479416196184763"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="79.23673962909446" y="-37.640725737601755" z="-10.479416196184763"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="79.32073962909446" y="-37.640725737601755" z="-10.479416196184763"/>
+<beam refx="dhill" refy="dhill-top" x="79.27873962909446" y="0.64" z1="-10.485416196184762" z2="-10.505416196184763" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="79.27873962909446" y="0.64" z1="10.485416196184762" z2="10.505416196184763" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 90 m -->
+<3dmodel-instance id="font-nine-l1" refx="dhill" x="80.0420917043531" y="-38.23351825251742" z="10.531838332133294"/>
+<3dmodel-instance id="font-zero-l1" refx="dhill" x="80.1260917043531" y="-38.23351825251742" z="10.531838332133294"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="80.0420917043531" y="-38.23351825251742" z="-10.531838332133294"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="80.1260917043531" y="-38.23351825251742" z="-10.531838332133294"/>
+<beam refx="dhill" refy="dhill-top" x="80.0840917043531" y="0.64" z1="-10.537838332133292" z2="-10.557838332133294" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+<beam refx="dhill" refy="dhill-top" x="80.0840917043531" y="0.64" z1="10.537838332133292" z2="10.557838332133294" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+
+<!-- 91 m -->
+<3dmodel-instance id="font-nine-l1" refx="dhill" x="80.84504923995104" y="-38.82955448969305" z="10.584104637810734"/>
+<3dmodel-instance id="font-one-l1" refx="dhill" x="80.92904923995104" y="-38.82955448969305" z="10.584104637810734"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="80.84504923995104" y="-38.82955448969305" z="-10.584104637810734"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="80.92904923995104" y="-38.82955448969305" z="-10.584104637810734"/>
+<beam refx="dhill" refy="dhill-top" x="80.88704923995104" y="0.64" z1="-10.590104637810732" z2="-10.610104637810734" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="80.88704923995104" y="0.64" z1="10.590104637810732" z2="10.610104637810734" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 92 m -->
+<3dmodel-instance id="font-nine-l1" refx="dhill" x="81.64800677554896" y="-39.425590726868684" z="10.636370943488174"/>
+<3dmodel-instance id="font-two-l1" refx="dhill" x="81.73200677554897" y="-39.425590726868684" z="10.636370943488174"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="81.64800677554896" y="-39.425590726868684" z="-10.636370943488174"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="81.73200677554897" y="-39.425590726868684" z="-10.636370943488174"/>
+<beam refx="dhill" refy="dhill-top" x="81.69000677554897" y="0.64" z1="-10.642370943488173" z2="-10.662370943488174" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="81.69000677554897" y="0.64" z1="10.642370943488173" z2="10.662370943488174" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 93 m -->
+<3dmodel-instance id="font-nine-l1" refx="dhill" x="82.45029715421448" y="-40.022521231823816" z="10.688593780541876"/>
+<3dmodel-instance id="font-three-l1" refx="dhill" x="82.53429715421449" y="-40.022521231823816" z="10.688593780541876"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="82.45029715421448" y="-40.022521231823816" z="-10.688593780541876"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="82.53429715421449" y="-40.022521231823816" z="-10.688593780541876"/>
+<beam refx="dhill" refy="dhill-top" x="82.49229715421448" y="0.64" z1="-10.694593780541874" z2="-10.714593780541875" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="82.49229715421448" y="0.64" z1="10.694593780541874" z2="10.714593780541875" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 94 m -->
+<3dmodel-instance id="font-nine-l1" refx="dhill" x="83.25037912394795" y="-40.62241192328971" z="10.740672728665905"/>
+<3dmodel-instance id="font-four-l1" refx="dhill" x="83.33437912394795" y="-40.62241192328971" z="10.740672728665905"/>
+<3dmodel-instance id="font-four-r1" refx="dhill" x="83.25037912394795" y="-40.62241192328971" z="-10.740672728665905"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="83.33437912394795" y="-40.62241192328971" z="-10.740672728665905"/>
+<beam refx="dhill" refy="dhill-top" x="83.29237912394795" y="0.64" z1="-10.746672728665903" z2="-10.766672728665904" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="83.29237912394795" y="0.64" z1="10.746672728665903" z2="10.766672728665904" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 95 m -->
+<3dmodel-instance id="font-nine-l1" refx="dhill" x="84.0504610936814" y="-41.2223026147556" z="10.792751676789932"/>
+<3dmodel-instance id="font-five-l1" refx="dhill" x="84.13446109368141" y="-41.2223026147556" z="10.792751676789932"/>
+<3dmodel-instance id="font-five-r1" refx="dhill" x="84.0504610936814" y="-41.2223026147556" z="-10.792751676789932"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="84.13446109368141" y="-41.2223026147556" z="-10.792751676789932"/>
+<beam refx="dhill" refy="dhill-top" x="84.09246109368141" y="0.64" z1="-10.79875167678993" z2="-10.818751676789931" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+<beam refx="dhill" refy="dhill-top" x="84.09246109368141" y="0.64" z1="10.79875167678993" z2="10.818751676789931" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+
+<!-- 96 m -->
+<3dmodel-instance id="font-nine-l1" refx="dhill" x="84.84995004962822" y="-41.82298064561398" z="10.84479194162268"/>
+<3dmodel-instance id="font-six-l1" refx="dhill" x="84.93395004962822" y="-41.82298064561398" z="10.84479194162268"/>
+<3dmodel-instance id="font-six-r1" refx="dhill" x="84.84995004962822" y="-41.82298064561398" z="-10.84479194162268"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="84.93395004962822" y="-41.82298064561398" z="-10.84479194162268"/>
+<beam refx="dhill" refy="dhill-top" x="84.89195004962822" y="0.64" z1="-10.850791941622678" z2="-10.870791941622679" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="84.89195004962822" y="0.64" z1="10.850791941622678" z2="10.870791941622679" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 97 m -->
+<3dmodel-instance id="font-nine-l1" refx="dhill" x="85.64741712519164" y="-42.426343109968805" z="10.896700315781773"/>
+<3dmodel-instance id="font-seven-l1" refx="dhill" x="85.73141712519164" y="-42.426343109968805" z="10.896700315781773"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="85.64741712519164" y="-42.426343109968805" z="-10.896700315781773"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="85.73141712519164" y="-42.426343109968805" z="-10.896700315781773"/>
+<beam refx="dhill" refy="dhill-top" x="85.68941712519164" y="0.64" z1="-10.902700315781772" z2="-10.922700315781773" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="85.68941712519164" y="0.64" z1="10.902700315781772" z2="10.922700315781773" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 98 m -->
+<3dmodel-instance id="font-nine-l1" refx="dhill" x="86.44488420075506" y="-43.02970557432363" z="10.948608689940869"/>
+<3dmodel-instance id="font-eight-l1" refx="dhill" x="86.52888420075506" y="-43.02970557432363" z="10.948608689940869"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="86.44488420075506" y="-43.02970557432363" z="-10.948608689940869"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="86.52888420075506" y="-43.02970557432363" z="-10.948608689940869"/>
+<beam refx="dhill" refy="dhill-top" x="86.48688420075506" y="0.64" z1="-10.954608689940867" z2="-10.974608689940869" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="86.48688420075506" y="0.64" z1="10.954608689940867" z2="10.974608689940869" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 99 m -->
+<3dmodel-instance id="font-nine-l1" refx="dhill" x="87.24182766871671" y="-43.633757296913096" z="11.000483103466745"/>
+<3dmodel-instance id="font-nine-l1" refx="dhill" x="87.32582766871671" y="-43.633757296913096" z="11.000483103466745"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="87.24182766871671" y="-43.633757296913096" z="-11.000483103466745"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="87.32582766871671" y="-43.633757296913096" z="-11.000483103466745"/>
+<beam refx="dhill" refy="dhill-top" x="87.28382766871671" y="0.64" z1="-11.006483103466744" z2="-11.026483103466745" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="87.28382766871671" y="0.64" z1="11.006483103466744" z2="11.026483103466745" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 100 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="88.00053643901876" y="-44.24022414958418" z="11.052238520450027"/>
+<3dmodel-instance id="font-zero-l1" refx="dhill" x="88.07893643901876" y="-44.24022414958418" z="11.052238520450027"/>
+<3dmodel-instance id="font-zero-l1" refx="dhill" x="88.15733643901876" y="-44.24022414958418" z="11.052238520450027"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="88.00053643901876" y="-44.24022414958418" z="-11.052238520450027"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="88.07893643901876" y="-44.24022414958418" z="-11.052238520450027"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="88.15733643901876" y="-44.24022414958418" z="-11.052238520450027"/>
+<beam refx="dhill" refy="dhill-top" x="88.07893643901876" y="0.64" z1="-11.058238520450026" z2="-11.078238520450027" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+<beam refx="dhill" refy="dhill-top" x="88.07893643901876" y="0.64" z1="11.058238520450026" z2="11.078238520450027" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+
+<!-- 101 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="88.79564520932081" y="-44.84669100225526" z="11.103993937433307"/>
+<3dmodel-instance id="font-zero-l1" refx="dhill" x="88.87404520932081" y="-44.84669100225526" z="11.103993937433307"/>
+<3dmodel-instance id="font-one-l1" refx="dhill" x="88.95244520932081" y="-44.84669100225526" z="11.103993937433307"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="88.79564520932081" y="-44.84669100225526" z="-11.103993937433307"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="88.87404520932081" y="-44.84669100225526" z="-11.103993937433307"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="88.95244520932081" y="-44.84669100225526" z="-11.103993937433307"/>
+<beam refx="dhill" refy="dhill-top" x="88.87404520932081" y="0.64" z1="-11.109993937433305" z2="-11.129993937433307" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="88.87404520932081" y="0.64" z1="11.109993937433305" z2="11.129993937433307" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 102 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="89.59029603350378" y="-45.453756096334935" z="11.155719584254964"/>
+<3dmodel-instance id="font-zero-l1" refx="dhill" x="89.66869603350378" y="-45.453756096334935" z="11.155719584254964"/>
+<3dmodel-instance id="font-two-l1" refx="dhill" x="89.74709603350378" y="-45.453756096334935" z="11.155719584254964"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="89.59029603350378" y="-45.453756096334935" z="-11.155719584254964"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="89.66869603350378" y="-45.453756096334935" z="-11.155719584254964"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="89.74709603350378" y="-45.453756096334935" z="-11.155719584254964"/>
+<beam refx="dhill" refy="dhill-top" x="89.66869603350378" y="0.64" z1="-11.161719584254962" z2="-11.181719584254964" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="89.66869603350378" y="0.64" z1="11.161719584254962" z2="11.181719584254964" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 103 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="90.38330164940382" y="-46.06297042081442" z="11.207338279375431"/>
+<3dmodel-instance id="font-zero-l1" refx="dhill" x="90.46170164940382" y="-46.06297042081442" z="11.207338279375431"/>
+<3dmodel-instance id="font-three-l1" refx="dhill" x="90.54010164940382" y="-46.06297042081442" z="11.207338279375431"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="90.38330164940382" y="-46.06297042081442" z="-11.207338279375431"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="90.46170164940382" y="-46.06297042081442" z="-11.207338279375431"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="90.54010164940382" y="-46.06297042081442" z="-11.207338279375431"/>
+<beam refx="dhill" refy="dhill-top" x="90.46170164940382" y="0.64" z1="-11.21333827937543" z2="-11.233338279375431" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="90.46170164940382" y="0.64" z1="11.21333827937543" z2="11.233338279375431" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 104 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="91.17630726530386" y="-46.672184745293904" z="11.258956974495899"/>
+<3dmodel-instance id="font-zero-l1" refx="dhill" x="91.25470726530386" y="-46.672184745293904" z="11.258956974495899"/>
+<3dmodel-instance id="font-four-l1" refx="dhill" x="91.33310726530387" y="-46.672184745293904" z="11.258956974495899"/>
+<3dmodel-instance id="font-four-r1" refx="dhill" x="91.17630726530386" y="-46.672184745293904" z="-11.258956974495899"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="91.25470726530386" y="-46.672184745293904" z="-11.258956974495899"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="91.33310726530387" y="-46.672184745293904" z="-11.258956974495899"/>
+<beam refx="dhill" refy="dhill-top" x="91.25470726530386" y="0.64" z1="-11.264956974495897" z2="-11.284956974495898" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="91.25470726530386" y="0.64" z1="11.264956974495897" z2="11.284956974495898" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 105 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="91.96891643024257" y="-47.281913506051346" z="11.310549783023836"/>
+<3dmodel-instance id="font-zero-l1" refx="dhill" x="92.04731643024257" y="-47.281913506051346" z="11.310549783023836"/>
+<3dmodel-instance id="font-five-l1" refx="dhill" x="92.12571643024258" y="-47.281913506051346" z="11.310549783023836"/>
+<3dmodel-instance id="font-five-r1" refx="dhill" x="91.96891643024257" y="-47.281913506051346" z="-11.310549783023836"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="92.04731643024257" y="-47.281913506051346" z="-11.310549783023836"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="92.12571643024258" y="-47.281913506051346" z="-11.310549783023836"/>
+<beam refx="dhill" refy="dhill-top" x="92.04731643024257" y="0.64" z1="-11.316549783023834" z2="-11.336549783023836" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+<beam refx="dhill" refy="dhill-top" x="92.04731643024257" y="0.64" z1="11.316549783023834" z2="11.336549783023836" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+
+<!-- 106 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="92.76006884560204" y="-47.89353255061332" z="11.3620474718864"/>
+<3dmodel-instance id="font-zero-l1" refx="dhill" x="92.83846884560204" y="-47.89353255061332" z="11.3620474718864"/>
+<3dmodel-instance id="font-six-l1" refx="dhill" x="92.91686884560204" y="-47.89353255061332" z="11.3620474718864"/>
+<3dmodel-instance id="font-six-r1" refx="dhill" x="92.76006884560204" y="-47.89353255061332" z="-11.3620474718864"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="92.83846884560204" y="-47.89353255061332" z="-11.3620474718864"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="92.91686884560204" y="-47.89353255061332" z="-11.3620474718864"/>
+<beam refx="dhill" refy="dhill-top" x="92.83846884560204" y="0.64" z1="-11.368047471886399" z2="-11.3880474718864" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="92.83846884560204" y="0.64" z1="11.368047471886399" z2="11.3880474718864" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 107 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="93.55122126096148" y="-48.505151595175306" z="11.413545160748967"/>
+<3dmodel-instance id="font-zero-l1" refx="dhill" x="93.62962126096149" y="-48.505151595175306" z="11.413545160748967"/>
+<3dmodel-instance id="font-seven-l1" refx="dhill" x="93.70802126096149" y="-48.505151595175306" z="11.413545160748967"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="93.55122126096148" y="-48.505151595175306" z="-11.413545160748967"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="93.62962126096149" y="-48.505151595175306" z="-11.413545160748967"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="93.70802126096149" y="-48.505151595175306" z="-11.413545160748967"/>
+<beam refx="dhill" refy="dhill-top" x="93.62962126096149" y="0.64" z1="-11.419545160748966" z2="-11.439545160748967" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="93.62962126096149" y="0.64" z1="11.419545160748966" z2="11.439545160748967" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 108 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="94.34218014181332" y="-49.11702059598167" z="11.465030136092693"/>
+<3dmodel-instance id="font-zero-l1" refx="dhill" x="94.42058014181332" y="-49.11702059598167" z="11.465030136092693"/>
+<3dmodel-instance id="font-eight-l1" refx="dhill" x="94.49898014181332" y="-49.11702059598167" z="11.465030136092693"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="94.34218014181332" y="-49.11702059598167" z="-11.465030136092693"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="94.42058014181332" y="-49.11702059598167" z="-11.465030136092693"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="94.49898014181332" y="-49.11702059598167" z="-11.465030136092693"/>
+<beam refx="dhill" refy="dhill-top" x="94.42058014181332" y="0.64" z1="-11.471030136092692" z2="-11.491030136092693" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="94.42058014181332" y="0.64" z1="11.471030136092692" z2="11.491030136092693" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 109 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="95.13513802087448" y="-49.72629566730687" z="11.516645460180822"/>
+<3dmodel-instance id="font-zero-l1" refx="dhill" x="95.21353802087448" y="-49.72629566730687" z="11.516645460180822"/>
+<3dmodel-instance id="font-nine-l1" refx="dhill" x="95.29193802087448" y="-49.72629566730687" z="11.516645460180822"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="95.13513802087448" y="-49.72629566730687" z="-11.516645460180822"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="95.21353802087448" y="-49.72629566730687" z="-11.516645460180822"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="95.29193802087448" y="-49.72629566730687" z="-11.516645460180822"/>
+<beam refx="dhill" refy="dhill-top" x="95.21353802087448" y="0.64" z1="-11.52264546018082" z2="-11.542645460180822" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="95.21353802087448" y="0.64" z1="11.52264546018082" z2="11.542645460180822" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 110 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="95.92832731403942" y="-50.33527082706998" z="11.568275903935413"/>
+<3dmodel-instance id="font-one-l1" refx="dhill" x="96.00672731403942" y="-50.33527082706998" z="11.568275903935413"/>
+<3dmodel-instance id="font-zero-l1" refx="dhill" x="96.08512731403943" y="-50.33527082706998" z="11.568275903935413"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="95.92832731403942" y="-50.33527082706998" z="-11.568275903935413"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="96.00672731403942" y="-50.33527082706998" z="-11.568275903935413"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="96.08512731403943" y="-50.33527082706998" z="-11.568275903935413"/>
+<beam refx="dhill" refy="dhill-top" x="96.00672731403942" y="0.64" z1="-11.574275903935412" z2="-11.594275903935413" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+<beam refx="dhill" refy="dhill-top" x="96.00672731403942" y="0.64" z1="11.574275903935412" z2="11.594275903935413" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+
+<!-- 111 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="96.72151660720436" y="-50.944245986833074" z="11.619906347690005"/>
+<3dmodel-instance id="font-one-l1" refx="dhill" x="96.79991660720437" y="-50.944245986833074" z="11.619906347690005"/>
+<3dmodel-instance id="font-one-l1" refx="dhill" x="96.87831660720437" y="-50.944245986833074" z="11.619906347690005"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="96.72151660720436" y="-50.944245986833074" z="-11.619906347690005"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="96.79991660720437" y="-50.944245986833074" z="-11.619906347690005"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="96.87831660720437" y="-50.944245986833074" z="-11.619906347690005"/>
+<beam refx="dhill" refy="dhill-top" x="96.79991660720437" y="0.64" z1="-11.625906347690004" z2="-11.645906347690005" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="96.79991660720437" y="0.64" z1="11.625906347690004" z2="11.645906347690005" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 112 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="97.5202801766895" y="-51.54588598136317" z="11.671899174180794"/>
+<3dmodel-instance id="font-one-l1" refx="dhill" x="97.5986801766895" y="-51.54588598136317" z="11.671899174180794"/>
+<3dmodel-instance id="font-two-l1" refx="dhill" x="97.6770801766895" y="-51.54588598136317" z="11.671899174180794"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="97.5202801766895" y="-51.54588598136317" z="-11.671899174180794"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="97.5986801766895" y="-51.54588598136317" z="-11.671899174180794"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="97.6770801766895" y="-51.54588598136317" z="-11.671899174180794"/>
+<beam refx="dhill" refy="dhill-top" x="97.5986801766895" y="0.64" z1="-11.677899174180792" z2="-11.697899174180794" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="97.5986801766895" y="0.64" z1="11.677899174180792" z2="11.697899174180794" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 113 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="98.31944285367385" y="-52.147000792123315" z="11.723917946580846"/>
+<3dmodel-instance id="font-one-l1" refx="dhill" x="98.39784285367385" y="-52.147000792123315" z="11.723917946580846"/>
+<3dmodel-instance id="font-three-l1" refx="dhill" x="98.47624285367385" y="-52.147000792123315" z="11.723917946580846"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="98.31944285367385" y="-52.147000792123315" z="-11.723917946580846"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="98.39784285367385" y="-52.147000792123315" z="-11.723917946580846"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="98.47624285367385" y="-52.147000792123315" z="-11.723917946580846"/>
+<beam refx="dhill" refy="dhill-top" x="98.39784285367385" y="0.64" z1="-11.729917946580844" z2="-11.749917946580846" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="98.39784285367385" y="0.64" z1="11.729917946580844" z2="11.749917946580846" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 114 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="99.1186055306582" y="-52.74811560288345" z="11.7759367189809"/>
+<3dmodel-instance id="font-one-l1" refx="dhill" x="99.1970055306582" y="-52.74811560288345" z="11.7759367189809"/>
+<3dmodel-instance id="font-four-l1" refx="dhill" x="99.2754055306582" y="-52.74811560288345" z="11.7759367189809"/>
+<3dmodel-instance id="font-four-r1" refx="dhill" x="99.1186055306582" y="-52.74811560288345" z="-11.7759367189809"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="99.1970055306582" y="-52.74811560288345" z="-11.7759367189809"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="99.2754055306582" y="-52.74811560288345" z="-11.7759367189809"/>
+<beam refx="dhill" refy="dhill-top" x="99.1970055306582" y="0.64" z1="-11.781936718980898" z2="-11.8019367189809" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="99.1970055306582" y="0.64" z1="11.781936718980898" z2="11.8019367189809" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 115 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="99.92327778416613" y="-53.341830640754225" z="11.828314719491482"/>
+<3dmodel-instance id="font-one-l1" refx="dhill" x="100.00167778416613" y="-53.341830640754225" z="11.828314719491482"/>
+<3dmodel-instance id="font-five-l1" refx="dhill" x="100.08007778416614" y="-53.341830640754225" z="11.828314719491482"/>
+<3dmodel-instance id="font-five-r1" refx="dhill" x="99.92327778416613" y="-53.341830640754225" z="-11.828314719491482"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="100.00167778416613" y="-53.341830640754225" z="-11.828314719491482"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="100.08007778416614" y="-53.341830640754225" z="-11.828314719491482"/>
+<beam refx="dhill" refy="dhill-top" x="100.00167778416613" y="0.64" z1="-11.83431471949148" z2="-11.854314719491482" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+<beam refx="dhill" refy="dhill-top" x="100.00167778416613" y="0.64" z1="11.83431471949148" z2="11.854314719491482" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+
+<!-- 116 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="100.72827488442877" y="-53.93510938516425" z="11.880713900229875"/>
+<3dmodel-instance id="font-one-l1" refx="dhill" x="100.80667488442877" y="-53.93510938516425" z="11.880713900229875"/>
+<3dmodel-instance id="font-six-l1" refx="dhill" x="100.88507488442878" y="-53.93510938516425" z="11.880713900229875"/>
+<3dmodel-instance id="font-six-r1" refx="dhill" x="100.72827488442877" y="-53.93510938516425" z="-11.880713900229875"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="100.80667488442877" y="-53.93510938516425" z="-11.880713900229875"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="100.88507488442878" y="-53.93510938516425" z="-11.880713900229875"/>
+<beam refx="dhill" refy="dhill-top" x="100.80667488442877" y="0.64" z1="-11.886713900229873" z2="-11.906713900229875" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="100.80667488442877" y="0.64" z1="11.886713900229873" z2="11.906713900229875" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 117 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="101.53327198469141" y="-54.528388129574275" z="11.933113080968269"/>
+<3dmodel-instance id="font-one-l1" refx="dhill" x="101.61167198469141" y="-54.528388129574275" z="11.933113080968269"/>
+<3dmodel-instance id="font-seven-l1" refx="dhill" x="101.69007198469141" y="-54.528388129574275" z="11.933113080968269"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="101.53327198469141" y="-54.528388129574275" z="-11.933113080968269"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="101.61167198469141" y="-54.528388129574275" z="-11.933113080968269"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="101.69007198469141" y="-54.528388129574275" z="-11.933113080968269"/>
+<beam refx="dhill" refy="dhill-top" x="101.61167198469141" y="0.64" z1="-11.939113080968268" z2="-11.959113080968269" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="101.61167198469141" y="0.64" z1="11.939113080968268" z2="11.959113080968269" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 118 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="102.34369848105143" y="-55.11422505751442" z="11.985865079328082"/>
+<3dmodel-instance id="font-one-l1" refx="dhill" x="102.42209848105144" y="-55.11422505751442" z="11.985865079328082"/>
+<3dmodel-instance id="font-eight-l1" refx="dhill" x="102.50049848105144" y="-55.11422505751442" z="11.985865079328082"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="102.34369848105143" y="-55.11422505751442" z="-11.985865079328082"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="102.42209848105144" y="-55.11422505751442" z="-11.985865079328082"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="102.50049848105144" y="-55.11422505751442" z="-11.985865079328082"/>
+<beam refx="dhill" refy="dhill-top" x="102.42209848105144" y="0.64" z1="-11.99186507932808" z2="-12.011865079328082" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="102.42209848105144" y="0.64" z1="11.99186507932808" z2="12.011865079328082" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 119 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="103.15438012623633" y="-55.69971226502653" z="12.038633657985205"/>
+<3dmodel-instance id="font-one-l1" refx="dhill" x="103.23278012623634" y="-55.69971226502653" z="12.038633657985205"/>
+<3dmodel-instance id="font-nine-l1" refx="dhill" x="103.31118012623634" y="-55.69971226502653" z="12.038633657985205"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="103.15438012623633" y="-55.69971226502653" z="-12.038633657985205"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="103.23278012623634" y="-55.69971226502653" z="-12.038633657985205"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="103.31118012623634" y="-55.69971226502653" z="-12.038633657985205"/>
+<beam refx="dhill" refy="dhill-top" x="103.23278012623634" y="0.64" z1="-12.044633657985203" z2="-12.064633657985205" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="103.23278012623634" y="0.64" z1="12.044633657985203" z2="12.064633657985205" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 120 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="103.96506177142122" y="-56.28519947253863" z="12.091402236642326"/>
+<3dmodel-instance id="font-two-l1" refx="dhill" x="104.04346177142122" y="-56.28519947253863" z="12.091402236642326"/>
+<3dmodel-instance id="font-zero-l1" refx="dhill" x="104.12186177142122" y="-56.28519947253863" z="12.091402236642326"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="103.96506177142122" y="-56.28519947253863" z="-12.091402236642326"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="104.04346177142122" y="-56.28519947253863" z="-12.091402236642326"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="104.12186177142122" y="-56.28519947253863" z="-12.091402236642326"/>
+<beam refx="dhill" refy="dhill-top" x="104.04346177142122" y="0.64" z1="-12.097402236642324" z2="-12.117402236642326" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+<beam refx="dhill" refy="dhill-top" x="104.04346177142122" y="0.64" z1="12.097402236642324" z2="12.117402236642326" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+
+<!-- 121 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="104.78108093047071" y="-56.863221727781244" z="12.144518876864037"/>
+<3dmodel-instance id="font-two-l1" refx="dhill" x="104.85948093047071" y="-56.863221727781244" z="12.144518876864037"/>
+<3dmodel-instance id="font-one-l1" refx="dhill" x="104.93788093047071" y="-56.863221727781244" z="12.144518876864037"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="104.78108093047071" y="-56.863221727781244" z="-12.144518876864037"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="104.85948093047071" y="-56.863221727781244" z="-12.144518876864037"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="104.93788093047071" y="-56.863221727781244" z="-12.144518876864037"/>
+<beam refx="dhill" refy="dhill-top" x="104.85948093047071" y="0.64" z1="-12.150518876864036" z2="-12.170518876864037" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="104.85948093047071" y="0.64" z1="12.150518876864036" z2="12.170518876864037" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 122 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="105.5972905150721" y="-57.44097765722273" z="12.197647934817526"/>
+<3dmodel-instance id="font-two-l1" refx="dhill" x="105.6756905150721" y="-57.44097765722273" z="12.197647934817526"/>
+<3dmodel-instance id="font-two-l1" refx="dhill" x="105.75409051507211" y="-57.44097765722273" z="12.197647934817526"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="105.5972905150721" y="-57.44097765722273" z="-12.197647934817526"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="105.6756905150721" y="-57.44097765722273" z="-12.197647934817526"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="105.75409051507211" y="-57.44097765722273" z="-12.197647934817526"/>
+<beam refx="dhill" refy="dhill-top" x="105.6756905150721" y="0.64" z1="-12.203647934817525" z2="-12.223647934817526" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="105.6756905150721" y="0.64" z1="12.203647934817525" z2="12.223647934817526" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 123 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="106.41350009967351" y="-58.018733586664226" z="12.250776992771016"/>
+<3dmodel-instance id="font-two-l1" refx="dhill" x="106.49190009967352" y="-58.018733586664226" z="12.250776992771016"/>
+<3dmodel-instance id="font-three-l1" refx="dhill" x="106.57030009967352" y="-58.018733586664226" z="12.250776992771016"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="106.41350009967351" y="-58.018733586664226" z="-12.250776992771016"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="106.49190009967352" y="-58.018733586664226" z="-12.250776992771016"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="106.57030009967352" y="-58.018733586664226" z="-12.250776992771016"/>
+<beam refx="dhill" refy="dhill-top" x="106.49190009967352" y="0.64" z1="-12.256776992771014" z2="-12.276776992771016" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="106.49190009967352" y="0.64" z1="12.256776992771014" z2="12.276776992771016" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 124 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="107.23344357056598" y="-58.591177165677074" z="12.304148773264151"/>
+<3dmodel-instance id="font-two-l1" refx="dhill" x="107.31184357056598" y="-58.591177165677074" z="12.304148773264151"/>
+<3dmodel-instance id="font-four-l1" refx="dhill" x="107.39024357056599" y="-58.591177165677074" z="12.304148773264151"/>
+<3dmodel-instance id="font-four-r1" refx="dhill" x="107.23344357056598" y="-58.591177165677074" z="-12.304148773264151"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="107.31184357056598" y="-58.591177165677074" z="-12.304148773264151"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="107.39024357056599" y="-58.591177165677074" z="-12.304148773264151"/>
+<beam refx="dhill" refy="dhill-top" x="107.31184357056598" y="0.64" z1="-12.31014877326415" z2="-12.33014877326415" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="107.31184357056598" y="0.64" z1="12.31014877326415" z2="12.33014877326415" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 125 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="108.05620227477692" y="-59.159560233361866" z="12.329578989226153"/>
+<3dmodel-instance id="font-two-l1" refx="dhill" x="108.13460227477692" y="-59.159560233361866" z="12.329578989226153"/>
+<3dmodel-instance id="font-five-l1" refx="dhill" x="108.21300227477693" y="-59.159560233361866" z="12.329578989226153"/>
+<3dmodel-instance id="font-five-r1" refx="dhill" x="108.05620227477692" y="-59.159560233361866" z="-12.329578989226153"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="108.13460227477692" y="-59.159560233361866" z="-12.329578989226153"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="108.21300227477693" y="-59.159560233361866" z="-12.329578989226153"/>
+<beam refx="dhill" refy="dhill-top" x="108.13460227477692" y="0.64" z1="-12.335578989226152" z2="-12.355578989226153" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+<beam refx="dhill" refy="dhill-top" x="108.13460227477692" y="0.64" z1="12.335578989226152" z2="12.355578989226153" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+
+<!-- 126 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="108.88001023411928" y="-59.726429218334744" z="12.344235963396905"/>
+<3dmodel-instance id="font-two-l1" refx="dhill" x="108.95841023411928" y="-59.726429218334744" z="12.344235963396905"/>
+<3dmodel-instance id="font-six-l1" refx="dhill" x="109.03681023411929" y="-59.726429218334744" z="12.344235963396905"/>
+<3dmodel-instance id="font-six-r1" refx="dhill" x="108.88001023411928" y="-59.726429218334744" z="-12.344235963396905"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="108.95841023411928" y="-59.726429218334744" z="-12.344235963396905"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="109.03681023411929" y="-59.726429218334744" z="-12.344235963396905"/>
+<beam refx="dhill" refy="dhill-top" x="108.95841023411928" y="0.64" z1="-12.350235963396903" z2="-12.370235963396905" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="108.95841023411928" y="0.64" z1="12.350235963396903" z2="12.370235963396905" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 127 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="109.70381819346164" y="-60.29329820330763" z="12.358892937567658"/>
+<3dmodel-instance id="font-two-l1" refx="dhill" x="109.78221819346165" y="-60.29329820330763" z="12.358892937567658"/>
+<3dmodel-instance id="font-seven-l1" refx="dhill" x="109.86061819346165" y="-60.29329820330763" z="12.358892937567658"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="109.70381819346164" y="-60.29329820330763" z="-12.358892937567658"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="109.78221819346165" y="-60.29329820330763" z="-12.358892937567658"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="109.86061819346165" y="-60.29329820330763" z="-12.358892937567658"/>
+<beam refx="dhill" refy="dhill-top" x="109.78221819346165" y="0.64" z1="-12.364892937567657" z2="-12.384892937567658" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="109.78221819346165" y="0.64" z1="12.364892937567657" z2="12.384892937567658" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 128 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="110.53150564056023" y="-60.854472023268514" z="12.373618582299574"/>
+<3dmodel-instance id="font-two-l1" refx="dhill" x="110.60990564056023" y="-60.854472023268514" z="12.373618582299574"/>
+<3dmodel-instance id="font-eight-l1" refx="dhill" x="110.68830564056023" y="-60.854472023268514" z="12.373618582299574"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="110.53150564056023" y="-60.854472023268514" z="-12.373618582299574"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="110.60990564056023" y="-60.854472023268514" z="-12.373618582299574"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="110.68830564056023" y="-60.854472023268514" z="-12.373618582299574"/>
+<beam refx="dhill" refy="dhill-top" x="110.60990564056023" y="0.64" z1="-12.379618582299573" z2="-12.399618582299574" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="110.60990564056023" y="0.64" z1="12.379618582299573" z2="12.399618582299574" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 129 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="111.36061739805204" y="-61.413554927307636" z="12.388369438657387"/>
+<3dmodel-instance id="font-two-l1" refx="dhill" x="111.43901739805204" y="-61.413554927307636" z="12.388369438657387"/>
+<3dmodel-instance id="font-nine-l1" refx="dhill" x="111.51741739805205" y="-61.413554927307636" z="12.388369438657387"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="111.36061739805204" y="-61.413554927307636" z="-12.388369438657387"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="111.43901739805204" y="-61.413554927307636" z="-12.388369438657387"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="111.51741739805205" y="-61.413554927307636" z="-12.388369438657387"/>
+<beam refx="dhill" refy="dhill-top" x="111.43901739805204" y="0.64" z1="-12.394369438657385" z2="-12.414369438657387" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="111.43901739805204" y="0.64" z1="12.394369438657385" z2="12.414369438657387" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 130 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="112.18972915554387" y="-61.97263783134676" z="12.403120295015201"/>
+<3dmodel-instance id="font-three-l1" refx="dhill" x="112.26812915554387" y="-61.97263783134676" z="12.403120295015201"/>
+<3dmodel-instance id="font-zero-l1" refx="dhill" x="112.34652915554388" y="-61.97263783134676" z="12.403120295015201"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="112.18972915554387" y="-61.97263783134676" z="-12.403120295015201"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="112.26812915554387" y="-61.97263783134676" z="-12.403120295015201"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="112.34652915554388" y="-61.97263783134676" z="-12.403120295015201"/>
+<beam refx="dhill" refy="dhill-top" x="112.26812915554387" y="0.64" z1="-12.4091202950152" z2="-12.4291202950152" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+<beam refx="dhill" refy="dhill-top" x="112.26812915554387" y="0.64" z1="12.4091202950152" z2="12.4291202950152" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+
+<!-- 131 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="113.02275757249446" y="-62.525852312596896" z="12.417941181503542"/>
+<3dmodel-instance id="font-three-l1" refx="dhill" x="113.10115757249446" y="-62.525852312596896" z="12.417941181503542"/>
+<3dmodel-instance id="font-one-l1" refx="dhill" x="113.17955757249446" y="-62.525852312596896" z="12.417941181503542"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="113.02275757249446" y="-62.525852312596896" z="-12.417941181503542"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="113.10115757249446" y="-62.525852312596896" z="-12.417941181503542"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="113.17955757249446" y="-62.525852312596896" z="-12.417941181503542"/>
+<beam refx="dhill" refy="dhill-top" x="113.10115757249446" y="0.64" z1="-12.42394118150354" z2="-12.443941181503542" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="113.10115757249446" y="0.64" z1="12.42394118150354" z2="12.443941181503542" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 132 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="113.85715459949789" y="-63.07701617328428" z="12.432786538830275"/>
+<3dmodel-instance id="font-three-l1" refx="dhill" x="113.93555459949789" y="-63.07701617328428" z="12.432786538830275"/>
+<3dmodel-instance id="font-two-l1" refx="dhill" x="114.0139545994979" y="-63.07701617328428" z="12.432786538830275"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="113.85715459949789" y="-63.07701617328428" z="-12.432786538830275"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="113.93555459949789" y="-63.07701617328428" z="-12.432786538830275"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="114.0139545994979" y="-63.07701617328428" z="-12.432786538830275"/>
+<beam refx="dhill" refy="dhill-top" x="113.93555459949789" y="0.64" z1="-12.438786538830273" z2="-12.458786538830275" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="113.93555459949789" y="0.64" z1="12.438786538830273" z2="12.458786538830275" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 133 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="114.69155162650132" y="-63.62818003397167" z="12.447631896157008"/>
+<3dmodel-instance id="font-three-l1" refx="dhill" x="114.76995162650132" y="-63.62818003397167" z="12.447631896157008"/>
+<3dmodel-instance id="font-three-l1" refx="dhill" x="114.84835162650133" y="-63.62818003397167" z="12.447631896157008"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="114.69155162650132" y="-63.62818003397167" z="-12.447631896157008"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="114.76995162650132" y="-63.62818003397167" z="-12.447631896157008"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="114.84835162650133" y="-63.62818003397167" z="-12.447631896157008"/>
+<beam refx="dhill" refy="dhill-top" x="114.76995162650132" y="0.64" z1="-12.453631896157006" z2="-12.473631896157007" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="114.76995162650132" y="0.64" z1="12.453631896157006" z2="12.473631896157007" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 134 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="115.52989905292577" y="-64.17330044973896" z="12.462547152347414"/>
+<3dmodel-instance id="font-three-l1" refx="dhill" x="115.60829905292577" y="-64.17330044973896" z="12.462547152347414"/>
+<3dmodel-instance id="font-four-l1" refx="dhill" x="115.68669905292577" y="-64.17330044973896" z="12.462547152347414"/>
+<3dmodel-instance id="font-four-r1" refx="dhill" x="115.52989905292577" y="-64.17330044973896" z="-12.462547152347414"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="115.60829905292577" y="-64.17330044973896" z="-12.462547152347414"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="115.68669905292577" y="-64.17330044973896" z="-12.462547152347414"/>
+<beam refx="dhill" refy="dhill-top" x="115.60829905292577" y="0.64" z1="-12.468547152347412" z2="-12.488547152347413" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="115.60829905292577" y="0.64" z1="12.468547152347412" z2="12.488547152347413" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 135 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="116.36955938605249" y="-64.71641233965993" z="12.477485639273961"/>
+<3dmodel-instance id="font-three-l1" refx="dhill" x="116.44795938605249" y="-64.71641233965993" z="12.477485639273961"/>
+<3dmodel-instance id="font-five-l1" refx="dhill" x="116.52635938605249" y="-64.71641233965993" z="12.477485639273961"/>
+<3dmodel-instance id="font-five-r1" refx="dhill" x="116.36955938605249" y="-64.71641233965993" z="-12.477485639273961"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="116.44795938605249" y="-64.71641233965993" z="-12.477485639273961"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="116.52635938605249" y="-64.71641233965993" z="-12.477485639273961"/>
+<beam refx="dhill" refy="dhill-top" x="116.44795938605249" y="0.64" z1="-12.48348563927396" z2="-12.503485639273961" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+<beam refx="dhill" refy="dhill-top" x="116.44795938605249" y="0.64" z1="12.48348563927396" z2="12.503485639273961" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+
+<!-- 136 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="117.2092197191792" y="-65.25952422958089" z="12.49242412620051"/>
+<3dmodel-instance id="font-three-l1" refx="dhill" x="117.2876197191792" y="-65.25952422958089" z="12.49242412620051"/>
+<3dmodel-instance id="font-six-l1" refx="dhill" x="117.3660197191792" y="-65.25952422958089" z="12.49242412620051"/>
+<3dmodel-instance id="font-six-r1" refx="dhill" x="117.2092197191792" y="-65.25952422958089" z="-12.49242412620051"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="117.2876197191792" y="-65.25952422958089" z="-12.49242412620051"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="117.3660197191792" y="-65.25952422958089" z="-12.49242412620051"/>
+<beam refx="dhill" refy="dhill-top" x="117.2876197191792" y="0.64" z1="-12.498424126200508" z2="-12.51842412620051" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="117.2876197191792" y="0.64" z1="12.498424126200508" z2="12.51842412620051" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 137 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="118.05236187627794" y="-65.79720271044634" z="12.507424979854584"/>
+<3dmodel-instance id="font-three-l1" refx="dhill" x="118.13076187627794" y="-65.79720271044634" z="12.507424979854584"/>
+<3dmodel-instance id="font-seven-l1" refx="dhill" x="118.20916187627795" y="-65.79720271044634" z="12.507424979854584"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="118.05236187627794" y="-65.79720271044634" z="-12.507424979854584"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="118.13076187627794" y="-65.79720271044634" z="-12.507424979854584"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="118.20916187627795" y="-65.79720271044634" z="-12.507424979854584"/>
+<beam refx="dhill" refy="dhill-top" x="118.13076187627794" y="0.64" z1="-12.513424979854582" z2="-12.533424979854583" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="118.13076187627794" y="0.64" z1="12.513424979854582" z2="12.533424979854583" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 138 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="118.89660381377224" y="-66.33316497681949" z="12.52244553286877"/>
+<3dmodel-instance id="font-three-l1" refx="dhill" x="118.97500381377225" y="-66.33316497681949" z="12.52244553286877"/>
+<3dmodel-instance id="font-eight-l1" refx="dhill" x="119.05340381377225" y="-66.33316497681949" z="12.52244553286877"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="118.89660381377224" y="-66.33316497681949" z="-12.52244553286877"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="118.97500381377225" y="-66.33316497681949" z="-12.52244553286877"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="119.05340381377225" y="-66.33316497681949" z="-12.52244553286877"/>
+<beam refx="dhill" refy="dhill-top" x="118.97500381377225" y="0.64" z1="-12.52844553286877" z2="-12.54844553286877" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="118.97500381377225" y="0.64" z1="12.52844553286877" z2="12.54844553286877" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 139 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="119.74417139765038" y="-66.86381856550258" z="12.537524965960733"/>
+<3dmodel-instance id="font-three-l1" refx="dhill" x="119.82257139765038" y="-66.86381856550258" z="12.537524965960733"/>
+<3dmodel-instance id="font-nine-l1" refx="dhill" x="119.90097139765038" y="-66.86381856550258" z="12.537524965960733"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="119.74417139765038" y="-66.86381856550258" z="-12.537524965960733"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="119.82257139765038" y="-66.86381856550258" z="-12.537524965960733"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="119.90097139765038" y="-66.86381856550258" z="-12.537524965960733"/>
+<beam refx="dhill" refy="dhill-top" x="119.82257139765038" y="0.64" z1="-12.543524965960732" z2="-12.563524965960733" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="119.82257139765038" y="0.64" z1="12.543524965960732" z2="12.563524965960733" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 140 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="120.59478645334735" y="-67.38960752223488" z="12.552658354090903"/>
+<3dmodel-instance id="font-four-l1" refx="dhill" x="120.67318645334736" y="-67.38960752223488" z="12.552658354090903"/>
+<3dmodel-instance id="font-zero-l1" refx="dhill" x="120.75158645334736" y="-67.38960752223488" z="12.552658354090903"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="120.59478645334735" y="-67.38960752223488" z="-12.552658354090903"/>
+<3dmodel-instance id="font-four-r1" refx="dhill" x="120.67318645334736" y="-67.38960752223488" z="-12.552658354090903"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="120.75158645334736" y="-67.38960752223488" z="-12.552658354090903"/>
+<beam refx="dhill" refy="dhill-top" x="120.67318645334736" y="0.64" z1="-12.558658354090902" z2="-12.578658354090903" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+<beam refx="dhill" refy="dhill-top" x="120.67318645334736" y="0.64" z1="12.558658354090902" z2="12.578658354090903" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+
+<!-- 141 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="121.44773386587025" y="-67.91155145838158" z="12.567833285215501"/>
+<3dmodel-instance id="font-four-l1" refx="dhill" x="121.52613386587025" y="-67.91155145838158" z="12.567833285215501"/>
+<3dmodel-instance id="font-one-l1" refx="dhill" x="121.60453386587025" y="-67.91155145838158" z="12.567833285215501"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="121.44773386587025" y="-67.91155145838158" z="-12.567833285215501"/>
+<3dmodel-instance id="font-four-r1" refx="dhill" x="121.52613386587025" y="-67.91155145838158" z="-12.567833285215501"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="121.60453386587025" y="-67.91155145838158" z="-12.567833285215501"/>
+<beam refx="dhill" refy="dhill-top" x="121.52613386587025" y="0.64" z1="-12.5738332852155" z2="-12.593833285215501" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="121.52613386587025" y="0.64" z1="12.5738332852155" z2="12.593833285215501" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 142 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="122.30705175798553" y="-68.42299330286689" z="12.583121684740497"/>
+<3dmodel-instance id="font-four-l1" refx="dhill" x="122.38545175798554" y="-68.42299330286689" z="12.583121684740497"/>
+<3dmodel-instance id="font-two-l1" refx="dhill" x="122.46385175798554" y="-68.42299330286689" z="12.583121684740497"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="122.30705175798553" y="-68.42299330286689" z="-12.583121684740497"/>
+<3dmodel-instance id="font-four-r1" refx="dhill" x="122.38545175798554" y="-68.42299330286689" z="-12.583121684740497"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="122.46385175798554" y="-68.42299330286689" z="-12.583121684740497"/>
+<beam refx="dhill" refy="dhill-top" x="122.38545175798554" y="0.64" z1="-12.589121684740496" z2="-12.609121684740497" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="122.38545175798554" y="0.64" z1="12.589121684740496" z2="12.609121684740497" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 143 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="123.16693281406809" y="-68.93347061250768" z="12.598420077476124"/>
+<3dmodel-instance id="font-four-l1" refx="dhill" x="123.24533281406809" y="-68.93347061250768" z="12.598420077476124"/>
+<3dmodel-instance id="font-three-l1" refx="dhill" x="123.3237328140681" y="-68.93347061250768" z="12.598420077476124"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="123.16693281406809" y="-68.93347061250768" z="-12.598420077476124"/>
+<3dmodel-instance id="font-four-r1" refx="dhill" x="123.24533281406809" y="-68.93347061250768" z="-12.598420077476124"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="123.3237328140681" y="-68.93347061250768" z="-12.598420077476124"/>
+<beam refx="dhill" refy="dhill-top" x="123.24533281406809" y="0.64" z1="-12.604420077476123" z2="-12.624420077476124" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="123.24533281406809" y="0.64" z1="12.604420077476123" z2="12.624420077476124" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 144 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="124.03470764439729" y="-69.43042820008144" z="12.613858543357912"/>
+<3dmodel-instance id="font-four-l1" refx="dhill" x="124.11310764439729" y="-69.43042820008144" z="12.613858543357912"/>
+<3dmodel-instance id="font-four-l1" refx="dhill" x="124.19150764439729" y="-69.43042820008144" z="12.613858543357912"/>
+<3dmodel-instance id="font-four-r1" refx="dhill" x="124.03470764439729" y="-69.43042820008144" z="-12.613858543357912"/>
+<3dmodel-instance id="font-four-r1" refx="dhill" x="124.11310764439729" y="-69.43042820008144" z="-12.613858543357912"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="124.19150764439729" y="-69.43042820008144" z="-12.613858543357912"/>
+<beam refx="dhill" refy="dhill-top" x="124.11310764439729" y="0.64" z1="-12.61985854335791" z2="-12.639858543357912" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="124.11310764439729" y="0.64" z1="12.61985854335791" z2="12.639858543357912" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 145 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="124.90248247472648" y="-69.92738578765521" z="12.629297009239702"/>
+<3dmodel-instance id="font-four-l1" refx="dhill" x="124.98088247472649" y="-69.92738578765521" z="12.629297009239702"/>
+<3dmodel-instance id="font-five-l1" refx="dhill" x="125.05928247472649" y="-69.92738578765521" z="12.629297009239702"/>
+<3dmodel-instance id="font-five-r1" refx="dhill" x="124.90248247472648" y="-69.92738578765521" z="-12.629297009239702"/>
+<3dmodel-instance id="font-four-r1" refx="dhill" x="124.98088247472649" y="-69.92738578765521" z="-12.629297009239702"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="125.05928247472649" y="-69.92738578765521" z="-12.629297009239702"/>
+<beam refx="dhill" refy="dhill-top" x="124.98088247472649" y="0.64" z1="-12.6352970092397" z2="-12.655297009239701" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+<beam refx="dhill" refy="dhill-top" x="124.98088247472649" y="0.64" z1="12.6352970092397" z2="12.655297009239701" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+
+<!-- 146 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="125.77776016726358" y="-70.41098362189838" z="12.644869863701913"/>
+<3dmodel-instance id="font-four-l1" refx="dhill" x="125.85616016726358" y="-70.41098362189838" z="12.644869863701913"/>
+<3dmodel-instance id="font-six-l1" refx="dhill" x="125.93456016726358" y="-70.41098362189838" z="12.644869863701913"/>
+<3dmodel-instance id="font-six-r1" refx="dhill" x="125.77776016726358" y="-70.41098362189838" z="-12.644869863701913"/>
+<3dmodel-instance id="font-four-r1" refx="dhill" x="125.85616016726358" y="-70.41098362189838" z="-12.644869863701913"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="125.93456016726358" y="-70.41098362189838" z="-12.644869863701913"/>
+<beam refx="dhill" refy="dhill-top" x="125.85616016726358" y="0.64" z1="-12.650869863701912" z2="-12.670869863701913" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="125.85616016726358" y="0.64" z1="12.650869863701912" z2="12.670869863701913" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 147 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="126.6537439828477" y="-70.89332411867912" z="12.66045536598722"/>
+<3dmodel-instance id="font-four-l1" refx="dhill" x="126.7321439828477" y="-70.89332411867912" z="12.66045536598722"/>
+<3dmodel-instance id="font-seven-l1" refx="dhill" x="126.8105439828477" y="-70.89332411867912" z="12.66045536598722"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="126.6537439828477" y="-70.89332411867912" z="-12.66045536598722"/>
+<3dmodel-instance id="font-four-r1" refx="dhill" x="126.7321439828477" y="-70.89332411867912" z="-12.66045536598722"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="126.8105439828477" y="-70.89332411867912" z="-12.66045536598722"/>
+<beam refx="dhill" refy="dhill-top" x="126.7321439828477" y="0.64" z1="-12.666455365987218" z2="-12.68645536598722" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="126.7321439828477" y="0.64" z1="12.666455365987218" z2="12.68645536598722" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 148 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="127.53614932929048" y="-71.36376755512326" z="12.67615489043516"/>
+<3dmodel-instance id="font-four-l1" refx="dhill" x="127.61454932929048" y="-71.36376755512326" z="12.67615489043516"/>
+<3dmodel-instance id="font-eight-l1" refx="dhill" x="127.69294932929049" y="-71.36376755512326" z="12.67615489043516"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="127.53614932929048" y="-71.36376755512326" z="-12.67615489043516"/>
+<3dmodel-instance id="font-four-r1" refx="dhill" x="127.61454932929048" y="-71.36376755512326" z="-12.67615489043516"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="127.69294932929049" y="-71.36376755512326" z="-12.67615489043516"/>
+<beam refx="dhill" refy="dhill-top" x="127.61454932929048" y="0.64" z1="-12.682154890435159" z2="-12.70215489043516" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="127.61454932929048" y="0.64" z1="12.682154890435159" z2="12.70215489043516" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 149 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="128.42009273071594" y="-71.8313614634202" z="12.691881724937236"/>
+<3dmodel-instance id="font-four-l1" refx="dhill" x="128.49849273071592" y="-71.8313614634202" z="12.691881724937236"/>
+<3dmodel-instance id="font-nine-l1" refx="dhill" x="128.5768927307159" y="-71.8313614634202" z="12.691881724937236"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="128.42009273071594" y="-71.8313614634202" z="-12.691881724937236"/>
+<3dmodel-instance id="font-four-r1" refx="dhill" x="128.49849273071592" y="-71.8313614634202" z="-12.691881724937236"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="128.5768927307159" y="-71.8313614634202" z="-12.691881724937236"/>
+<beam refx="dhill" refy="dhill-top" x="128.49849273071592" y="0.64" z1="-12.697881724937234" z2="-12.717881724937236" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="128.49849273071592" y="0.64" z1="12.697881724937234" z2="12.717881724937236" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 150 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="129.30975509167547" y="-72.287921549616" z="12.707710140885434"/>
+<3dmodel-instance id="font-five-l1" refx="dhill" x="129.38815509167546" y="-72.287921549616" z="12.707710140885434"/>
+<3dmodel-instance id="font-zero-l1" refx="dhill" x="129.46655509167545" y="-72.287921549616" z="12.707710140885434"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="129.30975509167547" y="-72.287921549616" z="-12.707710140885434"/>
+<3dmodel-instance id="font-five-r1" refx="dhill" x="129.38815509167546" y="-72.287921549616" z="-12.707710140885434"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="129.46655509167545" y="-72.287921549616" z="-12.707710140885434"/>
+<beam refx="dhill" refy="dhill-top" x="129.38815509167546" y="0.64" z1="-12.713710140885432" z2="-12.733710140885433" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+<beam refx="dhill" refy="dhill-top" x="129.38815509167546" y="0.64" z1="12.713710140885432" z2="12.733710140885433" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+
+<!-- 151 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="130.20140846454157" y="-72.74064029525893" z="12.723573921635133"/>
+<3dmodel-instance id="font-five-l1" refx="dhill" x="130.27980846454156" y="-72.74064029525893" z="12.723573921635133"/>
+<3dmodel-instance id="font-one-l1" refx="dhill" x="130.35820846454155" y="-72.74064029525893" z="12.723573921635133"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="130.20140846454157" y="-72.74064029525893" z="-12.723573921635133"/>
+<3dmodel-instance id="font-five-r1" refx="dhill" x="130.27980846454156" y="-72.74064029525893" z="-12.723573921635133"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="130.35820846454155" y="-72.74064029525893" z="-12.723573921635133"/>
+<beam refx="dhill" refy="dhill-top" x="130.27980846454156" y="0.64" z1="-12.729573921635131" z2="-12.749573921635132" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="130.27980846454156" y="0.64" z1="12.729573921635131" z2="12.749573921635132" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 152 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="131.0984011215748" y="-73.18262119762386" z="12.739532697448519"/>
+<3dmodel-instance id="font-five-l1" refx="dhill" x="131.17680112157478" y="-73.18262119762386" z="12.739532697448519"/>
+<3dmodel-instance id="font-two-l1" refx="dhill" x="131.25520112157477" y="-73.18262119762386" z="12.739532697448519"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="131.0984011215748" y="-73.18262119762386" z="-12.739532697448519"/>
+<3dmodel-instance id="font-five-r1" refx="dhill" x="131.17680112157478" y="-73.18262119762386" z="-12.739532697448519"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="131.25520112157477" y="-73.18262119762386" z="-12.739532697448519"/>
+<beam refx="dhill" refy="dhill-top" x="131.17680112157478" y="0.64" z1="-12.745532697448517" z2="-12.765532697448519" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="131.17680112157478" y="0.64" z1="12.745532697448517" z2="12.765532697448519" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 153 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="131.9975120972656" y="-73.62034194580963" z="12.755529161800197"/>
+<3dmodel-instance id="font-five-l1" refx="dhill" x="132.0759120972656" y="-73.62034194580963" z="12.755529161800197"/>
+<3dmodel-instance id="font-three-l1" refx="dhill" x="132.15431209726557" y="-73.62034194580963" z="12.755529161800197"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="131.9975120972656" y="-73.62034194580963" z="-12.755529161800197"/>
+<3dmodel-instance id="font-five-r1" refx="dhill" x="132.0759120972656" y="-73.62034194580963" z="-12.755529161800197"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="132.15431209726557" y="-73.62034194580963" z="-12.755529161800197"/>
+<beam refx="dhill" refy="dhill-top" x="132.0759120972656" y="0.64" z1="-12.761529161800196" z2="-12.781529161800197" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="132.0759120972656" y="0.64" z1="12.761529161800196" z2="12.781529161800197" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 154 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="132.90185528400082" y="-74.0470827476371" z="12.771618458326026"/>
+<3dmodel-instance id="font-five-l1" refx="dhill" x="132.9802552840008" y="-74.0470827476371" z="12.771618458326026"/>
+<3dmodel-instance id="font-four-l1" refx="dhill" x="133.0586552840008" y="-74.0470827476371" z="12.771618458326026"/>
+<3dmodel-instance id="font-four-r1" refx="dhill" x="132.90185528400082" y="-74.0470827476371" z="-12.771618458326026"/>
+<3dmodel-instance id="font-five-r1" refx="dhill" x="132.9802552840008" y="-74.0470827476371" z="-12.771618458326026"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="133.0586552840008" y="-74.0470827476371" z="-12.771618458326026"/>
+<beam refx="dhill" refy="dhill-top" x="132.9802552840008" y="0.64" z1="-12.777618458326025" z2="-12.797618458326026" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="132.9802552840008" y="0.64" z1="12.777618458326025" z2="12.797618458326026" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 155 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="133.80816808122316" y="-74.46969026483363" z="12.787742700541585"/>
+<3dmodel-instance id="font-five-l1" refx="dhill" x="133.88656808122315" y="-74.46969026483363" z="12.787742700541585"/>
+<3dmodel-instance id="font-five-l1" refx="dhill" x="133.96496808122313" y="-74.46969026483363" z="12.787742700541585"/>
+<3dmodel-instance id="font-five-r1" refx="dhill" x="133.80816808122316" y="-74.46969026483363" z="-12.787742700541585"/>
+<3dmodel-instance id="font-five-r1" refx="dhill" x="133.88656808122315" y="-74.46969026483363" z="-12.787742700541585"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="133.96496808122313" y="-74.46969026483363" z="-12.787742700541585"/>
+<beam refx="dhill" refy="dhill-top" x="133.88656808122315" y="0.64" z1="-12.793742700541584" z2="-12.813742700541585" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+<beam refx="dhill" refy="dhill-top" x="133.88656808122315" y="0.64" z1="12.793742700541584" z2="12.813742700541585" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+
+<!-- 156 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="134.71983373284291" y="-74.88056282469528" z="12.803962339912003"/>
+<3dmodel-instance id="font-five-l1" refx="dhill" x="134.7982337328429" y="-74.88056282469528" z="12.803962339912003"/>
+<3dmodel-instance id="font-six-l1" refx="dhill" x="134.8766337328429" y="-74.88056282469528" z="12.803962339912003"/>
+<3dmodel-instance id="font-six-r1" refx="dhill" x="134.71983373284291" y="-74.88056282469528" z="-12.803962339912003"/>
+<3dmodel-instance id="font-five-r1" refx="dhill" x="134.7982337328429" y="-74.88056282469528" z="-12.803962339912003"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="134.8766337328429" y="-74.88056282469528" z="-12.803962339912003"/>
+<beam refx="dhill" refy="dhill-top" x="134.7982337328429" y="0.64" z1="-12.809962339912001" z2="-12.829962339912003" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="134.7982337328429" y="0.64" z1="12.809962339912001" z2="12.829962339912003" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 157 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="135.633091422115" y="-75.28794519174792" z="12.820210352156252"/>
+<3dmodel-instance id="font-five-l1" refx="dhill" x="135.711491422115" y="-75.28794519174792" z="12.820210352156252"/>
+<3dmodel-instance id="font-seven-l1" refx="dhill" x="135.78989142211498" y="-75.28794519174792" z="12.820210352156252"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="135.633091422115" y="-75.28794519174792" z="-12.820210352156252"/>
+<3dmodel-instance id="font-five-r1" refx="dhill" x="135.711491422115" y="-75.28794519174792" z="-12.820210352156252"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="135.78989142211498" y="-75.28794519174792" z="-12.820210352156252"/>
+<beam refx="dhill" refy="dhill-top" x="135.711491422115" y="0.64" z1="-12.82621035215625" z2="-12.846210352156252" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="135.711491422115" y="0.64" z1="12.82621035215625" z2="12.846210352156252" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 158 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="136.55200757350843" y="-75.68235192829977" z="12.83655886744717"/>
+<3dmodel-instance id="font-five-l1" refx="dhill" x="136.63040757350842" y="-75.68235192829977" z="12.83655886744717"/>
+<3dmodel-instance id="font-eight-l1" refx="dhill" x="136.7088075735084" y="-75.68235192829977" z="12.83655886744717"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="136.55200757350843" y="-75.68235192829977" z="-12.83655886744717"/>
+<3dmodel-instance id="font-five-r1" refx="dhill" x="136.63040757350842" y="-75.68235192829977" z="-12.83655886744717"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="136.7088075735084" y="-75.68235192829977" z="-12.83655886744717"/>
+<beam refx="dhill" refy="dhill-top" x="136.63040757350842" y="0.64" z1="-12.842558867447169" z2="-12.86255886744717" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="136.63040757350842" y="0.64" z1="12.842558867447169" z2="12.86255886744717" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 159 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="137.47195251365292" y="-76.07439951100189" z="12.85292565561889"/>
+<3dmodel-instance id="font-five-l1" refx="dhill" x="137.5503525136529" y="-76.07439951100189" z="12.85292565561889"/>
+<3dmodel-instance id="font-nine-l1" refx="dhill" x="137.6287525136529" y="-76.07439951100189" z="12.85292565561889"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="137.47195251365292" y="-76.07439951100189" z="-12.85292565561889"/>
+<3dmodel-instance id="font-five-r1" refx="dhill" x="137.5503525136529" y="-76.07439951100189" z="-12.85292565561889"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="137.6287525136529" y="-76.07439951100189" z="-12.85292565561889"/>
+<beam refx="dhill" refy="dhill-top" x="137.5503525136529" y="0.64" z1="-12.858925655618888" z2="-12.87892565561889" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+<beam refx="dhill" refy="dhill-top" x="137.5503525136529" y="0.64" z1="12.858925655618888" z2="12.87892565561889" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xbeac0c"/>
+
+<!-- 160 m -->
+<3dmodel-instance id="font-one-l1" refx="dhill" x="138.39800705754047" y="-76.4517716979201" z="12.869402052215573"/>
+<3dmodel-instance id="font-six-l1" refx="dhill" x="138.47640705754046" y="-76.4517716979201" z="12.869402052215573"/>
+<3dmodel-instance id="font-zero-l1" refx="dhill" x="138.55480705754044" y="-76.4517716979201" z="12.869402052215573"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="138.39800705754047" y="-76.4517716979201" z="-12.869402052215573"/>
+<3dmodel-instance id="font-six-r1" refx="dhill" x="138.47640705754046" y="-76.4517716979201" z="-12.869402052215573"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="138.55480705754044" y="-76.4517716979201" z="-12.869402052215573"/>
+<beam refx="dhill" refy="dhill-top" x="138.47640705754046" y="0.64" z1="-12.875402052215572" z2="-12.895402052215573" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+<beam refx="dhill" refy="dhill-top" x="138.47640705754046" y="0.64" z1="12.875402052215572" z2="12.895402052215573" r="0.17" edges="30" end1="true" end2="false" zbias="1" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xab2a24"/>
+	
+	</hill>
