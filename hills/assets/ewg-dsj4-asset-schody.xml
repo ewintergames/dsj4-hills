@@ -1,0 +1,377 @@
+<!-- Schody -->
+<profile id="inrun-stairs1" refx="inrun">
+	<start x="0.000" y="0.000" refy="inrun-top"/>
+	<line x="0.480" y="0.000" refyx="0.000"  refy="inrun-top"/>
+	<line x="0.490" y="0.000" refy="inrun-top"/>
+	<line x="0.970" y="0.000" refyx="0.490"  refy="inrun-top"/>
+	<line x="0.980" y="0.000" refy="inrun-top"/>
+	<line x="1.460" y="0.000" refyx="0.980"  refy="inrun-top"/>
+	<line x="1.470" y="0.000" refy="inrun-top"/>
+	<line x="1.950" y="0.000" refyx="1.470"  refy="inrun-top"/>
+	<line x="1.960" y="0.000" refy="inrun-top"/>
+	<line x="2.440" y="0.000" refyx="1.960"  refy="inrun-top"/>
+	<line x="2.450" y="0.000" refy="inrun-top"/>
+	<line x="2.930" y="0.000" refyx="2.450"  refy="inrun-top"/>
+	<line x="2.940" y="0.000" refy="inrun-top"/>
+	<line x="3.420" y="0.000" refyx="2.940"  refy="inrun-top"/>
+	<line x="3.430" y="0.000" refy="inrun-top"/>
+	<line x="3.910" y="0.000" refyx="3.430"  refy="inrun-top"/>
+	<line x="3.920" y="0.000" refy="inrun-top"/>
+	<line x="4.400" y="0.000" refyx="3.920"  refy="inrun-top"/>
+	<line x="4.410" y="0.000" refy="inrun-top"/>
+	<line x="4.890" y="0.000" refyx="4.410"  refy="inrun-top"/>
+	<line x="4.900" y="0.000" refy="inrun-top"/>
+	<line x="5.380" y="0.000" refyx="4.900"  refy="inrun-top"/>
+	<line x="5.390" y="0.000" refy="inrun-top"/>
+	<line x="5.870" y="0.000" refyx="5.390"  refy="inrun-top"/>
+	<line x="5.880" y="0.000" refy="inrun-top"/>
+	<line x="6.360" y="0.000" refyx="5.880"  refy="inrun-top"/>
+	<line x="6.370" y="0.000" refy="inrun-top"/>
+	<line x="6.850" y="0.000" refyx="6.370"  refy="inrun-top"/>
+	<line x="6.860" y="0.000" refy="inrun-top"/>
+	<line x="7.340" y="0.000" refyx="6.860"  refy="inrun-top"/>
+	<line x="7.350" y="0.000" refy="inrun-top"/>
+	<line x="7.830" y="0.000" refyx="7.350"  refy="inrun-top"/>
+	<line x="7.840" y="0.000" refy="inrun-top"/>
+	<line x="8.320" y="0.000" refyx="7.840"  refy="inrun-top"/>
+	<line x="8.330" y="0.000" refy="inrun-top"/>
+	<line x="8.810" y="0.000" refyx="8.330"  refy="inrun-top"/>
+	<line x="8.820" y="0.000" refy="inrun-top"/>
+	<line x="9.300" y="0.000" refyx="8.820"  refy="inrun-top"/>
+	<line x="9.310" y="0.000" refy="inrun-top"/>
+	<line x="9.790" y="0.000" refyx="9.310"  refy="inrun-top"/>
+	<line x="9.800" y="0.000" refy="inrun-top"/>
+	<line x="10.280" y="0.000" refyx="9.800"  refy="inrun-top"/>
+	<line x="10.290" y="0.000" refy="inrun-top"/>
+	<line x="10.770" y="0.000" refyx="10.290"  refy="inrun-top"/>
+	<line x="10.780" y="0.000" refy="inrun-top"/>
+	<line x="11.260" y="0.000" refyx="10.780"  refy="inrun-top"/>
+	<line x="11.270" y="0.000" refy="inrun-top"/>
+	<line x="11.750" y="0.000" refyx="11.270"  refy="inrun-top"/>
+	<line x="11.760" y="0.000" refy="inrun-top"/>
+	<line x="12.240" y="0.000" refyx="11.760"  refy="inrun-top"/>
+	<line x="12.250" y="0.000" refy="inrun-top"/>
+	<line x="12.730" y="0.000" refyx="12.250"  refy="inrun-top"/>
+	<line x="12.740" y="0.000" refy="inrun-top"/>
+	<line x="13.220" y="0.000" refyx="12.740"  refy="inrun-top"/>
+	<line x="13.230" y="0.000" refy="inrun-top"/>
+	<line x="13.710" y="0.000" refyx="13.230"  refy="inrun-top"/>
+	<line x="13.720" y="0.000" refy="inrun-top"/>
+	<line x="14.200" y="0.000" refyx="13.720"  refy="inrun-top"/>
+	<line x="14.210" y="0.000" refy="inrun-top"/>
+	<line x="14.690" y="0.000" refyx="14.210"  refy="inrun-top"/>
+	<line x="14.700" y="0.000" refy="inrun-top"/>
+	<line x="15.180" y="0.000" refyx="14.700"  refy="inrun-top"/>
+	<line x="15.190" y="0.000" refy="inrun-top"/>
+	<line x="15.670" y="0.000" refyx="15.190"  refy="inrun-top"/>
+	<line x="15.680" y="0.000" refy="inrun-top"/>
+	<line x="16.160" y="0.000" refyx="15.680"  refy="inrun-top"/>
+	<line x="16.170" y="0.000" refy="inrun-top"/>
+	<line x="16.650" y="0.000" refyx="16.170"  refy="inrun-top"/>
+	<line x="16.660" y="0.000" refy="inrun-top"/>
+	<line x="17.140" y="0.000" refyx="16.660"  refy="inrun-top"/>
+	<line x="17.150" y="0.000" refy="inrun-top"/>
+	<line x="17.630" y="0.000" refyx="17.150"  refy="inrun-top"/>
+	<line x="17.640" y="0.000" refy="inrun-top"/>
+	<line x="18.120" y="0.000" refyx="17.640"  refy="inrun-top"/>
+	<line x="18.130" y="0.000" refy="inrun-top"/>
+	<line x="18.610" y="0.000" refyx="18.130"  refy="inrun-top"/>
+	<line x="18.620" y="0.000" refy="inrun-top"/>
+	<line x="19.100" y="0.000" refyx="18.620"  refy="inrun-top"/>
+	<line x="19.110" y="0.000" refy="inrun-top"/>
+	<line x="19.590" y="0.000" refyx="19.110"  refy="inrun-top"/>
+	<line x="19.600" y="0.000" refy="inrun-top"/>
+	<line x="20.080" y="0.000" refyx="19.600"  refy="inrun-top"/>
+	<line x="20.090" y="0.000" refy="inrun-top"/>
+	<line x="20.570" y="0.000" refyx="20.090"  refy="inrun-top"/>
+	<line x="20.580" y="0.000" refy="inrun-top"/>
+	<line x="21.060" y="0.000" refyx="20.580"  refy="inrun-top"/>
+	<line x="21.070" y="0.000" refy="inrun-top"/>
+	<line x="21.550" y="0.000" refyx="21.070"  refy="inrun-top"/>
+	<line x="21.560" y="0.000" refy="inrun-top"/>
+	<line x="22.040" y="0.000" refyx="21.560"  refy="inrun-top"/>
+	<line x="22.050" y="0.000" refy="inrun-top"/>
+	<line x="22.530" y="0.000" refyx="22.050"  refy="inrun-top"/>
+	<line x="22.540" y="0.000" refy="inrun-top"/>
+	<line x="23.020" y="0.000" refyx="22.540"  refy="inrun-top"/>
+	<line x="23.030" y="0.000" refy="inrun-top"/>
+	<line x="23.510" y="0.000" refyx="23.030"  refy="inrun-top"/>
+	<line x="23.520" y="0.000" refy="inrun-top"/>
+	<line x="24.000" y="0.000" refyx="23.520"  refy="inrun-top"/>
+	<line x="24.010" y="0.000" refy="inrun-top"/>
+	<line x="24.490" y="0.000" refyx="24.010"  refy="inrun-top"/>
+	<line x="24.500" y="0.000" refy="inrun-top"/>
+	<line x="24.980" y="0.000" refyx="24.500"  refy="inrun-top"/>
+	<line x="24.990" y="0.000" refy="inrun-top"/>
+	<line x="25.470" y="0.000" refyx="24.990"  refy="inrun-top"/>
+	<line x="25.480" y="0.000" refy="inrun-top"/>
+	<line x="25.960" y="0.000" refyx="25.480"  refy="inrun-top"/>
+	<line x="25.970" y="0.000" refy="inrun-top"/>
+	<line x="26.450" y="0.000" refyx="25.970"  refy="inrun-top"/>
+	<line x="26.460" y="0.000" refy="inrun-top"/>
+	<line x="26.940" y="0.000" refyx="26.460"  refy="inrun-top"/>
+	<line x="26.950" y="0.000" refy="inrun-top"/>
+	<line x="27.440" y="0.000" refyx="27.000"  refy="inrun-top"/>
+	<line x="27.450" y="0.000" refy="inrun-top"/>
+	<line x="27.970" y="0.000" refyx="27.490"  refy="inrun-top"/>
+	<line x="27.980" y="0.000" refy="inrun-top"/>
+	<line x="28.460" y="0.000" refyx="27.980"  refy="inrun-top"/>
+	<line x="28.470" y="0.000" refy="inrun-top"/>
+	<line x="28.950" y="0.000" refyx="28.470"  refy="inrun-top"/>
+	<line x="28.960" y="0.000" refy="inrun-top"/>
+	<line x="29.440" y="0.000" refyx="28.960"  refy="inrun-top"/>
+	<line x="29.450" y="0.000" refy="inrun-top"/>
+	<line x="29.930" y="0.000" refyx="29.450"  refy="inrun-top"/>
+	<line x="29.940" y="0.000" refy="inrun-top"/>
+	<line x="30.420" y="0.000" refyx="29.940"  refy="inrun-top"/>
+	<line x="30.430" y="0.000" refy="inrun-top"/>
+	<line x="30.910" y="0.000" refyx="30.430"  refy="inrun-top"/>
+	<line x="30.920" y="0.000" refy="inrun-top"/>
+	<line x="31.400" y="0.000" refyx="30.920"  refy="inrun-top"/>
+	<line x="31.410" y="0.000" refy="inrun-top"/>
+	<line x="31.890" y="0.000" refyx="31.410"  refy="inrun-top"/>
+	<line x="31.900" y="0.000" refy="inrun-top"/>
+	<line x="32.380" y="0.000" refyx="31.900"  refy="inrun-top"/>
+	<line x="32.390" y="0.000" refy="inrun-top"/>
+	<line x="32.870" y="0.000" refyx="32.390"  refy="inrun-top"/>
+	<line x="32.880" y="0.000" refy="inrun-top"/>
+	<line x="33.360" y="0.000" refyx="32.880"  refy="inrun-top"/>
+	<line x="33.370" y="0.000" refy="inrun-top"/>
+	<line x="33.850" y="0.000" refyx="33.370"  refy="inrun-top"/>
+	<line x="33.860" y="0.000" refy="inrun-top"/>
+	<line x="34.340" y="0.000" refyx="33.860"  refy="inrun-top"/>
+	<line x="34.350" y="0.000" refy="inrun-top"/>
+	<line x="34.830" y="0.000" refyx="34.350"  refy="inrun-top"/>
+	<line x="34.840" y="0.000" refy="inrun-top"/>
+	<line x="35.320" y="0.000" refyx="34.840"  refy="inrun-top"/>
+	<line x="35.330" y="0.000" refy="inrun-top"/>
+	<line x="35.810" y="0.000" refyx="35.330"  refy="inrun-top"/>
+	<line x="35.820" y="0.000" refy="inrun-top"/>
+	<line x="36.300" y="0.000" refyx="35.820"  refy="inrun-top"/>
+	<line x="36.310" y="0.000" refy="inrun-top"/>
+	<line x="36.790" y="0.000" refyx="36.310"  refy="inrun-top"/>
+	<line x="36.800" y="0.000" refy="inrun-top"/>
+	<line x="37.280" y="0.000" refyx="36.800"  refy="inrun-top"/>
+	<line x="37.290" y="0.000" refy="inrun-top"/>
+	<line x="37.770" y="0.000" refyx="37.290"  refy="inrun-top"/>
+	<line x="37.780" y="0.000" refy="inrun-top"/>
+	<line x="38.260" y="0.000" refyx="37.780"  refy="inrun-top"/>
+	<line x="38.270" y="0.000" refy="inrun-top"/>
+	<line x="38.750" y="0.000" refyx="38.270"  refy="inrun-top"/>
+	<line x="38.760" y="0.000" refy="inrun-top"/>
+	<line x="39.240" y="0.000" refyx="38.760"  refy="inrun-top"/>
+	<line x="39.250" y="0.000" refy="inrun-top"/>
+	<line x="39.730" y="0.000" refyx="39.250"  refy="inrun-top"/>
+	<line x="39.740" y="0.000" refy="inrun-top"/>
+	<line x="40.220" y="0.000" refyx="39.740"  refy="inrun-top"/>
+	<line x="40.230" y="0.000" refy="inrun-top"/>
+	<line x="40.710" y="0.000" refyx="40.230"  refy="inrun-top"/>
+	<line x="40.720" y="0.000" refy="inrun-top"/>
+	<line x="41.200" y="0.000" refyx="40.720"  refy="inrun-top"/>
+	<line x="41.210" y="0.000" refy="inrun-top"/>
+	<line x="41.690" y="0.000" refyx="41.210"  refy="inrun-top"/>
+	<line x="41.700" y="0.000" refy="inrun-top"/>
+	<line x="42.180" y="0.000" refyx="41.700"  refy="inrun-top"/>
+	<line x="42.190" y="0.000" refy="inrun-top"/>
+	<line x="42.670" y="0.000" refyx="42.190"  refy="inrun-top"/>
+	<line x="42.680" y="0.000" refy="inrun-top"/>
+	<line x="43.160" y="0.000" refyx="42.680"  refy="inrun-top"/>
+	<line x="43.170" y="0.000" refy="inrun-top"/>
+	<line x="43.650" y="0.000" refyx="43.170"  refy="inrun-top"/>
+	<line x="43.660" y="0.000" refy="inrun-top"/>
+	<line x="44.140" y="0.000" refyx="43.660"  refy="inrun-top"/>
+	<line x="44.150" y="0.000" refy="inrun-top"/>
+	<line x="44.630" y="0.000" refyx="44.150"  refy="inrun-top"/>
+	<line x="44.640" y="0.000" refy="inrun-top"/>
+	<line x="45.120" y="0.000" refyx="44.640"  refy="inrun-top"/>
+	<line x="45.130" y="0.000" refy="inrun-top"/>
+	<line x="45.610" y="0.000" refyx="45.130"  refy="inrun-top"/>
+	<line x="45.620" y="0.000" refy="inrun-top"/>
+	<line x="46.100" y="0.000" refyx="45.620"  refy="inrun-top"/>
+	<line x="46.110" y="0.000" refy="inrun-top"/>
+	<line x="46.590" y="0.000" refyx="46.110"  refy="inrun-top"/>
+	<line x="46.600" y="0.000" refy="inrun-top"/>
+	<line x="47.080" y="0.000" refyx="46.600"  refy="inrun-top"/>
+	<line x="47.090" y="0.000" refy="inrun-top"/>
+	<line x="47.570" y="0.000" refyx="47.090"  refy="inrun-top"/>
+	<line x="47.580" y="0.000" refy="inrun-top"/>
+	<line x="48.060" y="0.000" refyx="47.580"  refy="inrun-top"/>
+	<line x="48.070" y="0.000" refy="inrun-top"/>
+	<line x="48.550" y="0.000" refyx="48.070"  refy="inrun-top"/>
+	<line x="48.560" y="0.000" refy="inrun-top"/>
+	<line x="49.040" y="0.000" refyx="48.560"  refy="inrun-top"/>
+	<line x="49.050" y="0.000" refy="inrun-top"/>
+	<line x="49.530" y="0.000" refyx="49.050"  refy="inrun-top"/>
+	<line x="49.540" y="0.000" refy="inrun-top"/>
+	<line x="50.020" y="0.000" refyx="49.540"  refy="inrun-top"/>
+	<line x="50.030" y="0.000" refy="inrun-top"/>
+	<line x="50.510" y="0.000" refyx="50.030"  refy="inrun-top"/>
+	<line x="50.520" y="0.000" refy="inrun-top"/>
+	<line x="51.000" y="0.000" refyx="50.520"  refy="inrun-top"/>
+	<line x="51.010" y="0.000" refy="inrun-top"/>
+	<line x="51.490" y="0.000" refyx="51.010"  refy="inrun-top"/>
+	<line x="51.500" y="0.000" refy="inrun-top"/>
+	<line x="51.980" y="0.000" refyx="51.500"  refy="inrun-top"/>
+	<line x="51.990" y="0.000" refy="inrun-top"/>
+	<line x="52.470" y="0.000" refyx="51.990"  refy="inrun-top"/>
+	<line x="52.480" y="0.000" refy="inrun-top"/>
+	<line x="52.960" y="0.000" refyx="52.480"  refy="inrun-top"/>
+	<line x="52.970" y="0.000" refy="inrun-top"/>
+	<line x="53.450" y="0.000" refyx="52.970"  refy="inrun-top"/>
+	<line x="53.460" y="0.000" refy="inrun-top"/>
+	<line x="53.940" y="0.000" refyx="53.460"  refy="inrun-top"/>
+	<line x="53.950" y="0.000" refy="inrun-top"/>
+	<line x="54.430" y="0.000" refyx="53.950"  refy="inrun-top"/>
+	<line x="54.440" y="0.000" refy="inrun-top"/>
+	<line x="54.920" y="0.000" refyx="54.440"  refy="inrun-top"/>
+	<line x="54.930" y="0.000" refy="inrun-top"/>
+	<line x="55.410" y="0.000" refyx="54.930"  refy="inrun-top"/>
+	<line x="55.420" y="0.000" refy="inrun-top"/>
+	<line x="55.900" y="0.000" refyx="55.420"  refy="inrun-top"/>
+	<line x="55.910" y="0.000" refy="inrun-top"/>
+	<line x="56.390" y="0.000" refyx="55.910"  refy="inrun-top"/>
+	<line x="56.400" y="0.000" refy="inrun-top"/>
+	<line x="56.880" y="0.000" refyx="56.400"  refy="inrun-top"/>
+	<line x="56.890" y="0.000" refy="inrun-top"/>
+	<line x="57.370" y="0.000" refyx="56.890"  refy="inrun-top"/>
+	<line x="57.380" y="0.000" refy="inrun-top"/>
+	<line x="57.860" y="0.000" refyx="57.380"  refy="inrun-top"/>
+	<line x="57.870" y="0.000" refy="inrun-top"/>
+	<line x="58.350" y="0.000" refyx="57.870"  refy="inrun-top"/>
+	<line x="58.360" y="0.000" refy="inrun-top"/>
+	<line x="58.840" y="0.000" refyx="58.360"  refy="inrun-top"/>
+	<line x="58.850" y="0.000" refy="inrun-top"/>
+	<line x="59.330" y="0.000" refyx="58.850"  refy="inrun-top"/>
+	<line x="59.340" y="0.000" refy="inrun-top"/>
+	<line x="59.820" y="0.000" refyx="59.340"  refy="inrun-top"/>
+	<line x="59.830" y="0.000" refy="inrun-top"/>
+	<line x="60.310" y="0.000" refyx="59.830"  refy="inrun-top"/>
+	<line x="60.320" y="0.000" refy="inrun-top"/>
+	<line x="60.800" y="0.000" refyx="60.320"  refy="inrun-top"/>
+	<line x="60.810" y="0.000" refy="inrun-top"/>
+	<line x="61.290" y="0.000" refyx="60.810"  refy="inrun-top"/>
+	<line x="61.300" y="0.000" refy="inrun-top"/>
+	<line x="61.780" y="0.000" refyx="61.300"  refy="inrun-top"/>
+	<line x="61.790" y="0.000" refy="inrun-top"/>
+	<line x="62.270" y="0.000" refyx="61.790"  refy="inrun-top"/>
+	<line x="62.280" y="0.000" refy="inrun-top"/>
+	<line x="62.760" y="0.000" refyx="62.280"  refy="inrun-top"/>
+	<line x="62.770" y="0.000" refy="inrun-top"/>
+	<line x="63.250" y="0.000" refyx="62.770"  refy="inrun-top"/>
+	<line x="63.260" y="0.000" refy="inrun-top"/>
+	<line x="63.740" y="0.000" refyx="63.260"  refy="inrun-top"/>
+	<line x="63.750" y="0.000" refy="inrun-top"/>
+	<line x="64.230" y="0.000" refyx="63.750"  refy="inrun-top"/>
+	<line x="64.240" y="0.000" refy="inrun-top"/>
+	<line x="64.720" y="0.000" refyx="64.240"  refy="inrun-top"/>
+	<line x="64.730" y="0.000" refy="inrun-top"/>
+	<line x="65.210" y="0.000" refyx="64.730"  refy="inrun-top"/>
+	<line x="65.220" y="0.000" refy="inrun-top"/>
+	<line x="65.700" y="0.000" refyx="65.220"  refy="inrun-top"/>
+	<line x="65.710" y="0.000" refy="inrun-top"/>
+	<line x="66.190" y="0.000" refyx="65.710"  refy="inrun-top"/>
+	<line x="66.200" y="0.000" refy="inrun-top"/>
+	<line x="66.680" y="0.000" refyx="66.200"  refy="inrun-top"/>
+	<line x="66.690" y="0.000" refy="inrun-top"/>
+	<line x="67.170" y="0.000" refyx="66.690"  refy="inrun-top"/>
+	<line x="67.180" y="0.000" refy="inrun-top"/>
+	<line x="67.660" y="0.000" refyx="67.180"  refy="inrun-top"/>
+	<line x="67.670" y="0.000" refy="inrun-top"/>
+	<line x="68.150" y="0.000" refyx="67.670"  refy="inrun-top"/>
+	<line x="68.160" y="0.000" refy="inrun-top"/>
+	<line x="68.640" y="0.000" refyx="68.160"  refy="inrun-top"/>
+	<line x="68.650" y="0.000" refy="inrun-top"/>
+	<line x="69.130" y="0.000" refyx="68.650"  refy="inrun-top"/>
+	<line x="69.140" y="0.000" refy="inrun-top"/>
+	<line x="69.620" y="0.000" refyx="69.140"  refy="inrun-top"/>
+	<line x="69.630" y="0.000" refy="inrun-top"/>
+	<line x="70.110" y="0.000" refyx="69.630"  refy="inrun-top"/>
+	<line x="70.120" y="0.000" refy="inrun-top"/>
+	<line x="70.600" y="0.000" refyx="70.120"  refy="inrun-top"/>
+	<line x="70.610" y="0.000" refy="inrun-top"/>
+	<line x="71.090" y="0.000" refyx="70.610"  refy="inrun-top"/>
+	<line x="71.100" y="0.000" refy="inrun-top"/>
+	<line x="71.580" y="0.000" refyx="71.100"  refy="inrun-top"/>
+	<line x="71.590" y="0.000" refy="inrun-top"/>
+	<line x="72.070" y="0.000" refyx="71.590"  refy="inrun-top"/>
+	<line x="72.080" y="0.000" refy="inrun-top"/>
+	<line x="72.560" y="0.000" refyx="72.080"  refy="inrun-top"/>
+	<line x="72.570" y="0.000" refy="inrun-top"/>
+	<line x="73.050" y="0.000" refyx="72.570"  refy="inrun-top"/>
+	<line x="73.060" y="0.000" refy="inrun-top"/>
+	<line x="73.540" y="0.000" refyx="73.060"  refy="inrun-top"/>
+	<line x="73.550" y="0.000" refy="inrun-top"/>
+	<line x="74.030" y="0.000" refyx="73.550"  refy="inrun-top"/>
+	<line x="74.040" y="0.000" refy="inrun-top"/>
+	<line x="74.520" y="0.000" refyx="74.040"  refy="inrun-top"/>
+	<line x="74.530" y="0.000" refy="inrun-top"/>
+	<line x="75.010" y="0.000" refyx="74.530"  refy="inrun-top"/>
+	<line x="75.020" y="0.000" refy="inrun-top"/>
+	
+</profile>
+
+<profile id="kk" refx="inrun">
+	<start x="74.760" y="0.000" refy="inrun-top"/>
+	<line x="75.750" y="0.000" refyx="74.760"  refy="inrun-top"/>
+	<line x="75.760" y="0.000" refy="inrun-top"/>
+	<line x="76.750" y="0.000" refyx="75.760"  refy="inrun-top"/>
+	<line x="76.760" y="0.000" refy="inrun-top"/>
+	<line x="77.750" y="0.000" refyx="76.760"  refy="inrun-top"/>
+	<line x="77.760" y="0.000" refy="inrun-top"/>
+	<line x="78.750" y="0.000" refyx="77.760"  refy="inrun-top"/>
+	<line x="78.760" y="0.000" refy="inrun-top"/>
+	<line x="79.750" y="0.000" refyx="78.760"  refy="inrun-top"/>
+	<line x="79.760" y="0.000" refy="inrun-top"/>
+	<line x="80.750" y="0.000" refyx="79.760"  refy="inrun-top"/>
+	<line x="80.760" y="0.000" refy="inrun-top"/>
+	<line x="81.750" y="0.000" refyx="80.760"  refy="inrun-top"/>
+	<line x="81.760" y="0.000" refy="inrun-top"/>
+	<line x="82.750" y="0.000" refyx="81.760"  refy="inrun-top"/>
+	<line x="82.760" y="0.000" refy="inrun-top"/>
+	<line x="83.750" y="0.000" refyx="82.760"  refy="inrun-top"/>
+	<line x="83.760" y="0.000" refy="inrun-top"/>
+	<line x="84.750" y="0.000" refyx="83.760"  refy="inrun-top"/>
+	<line x="84.760" y="0.000" refy="inrun-top"/>
+	<line x="85.750" y="0.000" refyx="84.760"  refy="inrun-top"/>
+	<line x="85.760" y="0.000" refy="inrun-top"/>
+	<line x="86.750" y="0.000" refyx="85.760"  refy="inrun-top"/>
+	<line x="86.760" y="0.000" refy="inrun-top"/>
+	<line x="87.750" y="0.000" refyx="86.760"  refy="inrun-top"/>
+	<line x="87.760" y="0.000" refy="inrun-top"/>
+	<line x="88.750" y="0.000" refyx="87.760"  refy="inrun-top"/>
+	<line x="88.760" y="0.000" refy="inrun-top"/>
+	<line x="89.750" y="0.000" refyx="88.760"  refy="inrun-top"/>
+	<line x="89.760" y="0.000" refy="inrun-top"/>
+	<line x="90.750" y="0.000" refyx="89.760"  refy="inrun-top"/>
+	<line x="90.760" y="0.000" refy="inrun-top"/>
+	<line x="91.750" y="0.000" refyx="90.760"  refy="inrun-top"/>
+	<line x="91.760" y="0.000" refy="inrun-top"/>
+	<line x="92.750" y="0.000" refyx="91.760"  refy="inrun-top"/>
+	<line x="92.760" y="0.000" refy="inrun-top"/>
+	
+</profile>
+
+
+<pillar type="blend" step="0.49" count="57" refx="inrun" refy="inrun-stairs1" refrz="inrun-left" zbias="2" x1="0.025" x2="0.48" lz="2." rz="0.36" ty="-0.025" by="-0.05" t="Textures\grating1.png" m="Materials\material1.xml" c="0xc6c6c6" />
+<pillar type="blend" step="0.49" count="57" refx="inrun" refy="inrun-stairs1" refrz="inrun-left" zbias="2" x1="0.025" x2="0.48" lz="2." rz="0.36" ty="0" by="-0.025" t="Textures\grating1.png" m="Materials\material1.xml" c="0xc6c6c6" />
+<pillar type="blend" step="0.49" count="57" refx="inrun" refy="inrun-stairs1" refrz="inrun-right" zbias="2" x1="0.025" x2="0.48" lz="-0.36" rz="-2" ty="-0.025" by="-0.05" t="Textures\grating1.png" m="Materials\material1.xml" c="0xc6c6c6" />
+<pillar type="blend" step="0.49" count="57" refx="inrun" refy="inrun-stairs1" refrz="inrun-right" zbias="2" x1="0.025" x2="0.48" lz="-0.36" rz="-2" ty="0" by="-0.025" t="Textures\grating1.png" m="Materials\material1.xml" c="0xc6c6c6" />
+
+
+
+<pillar type="blend" step="0.49" count="97" refx="inrun" refy="inrun-stairs1" reflz="inrun-right" zbias="2" x1="27.5" x2="27.96" lz="-0.36" rz="-2" ty="-0.025" by="-0.05" t="Textures\grating1.png" m="Materials\material1.xml" c="0xc6c6c6" />
+<pillar type="blend" step="0.49" count="97" refx="inrun" refy="inrun-stairs1" reflz="inrun-right" zbias="2" x1="27.5" x2="27.96" lz="-0.36" rz="-2" ty="0" by="-0.025" t="Textures\grating1.png" m="Materials\material1.xml" c="0xc6c6c6" />
+
+<pillar type="blend" step="0.49" count="97" refx="inrun" refy="inrun-stairs1" refrz="inrun-left" zbias="2" x1="27.5" x2="27.96" lz="2" rz="0.36" ty="-0.025" by="-0.05" t="Textures\grating1.png" m="Materials\material1.xml" c="0xc6c6c6" />
+<pillar type="blend" step="0.49" count="97" refx="inrun" refy="inrun-stairs1" refrz="inrun-left" zbias="2" x1="27.5" x2="27.96" lz="2" rz="0.36" ty="0" by="-0.025" t="Textures\grating1.png" m="Materials\material1.xml" c="0xc6c6c6" />
+
+<pillar type="blend" step="1" count="18" refx="inrun" refy="kk" reflz="inrun-right" zbias="2" x1="74.79" x2="75.75" lz="-0.36" rz="-2" ty="-0.025" by="-0.05" t="Textures\grating1.png" m="Materials\material1.xml" c="0xc6c6c6" />
+<pillar type="blend" step="1" count="18" refx="inrun" refy="kk" reflz="inrun-right" zbias="2" x1="74.79" x2="75.75" lz="-0.36" rz="-2" ty="0" by="-0.025" t="Textures\grating1.png" m="Materials\material1.xml" c="0xc6c6c6" />
+
+<pillar type="blend" step="1" count="18" refx="inrun" refy="kk" refrz="inrun-left" zbias="2" x1="74.79" x2="75.75" lz="2" rz="0.36" ty="-0.025" by="-0.05" t="Textures\grating1.png" m="Materials\material1.xml" c="0xc6c6c6" />
+<pillar type="blend" step="1" count="18" refx="inrun" refy="kk" refrz="inrun-left" zbias="2" x1="74.79" x2="75.75" lz="2" rz="0.36" ty="0" by="-0.025" t="Textures\grating1.png" m="Materials\material1.xml" c="0xc6c6c6" />
+
+
+
+
+

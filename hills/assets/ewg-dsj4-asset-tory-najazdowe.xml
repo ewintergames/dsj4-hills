@@ -1,0 +1,6 @@
+              <!-- Tory Najazdowe -->
+<railing refx1="inrun" refx2="dhill" zbias="2" h="0.06" w="0.03" z1="0.215" z2="0.215" t="Textures\metal.png" m="Materials\metal.xml" c="0xffffff"/>
+<railing refx1="inrun" refx2="dhill" zbias="2" h="0.06" w="0.15" z1="0" z2="0" t="Textures\metal.png" m="Materials\metal.xml" c="0xffffff"/>
+<railing refx1="inrun" refx2="dhill" zbias="2" h="0.06" w="0.03" z1="-0.215" z2="-0.215" t="Textures\metal.png" m="Materials\metal.xml" c="0xffffff"/>
+<railing refx1="inrun" refx2="dhill" zbias="2" h="0.06" w="0.605" z="0.535" t="Textures\rubbermat.png" m="Materials\metal.xml" c="0x232323"/>
+<railing refx1="inrun" refx2="dhill" zbias="2" h="0.06" w="0.605" z="-0.535" t="Textures\rubbermat.png" m="Materials\metal.xml" c="0x232323"/>

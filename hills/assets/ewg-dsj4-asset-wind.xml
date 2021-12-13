@@ -1,0 +1,77 @@
+<!-- Wiatrołapy -->
+<profile id="dhill-fence" refx="dhill">
+	<start x="-20.00" y="10.20"  refy="dhill-top" />
+	<line x="-18.12" y="9.82"  refy="dhill-top" />
+	<line x="-16.25" y="9.49"  refy="dhill-top" />
+	<line x="-14.38" y="9.28"  refy="dhill-top" />
+	<line x="-12.50" y="9.20"  refy="dhill-top" />
+	<line x="-10.62" y="9.28"  refy="dhill-top" />
+	<line x="-8.75" y="9.49"  refy="dhill-top" />
+	<line x="-6.88" y="9.82"  refy="dhill-top" />
+	<line x="-5.00" y="10.20"  refy="dhill-top" />
+	<line x="-3.12" y="9.82"  refy="dhill-top" />
+	<line x="-1.25" y="9.49"  refy="dhill-top" />
+	<line x="0.62" y="9.28"  refy="dhill-top" />
+	<line x="2.50" y="9.20"  refy="dhill-top" />
+	<line x="4.38" y="9.28"  refy="dhill-top" />
+	<line x="6.25" y="9.49"  refy="dhill-top" />
+	<line x="8.12" y="9.82"  refy="dhill-top" />
+	<line x="10.00" y="10.20"  refy="dhill-top" />
+	<line x="11.88" y="9.82"  refy="dhill-top" />
+	<line x="13.75" y="9.49"  refy="dhill-top" />
+	<line x="15.62" y="9.28"  refy="dhill-top" />
+	<line x="17.50" y="9.20"  refy="dhill-top" />
+	<line x="19.38" y="9.28"  refy="dhill-top" />
+	<line x="21.25" y="9.49"  refy="dhill-top" />
+	<line x="23.12" y="9.82"  refy="dhill-top" />
+	<line x="25.00" y="10.20"  refy="dhill-top" />
+	<line x="26.88" y="9.82"  refy="dhill-top" />
+	<line x="28.75" y="9.49"  refy="dhill-top" />
+	<line x="30.62" y="9.28"  refy="dhill-top" />
+	<line x="32.50" y="9.20"  refy="dhill-top" />
+	<line x="34.38" y="9.28"  refy="dhill-top" />
+	<line x="36.25" y="9.49"  refy="dhill-top" />
+	<line x="38.12" y="9.82"  refy="dhill-top" />
+	<line x="40.00" y="10.20"  refy="dhill-top" />
+	<line x="41.88" y="9.82"  refy="dhill-top" />
+	<line x="43.75" y="9.49"  refy="dhill-top" />
+	<line x="45.62" y="9.28"  refy="dhill-top" />
+	<line x="47.50" y="9.20"  refy="dhill-top" />
+	<line x="49.38" y="9.28"  refy="dhill-top" />
+	<line x="51.25" y="9.49"  refy="dhill-top" />
+	<line x="53.12" y="9.82"  refy="dhill-top" />
+	<line x="55.00" y="10.20"  refy="dhill-top" />
+	<line x="56.88" y="9.82"  refy="dhill-top" />
+	<line x="58.75" y="9.49"  refy="dhill-top" />
+	<line x="60.62" y="9.28"  refy="dhill-top" />
+	<line x="62.50" y="9.20"  refy="dhill-top" />
+	<line x="64.38" y="9.28"  refy="dhill-top" />
+	<line x="66.25" y="9.49"  refy="dhill-top" />
+	<line x="68.12" y="9.82"  refy="dhill-top" />
+	<line x="70.00" y="10.20"  refy="dhill-top" />
+	<line x="71.88" y="9.82"  refy="dhill-top" />
+	<line x="73.75" y="9.49"  refy="dhill-top" />
+	<line x="75.62" y="9.28"  refy="dhill-top" />
+	<line x="77.50" y="9.20"  refy="dhill-top" />
+	<line x="79.38" y="9.28"  refy="dhill-top" />
+	<line x="81.25" y="9.49"  refy="dhill-top" />
+	<line x="83.12" y="9.82"  refy="dhill-top" />
+	<line x="85.00" y="10.20"  refy="dhill-top" />
+	<line x="86.88" y="9.82"  refy="dhill-top" />
+	<line x="88.75" y="9.49"  refy="dhill-top" />
+	<line x="90.62" y="9.28"  refy="dhill-top" />
+	<line x="92.50" y="9.20"  refy="dhill-top" />
+	<line x="94.38" y="9.28"  refy="dhill-top" />
+	<line x="96.25" y="9.49"  refy="dhill-top" />
+	<line x="98.12" y="9.82"  refy="dhill-top" />
+	<line x="100" y="10.20"  refy="dhill-top" />
+	</profile>
+<pillar step="15" count="8" refx="dhill" refy="dhill-fence" x1="-5" x2="-4.8" lz="-19.8" rz="-20" ty="0.2" by="-40.05" t="Textures\metal.png" m="Materials\material1.xml" c="0xc6c6c6" />
+<pillar refx="dhill" refy="dhill-fence" x1="-20" x2="-19.8" lz="-6.4" rz="-6.6" ty="0.2" by="-40.05" t="Textures\metal.png" m="Materials\material1.xml" c="0xc6c6c6" />
+<pillar scale="2" type="blend" refx="dhill" refy="dhill-fence" x1="-19.9" x2="-5" lz2="-19.85" lz1="-6.45" rz2="-19.95" rz1="-6.55" ty="0" by="-40.05" t="Textures\net.png" m="Materials\material1.xml" c="0xc6c6c6" />
+<pillar scale="2" type="blend" refx="dhill" refy="dhill-fence" x1="-04.9" x2="99.9" lz="-19.85" rz="-19.95" ty="0" by="-40.05" t="Textures\net.png" m="Materials\material1.xml" c="0xc6c6c6" />
+<pillar step="15" count="8" refx="dhill" refy="dhill-fence" x1="-5" x2="-4.8" lz="20" rz="19.8" ty="0.2" by="-40.05" t="Textures\metal.png" m="Materials\material1.xml" c="0xc6c6c6" />
+<pillar refx="dhill" refy="dhill-fence" x1="-20" x2="-19.8" lz="6.6" rz="6.4" ty="0.2" by="-40.05" t="Textures\metal.png" m="Materials\material1.xml" c="0xc6c6c6" />
+<pillar scale="2" type="blend" refx="dhill" refy="dhill-fence" x1="-19.9" x2="-5" lz2="19.85" lz1="6.45" rz2="19.95" rz1="6.55" ty="0" by="-40.05" t="Textures\net.png" m="Materials\material1.xml" c="0xc6c6c6" />
+<pillar scale="2" type="blend" refx="dhill" refy="dhill-fence" x1="-04.9" x2="99.9" lz="19.95" rz="19.85" ty="0" by="-40.05" t="Textures\net.png" m="Materials\material1.xml" c="0xc6c6c6" />
+
