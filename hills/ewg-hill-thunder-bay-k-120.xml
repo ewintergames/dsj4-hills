@@ -1,0 +1,1994 @@
+<hill version="DSJ4-1.8.0" author="Szczepan Kasperek">
+    <location latitude="48.2222" longitude="89.1414" orientation="245" timezone="2" altitude="1300" />
+    <weather pollution="0.0" firstsnow="300" lastsnow="90" maxsnow="1.5" precipitationprobability="0.1" fogprobability="0.1" />
+    <inrun>
+        <profile e="100" es="15" t="3.43" gamma="33" alpha="10" r1="105" s="2.5" b1="2.0" z0="0" l="6.5" f="3.0" />
+        <guardrail z1="-2.15" z2="1.45" x="10" />
+        <startgate default="10" max="40" step="0.35" wind="2.4" z1="-1.0" z2="1.0" pz1="-0.8" pz2="0.8" t1="Textures\wood1.png" m1="Materials\material1.xml" c1="0x382800" t2="Textures\wood1.png" m2="Materials\material1.xml" c2="0x382800" t3="Textures\wood1.png" m3="Materials\material1.xml" c3="0x382800" />
+        <startbanner z="0" text="THUNDER BAY K120" textsize="0.1" />
+        <frame bh="2.0" snow="true" t="Textures\concrete5.png" m="Materials\material1.xml" c0="0x97a594" c1="0xB2ABA0" c="0x504941" c2="0xB2ABA0" />
+        <flag x="12.5" z="4.55" hf="2.4" pf="1.5" hp="27.0" rb="0.07" rt="0.05" tf="Textures\flag-can.png" mf="Materials\flag.xml" tp="Textures\wood1.png" mp="Materials\material1.xml" cp="0xffffff" />
+ <twigs lz="1" rz="-1" top="false"/>
+   </inrun>
+    <dhill>
+        <profile alpha="6.28" h="56" n="106.41" l1="16.04" l2="13.38" a="87.5" beta-p="37.7" beta="32.7" beta-l="30.2" rl="306.15" r2="73.22" b0="9.5" bk="23.37" ba="26" hr="0" nr="60" ar="0" k="120" hs="120" />
+        <fence h="0.001" t="Textures\fenceback.png" m="Materials\material1.xml" c="0xffffff" />
+        <judgetower d="68.5" q="35.4" h="+6" t1="Textures\wood3.png" m1="Materials\wood.xml" c1="0x78554e" t2="Textures\wood3.png" m2="Materials\wood.xml" c2="0x959183" />
+        <lights step="20" size="3" h="30" d="35" r="0.70" g="0.65" b="0.60" attn="0.0005" range="80" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999" />
+        <windflags h="4" l="4.1" d="0.6" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999" />
+        <measurers c1="0x578ad1" c2="0xeeeeee" />
+        <label summer-d="75" winter-d="75" text="" textsize="2.5" />
+        <plastic c="0x5d603A" t="Textures\snow.png" m="Materials\snow.xml" />
+        <lines summer-min="105" summer-max="145" winter-min="105" winter-max="145" />
+        <numbers min="50" max="140" h1="0" h2="0" />
+    </dhill>
+
+    <profile id="inrun-left" side="left" maxstep="1000">
+        <start x="-10" y="1.0" refx="inrun" />
+        <line x="0" y="1.0" refx="dhill" />
+    </profile>
+
+    <profile id="inrun-right" side="right" maxstep="1000">
+        <start x="-10" y="-1.0" refx="inrun" />
+        <line x="0" y="-1.0" refx="dhill" />
+
+</profile>
+	<profile id="inrun-terrain">		
+           <start x="-127" y="29.3"/>           
+           <line x="-110" y="-9.6"/>
+           <line x="-100" y="-9.6"/>
+           <line x="-30" y="5.6"/>
+           <line x="-29" y="4.8"/>    
+           <line x="-28" y="4.6"/>
+           <line x="-27" y="4.6"/>
+           <line x="-26" y="4.6"/>
+           <line x="-25" y="4.6"/>
+           <line x="-24" y="4.6"/>
+           <line x="-23" y="4.6"/>
+           <line x="-22" y="4.6"/>
+           <line x="-21" y="3.6"/>
+           <line x="-20" y="3.2"/>
+           <line x="-19" y="4"/>
+           <line x="-18" y="4"/>
+           <line x="-17" y="4"/>
+           <line x="-16" y="4"/>
+           <line x="-15" y="3"/>
+           <line x="-14" y="3"/>
+           <line x="-13" y="3"/>
+           <line x="-12" y="3"/>
+           <line x="-11" y="2.6"/>
+           <line x="-10" y="2.6"/>
+           <line x="-9" y="2.6"/>
+           <line x="-8" y="2.6"/>
+           <line x="-7" y="2.6"/>
+           <line x="-6" y="2.6"/>
+           <line x="-5" y="2.6"/>
+           <line x="-4" y="2.6"/>
+           <line x="-3" y="2.6"/>
+           <line x="-2" y="2.6"/>
+           <line x="-1" y="2.6"/>
+           <line x="-0.1" y="0"/>
+
+    </profile>
+
+    <terrain>
+        <profile in="0.7" a0="5.0" l0="50.0" y0="-15.0" hd="13.5" dd="75.0" sd="30" fd="1300" sc="0.07" sm="0.47" rs="1820" c1="0x443920" c2="0x5D603A" tsc="0.008" tsm="0.4" />
+        <trees count="20000" minheight="10" maxheight="20" fractalthreshold="1" maxaltitude="1600" normalaltitude="1000" seed="101" />
+        <blocks count="10" minsaturation="0.0" maxsaturation="0.1" minfloors="1" maxfloors="4" maxaltitude="1300" normalaltitude="1000" fractalthreshold="0.3" seed="258" />
+        <houses count="200" minsaturation="0.0" maxsaturation="0.2" minfloors="1" maxfloors="3" maxaltitude="1600" normalaltitude="1000" fractalthreshold="0.5" seed="156" />
+        <audience count="20000" d="20" x0="0" seed="413" />
+    </terrain>
+	 <lights refx="inrun" step="0.1" refz="inrun-left" refy="inrun-top" x1="4" x2="70" l="0.87"  h="1.25" d="-0.4" r="0.34" g="0.24" b="0.80" attn="2.4" range="15" t="Textures\rust1.png" m="Materials\metal.xml" c="16777215" />
+	 <lights refx="inrun" step="0.1" refz="inrun-right" refy="inrun-top" x1="4" x2="70" l="0.87"  h="1.25" d="-1.9" r="0.34" g="0.24" b="0.80" attn="2.4" range="15" t="Textures\rust1.png" m="Materials\metal.xml" c="16777215" />
+
+<stairs refx="inrun" zbias="2" refz="inrun-right" c2="0x008611" m2="Materials\material1.xml" t2="Textures\carpet.png" c1="0x008611" m1="Materials\material1.xml" t1="Textures\carpet.png" x1="3.61" x2="21.01" rz="1.6" lz="2.438" s="0.35" />
+<stairs refx="inrun" zbias="2" refz="inrun-left" c2="0x008611" m2="Materials\material1.xml" t2="Textures\carpet.png" c1="0x008611" m1="Materials\material1.xml" t1="Textures\carpet.png" x1="3.61" x2="21.01" rz="-3.99" lz="-1.6" s="0.35" />
+<stairs refx="inrun" refz="inrun-left" c2="0xffbe38" m2="Materials\material1.xml" t2="Textures\wood1.png" c1="0xb15d00" m1="Materials\material1.xml" t1="Textures\wood1.png" x1="21.01" x2="98.3" rz="-3.99" lz="-3" s="0.4" />
+<railing refx1="inrun" refx2="dhill" x1="92" x2="0" type="glass" h="0.75" w="0.025" z1="1.35" z2="1.35" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<railing refx1="inrun" refx2="dhill" x1="92" x2="0" type="glass" h="0.75" w="0.025" z1="-2" z2="-2" t="Textures\railing-glass.png" m="Materials\window.xml" c="0xffffffff" t3="Textures\railing-glass-cut.png" m3="Materials\window.xml" c3="0xffffffff" t6="Textures\railing-glass-cut.png" m6="Materials\window.xml" c6="0xffffffff"/>
+<railing refx1="inrun" refx2="dhill" x1="70" x2="-6" h="0.75" w="0.1" z1="1.35" z2="1.35" t="Textures\wood3.png" m="Materials\wood.xml" c="0xffbe38" t3="Textures\wood3.png" m3="Materials\wood.xml" c3="0xffbe38" t6="Textures\wood3.png" m6="Materials\wood.xml" c6="0xffbe38"/>
+<railing refx1="inrun" refx2="dhill" x1="70" x2="-6" h="0.75" w="0.1" z1="-2" z2="-2" t="Textures\wood3.png" m="Materials\wood.xml" c="0xffbe38" t3="Textures\wood3.png" m3="Materials\wood.xml" c3="0xffbe38" t6="Textures\wood3.png" m6="Materials\wood.xml" c6="0xffbe38"/>
+<railing refx1="inrun" refx2="dhill" h1="-0" h2="-0.4" z1="-0.775" z2="-0.775" w="4.45" t="Textures\concrete1.png" m="Materials\wood.xml" c="0x4d4d4d" top="false"/>
+<railing refx1="inrun" refx2="dhill" x1="70" x2="0" h1="-0" h2="-4.1" z1="-0.775" z2="-0.775" w="4.45" t="Textures\concrete1.png" m="Materials\wood.xml" c="0x4d4d4d" top="false"/>
+
+	<pillar  count="54" refx="dhill" refy="dhill-top" refz="dhill-right" x1="0" x2="240" lz="0.02" rz="-0.03" ty="1" by="0.95" scale="1.25" t="Textures\wood3.png" m="Materials\wood.xml" c="0x000000"/>
+	<pillar  count="54" refx="dhill" refy="dhill-top" refz="dhill-right" x1="0" x2="240" lz="0.02" rz="-0.03" ty="0.6" by="0.55" scale="1.25" t="Textures\wood3.png" m="Materials\wood.xml" c="0x000000"/>
+	<pillar step="10" count="54" refx="dhill" refy="dhill-top" refz="dhill-right" x1="0" x2="0.05" lz="0.02" rz="-0.03" ty="1" by="0" scale="1.25" t="Textures\wood3.png" m="Materials\wood.xml" c="0x000000"/>
+	<pillar refx="dhill" zbias="2" refy="dhill-top" refz="dhill-right" x1="105.9" x2="119.6" lz="0" rz="1.03" ty="0.0001" by="0" scale="1.25" t="Textures\snow.png" m="Materials\snow.xml" c="0x900000"/>
+	<pillar refx="dhill" zbias="2" refy="dhill-top" refz="dhill-left" x1="105.9" x2="119.6" lz="-1.03" rz="0" ty="0.0001" by="0" scale="1.25" t="Textures\snow.png" m="Materials\snow.xml" c="0x900000"/>
+
+
+<pillar refx="inrun" x1="-26" x2="3.6" lz="-3" rz="-5.5" by="55.6" ty="55.7" t="Textures\wood3.png" m="Materials\wood.xml" c="0xffbe38" pt="true"/>
+<pillar refx="inrun" x1="-26.5" x2="-26" lz="-3" rz="-5.5" by="55.2" ty="55.7" t="Textures\wood3.png" m="Materials\wood.xml" c="0xffbe38" pt="true"/>
+<pillar refx="inrun" x1="-27" x2="-26.5" lz="-3" rz="-5.5" by="54.7" ty="55.2" t="Textures\wood3.png" m="Materials\wood.xml" c="0xffbe38" pt="true"/>
+
+<railing refx1="inrun" zbias="1" refx2="dhill" x1="0" x2="-28" h="1.25" w="0.05" z1="1.44" z2="1.44" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6"/>
+<railing refx1="inrun" zbias="1" refx2="dhill" x1="4" x2="-28" h="1.25" w="0.05" z1="-3" z2="-3" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="4" x2="-28" h="0.08" w="0.1" z1="1.44" z2="1.44" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="4" x2="-28" h="0.08" w="0.1" z1="-3" z2="-3" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="4" x2="-28" h="1.25" h2="1.17" w="0.1" z1="1.44" z2="1.44" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="4" x2="-28" h="1.25"  h2="1.17" w="0.1" z1="-3" z2="-3" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="70.2" x2="-28" h="1.17" w="0.1" z1="1.44" z2="1.44" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="70.2" x2="-28" h="1.17" w="0.1" z1="-3" z2="-3" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="66.2" x2="-32" h="1.17" w="0.04" z1="1.47" z2="1.47" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="66.2" x2="-32" h="1.17" w="0.04" z1="-3.03" z2="-3.03" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="62.2" x2="-36" h="1.17" w="0.04" z1="1.47" z2="1.47" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="62.2" x2="-36" h="1.17" w="0.04" z1="-3.03" z2="-3.03" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="58.2" x2="-40" h="1.17" w="0.04" z1="1.47" z2="1.47" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="58.2" x2="-40" h="1.17" w="0.04" z1="-3.03" z2="-3.03" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="54.2" x2="-44" h="1.17" w="0.04" z1="1.47" z2="1.47" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="54.2" x2="-44" h="1.17" w="0.04" z1="-3.03" z2="-3.03" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="50.2" x2="-48" h="1.17" w="0.04" z1="1.47" z2="1.47" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="50.2" x2="-48" h="1.17" w="0.04" z1="-3.03" z2="-3.03" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="46.2" x2="-52" h="1.17" w="0.04" z1="1.47" z2="1.47" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="46.2" x2="-52" h="1.17" w="0.04" z1="-3.03" z2="-3.03" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="42.2" x2="-56" h="1.17" w="0.04" z1="1.47" z2="1.47" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="42.2" x2="-56" h="1.17" w="0.04" z1="-3.03" z2="-3.03" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="38.2" x2="-60" h="1.17" w="0.04" z1="1.47" z2="1.47" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="38.2" x2="-60" h="1.17" w="0.04" z1="-3.03" z2="-3.03" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="34.2" x2="-64" h="1.17" w="0.04" z1="1.47" z2="1.47" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="34.2" x2="-64" h="1.17" w="0.04" z1="-3.03" z2="-3.03" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="30.2" x2="-68" h="1.17" w="0.04" z1="1.47" z2="1.47" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="30.2" x2="-68" h="1.17" w="0.04" z1="-3.03" z2="-3.03" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="26.2" x2="-72" h="1.17" w="0.04" z1="1.47" z2="1.47" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="26.2" x2="-72" h="1.17" w="0.04" z1="-3.03" z2="-3.03" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="22.2" x2="-76" h="1.17" w="0.04" z1="1.47" z2="1.47" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="22.2" x2="-76" h="1.17" w="0.04" z1="-3.03" z2="-3.03" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="18.2" x2="-80" h="1.17" w="0.04" z1="1.47" z2="1.47" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="18.2" x2="-80" h="1.17" w="0.04" z1="-3.03" z2="-3.03" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="14.2" x2="-84" h="1.17" w="0.04" z1="1.47" z2="1.47" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="14.2" x2="-84" h="1.17" w="0.04" z1="-3.03" z2="-3.03" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="10.2" x2="-88" h="1.17" w="0.04" z1="1.47" z2="1.47" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="10.2" x2="-88" h="1.17" w="0.04" z1="-3.03" z2="-3.03" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="6.2" x2="-92" h="1.17" w="0.04" z1="1.47" z2="1.47" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="6.2" x2="-92" h="1.17" w="0.04" z1="-3.03" z2="-3.03" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="4" x2="-94.2" h="1.17" w="0.1" z1="1.44" z2="1.44" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<railing refx1="inrun" zbias="2" refx2="dhill" x1="4" x2="-94.2" h="1.17" w="0.1" z1="-3" z2="-3" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000"/>
+<pillar refx="inrun" x1="-26" x2="3.6" lz="-5.49" rz="-5.51" by="55.1" ty="56.8" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" x1="-26" x2="0" lz="-2.99" rz="-3.01" by="55.1" ty="56.8" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" x1="3.59" x2="3.61" lz="-2.99" rz="-5.51" by="55.1" ty="56.8" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+
+<pillar refx="inrun" x1="-26" x2="0" lz="-2.89" rz="-3.01" by="56.7" ty="56.8" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" x1="-26" x2="3.8" lz="-5.5" rz="-5.6" by="56.7" ty="56.8" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="27" x1="-26" x2="-25.9" lz="-2.89" rz="-3.01" by="55.1" ty="56.8" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="30" x1="-26" x2="-25.9" lz="-5.5" rz="-5.6" by="55.1" ty="56.8" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+
+
+<pillar refx="inrun" step="1" count="1" x1="3.7" x2="4" lz="1.1" rz="1.4" by="55.1" ty="0.8" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="3.7" x2="4" lz="-3" rz="-2.7" by="55.1" ty="0.8" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="3.75" x2="3.95" lz="-3" rz="1.4" by="54.9" ty="54.7" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="3.75" x2="3.95" lz="-3" rz="1.4" by="50.7" ty="50.5" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="3.75" x2="3.95" lz="-3" rz="1.4" by="42.1" ty="41.9" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="3.75" x2="3.95" lz="-3" rz="1.4" by="34.1" ty="33.9" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="3.75" x2="3.95" lz="1.2" rz="1.4" by="55.1" ty="0.8" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+
+<pillar refx="inrun" step="1" count="1" x1="30.8" x2="31" lz="-3" rz="-2.8" by="37.6" ty="0.8" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="30.8" x2="31" lz="1.2" rz="1.4" by="37.6" ty="0.8" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="30.8" x2="31" lz="-3" rz="1.4" by="37.3" ty="37.1" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="30.8" x2="31" lz="-3" rz="1.4" by="28.1" ty="27.9" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="30.8" x2="31" lz="-3" rz="1.4" by="32.1" ty="31.9" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="30.8" x2="31" lz="-3" rz="1.4" by="24.1" ty="23.9" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+
+<pillar refx="inrun" step="1" count="1" x1="49.8" x2="50" lz="-3" rz="-2.8" by="25" ty="0.8" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="49.8" x2="50" lz="1.2" rz="1.4" by="25" ty="0.8" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="49.8" x2="50" lz="-3" rz="1.4" by="24.9" ty="24.7" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="49.8" x2="50" lz="-3" rz="1.4" by="21.7" ty="21.5" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="49.8" x2="50" lz="-3" rz="1.4" by="18.7" ty="18.5" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+
+<pillar refx="inrun" step="1" count="1" x1="59.8" x2="60" lz="-3" rz="-2.8" by="18.6" ty="0.8" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="59.8" x2="60" lz="1.2" rz="1.4" by="18.6" ty="0.8" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="59.8" x2="60" lz="-3" rz="1.4" by="18.4" ty="18.2" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="59.8" x2="60" lz="-3" rz="1.4" by="16.2" ty="16" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+
+
+
+<pillar refx="inrun" step="1" count="1" x1="-7" x2="3.95" lz="1.2" rz="1.4" by="54.9" ty="54.7" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-7" x2="3.95" lz="-3" rz="-2.8" by="54.9" ty="54.7" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-7" x2="-6.8" lz="1.2" rz="1.4" by="63.9" ty="54.7" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-7" x2="-6.8" lz="-3" rz="-2.8" by="64.2" ty="54.7" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-7" x2="-6.8" lz="1.2" rz="1.4" by="64.2" ty="54.7" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-2.1" x2="-1.9" lz="-3" rz="-2.8" by="59.9" ty="54.7" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-2.1" x2="-1.9" lz="1.2" rz="1.4" by="59.9" ty="54.7" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-11" x2="-6.8" lz="-3" rz="-2.8" by="58.1" ty="57.9" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-11" x2="-6.8" lz="1.2" rz="1.4" by="58.1" ty="57.9" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-11" x2="-6.8" lz="-3" rz="-2.8" by="64.4" ty="64.2" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-11" x2="-6.8" lz="1.2" rz="1.4" by="64.4" ty="64.2" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-11" x2="-10.9" lz="-3" rz="1.4" by="58.1" ty="57.9" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-11" x2="-10.9" lz="-3" rz="-2.8" by="64.4" ty="57.9" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-11" x2="-10.9" lz="1.2" rz="1.4" by="64.4" ty="57.9" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-7" x2="-6.8" lz="-3" rz="1.4" by="58.1" ty="57.9" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-11.9" x2="-11.7" lz="-3" rz="1.4" by="63.4" ty="63.2" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-11.9" x2="-11" lz="1.2" rz="1.4" by="63.4" ty="63.2" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-11.9" x2="-11" lz="-3" rz="-2.8" by="63.4" ty="63.2" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+	
+     <pillar refx="inrun" x1="-7" x2="3.8" rz="-3" lz="-2.8" ty1="64.4" ty2="54.7" by1="64.2" by2="54.5" t="Textures\metal.png" m="Materials\material1.xml" c="0x000000"/>	
+	<pillar refx="inrun" x1="-7" x2="3.8" rz="1.4" lz="1.2" ty1="64.4" ty2="54.7" by1="64.2" by2="54.5" t="Textures\metal.png" m="Materials\material1.xml" c="0x000000"/>	
+	<pillar refx="inrun" x1="-11" x2="3.8" rz="-3" lz="-2.8" ty1="64.4" ty2="50.7" by1="64.2" by2="50.5" t="Textures\metal.png" m="Materials\material1.xml" c="0x000000"/>	
+	<pillar refx="inrun" x1="-11" x2="3.8" rz="1.4" lz="1.2" ty1="64.4" ty2="50.7" by1="64.2" by2="50.5" t="Textures\metal.png" m="Materials\material1.xml" c="0x000000"/>
+	<pillar refx="inrun" x1="-11" x2="-7" rz="-3" lz="-2.8" ty1="58.1" ty2="54.9" by1="57.9" by2="54.7" t="Textures\metal.png" m="Materials\material1.xml" c="0x000000"/>	
+	<pillar refx="inrun" x1="-11" x2="-7" rz="1.4" lz="1.2" ty1="58.1" ty2="54.9" by1="57.9" by2="54.7" t="Textures\metal.png" m="Materials\material1.xml" c="0x000000"/>
+	<pillar refx="inrun" x1="-11.8" x2="-11" rz="-3" lz="-2.8" ty1="63.4" ty2="64.4" by1="63.2" by2="64.2" t="Textures\metal.png" m="Materials\material1.xml" c="0x000000"/>	
+	<pillar refx="inrun" x1="-11.8" x2="-11" rz="1.4" lz="1.2" ty1="63.4" ty2="64.4" by1="63.2" by2="64.2" t="Textures\metal.png" m="Materials\material1.xml" c="0x000000"/>
+	<pillar refx="inrun" x1="-8.5" x2="3.4" rz="-0.1" lz="-1.5" ty1="64.2" ty2="55.3" by1="64.4" by2="55.5" t="Textures\wood4.png" m="Materials\material1.xml" c="0x281800"/>	
+	
+
+
+
+<pillar refx="inrun" step="1" count="1" x1="-6.2" x2="-6" lz="-3" rz="1.4" by="55" ty="54.8" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-1.1" x2="-0.9" lz="-3" rz="1.4" by="55" ty="54.8" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+
+
+	
+	<pillar refx="inrun" x1="30.8" x2="44" rz="-3" lz="-2.8" ty1="23.8" ty2="28.9" by1="23.6" by2="28.7" t="Textures\metal.png" m="Materials\material1.xml" c="0x000000"/>	
+	<pillar refx="inrun" x1="30.8" x2="44" rz="1.2" lz="1.4" ty1="23.8" ty2="28.9" by1="23.6" by2="28.7" t="Textures\metal.png" m="Materials\material1.xml" c="0x000000"/>	
+	<pillar refx="inrun" x1="44" x2="49.8" rz="-3" lz="-2.8" ty1="29.1" ty2="19" by1="28.7" by2="18.6" t="Textures\metal.png" m="Materials\material1.xml" c="0x000000"/>	
+	<pillar refx="inrun" x1="44" x2="49.8" rz="1.2" lz="1.4" ty1="29.1" ty2="19" by1="28.7" by2="18.6" t="Textures\metal.png" m="Materials\material1.xml" c="0x000000"/>	
+<pillar refx="inrun" step="1" count="1" x1="46.2" x2="46.4" lz="-3" rz="1.4" by="25" ty="24.8" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="38.8" x2="39" lz="-3" rz="1.4" by="27" ty="26.8" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+
+
+<pillar refx="inrun" front="true" zbias="1" ta1="45" ta2="45" scale="2"
+    x1="3.8" x2="3.85"
+    rz="1.4" lz="-3"
+    tly="41.9" try="49.9"
+    bly="42.4" bry="50.4"
+    top="true" bottom="true"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0x000000"/>
+<pillar refx="inrun" front="true" zbias="1" ta1="45" ta2="45" scale="2"
+    x1="3.8" x2="3.85"
+    rz="-3" lz="1.4"
+    tly="49.9" try="55.1"
+    bly="50.2" bry="55.4"
+    top="true" bottom="true"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0x000000"/>
+<pillar refx="inrun" rear="true" front="true" zbias="1" ta1="45" ta2="45" scale="2"
+    x1="3.8" x2="3.85"
+    rz="1.4" lz="-3"
+    tly="41.6" try="34"
+    bly="42.1" bry="34.5"
+    top="true" bottom="true"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0x000000"/>
+
+
+<pillar refx="inrun" front="true" zbias="1" ta1="45" ta2="45" scale="2"
+    x1="30.8" x2="30.85"
+    rz="-3" lz="1.4"
+    tly="37.1" try="31.8"
+    bly="37.5" bry="32.2"
+    top="true" bottom="true"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0x000000"/>
+<pillar refx="inrun" front="true" zbias="1" ta1="45" ta2="45" scale="2"
+    x1="30.8" x2="30.85"
+    rz="1.4" lz="-3"
+    tly="31.8" try="27.8"
+    bly="32.2" bry="28.2"
+    top="true" bottom="true"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0x000000"/>
+<pillar refx="inrun" front="true" zbias="1" ta1="45" ta2="45" scale="2"
+    x1="30.8" x2="30.85"
+    rz="-3" lz="1.4"
+    tly="27.8" try="22.8"
+    bly="28.2" bry="23.2"
+    top="true" bottom="true"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0x000000"/>
+
+<pillar refx="inrun" front="true" zbias="1" ta1="45" ta2="45" scale="2"
+    x1="49.9" x2="49.95"
+    rz="1.4" lz="-3"
+    tly="24.5" try="21.3"
+    bly="24.9" bry="21.7"
+    top="true" bottom="true"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0x000000"/>
+<pillar refx="inrun" front="true" zbias="1" ta1="45" ta2="45" scale="2"
+    x1="49.9" x2="49.95"
+    rz="-3" lz="1.4"
+    tly="21.3" try="18.3"
+    bly="21.7" bry="18.7"
+    top="true" bottom="true"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0x000000"/>
+
+
+<pillar refx="inrun" front="true" zbias="1" ta1="45" ta2="45" scale="2"
+    x1="-7.2" x2="-6.7"
+    rz="-2.7" lz="-5.4"
+    tly="18.3" try="55"
+    bly="23" bry="59.7"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0x000000"/>
+<pillar refx="inrun" zbias="1" ta1="45" ta2="47" scale="2"
+    x1="-7.2" x2="-6.7"
+    rz="3.8" lz="1.1"
+    tly="55" try="18.3"
+    bly="59.7" bry="23"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0x000000"/>
+
+<pillar refx="inrun" step="1" count="1" x1="-7.2" x2="-6.7" lz="-3" rz="1.4" by="54.7" ty="55" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-7.2" x2="-6.7" lz="-3.6" rz="2" by="46.7" ty="47" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-7.2" x2="-6.7" lz="-4.2" rz="2.6" by="38.7" ty="39" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-7.2" x2="-6.7" lz="-4.8" rz="3.2" by="30.7" ty="31" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-7.2" x2="-6.7" lz="-4.6" rz="3" by="22.7" ty="23" t="Textures\plate2.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+
+
+<pillar refx="inrun" front="true" zbias="1" ta1="45" ta2="45" scale="2"
+    x1="-7" x2="-6.9"
+    rz="-0.8" lz="2"
+    tly="46.3" try="54"
+    bly="47" bry="54.7"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0x000000"/>
+<pillar refx="inrun" zbias="1" ta1="45" ta2="47" scale="2"
+    x1="-7" x2="-6.9"
+    rz="-3.6" lz="-0.8"
+    tly="54" try="46.3"
+    bly="54.7" bry="47"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0x000000"/>
+<pillar refx="inrun" front="true" zbias="1" ta1="45" ta2="45" scale="2"
+    x1="-7" x2="-6.9"
+    rz="2.6" lz="-0.8"
+    tly="46.3" try="39"
+    bly="47" bry="40"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0x000000"/>
+<pillar refx="inrun" zbias="1" ta1="45" ta2="47" scale="2"
+    x1="-7" x2="-6.9"
+    rz="-4.2" lz="-0.8"
+    tly="46.3" try="39"
+    bly="47" bry="40"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0x000000"/>
+<pillar refx="inrun" front="true" zbias="1" ta1="45" ta2="45" scale="2"
+    x1="-7" x2="-6.9"
+    rz="3.2" lz="-0.8"
+    tly="38.5" try="30.3"
+    bly="39.2" bry="31"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0x000000"/>
+<pillar refx="inrun" zbias="1" ta1="45" ta2="47" scale="2"
+    x1="-7" x2="-6.9"
+    rz="-4.8" lz="-0.8"
+    tly="38.5" try="30.3"
+    bly="39.2" bry="31"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0x000000"/>
+
+<pillar refx="inrun" zbias="1" ta1="45" ta2="47" scale="2"
+    x1="3.8" x2="3.9"
+    rz="-3" lz="-5.5"
+    tly="55" try="47.3"
+    bly="55.7" bry="48"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6"/>
+
+<pillar refx="inrun" step="1" count="1" x1="-7.1" x2="-6.9" lz="-5.5" rz="-5.3" by="55.2" ty="03" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-7.1" x2="-6.9" lz="-5.5" rz="-3" by="55.2" ty="55" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-7.1" x2="-6.9" lz="-5.5" rz="-3.6" by="47" ty="46.8" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-7.1" x2="-6.9" lz="-5.5" rz="-4.2" by="39" ty="38.8" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-7.1" x2="-6.9" lz="-5.5" rz="-4.8" by="31" ty="30.8" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+
+<pillar refx="inrun" step="1" count="1" x1="-16.1" x2="-15.9" lz="-5.5" rz="-5.3" by="55.2" ty="03" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-16.1" x2="-15.9" lz="-3.2" rz="-3" by="55.2" ty="03" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-16.1" x2="-15.9" lz="-5.5" rz="-3" by="55.2" ty="55" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-16.1" x2="-15.9" lz="-5.5" rz="-3" by="50.2" ty="50" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-16.1" x2="-15.9" lz="-5.5" rz="-3" by="45.2" ty="45" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-16.1" x2="-15.9" lz="-5.5" rz="-3" by="40.2" ty="40" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-14.1" x2="-13.9" lz="-5.5" rz="-3" by="55.2" ty="55" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-12.1" x2="-11.9" lz="-5.5" rz="-3" by="55.2" ty="55" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-10.1" x2="-9.9" lz="-5.5" rz="-3" by="55.2" ty="55" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-8.1" x2="-7.9" lz="-5.5" rz="-3" by="55.2" ty="55" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-6.1" x2="-5.9" lz="-5.5" rz="-3" by="55.2" ty="55" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-4.1" x2="-3.9" lz="-5.5" rz="-3" by="55.2" ty="55" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-18.1" x2="-17.9" lz="-5.5" rz="-3" by="55.2" ty="55" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-20.1" x2="-19.9" lz="-5.5" rz="-3" by="55.2" ty="55" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-22.1" x2="-21.9" lz="-5.5" rz="-3" by="55.2" ty="55" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-24.1" x2="-23.9" lz="-5.5" rz="-3" by="55.2" ty="55" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-26.1" x2="-25.9" lz="-5.5" rz="-3" by="55.2" ty="55" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-2.1" x2="-1.9" lz="-5.5" rz="-3" by="55.2" ty="55" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-0.1" x2="0.1" lz="-5.5" rz="-3" by="55.2" ty="55" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="1.9" x2="2.1" lz="-5.5" rz="-3" by="55.2" ty="55" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+
+
+
+
+<pillar refx="inrun" zbias="1" ta1="45" ta2="47" scale="2"
+    x1="-16.1" x2="-15.9"
+    rz="-3" lz="-5.5"
+    tly="55" try="50"
+    bly="55.2" bry="50.2"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6"/>
+<pillar refx="inrun" zbias="1" ta1="45" ta2="47" scale="2"
+    x1="-16.1" x2="-15.9"
+    rz="-5.5" lz="-3"
+    tly="55" try="50"
+    bly="55.2" bry="50.2"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6"/>
+<pillar refx="inrun" zbias="1" ta1="45" ta2="47" scale="2"
+    x1="-16.1" x2="-15.9"
+    rz="-3" lz="-5.5"
+    tly="50" try="45"
+    bly="50.2" bry="45.2"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6"/>
+<pillar refx="inrun" zbias="1" ta1="45" ta2="47" scale="2"
+    x1="-16.1" x2="-15.9"
+    rz="-5.5" lz="-3"
+    tly="50" try="45"
+    bly="50.2" bry="45.2"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6"/>
+<pillar refx="inrun" zbias="1" ta1="45" ta2="47" scale="2"
+    x1="-11.1" x2="-10.9"
+    rz="1.4" lz="-3"
+    tly="63" try="58"
+    bly="63.2" bry="58.2"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0x000000"/>
+<pillar refx="inrun" zbias="1" ta1="45" ta2="47" scale="2"
+    x1="-11.1" x2="-10.9"
+    rz="-3" lz="1.4"
+    tly="63" try="58"
+    bly="63.2" bry="58.2"
+    t="Textures\metal.png" m="Materials\metal.xml" c="0x000000"/>
+<pillar refx="inrun" step="1" count="1" x1="-6" x2="3.6" lz="1.2" rz="1.4" by="54.7" ty="54.4" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-6" x2="3.6" lz="-3" rz="-2.8" by="54.7" ty="54.4" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-6" x2="-5.8" lz="-3" rz="1.4" by="54.7" ty="54.4" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="3.4" x2="3.6" lz="-3" rz="1.4" by="54.7" ty="54.4" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="2.4" x2="2.6" lz="-3" rz="1.4" by="54.7" ty="54.4" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="1.4" x2="1.6" lz="-3" rz="1.4" by="54.7" ty="54.4" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="0.4" x2="0.6" lz="-3" rz="1.4" by="54.7" ty="54.4" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-0.6" x2="-0.4" lz="-3" rz="1.4" by="54.7" ty="54.4" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-1.6" x2="-1.4" lz="-3" rz="1.4" by="54.7" ty="54.4" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-2.6" x2="-2.4" lz="-3" rz="1.4" by="54.7" ty="54.4" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-3.6" x2="-3.4" lz="-3" rz="1.4" by="54.7" ty="54.4" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-4.6" x2="-4.4" lz="-3" rz="1.4" by="54.7" ty="54.4" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+
+
+<pillar refx="inrun" step="1" count="1" x1="-1.6" x2="1.2" lz="-0.1" rz="1" by="57.1" ty="57" t="Textures\wood3.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-6.6" x2="-2.65" lz="-0.1" rz="1" by="60.1" ty="59.9" t="Textures\wood3.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-11.8" x2="-6.65" lz="-0.1" rz="1" by="63.1" ty="62.9" t="Textures\wood3.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-8.6" x2="-4.7" lz="-2.8" rz="-1.4" by="61.6" ty="61.4" t="Textures\wood3.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-3.7" x2="-0.8" lz="-2.8" rz="-1.4" by="58.6" ty="58.4" t="Textures\wood3.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+
+<pillar refx="inrun" step="1" count="1" x1="-6.6" x2="-3.2" lz="-2.9" rz="1.3" by="54.8" ty="54.7" t="Textures\wood5.png" m="Materials\metal.xml" c="0xffbe38" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="0.1" x2="3" lz="-3.2" rz="1.3" by="55.8" ty="55.7" t="Textures\wood5.png" m="Materials\metal.xml" c="0xffbe38" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-3.2" x2="-3.1" lz="-1.4" rz="1.3" by="56.8" ty="54.7" t="Textures\plate2.png" m="Materials\metal.xml" c="0x0056ff" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-3.2" x2="-3.1" lz="-2.9" rz="-2.4" by="56.8" ty="54.7" t="Textures\plate2.png" m="Materials\metal.xml" c="0x0056ff" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-3.2" x2="-3.1" lz="-2.9" rz="-0.9" by="56.8" ty="56.5" t="Textures\plate2.png" m="Materials\metal.xml" c="0x0056ff" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-6.6" x2="-6.5" lz="-2.9" rz="1.3" by="60" ty="54.7" t="Textures\plate2.png" m="Materials\metal.xml" c="0x0056ff" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-6.6" x2="-3.2" lz="-2.8" rz="-2.7" by="56.8" ty="54.7" t="Textures\plate2.png" m="Materials\metal.xml" c="0x0056ff" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-6.6" x2="-3.2" lz="1.18" rz="1.3" by="55.8" ty="54.7" t="Textures\plate2.png" m="Materials\metal.xml" c="0x0056ff" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-4.1" x2="-3.2" lz="1.2" rz="1.3" by="56.8" ty="54.7" t="Textures\plate2.png" m="Materials\metal.xml" c="0x0056ff" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-6.6" x2="-4.6" lz="1.2" rz="1.3" by="56.8" ty="54.7" t="Textures\plate2.png" m="Materials\metal.xml" c="0x0056ff" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-6.6" x2="-3.2" lz="1.2" rz="1.3" by="56.8" ty="56.6" t="Textures\plate2.png" m="Materials\metal.xml" c="0x0056ff" pt="true"/>
+<pillar refx="inrun" x1="-6.6" x2="-3.2" rz="1.3" lz="-2.9" ty1="58.8" ty2="56.7" by1="60" by2="56.8" t="Textures\plate2.png" m="Materials\material1.xml" c="0x0056ff"/>	
+<pillar refx="inrun" x1="-6.6" x2="-3.2" rz="1.3" lz="1.2" ty1="56.7" ty2="56.7" by1="60" by2="56.8" t="Textures\plate2.png" m="Materials\material1.xml" c="0x0056ff"/>
+<pillar refx="inrun" x1="-6.6" x2="-3.2" rz="-2.7" lz="-2.8" ty1="56.7" ty2="56.7" by1="60" by2="56.8" t="Textures\plate2.png" m="Materials\material1.xml" c="0x0056ff"/>
+<pillar refx="inrun" type="glass" step="1" count="1" x1="-4.6" x2="-4.1" lz="1.21" rz="1.29" by="56.6" ty="55.8" t="Textures\window.png" m="Materials\window.xml" c="0xffffff" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-3.2" x2="-3.1" lz="-2.8" rz="1.3" by="54.8" ty="54.7" t="Textures\plate2.png" m="Materials\metal.xml" c="0x0056ff" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-3.12" x2="-3.18" lz="-2.4" rz="-1.4" by="56.5" ty="54.8" t="Textures\metal.png" m="Materials\metal.xml" c="0x0050c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-3.08" x2="-3.26" lz="-1.61" rz="-1.6" by="55.61" ty="55.6" t="Textures\metal.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-3.25" x2="-3.26" lz="-1.9" rz="-1.6" by="55.61" ty="55.6" t="Textures\metal.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-3.07" x2="-3.08" lz="-1.9" rz="-1.6" by="55.61" ty="55.6" t="Textures\metal.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-5.61" x2="-5.51" lz="-1.9" rz="0" by="55.61" ty="54.6" t="Textures\carpet.png" m="Materials\metal.xml" c="0xffffff" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-5.61" x2="-5.01" lz="-1.9" rz="0" by="55.11" ty="54.6" t="Textures\carpet.png" m="Materials\metal.xml" c="0xffffff" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-5.6" x2="-5.01" lz="-0.1" rz="0" by="55.41" ty="54.6" t="Textures\carpet.png" m="Materials\metal.xml" c="0xffffff" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-5.6" x2="-5" lz="-1.9" rz="-1.8" by="55.41" ty="54.6" t="Textures\carpet.png" m="Materials\metal.xml" c="0xffffff" pt="true"/>
+
+
+<pillar refx="inrun" step="1" count="1" x1="-0.25" x2="0.1" lz="-2.7" rz="-1.7" by="55.8" ty="55.7" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-0.5" x2="-0.25" lz="-2.7" rz="-1.7" by="55.55" ty="55.45" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-0.75" x2="-0.5" lz="-2.7" rz="-1.7" by="55.3" ty="55.2" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-1" x2="-0.75" lz="-2.7" rz="-1.7" by="55.05" ty="54.95" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-1.25" x2="-1" lz="-2.7" rz="-1.7" by="54.8" ty="54.7" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-3.2" x2="-1.25" lz="-2.7" rz="-1.7" by="54.8" ty="54.7" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+
+<pillar refx="inrun" step="1" count="1" x1="-0.4" x2="-0.2" lz="-1.7" rz="-0.1" by="56.3" ty="56.25" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-0.2" x2="0" lz="-1.7" rz="-0.1" by="56.05" ty="56" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-0.8" x2="-0.6" lz="-1.7" rz="-0.1" by="56.8" ty="56.75" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-0.6" x2="-0.4" lz="-1.7" rz="-0.1" by="56.55" ty="56.5" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-1.6" x2="-0.8" lz="-1.7" rz="-0.1" by="57.1" ty="57" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-1.6" x2="-1.4" lz="-1.7" rz="-0.1" by="57.35" ty="57.3" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-1.8" x2="-1.6" lz="-1.7" rz="-0.1" by="57.6" ty="57.55" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-2" x2="-1.8" lz="-1.7" rz="-0.1" by="57.85" ty="57.8" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-2.2" x2="-2" lz="-1.7" rz="-0.1" by="58.1" ty="58.05" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-2.4" x2="-2.2" lz="-1.7" rz="-0.1" by="58.35" ty="58.3" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-4.6" x2="-2.4" lz="-1.7" rz="-0.1" by="58.6" ty="58.55" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-4.6" x2="-4.4" lz="-1.7" rz="-0.1" by="58.85" ty="58.8" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-4.8" x2="-4.6" lz="-1.7" rz="-0.1" by="59.1" ty="59.05" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-5" x2="-4.8" lz="-1.7" rz="-0.1" by="59.35" ty="59.3" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-5.2" x2="-5" lz="-1.7" rz="-0.1" by="59.6" ty="59.55" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-5.4" x2="-5.2" lz="-1.7" rz="-0.1" by="59.85" ty="59.8" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-6.6" x2="-5.4" lz="-1.7" rz="-0.1" by="60.1" ty="60" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-6.6" x2="-6.4" lz="-1.7" rz="-0.1" by="60.35" ty="60.3" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-6.8" x2="-6.6" lz="-1.7" rz="-0.1" by="60.6" ty="60.55" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-7" x2="-6.8" lz="-1.7" rz="-0.1" by="60.85" ty="60.8" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-7.2" x2="-7" lz="-1.7" rz="-0.1" by="61.1" ty="61.05" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-7.4" x2="-7.2" lz="-1.7" rz="-0.1" by="61.35" ty="61.3" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-8.6" x2="-7.4" lz="-1.7" rz="-0.1" by="61.6" ty="61.5" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-8.6" x2="-8.4" lz="-1.7" rz="-0.1" by="61.85" ty="61.8" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-8.8" x2="-8.6" lz="-1.7" rz="-0.1" by="62.1" ty="62.05" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-9" x2="-8.8" lz="-1.7" rz="-0.1" by="62.35" ty="62.3" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-9.2" x2="-9" lz="-1.7" rz="-0.1" by="62.6" ty="62.55" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-9.4" x2="-9.2" lz="-1.7" rz="-0.1" by="62.85" ty="62.8" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-11.8" x2="-9.4" lz="-1.7" rz="-0.1" by="63.1" ty="63" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-11.8" x2="-11.2" lz="-2.7" rz="-1.7" by="63.1" ty="63.05" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-11.2" x2="-11" lz="-2.7" rz="-1.7" by="63.35" ty="63.3" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-11" x2="-10.8" lz="-2.7" rz="-1.7" by="63.6" ty="63.55" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-10.8" x2="-10.6" lz="-2.7" rz="-1.7" by="63.6" ty="63.55" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-10.6" x2="-10.4" lz="-2.7" rz="-1.7" by="63.85" ty="63.8" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-10.4" x2="-10.2" lz="-2.7" rz="-1.7" by="64.1" ty="64.05" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-10.2" x2="-9" lz="-2.7" rz="-1.7" by="64.35" ty="64.3" t="Textures\wood5.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-11.2" x2="-8.5" lz="-1.7" rz="0" by="64.35" ty="64.3" t="Textures\wood3.png" m="Materials\metal.xml" c="0x281800" pt="true"/>
+
+
+	<pillar refx="inrun" x1="-1" x2="0" rz="-0.1" lz="-0.15" ty1="57" ty2="55.75" by1="57.1" by2="55.85" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-1" x2="0" rz="-1.7" lz="-1.75" ty1="57" ty2="55.75" by1="57.1" by2="55.85" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-2.6" x2="-1.4" rz="-0.1" lz="-0.15" ty1="58.5" ty2="57" by1="58.6" by2="57.1" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-2.6" x2="-1.4" rz="-1.7" lz="-1.75" ty1="58.5" ty2="57" by1="58.6" by2="57.1" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>
+	<pillar refx="inrun" x1="-5.6" x2="-4.4" rz="-0.1" lz="-0.15" ty1="60" ty2="58.6" by1="60.1" by2="58.7" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-5.6" x2="-4.4" rz="-1.7" lz="-1.75" ty1="60" ty2="58.6" by1="60.1" by2="58.7" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>
+	<pillar refx="inrun" x1="-7.6" x2="-6.4" rz="-0.1" lz="-0.15" ty1="61.5" ty2="60" by1="61.6" by2="60.1" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-7.6" x2="-6.4" rz="-1.7" lz="-1.75" ty1="61.5" ty2="60" by1="61.6" by2="60.1" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>
+	<pillar refx="inrun" x1="-9.6" x2="-8.4" rz="-0.1" lz="-0.15" ty1="63" ty2="61.5" by1="63.1" by2="61.6" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-9.6" x2="-8.4" rz="-1.7" lz="-1.75" ty1="63" ty2="61.5" by1="63.1" by2="61.6" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>
+	<pillar refx="inrun" x1="-11.2" x2="-10.2" rz="-1.7" lz="-1.75" ty1="63" ty2="64.25" by1="63.1" by2="64.35" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-11.2" x2="-10.2" rz="-2.7" lz="-2.75" ty1="63" ty2="64.25" by1="63.1" by2="64.35" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>
+	<pillar refx="inrun" x1="-1.25" x2="0" rz="-1.7" lz="-1.75" ty1="54.75" ty2="55.7" by1="54.85" by2="55.8" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-1.25" x2="0" rz="-2.7" lz="-2.75" ty1="54.75" ty2="55.7" by1="54.85" by2="55.8" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>
+
+	<pillar refx="inrun" x1="-1" x2="0" rz="-0.1" lz="-0.15" ty1="57.4" ty2="56.15" by1="57.7" by2="56.35" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-1" x2="0" rz="-1.7" lz="-1.75" ty1="57.4" ty2="56.15" by1="57.7" by2="56.35" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-2.6" x2="-1.4" rz="-0.1" lz="-0.15" ty1="58.9" ty2="57.5" by1="59" by2="57.6" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-2.6" x2="-1.4" rz="-1.7" lz="-1.75" ty1="58.9" ty2="57.5" by1="59" by2="57.6" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>
+	<pillar refx="inrun" x1="-5.6" x2="-4.4" rz="-0.1" lz="-0.15" ty1="60.4" ty2="59.1" by1="60.5" by2="59.2" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-5.6" x2="-4.4" rz="-1.7" lz="-1.75" ty1="60.4" ty2="59.1" by1="60.5" by2="59.2" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>
+	<pillar refx="inrun" x1="-7.6" x2="-6.4" rz="-0.1" lz="-0.15" ty1="61.9" ty2="60.5" by1="62" by2="60.6" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-7.6" x2="-6.4" rz="-1.7" lz="-1.75" ty1="61.9" ty2="60.5" by1="62" by2="60.6" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>
+	<pillar refx="inrun" x1="-9.6" x2="-8.4" rz="-0.1" lz="-0.15" ty1="63.4" ty2="62" by1="63.5" by2="62.1" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-9.6" x2="-8.4" rz="-1.7" lz="-1.75" ty1="63.4" ty2="62" by1="63.5" by2="62.1" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>
+	<pillar refx="inrun" x1="-11.2" x2="-10.2" rz="-1.7" lz="-1.75" ty1="63.4" ty2="64.75" by1="63.5" by2="64.85" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-11.2" x2="-10.2" rz="-2.7" lz="-2.75" ty1="63.4" ty2="64.75" by1="63.5" by2="64.85" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>
+	<pillar refx="inrun" x1="-1.25" x2="0" rz="-1.7" lz="-1.75" ty1="55.15" ty2="56.2" by1="55.25" by2="56.3" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-1.25" x2="0" rz="-2.7" lz="-2.75" ty1="55.15" ty2="56.2" by1="55.25" by2="56.3" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>
+
+	<pillar refx="inrun" x1="-1" x2="0" rz="-0.1" lz="-0.15" ty1="57.8" ty2="56.65" by1="58.1" by2="56.85" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-1" x2="0" rz="-1.7" lz="-1.75" ty1="57.8" ty2="56.65" by1="58.1" by2="56.85" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-2.6" x2="-1.4" rz="-0.1" lz="-0.15" ty1="59.3" ty2="58" by1="59.4" by2="58.1" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-2.6" x2="-1.4" rz="-1.7" lz="-1.75" ty1="59.3" ty2="58" by1="59.4" by2="58.1" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>
+	<pillar refx="inrun" x1="-5.6" x2="-4.4" rz="-0.1" lz="-0.15" ty1="60.8" ty2="59.6" by1="60.9" by2="59.7" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-5.6" x2="-4.4" rz="-1.7" lz="-1.75" ty1="60.8" ty2="59.6" by1="60.9" by2="59.7" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>
+	<pillar refx="inrun" x1="-7.6" x2="-6.4" rz="-0.1" lz="-0.15" ty1="62.3" ty2="61" by1="62.4" by2="61.1" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-7.6" x2="-6.4" rz="-1.7" lz="-1.75" ty1="62.3" ty2="61" by1="62.4" by2="61.1" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>
+	<pillar refx="inrun" x1="-9.6" x2="-8.4" rz="-0.1" lz="-0.15" ty1="63.8" ty2="62.5" by1="63.9" by2="62.6" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-9.6" x2="-8.4" rz="-1.7" lz="-1.75" ty1="63.8" ty2="62.5" by1="63.9" by2="62.6" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>
+	<pillar refx="inrun" x1="-11.2" x2="-10.2" rz="-1.7" lz="-1.75" ty1="63.8" ty2="65.25" by1="63.9" by2="65.35" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-11.2" x2="-10.2" rz="-2.7" lz="-2.75" ty1="63.8" ty2="65.25" by1="63.9" by2="65.35" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>
+	<pillar refx="inrun" x1="-1.25" x2="0" rz="-1.7" lz="-1.75" ty1="55.55" ty2="56.7" by1="55.65" by2="56.8" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>	
+	<pillar refx="inrun" x1="-1.25" x2="0" rz="-2.7" lz="-2.75" ty1="55.55" ty2="56.7" by1="55.65" by2="56.8" t="Textures\wood3.png" m="Materials\material1.xml" c="0x281800"/>
+
+
+
+<pillar refx="inrun" step="1" count="1" x1="-1.6" x2="1.2" lz="1" rz="1.05" by="57.7" ty="57" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-0.8" x2="1.2" lz="-0.16" rz="-0.09" by="57.7" ty="57" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-1.6" x2="-1.55" lz="-0.15" rz="1" by="57.7" ty="57" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-0.8" x2="-1.6" lz="-1.76" rz="-1.69" by="57.7" ty="57" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-1.6" x2="1.2" lz="1" rz="1.05" by="57.1" ty="57" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-0.8" x2="1.2" lz="-0.16" rz="-0.09" by="57.1" ty="57" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-1.6" x2="-1.55" lz="-0.15" rz="1" by="57.1" ty="57" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-0.8" x2="-1.6" lz="-1.76" rz="-1.69" by="57.1" ty="57" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-1.6" x2="1.2" lz="1" rz="1.05" by="57.7" ty="57.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-0.8" x2="1.2" lz="-0.16" rz="-0.09" by="57.7" ty="57.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-1.6" x2="-1.55" lz="-0.15" rz="1" by="57.7" ty="57.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-0.8" x2="-1.6" lz="-1.76" rz="-1.69" by="57.7" ty="57.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-1.6" x2="-1.5" lz="1" rz="1.05" by="57.7" ty="57" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-0.8" x2="-0.7" lz="-0.16" rz="-0.09" by="57.7" ty="57" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-1.5" x2="-1.6" lz="-1.76" rz="-1.69" by="57.7" ty="57" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="1.1" x2="1.2" lz="1" rz="1.05" by="57.7" ty="57" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="1.1" x2="1.2" lz="-0.16" rz="-0.09" by="57.7" ty="57" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-1.6" x2="-1.55" lz="-0.15" rz="-0.05" by="57.7" ty="57" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-0.9" x2="-0.8" lz="-1.76" rz="-1.69" by="57.7" ty="57" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+
+
+<pillar refx="inrun" step="1" count="1" x1="-3.7" x2="-0.8" lz="-2.85" rz="-2.79" by="59.3" ty="58.6" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-2.4" x2="-0.8" lz="-1.51" rz="-1.45" by="59.3" ty="58.6" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-3.7" x2="-3.65" lz="-2.85" rz="-1.6" by="59.3" ty="58.6" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-4.4" x2="-2.4" lz="-0.16" rz="-0.1" by="59.3" ty="58.6" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-4.4" x2="-3.7" lz="-1.6" rz="-1.65" by="59.3" ty="58.6" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-3.7" x2="-0.8" lz="-2.85" rz="-2.79" by="58.7" ty="58.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-2.4" x2="-0.8" lz="-1.51" rz="-1.45" by="58.7" ty="58.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-3.7" x2="-3.65" lz="-2.85" rz="-1.6" by="58.7" ty="58.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-4.4" x2="-2.4" lz="-0.16" rz="-0.1" by="58.7" ty="58.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-4.4" x2="-3.7" lz="-1.6" rz="-1.65" by="58.7" ty="58.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-3.7" x2="-0.8" lz="-2.85" rz="-2.79" by="59.3" ty="59.2" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-2.4" x2="-0.8" lz="-1.51" rz="-1.45" by="59.3" ty="59.2" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-3.7" x2="-3.65" lz="-2.85" rz="-1.6" by="59.3" ty="59.2" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-4.4" x2="-2.4" lz="-0.16" rz="-0.1" by="59.3" ty="59.2" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-4.4" x2="-3.7" lz="-1.6" rz="-1.65" by="59.3" ty="59.2" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-3.7" x2="-3.6" lz="-2.85" rz="-2.79" by="59.3" ty="58.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-2.4" x2="-2.3" lz="-1.51" rz="-1.45" by="59.3" ty="58.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-4.4" x2="-4.3" lz="-0.16" rz="-0.1" by="59.3" ty="58.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-4.4" x2="-4.3" lz="-1.6" rz="-1.65" by="59.3" ty="58.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-0.9" x2="-0.8" lz="-2.85" rz="-2.79" by="59.3" ty="58.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-0.9" x2="-0.8" lz="-1.51" rz="-1.45" by="59.3" ty="58.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-2.5" x2="-2.4" lz="-0.16" rz="-0.1" by="59.3" ty="58.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-3.8" x2="-3.7" lz="-1.6" rz="-1.65" by="59.3" ty="58.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+
+
+
+<pillar refx="inrun" step="1" count="1" x1="-6.6" x2="-2.65" lz="1" rz="1.05" by="60.8" ty="60.1" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-5.4" x2="-2.65" lz="-0.16" rz="-0.09" by="60.8" ty="60.1" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-6.6" x2="-6.55" lz="-0.16" rz="1" by="60.8" ty="60.1" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-6.6" x2="-5.4" lz="-1.76" rz="-1.69" by="60.8" ty="60.1" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-6.6" x2="-2.65" lz="1" rz="1.05" by="60.2" ty="60.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-5.4" x2="-2.65" lz="-0.16" rz="-0.09" by="60.2" ty="60.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-6.6" x2="-6.55" lz="-0.16" rz="1" by="60.2" ty="60.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-6.6" x2="-5.4" lz="-1.76" rz="-1.69" by="60.2" ty="60.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-6.6" x2="-2.65" lz="1" rz="1.05" by="60.8" ty="60.7" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-5.4" x2="-2.65" lz="-0.16" rz="-0.09" by="60.8" ty="60.7" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-6.6" x2="-6.55" lz="-0.16" rz="1" by="60.8" ty="60.7" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-6.6" x2="-5.4" lz="-1.76" rz="-1.69" by="60.8" ty="60.7" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-6.6" x2="-6.5" lz="1" rz="1.05" by="60.8" ty="60.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-5.4" x2="-5.3" lz="-0.16" rz="-0.09" by="60.8" ty="60.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-6.6" x2="-6.55" lz="-0.16" rz="-0.06" by="60.8" ty="60.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-6.6" x2="-6.5" lz="-1.76" rz="-1.69" by="60.8" ty="60.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-2.75" x2="-2.65" lz="1" rz="1.05" by="60.8" ty="60.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-2.75" x2="-2.65" lz="-0.16" rz="-0.09" by="60.8" ty="60.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-5.5" x2="-5.4" lz="-1.76" rz="-1.69" by="60.8" ty="60.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+
+
+<pillar refx="inrun" step="1" count="1" x1="-8.6" x2="-4.7" lz="-2.85" rz="-2.79" by="62.3" ty="61.6" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-7.4" x2="-4.7" lz="-1.51" rz="-1.45" by="62.3" ty="61.6" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-8.65" x2="-8.6" lz="-2.85" rz="-1.65" by="62.3" ty="61.6" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-8.6" x2="-7.4" lz="-0.16" rz="-0.09" by="62.3" ty="61.6" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-8.6" x2="-4.7" lz="-2.85" rz="-2.79" by="61.7" ty="61.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-7.4" x2="-4.7" lz="-1.51" rz="-1.45" by="61.7" ty="61.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-8.65" x2="-8.6" lz="-2.85" rz="-1.65" by="61.7" ty="61.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-8.6" x2="-7.4" lz="-0.16" rz="-0.09" by="61.7" ty="61.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-8.6" x2="-4.7" lz="-2.85" rz="-2.79" by="62.3" ty="62.2" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-7.4" x2="-4.7" lz="-1.51" rz="-1.45" by="62.3" ty="62.2" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-8.65" x2="-8.6" lz="-2.85" rz="-1.65" by="62.3" ty="62.2" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-8.6" x2="-7.4" lz="-0.16" rz="-0.09" by="62.3" ty="62.2" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-4.8" x2="-4.7" lz="-2.85" rz="-2.79" by="62.3" ty="61.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-4.8" x2="-4.7" lz="-1.51" rz="-1.45" by="62.3" ty="61.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-8.65" x2="-8.6" lz="-1.75" rz="-1.65" by="62.3" ty="61.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-7.5" x2="-7.4" lz="-0.16" rz="-0.09" by="62.3" ty="61.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-8.6" x2="-8.5" lz="-2.85" rz="-2.79" by="62.3" ty="61.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-7.4" x2="-7.3" lz="-1.51" rz="-1.45" by="62.3" ty="61.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-8.6" x2="-8.5" lz="-0.16" rz="-0.09" by="62.3" ty="61.6" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+
+
+
+<pillar refx="inrun" step="1" count="1" x1="-11.7" x2="-6.65" lz="1" rz="1.05" by="63.8" ty="63.1" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-9.4" x2="-6.65" lz="-0.16" rz="-0.09" by="63.8" ty="63.1" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-11.7" x2="-11.65" lz="-2.76" rz="1" by="63.8" ty="63.1" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-11.2" x2="-9.4" lz="-1.76" rz="-1.69" by="63.8" ty="63.1" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-11.7" x2="-11" lz="-2.76" rz="-2.69" by="63.8" ty="63.1" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-11.7" x2="-6.65" lz="1" rz="1.05" by="63.2" ty="63.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-9.4" x2="-6.65" lz="-0.16" rz="-0.09" zbias="2" by="63.2" ty="63.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-11.7" x2="-11.65" lz="-2.76" rz="1" by="63.2" ty="63.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-11.2" x2="-9.4" lz="-1.76" rz="-1.69" by="63.2" ty="63.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-11.7" x2="-11" lz="-2.76" rz="-2.69" by="63.2" ty="63.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-11.7" x2="-6.65" lz="1" rz="1.05" by="63.8" ty="63.7" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-9.4" x2="-6.65" lz="-0.16" rz="-0.09" by="63.8" ty="63.7" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-11.7" x2="-11.65" lz="-2.76" rz="1" by="63.8" ty="63.7" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-11.2" x2="-9.4" lz="-1.76" rz="-1.69" by="63.8" ty="63.7" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-11.7" x2="-11" lz="-2.76" rz="-2.69" by="63.8" ty="63.7" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-11.7" x2="-11.6" lz="1" rz="1.05" by="63.8" ty="63.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-9.4" x2="-9.3" lz="-0.16" rz="-0.09" by="63.8" ty="63.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-11.2" x2="-11.1" lz="-1.76" rz="-1.69" by="63.8" ty="63.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-11.7" x2="-11.6" lz="-2.76" rz="-2.69" by="63.8" ty="63.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-6.75" x2="-6.65" lz="1" rz="1.05" by="63.8" ty="63.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-6.75" x2="-6.65" lz="-0.16" rz="-0.09" by="63.8" ty="63.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-9.5" x2="-9.4" lz="-1.76" rz="-1.69" by="63.8" ty="63.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-11.1" x2="-11" lz="-2.76" rz="-2.69" by="63.8" ty="63.1" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+
+
+
+
+<pillar refx="inrun" step="1" count="1" x1="-11.2" x2="-8.6" lz="-0.05" rz="0" by="65.05" ty="64.35" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-11.2" x2="-11.15" lz="-1.7" rz="0" by="65.05" ty="64.35" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-8.65" x2="-8.6" lz="-0.45" rz="0" by="65.05" ty="64.35" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-8.65" x2="-8.6" lz="-1.7" rz="-1.1" by="65.05" ty="64.35" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-9" x2="-8.6" lz="-1.7" rz="-1.65" by="65.05" ty="64.35" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-8.95" x2="-9" lz="-2.7" rz="-1.65" by="65.05" ty="64.35" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/><pillar refx="inrun" step="1" count="1" x1="-10.15" x2="-9" lz="-2.7" rz="-2.65" by="65.05" ty="64.35" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/><pillar refx="inrun" zbias="2" step="1" count="1" x1="-11.2" x2="-8.6" lz="-0.05" rz="0" by="64.45" ty="64.35" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-11.2" x2="-11.15" lz="-1.7" rz="0" by="64.45" ty="64.35" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-8.65" x2="-8.6" lz="-0.45" rz="0" by="64.45" ty="64.35" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-8.65" x2="-8.6" lz="-1.7" rz="-1.1" by="64.45" ty="64.35" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-9" x2="-8.6" lz="-1.7" rz="-1.65" by="64.45" ty="64.35" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-8.95" x2="-9" lz="-2.7" rz="-1.65" by="64.45" ty="64.35" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/><pillar refx="inrun" zbias="2" step="1" count="1" x1="-10.15" x2="-9" lz="-2.7" rz="-2.65" by="64.45" ty="64.35" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-11.2" x2="-8.6" lz="-0.05" rz="0" by="65.05" ty="64.95" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-11.2" x2="-11.15" lz="-1.7" rz="0" by="65.05" ty="64.95" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-8.65" x2="-8.6" lz="-0.45" rz="0" by="65.05" ty="64.95" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-8.65" x2="-8.6" lz="-1.7" rz="-1.1" by="65.05" ty="64.95" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-9" x2="-8.6" lz="-1.7" rz="-1.65" by="65.05" ty="64.95" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-8.95" x2="-9" lz="-2.7" rz="-1.65" by="65.05" ty="64.95" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/><pillar refx="inrun" zbias="2" step="1" count="1" x1="-10.15" x2="-9" lz="-2.7" rz="-2.65" by="65.05" ty="64.95" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-8.7" x2="-8.6" lz="-0.05" rz="0" by="65.05" ty="64.35" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-11.2" x2="-11.15" lz="-1.7" rz="-1.6" by="65.05" ty="64.35" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-8.65" x2="-8.6" lz="-0.45" rz="-0.35" by="65.05" ty="64.35" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-8.65" x2="-8.6" lz="-1.7" rz="-1.6" by="65.05" ty="64.35" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-8.7" x2="-8.6" lz="-1.7" rz="-1.65" by="65.05" ty="64.35" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-8.7" x2="-8.6" lz="-1.15" rz="-1.1" by="65.05" ty="64.35" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/><pillar refx="inrun" zbias="2" step="1" count="1" x1="-8.95" x2="-9" lz="-2.7" rz="-2.6" by="65.05" ty="64.35" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-10.15" x2="-10.05" lz="-2.7" rz="-2.65" by="65.05" ty="64.35" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000"/> 
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-11.2" x2="-11.1" lz="-0.05" rz="0" by="65.05" ty="64.35" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-9" x2="-8.9" lz="-1.7" rz="-1.65" by="65.05" ty="64.35" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-9.1" x2="-9" lz="-2.7" rz="-2.65" by="65.05" ty="64.35" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+
+
+
+<pillar refx="inrun" step="1" count="1" x1="-3.1" x2="-1" lz="-1.7" rz="-1.65" by="55.45" ty="54.75" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" step="1" count="1" x1="-3.1" x2="-1" lz="-2.7" rz="-2.65" by="55.45" ty="54.75" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-3.1" x2="-1" lz="-1.7" rz="-1.65" by="54.85" ty="54.75" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-3.1" x2="-1" lz="-2.7" rz="-2.65" by="54.85" ty="54.75" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-3.1" x2="-1" lz="-1.7" rz="-1.65" by="55.45" ty="55.35" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-3.1" x2="-1" lz="-2.7" rz="-2.65" by="55.45" ty="55.35" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-3.1" x2="-3.0" lz="-1.7" rz="-1.65" by="55.45" ty="54.75" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-3.1" x2="-3.0" lz="-2.7" rz="-2.65" by="55.45" ty="54.75" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-1.1" x2="-1" lz="-1.7" rz="-1.65" by="55.45" ty="54.75" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+<pillar refx="inrun" zbias="2" step="1" count="1" x1="-1.1" x2="-1" lz="-2.7" rz="-2.65" by="55.45" ty="54.75" t="Textures\wood5.png" m="Materials\metal.xml" c="0x000000" pt="true"/>
+
+
+		
+
+	<pillar refx="inrun" x1="-8.5" x2="3.4" rz="-1.35" lz="-1.4" ty1="64.4" ty2="55.5" by1="65.1" by2="56.2" t="Textures\plate2.png" m="Materials\material1.xml" c="0xc6c6c6"/>	
+	<pillar refx="inrun" x1="-8.5" x2="3.4" rz="-0.2" lz="-0.25" ty1="64.4" ty2="55.5" by1="65.1" by2="56.2" t="Textures\plate2.png" m="Materials\material1.xml" c="0xc6c6c6"/>	
+	<pillar refx="inrun" zbias="2" x1="-8.5" x2="3.4" rz="-1.35" lz="-1.4" ty1="64.4" ty2="55.5" by1="64.5" by2="55.6" t="Textures\wood5.png" m="Materials\material1.xml" c="0x000000"/>	
+	<pillar refx="inrun" zbias="2" x1="-8.5" x2="3.4" rz="-0.2" lz="-0.25" ty1="64.4" ty2="55.5" by1="64.5" by2="55.6" t="Textures\wood5.png" m="Materials\material1.xml" c="0x000000"/>
+	<pillar refx="inrun" zbias="2" x1="-8.5" x2="3.4" rz="-1.35" lz="-1.4" ty1="65" ty2="56.1" by1="65.1" by2="56.2" t="Textures\wood5.png" m="Materials\material1.xml" c="0x000000"/>	
+	<pillar refx="inrun" zbias="2" x1="-8.5" x2="3.4" rz="-0.2" lz="-0.25" ty1="65" ty2="56.1" by1="65.1" by2="56.2" t="Textures\wood5.png" m="Materials\material1.xml" c="0x000000"/>
+	<pillar refx="inrun" zbias="2" x1="3.5" x2="3.4" rz="-1.35" lz="-1.4" ty="55.5" by="56.2" t="Textures\wood5.png" m="Materials\material1.xml" c="0x000000"/>	
+	<pillar refx="inrun" zbias="2" x1="3.5" x2="3.4" rz="-0.2" lz="-0.25" ty="55.5" by="56.2" t="Textures\wood5.png" m="Materials\material1.xml" c="0x000000"/>
+	<pillar refx="inrun" zbias="2" x1="-8.5" x2="-8.4" rz="-1.35" lz="-1.4" ty="64.4" by="65.1" t="Textures\wood5.png" m="Materials\material1.xml" c="0x000000"/>	
+	<pillar refx="inrun" zbias="2" x1="-8.5" x2="-8.4" rz="-0.2" lz="-0.25" ty="64.4" by="65.1" t="Textures\wood5.png" m="Materials\material1.xml" c="0x000000"/>
+
+
+
+   <stairs refx1="dhill" refx2="dhill" refy="dhill-top" refz="dhill-right" x1="0" x2="131" y1="0" y2="0" rz="-1.5" lz="-0.01" s="0.3" d="0.3" t1="Textures\grid.png" m1="Materials\material1.xml" c1="0xc7c7d9" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x808080"/>
+<pillar refx="inrun" step="1" count="1" x1="0.05" x2="0.1" lz="0" rz="1.2" by="56.6" ty="55.6" t="Textures\plate2.png" m="Materials\metal.xml" c="0xc6c6c6" pt="true"/>
+<!-- Distance markers generated by an application created by Marcin Przyby³a -->
+
+<!-- 3D models of numbers -->
+
+<3dmodel id="font-zero-l1">
+<batch id="zero-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="0.02878785" y="0.05901495" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="2" x="0.020871499999999998" y="0.03587675" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="3" x="0" y="0.027636449999999996" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="4" x="-0.020871499999999998" y="0.03587675" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="5" x="-0.02878785" y="0.05901495" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="6" x="-0.02878785" y="0.14595419999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="7" x="-0.020871499999999998" y="0.1690924" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="8" x="0" y="0.17733364999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="9" x="0.020871499999999998" y="0.1690924" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="10" x="0.02878785" y="0.14595419999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="11" x="-0.0581514" y="0.05728785" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="12" x="-0.0404111" y="0.0136382" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="13" x="0" y="-0.0017270999999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="14" x="0.0404111" y="0.0136382" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="15" x="0.0581514" y="0.05728785" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="16" x="0.0581514" y="0.14768225000000001" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="17" x="0.0404111" y="0.19133095" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="18" x="0" y="0.20669719999999997" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="19" x="-0.0404111" y="0.19133095" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="20" x="-0.0581514" y="0.14768225000000001" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<face v3="19" v2="17" v1="18" />
+<face v3="20" v2="7" v1="19" />
+<face v3="7" v2="8" v1="19" />
+<face v3="8" v2="17" v1="19" />
+<face v3="8" v2="9" v1="17" />
+<face v3="9" v2="16" v1="17" />
+<face v3="20" v2="6" v1="7" />
+<face v3="10" v2="16" v1="9" />
+<face v3="11" v2="6" v1="20" />
+<face v3="10" v2="15" v1="16" />
+<face v3="11" v2="5" v1="6" />
+<face v3="1" v2="15" v1="10" />
+<face v3="11" v2="4" v1="5" />
+<face v3="2" v2="15" v1="1" />
+<face v3="12" v2="4" v1="11" />
+<face v3="2" v2="14" v1="15" />
+<face v3="12" v2="3" v1="4" />
+<face v3="3" v2="14" v1="2" />
+<face v3="12" v2="14" v1="3" />
+<face v3="12" v2="13" v1="14" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-zero-r1">
+<batch id="zero-r" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="0.02878785" y="0.05901495" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="2" x="0.020871499999999998" y="0.03587675" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="3" x="0" y="0.027636449999999996" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="4" x="-0.020871499999999998" y="0.03587675" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="5" x="-0.02878785" y="0.05901495" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="6" x="-0.02878785" y="0.14595419999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="7" x="-0.020871499999999998" y="0.1690924" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="8" x="0" y="0.17733364999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="9" x="0.020871499999999998" y="0.1690924" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="10" x="0.02878785" y="0.14595419999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="11" x="-0.0581514" y="0.05728785" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="12" x="-0.0404111" y="0.0136382" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="13" x="0" y="-0.0017270999999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="14" x="0.0404111" y="0.0136382" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="15" x="0.0581514" y="0.05728785" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="16" x="0.0581514" y="0.14768225000000001" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="17" x="0.0404111" y="0.19133095" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="18" x="0" y="0.20669719999999997" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="19" x="-0.0404111" y="0.19133095" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="20" x="-0.0581514" y="0.14768225000000001" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<face v1="19" v2="17" v3="18" />
+<face v1="20" v2="7" v3="19" />
+<face v1="7" v2="8" v3="19" />
+<face v1="8" v2="17" v3="19" />
+<face v1="8" v2="9" v3="17" />
+<face v1="9" v2="16" v3="17" />
+<face v1="20" v2="6" v3="7" />
+<face v1="10" v2="16" v3="9" />
+<face v1="11" v2="6" v3="20" />
+<face v1="10" v2="15" v3="16" />
+<face v1="11" v2="5" v3="6" />
+<face v1="1" v2="15" v3="10" />
+<face v1="11" v2="4" v3="5" />
+<face v1="2" v2="15" v3="1" />
+<face v1="12" v2="4" v3="11" />
+<face v1="2" v2="14" v3="15" />
+<face v1="12" v2="3" v3="4" />
+<face v1="3" v2="14" v3="2" />
+<face v1="12" v2="14" v3="3" />
+<face v1="12" v2="13" v3="14" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-one-r1">
+<batch id="one-r" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="0.01324205" y="0" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="2" x="-0.016121499999999997" y="0" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="3" x="-0.016121499999999997" y="0.2049701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="4" x="0.01324205" y="0.2049701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="5" x="0.04231775" y="0.18366635" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="6" x="0.04231775" y="0.15257569999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="7" x="0.01324205" y="0.1738785" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<face v3="5" v2="3" v1="4"/>
+<face v3="5" v2="7" v1="3"/>
+<face v3="7" v2="2" v1="3"/>
+<face v3="6" v2="7" v1="5"/>
+<face v3="1" v2="2" v1="7"/>
+</batch>
+</3dmodel>
+
+<3dmodel id="font-one-l1">
+<batch id="one-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="-0.01324205" y="0" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="2" x="0.016121499999999997" y="0" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="3" x="0.016121499999999997" y="0.2049701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="4" x="-0.01324205" y="0.2049701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="5" x="-0.04231775" y="0.18366635" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="6" x="-0.04231775" y="0.15257569999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="7" x="-0.01324205" y="0.1738785" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<face v3="5" v2="3" v1="4"/>
+<face v3="5" v2="7" v1="3"/>
+<face v3="7" v2="2" v1="3"/>
+<face v3="6" v2="7" v1="5"/>
+<face v3="1" v2="2" v1="7"/>
+</batch>
+</3dmodel>
+	 
+<3dmodel id="font-two-l1">
+<batch id="two-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0" staticligthing="true">
+<vertex id="1" x="-0.0598785" y="0" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="2" x="0.056999999999999995" y="0" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="3" x="0.056999999999999995" y="0.02936355" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="4" x="-0.0213028" y="0.02936355" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="5" x="0.044621499999999995" y="0.11198504999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="6" x="0.054049299999999995" y="0.12889789999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="7" x="0.056999999999999995" y="0.1479701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="8" x="0.039907599999999994" y="0.1895326" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="9" x="-0.0028785" y="0.20669719999999997" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="10" x="-0.0428222" y="0.18971215" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="11" x="-0.0598785" y="0.14768225000000001" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="12" x="-0.030514949999999996" y="0.14768225000000001" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="13" x="-0.020942749999999996" y="0.16941635" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="14" x="-0.0005757" y="0.17733364999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="15" x="0.0201153" y="0.16819275" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="16" x="0.027636449999999996" y="0.14825795" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="17" x="0.0262694" y="0.1387931" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="18" x="0.0201514" y="0.12781774999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="19" x="-0.0598785" y="0.027636449999999996" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<face v3="10" v2="8" v1="9" />
+<face v3="11" v2="13" v1="10" />
+<face v3="13" v2="14" v1="10" />
+<face v3="14" v2="8" v1="10" />
+<face v3="14" v2="15" v1="8" />
+<face v3="15" v2="7" v1="8" />
+<face v3="11" v2="12" v1="13" />
+<face v3="16" v2="7" v1="15" />
+<face v3="17" v2="7" v1="16" />
+<face v3="17" v2="6" v1="7" />
+<face v3="18" v2="6" v1="17" />
+<face v3="18" v2="5" v1="6" />
+<face v3="19" v2="5" v1="18" />
+<face v3="19" v2="4" v1="5" />
+<face v3="19" v2="3" v1="4" />
+<face v3="19" v2="2" v1="3" />
+<face v3="1" v2="2" v1="19" />
+</batch>
+</3dmodel>
+ 
+<3dmodel id="font-two-r1">
+<batch id="two-r" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0" staticligthing="true">
+<vertex id="1" x="0.0598785" y="0" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="2" x="-0.056999999999999995" y="0" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="3" x="-0.056999999999999995" y="0.02936355" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="4" x="0.0213028" y="0.02936355" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="5" x="-0.044621499999999995" y="0.11198504999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="6" x="-0.054049299999999995" y="0.12889789999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="7" x="-0.056999999999999995" y="0.1479701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="8" x="-0.039907599999999994" y="0.1895326" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="9" x="0.0028785" y="0.20669719999999997" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="10" x="0.0428222" y="0.18971215" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="11" x="0.0598785" y="0.14768225000000001" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="12" x="0.030514949999999996" y="0.14768225000000001" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="13" x="0.020942749999999996" y="0.16941635" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="14" x="0.0005757" y="0.17733364999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="15" x="-0.0201153" y="0.16819275" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="16" x="-0.027636449999999996" y="0.14825795" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="17" x="-0.0262694" y="0.1387931" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="18" x="-0.0201514" y="0.12781774999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="19" x="0.0598785" y="0.027636449999999996" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<face v3="10" v2="8" v1="9" />
+<face v3="11" v2="13" v1="10" />
+<face v3="13" v2="14" v1="10" />
+<face v3="14" v2="8" v1="10" />
+<face v3="14" v2="15" v1="8" />
+<face v3="15" v2="7" v1="8" />
+<face v3="11" v2="12" v1="13" />
+<face v3="16" v2="7" v1="15" />
+<face v3="17" v2="7" v1="16" />
+<face v3="17" v2="6" v1="7" />
+<face v3="18" v2="6" v1="17" />
+<face v3="18" v2="5" v1="6" />
+<face v3="19" v2="5" v1="18" />
+<face v3="19" v2="4" v1="5" />
+<face v3="19" v2="3" v1="4" />
+<face v3="19" v2="2" v1="3" />
+<face v3="1" v2="2" v1="19" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-three-l1">
+<batch id="three-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="-0.0184243" y="0.0926972" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="2" x="-0.0060458" y="0.0926972" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="3" x="0.01626495" y="0.08409685" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="4" x="0.0256215" y="0.06016635" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="5" x="0.01622885" y="0.0363451" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="6" x="-0.0054700999999999994" y="0.027636449999999996" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="7" x="-0.024937499999999998" y="0.03400525" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="8" x="-0.035985050000000005" y="0.0509542" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="9" x="-0.06534859999999999" y="0.0509542" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="10" x="-0.0445854" y="0.0117667" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="11" x="-0.0071972" y="-0.0017270999999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="12" x="0.0369569" y="0.015401399999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="13" x="0.05498505" y="0.06102989999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="14" x="0.0493715" y="0.0856444" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="15" x="0.030802799999999998" y="0.10593925" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="16" x="0.048111799999999996" y="0.1253715" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="17" x="0.05268224999999999" y="0.14825795" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="18" x="0.0361646" y="0.1887042" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="19" x="-0.007772899999999999" y="0.20669719999999997" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="20" x="-0.04602464999999999" y="0.19053959999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="21" x="-0.0641972" y="0.15257569999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="22" x="-0.034833649999999994" y="0.15257569999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="23" x="-0.02418225" y="0.17121565" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="24" x="-0.006621499999999999" y="0.17733364999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="25" x="0.01450175" y="0.16876845" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="26" x="0.023317749999999998" y="0.14768225000000001" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="27" x="0.014825699999999999" y="0.12688295" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="28" x="-0.0083486" y="0.11860559999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="29" x="-0.0184243" y="0.11860559999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<face v3="20" v2="18" v1="19" />
+<face v3="21" v2="23" v1="20" />
+<face v3="23" v2="24" v1="20" />
+<face v3="24" v2="18" v1="20" />
+<face v3="24" v2="25" v1="18" />
+<face v3="25" v2="17" v1="18" />
+<face v3="21" v2="22" v1="23" />
+<face v3="26" v2="17" v1="25" />
+<face v3="26" v2="16" v1="17" />
+<face v3="27" v2="16" v1="26" />
+<face v3="28" v2="16" v1="27" />
+<face v3="28" v2="15" v1="16" />
+<face v3="1" v2="28" v1="29" />
+<face v3="1" v2="15" v1="28" />
+<face v3="1" v2="2" v1="15" />
+<face v3="2" v2="14" v1="15" />
+<face v3="3" v2="14" v1="2" />
+<face v3="3" v2="13" v1="14" />
+<face v3="4" v2="13" v1="3" />
+<face v3="4" v2="12" v1="13" />
+<face v3="5" v2="12" v1="4" />
+<face v3="10" v2="8" v1="9" />
+<face v3="10" v2="7" v1="8" />
+<face v3="6" v2="12" v1="5" />
+<face v3="10" v2="6" v1="7" />
+<face v3="10" v2="12" v1="6" />
+<face v3="10" v2="11" v1="12" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-three-r1">
+<batch id="three-r" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="0.0184243" y="0.0926972" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="2" x="0.0060458" y="0.0926972" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="3" x="-0.01626495" y="0.08409685" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="4" x="-0.0256215" y="0.06016635" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="5" x="-0.01622885" y="0.0363451" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="6" x="0.0054700999999999994" y="0.027636449999999996" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="7" x="0.024937499999999998" y="0.03400525" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="8" x="0.035985050000000005" y="0.0509542" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="9" x="0.06534859999999999" y="0.0509542" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="10" x="0.0445854" y="0.0117667" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="11" x="0.0071972" y="-0.0017270999999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="12" x="-0.0369569" y="0.015401399999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="13" x="-0.05498505" y="0.06102989999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="14" x="-0.0493715" y="0.0856444" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="15" x="-0.030802799999999998" y="0.10593925" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="16" x="-0.048111799999999996" y="0.1253715" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="17" x="-0.05268224999999999" y="0.14825795" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="18" x="-0.0361646" y="0.1887042" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="19" x="0.007772899999999999" y="0.20669719999999997" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="20" x="0.04602464999999999" y="0.19053959999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="21" x="0.0641972" y="0.15257569999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="22" x="0.034833649999999994" y="0.15257569999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="23" x="0.02418225" y="0.17121565" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="24" x="0.006621499999999999" y="0.17733364999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="25" x="-0.01450175" y="0.16876845" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="26" x="-0.023317749999999998" y="0.14768225000000001" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="27" x="-0.014825699999999999" y="0.12688295" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="28" x="0.0083486" y="0.11860559999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="29" x="0.0184243" y="0.11860559999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<face v3="20" v2="18" v1="19" />
+<face v3="21" v2="23" v1="20" />
+<face v3="23" v2="24" v1="20" />
+<face v3="24" v2="18" v1="20" />
+<face v3="24" v2="25" v1="18" />
+<face v3="25" v2="17" v1="18" />
+<face v3="21" v2="22" v1="23" />
+<face v3="26" v2="17" v1="25" />
+<face v3="26" v2="16" v1="17" />
+<face v3="27" v2="16" v1="26" />
+<face v3="28" v2="16" v1="27" />
+<face v3="28" v2="15" v1="16" />
+<face v3="1" v2="28" v1="29" />
+<face v3="1" v2="15" v1="28" />
+<face v3="1" v2="2" v1="15" />
+<face v3="2" v2="14" v1="15" />
+<face v3="3" v2="14" v1="2" />
+<face v3="3" v2="13" v1="14" />
+<face v3="4" v2="13" v1="3" />
+<face v3="4" v2="12" v1="13" />
+<face v3="5" v2="12" v1="4" />
+<face v3="10" v2="8" v1="9" />
+<face v3="10" v2="7" v1="8" />
+<face v3="6" v2="12" v1="5" />
+<face v3="10" v2="6" v1="7" />
+<face v3="10" v2="12" v1="6" />
+<face v3="10" v2="11" v1="12" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-four-l1">
+<batch id="four-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="-0.06563645" y="0.030514949999999996" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="2" x="0.01986355" y="0.030514949999999996" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="3" x="0.01986355" y="0" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="4" x="0.0492271" y="0" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="5" x="0.0492271" y="0.030514949999999996" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="6" x="0.06563645" y="0.030514949999999996" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="7" x="0.06563645" y="0.0581514" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="8" x="0.0492271" y="0.0581514" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="9" x="0.0492271" y="0.11716634999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="10" x="0.01986355" y="0.11716634999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="11" x="0.01986355" y="0.0581514" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="12" x="-0.03368225" y="0.0581514" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="13" x="0.0356972" y="0.2049701" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="14" x="0.0028785" y="0.2049701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="15" x="-0.06563645" y="0.0581514" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<face v3="15" v2="13" v1="14" />
+<face v3="15" v2="12" v1="13" />
+<face v3="11" v2="9" v1="10" />
+<face v3="11" v2="8" v1="9" />
+<face v3="1" v2="12" v1="15" />
+<face v3="1" v2="11" v1="12" />
+<face v3="1" v2="8" v1="11" />
+<face v3="1" v2="7" v1="8" />
+<face v3="1" v2="6" v1="7" />
+<face v3="2" v2="6" v1="1" />
+<face v3="3" v2="5" v1="2" />
+<face v3="5" v2="6" v1="2" />
+<face v3="3" v2="4" v1="5" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-four-r1">
+<batch id="four-r" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="0.06563645" y="0.030514949999999996" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="2" x="-0.01986355" y="0.030514949999999996" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="3" x="-0.01986355" y="0" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="4" x="-0.0492271" y="0" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="5" x="-0.0492271" y="0.030514949999999996" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="6" x="-0.06563645" y="0.030514949999999996" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="7" x="-0.06563645" y="0.0581514" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="8" x="-0.0492271" y="0.0581514" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="9" x="-0.0492271" y="0.11716634999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="10" x="-0.01986355" y="0.11716634999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="11" x="-0.01986355" y="0.0581514" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="12" x="0.03368225" y="0.0581514" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="13" x="-0.0356972" y="0.2049701" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="14" x="-0.0028785" y="0.2049701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="15" x="0.06563645" y="0.0581514" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<face v3="15" v2="13" v1="14" />
+<face v3="15" v2="12" v1="13" />
+<face v3="11" v2="9" v1="10" />
+<face v3="11" v2="8" v1="9" />
+<face v3="1" v2="12" v1="15" />
+<face v3="1" v2="11" v1="12" />
+<face v3="1" v2="8" v1="11" />
+<face v3="1" v2="7" v1="8" />
+<face v3="1" v2="6" v1="7" />
+<face v3="2" v2="6" v1="1" />
+<face v3="3" v2="5" v1="2" />
+<face v3="5" v2="6" v1="2" />
+<face v3="3" v2="4" v1="5" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-five-l1">
+<batch id="five-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="-0.0546972" y="0.09413645" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="2" x="-0.027060749999999998" y="0.09413645" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="3" x="-0.0154375" y="0.10727115" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="4" x="-0.0005757" y="0.1111215" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="5" x="0.023317749999999998" y="0.09992955" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="6" x="0.0290757" y="0.07168224999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="7" x="0.0254771" y="0.04242604999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="8" x="0.00028785" y="0.027636449999999996" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="9" x="-0.01936005" y="0.034077449999999995" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="10" x="-0.0290757" y="0.0515299" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="11" x="-0.05843925" y="0.0515299" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="12" x="-0.0368125" y="0.0105431" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="13" x="0.00143925" y="-0.0017270999999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="14" x="0.02813995" y="0.0052174000000000005" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="15" x="0.0457729" y="0.0201514" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="16" x="0.05545244999999999" y="0.0387201" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="17" x="0.05843925" y="0.0693785" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="18" x="0.054588899999999996" y="0.1056514" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="19" x="0.04231775" y="0.12551495" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="20" x="0.027060749999999998" y="0.1360229" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="21" x="0.00575795" y="0.14048505" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="22" x="-0.011730599999999999" y="0.1377861" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="23" x="-0.027060749999999998" y="0.12925794999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="24" x="-0.027060749999999998" y="0.1756056" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="25" x="0.054409349999999995" y="0.1756056" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="26" x="0.054409349999999995" y="0.2049701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="27" x="-0.0546972" y="0.2049701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<face v3="1" v2="24" v1="27" />
+<face v3="24" v2="26" v1="27" />
+<face v3="24" v2="25" v1="26" />
+<face v3="1" v2="23" v1="24" />
+<face v3="22" v2="20" v1="21" />
+<face v3="23" v2="20" v1="22" />
+<face v3="23" v2="19" v1="20" />
+<face v3="1" v2="3" v1="23" />
+<face v3="3" v2="19" v1="23" />
+<face v3="3" v2="4" v1="19" />
+<face v3="4" v2="18" v1="19" />
+<face v3="5" v2="18" v1="4" />
+<face v3="1" v2="2" v1="3" />
+<face v3="5" v2="17" v1="18" />
+<face v3="6" v2="17" v1="5" />
+<face v3="7" v2="17" v1="6" />
+<face v3="7" v2="16" v1="17" />
+<face v3="12" v2="10" v1="11" />
+<face v3="12" v2="9" v1="10" />
+<face v3="8" v2="16" v1="7" />
+<face v3="8" v2="15" v1="16" />
+<face v3="12" v2="8" v1="9" />
+<face v3="12" v2="15" v1="8" />
+<face v3="12" v2="14" v1="15" />
+<face v3="13" v2="14" v1="12" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-five-r1">
+<batch id="five-r" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="0.0546972" y="0.09413645" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="2" x="0.027060749999999998" y="0.09413645" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="3" x="0.0154375" y="0.10727115" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="4" x="0.0005757" y="0.1111215" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="5" x="-0.023317749999999998" y="0.09992955" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="6" x="-0.0290757" y="0.07168224999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="7" x="-0.0254771" y="0.04242604999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="8" x="-0.00028785" y="0.027636449999999996" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="9" x="0.01936005" y="0.034077449999999995" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="10" x="0.0290757" y="0.0515299" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="11" x="0.05843925" y="0.0515299" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="12" x="0.0368125" y="0.0105431" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="13" x="-0.00143925" y="-0.0017270999999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="14" x="-0.02813995" y="0.0052174000000000005" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="15" x="-0.0457729" y="0.0201514" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="16" x="-0.05545244999999999" y="0.0387201" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="17" x="-0.05843925" y="0.0693785" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="18" x="-0.054588899999999996" y="0.1056514" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="19" x="-0.04231775" y="0.12551495" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="20" x="-0.027060749999999998" y="0.1360229" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="21" x="-0.00575795" y="0.14048505" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="22" x="0.011730599999999999" y="0.1377861" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="23" x="0.027060749999999998" y="0.12925794999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="24" x="0.027060749999999998" y="0.1756056" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="25" x="-0.054409349999999995" y="0.1756056" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="26" x="-0.054409349999999995" y="0.2049701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="27" x="0.0546972" y="0.2049701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<face v3="1" v2="24" v1="27" />
+<face v3="24" v2="26" v1="27" />
+<face v3="24" v2="25" v1="26" />
+<face v3="1" v2="23" v1="24" />
+<face v3="22" v2="20" v1="21" />
+<face v3="23" v2="20" v1="22" />
+<face v3="23" v2="19" v1="20" />
+<face v3="1" v2="3" v1="23" />
+<face v3="3" v2="19" v1="23" />
+<face v3="3" v2="4" v1="19" />
+<face v3="4" v2="18" v1="19" />
+<face v3="5" v2="18" v1="4" />
+<face v3="1" v2="2" v1="3" />
+<face v3="5" v2="17" v1="18" />
+<face v3="6" v2="17" v1="5" />
+<face v3="7" v2="17" v1="6" />
+<face v3="7" v2="16" v1="17" />
+<face v3="12" v2="10" v1="11" />
+<face v3="12" v2="9" v1="10" />
+<face v3="8" v2="16" v1="7" />
+<face v3="8" v2="15" v1="16" />
+<face v3="12" v2="8" v1="9" />
+<face v3="12" v2="15" v1="8" />
+<face v3="12" v2="14" v1="15" />
+<face v3="13" v2="14" v1="12" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-six-l1">
+<batch id="six-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="-0.0509542" y="0.095" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="2" x="-0.05678435" y="0.0785194" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="3" x="-0.0587271" y="0.06074204999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="4" x="-0.0409146" y="0.015041349999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="5" x="-0.0017270999999999999" y="-0.0017194999999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="6" x="0.03994275" y="0.01349475" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="7" x="0.0587271" y="0.06390934999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="8" x="0.0439736" y="0.10730724999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="9" x="0.009787849999999999" y="0.12090934999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="10" x="0.0017993" y="0.12026145" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="11" x="-0.00575795" y="0.11831775" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="12" x="-0.00633365" y="0.11831775" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="13" x="0.0368486" y="0.2049701" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="14" x="0.0040299" y="0.2049701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="15" x="0" y="0.095" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="16" x="0.0207271" y="0.08679579999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="17" x="0.02936355" y="0.061317750000000004" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="18" x="0.01975525" y="0.035301049999999994" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="19" x="0" y="0.027636449999999996" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="20" x="-0.021374999999999998" y="0.035840649999999995" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="21" x="-0.02936355" y="0.061317750000000004" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="22" x="-0.0207271" y="0.08679579999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<face v3="1" v2="13" v1="14" />
+<face v3="1" v2="12" v1="13" />
+<face v3="10" v2="8" v1="9" />
+<face v3="11" v2="8" v1="10" />
+<face v3="1" v2="11" v1="12" />
+<face v3="1" v2="8" v1="11" />
+<face v3="1" v2="15" v1="8" />
+<face v3="15" v2="16" v1="8" />
+<face v3="16" v2="7" v1="8" />
+<face v3="2" v2="15" v1="1" />
+<face v3="2" v2="22" v1="15" />
+<face v3="2" v2="21" v1="22" />
+<face v3="17" v2="7" v1="16" />
+<face v3="3" v2="21" v1="2" />
+<face v3="17" v2="6" v1="7" />
+<face v3="3" v2="20" v1="21" />
+<face v3="18" v2="6" v1="17" />
+<face v3="4" v2="20" v1="3" />
+<face v3="4" v2="19" v1="20" />
+<face v3="19" v2="6" v1="18" />
+<face v3="4" v2="6" v1="19" />
+<face v3="5" v2="6" v1="4" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-six-r1">
+<batch id="six-r" zbias="3"  texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="0.0509542" y="0.095" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="2" x="0.05678435" y="0.0785194" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="3" x="0.0587271" y="0.06074204999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="4" x="0.0409146" y="0.015041349999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="5" x="0.0017270999999999999" y="-0.0017194999999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="6" x="-0.03994275" y="0.01349475" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="7" x="-0.0587271" y="0.06390934999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="8" x="-0.0439736" y="0.10730724999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="9" x="-0.009787849999999999" y="0.12090934999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="10" x="-0.0017993" y="0.12026145" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="11" x="0.00575795" y="0.11831775" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="12" x="0.00633365" y="0.11831775" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="13" x="-0.0368486" y="0.2049701" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="14" x="-0.0040299" y="0.2049701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="15" x="0" y="0.095" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="16" x="-0.0207271" y="0.08679579999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="17" x="-0.02936355" y="0.061317750000000004" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="18" x="-0.01975525" y="0.035301049999999994" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="19" x="0" y="0.027636449999999996" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="20" x="0.021374999999999998" y="0.035840649999999995" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="21" x="0.02936355" y="0.061317750000000004" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="22" x="0.0207271" y="0.08679579999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<face v3="1" v2="13" v1="14" />
+<face v3="1" v2="12" v1="13" />
+<face v3="10" v2="8" v1="9" />
+<face v3="11" v2="8" v1="10" />
+<face v3="1" v2="11" v1="12" />
+<face v3="1" v2="8" v1="11" />
+<face v3="1" v2="15" v1="8" />
+<face v3="15" v2="16" v1="8" />
+<face v3="16" v2="7" v1="8" />
+<face v3="2" v2="15" v1="1" />
+<face v3="2" v2="22" v1="15" />
+<face v3="2" v2="21" v1="22" />
+<face v3="17" v2="7" v1="16" />
+<face v3="3" v2="21" v1="2" />
+<face v3="17" v2="6" v1="7" />
+<face v3="3" v2="20" v1="21" />
+<face v3="18" v2="6" v1="17" />
+<face v3="4" v2="20" v1="3" />
+<face v3="4" v2="19" v1="20" />
+<face v3="19" v2="6" v1="18" />
+<face v3="4" v2="6" v1="19" />
+<face v3="5" v2="6" v1="4" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-seven-l1">
+<batch id="seven-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="-0.054409349999999995" y="0.14595419999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="2" x="-0.025045799999999997" y="0.14595419999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="3" x="-0.025045799999999997" y="0.1756056" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="4" x="0.02936355" y="0.1756056" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="5" x="-0.040014949999999994" y="0" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="6" x="-0.0071972" y="0" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="7" x="0.062182249999999994" y="0.1756056" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="8" x="0.062182249999999994" y="0.2049701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="9" x="-0.054409349999999995" y="0.2049701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<face v3="1" v2="3" v1="9" />
+<face v3="3" v2="8" v1="9" />
+<face v3="3" v2="7" v1="8" />
+<face v3="1" v2="2" v1="3" />
+<face v3="4" v2="7" v1="3" />
+<face v3="5" v2="7" v1="4" />
+<face v3="5" v2="6" v1="7" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-seven-r1">
+<batch id="seven-r" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="0.054409349999999995" y="0.14595419999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="2" x="0.025045799999999997" y="0.14595419999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="3" x="0.025045799999999997" y="0.1756056" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="4" x="-0.02936355" y="0.1756056" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="5" x="0.040014949999999994" y="0" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="6" x="0.0071972" y="0" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="7" x="-0.062182249999999994" y="0.1756056" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="8" x="-0.062182249999999994" y="0.2049701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="9" x="0.054409349999999995" y="0.2049701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<face v3="1" v2="3" v1="9" />
+<face v3="3" v2="8" v1="9" />
+<face v3="3" v2="7" v1="8" />
+<face v3="1" v2="2" v1="3" />
+<face v3="4" v2="7" v1="3" />
+<face v3="5" v2="7" v1="4" />
+<face v3="5" v2="6" v1="7" />
+</batch>
+</3dmodel>
+	
+<3dmodel id="font-eight-l1">
+<batch id="eight-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="-0.02936355" y="0.1479701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="2" x="-0.0202958" y="0.1698847" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="3" x="0" y="0.17733364999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="4" x="0.0202958" y="0.1698847" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="5" x="0.02936355" y="0.1479701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="6" x="0.0202958" y="0.12605455" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="7" x="0" y="0.11860559999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="8" x="-0.0202958" y="0.12605455" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="9" x="-0.062470099999999994" y="0.0598785" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="10" x="-0.0439736" y="0.015473599999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="11" x="0" y="-0.0017270999999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="12" x="0.0439736" y="0.015473599999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="13" x="0.062470099999999994" y="0.0598785" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="14" x="0.05620864999999999" y="0.08625524999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="15" x="0.03828785" y="0.10593925" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="16" x="0.05304135" y="0.1240757" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="17" x="0.0587271" y="0.14739345" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="18" x="0.04177815" y="0.1894604" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="19" x="0" y="0.20669719999999997" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="20" x="-0.04177815" y="0.1894604" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="21" x="-0.0587271" y="0.14739345" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="22" x="-0.05304135" y="0.1240757" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="23" x="-0.03828785" y="0.10593925" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="24" x="-0.05620864999999999" y="0.08625524999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="25" x="-0.0331056" y="0.06016635" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="26" x="-0.023138199999999998" y="0.08344895" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="27" x="0" y="0.0926972" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="28" x="0.023138199999999998" y="0.08344895" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="29" x="0.0331056" y="0.06016635" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="30" x="0.023138199999999998" y="0.0368847" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="31" x="0" y="0.027636449999999996" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="32" x="-0.023138199999999998" y="0.0368847" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<face v3="20" v2="18" v1="19" />
+<face v3="21" v2="2" v1="20" />
+<face v3="2" v2="3" v1="20" />
+<face v3="3" v2="18" v1="20" />
+<face v3="3" v2="4" v1="18" />
+<face v3="4" v2="17" v1="18" />
+<face v3="21" v2="1" v1="2" />
+<face v3="5" v2="17" v1="4" />
+<face v3="21" v2="8" v1="1" />
+<face v3="6" v2="17" v1="5" />
+<face v3="22" v2="8" v1="21" />
+<face v3="6" v2="16" v1="17" />
+<face v3="22" v2="7" v1="8" />
+<face v3="7" v2="16" v1="6" />
+<face v3="23" v2="7" v1="22" />
+<face v3="7" v2="15" v1="16" />
+<face v3="23" v2="15" v1="7" />
+<face v3="24" v2="15" v1="23" />
+<face v3="24" v2="27" v1="15" />
+<face v3="27" v2="14" v1="15" />
+<face v3="24" v2="26" v1="27" />
+<face v3="28" v2="14" v1="27" />
+<face v3="9" v2="26" v1="24" />
+<face v3="28" v2="13" v1="14" />
+<face v3="9" v2="25" v1="26" />
+<face v3="29" v2="13" v1="28" />
+<face v3="9" v2="32" v1="25" />
+<face v3="30" v2="13" v1="29" />
+<face v3="10" v2="32" v1="9" />
+<face v3="30" v2="12" v1="13" />
+<face v3="10" v2="31" v1="32" />
+<face v3="31" v2="12" v1="30" />
+<face v3="10" v2="12" v1="31" />
+<face v3="10" v2="11" v1="12" />
+</batch>
+</3dmodel>
+	
+<3dmodel id="font-eight-r1">
+<batch id="eight-r" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="0.02936355" y="0.1479701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="2" x="0.0202958" y="0.1698847" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="3" x="0" y="0.17733364999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="4" x="-0.0202958" y="0.1698847" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="5" x="-0.02936355" y="0.1479701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="6" x="-0.0202958" y="0.12605455" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="7" x="0" y="0.11860559999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="8" x="0.0202958" y="0.12605455" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="9" x="0.062470099999999994" y="0.0598785" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="10" x="0.0439736" y="0.015473599999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="11" x="0" y="-0.0017270999999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="12" x="-0.0439736" y="0.015473599999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="13" x="-0.062470099999999994" y="0.0598785" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="14" x="-0.05620864999999999" y="0.08625524999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="15" x="-0.03828785" y="0.10593925" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="16" x="-0.05304135" y="0.1240757" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="17" x="-0.0587271" y="0.14739345" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="18" x="-0.04177815" y="0.1894604" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="19" x="0" y="0.20669719999999997" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="20" x="0.04177815" y="0.1894604" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="21" x="0.0587271" y="0.14739345" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="22" x="0.05304135" y="0.1240757" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="23" x="0.03828785" y="0.10593925" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="24" x="0.05620864999999999" y="0.08625524999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="25" x="0.0331056" y="0.06016635" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="26" x="0.023138199999999998" y="0.08344895" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="27" x="0" y="0.0926972" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="28" x="-0.023138199999999998" y="0.08344895" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="29" x="-0.0331056" y="0.06016635" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="30" x="-0.023138199999999998" y="0.0368847" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="31" x="0" y="0.027636449999999996" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="32" x="0.023138199999999998" y="0.0368847" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<face v3="20" v2="18" v1="19" />
+<face v3="21" v2="2" v1="20" />
+<face v3="2" v2="3" v1="20" />
+<face v3="3" v2="18" v1="20" />
+<face v3="3" v2="4" v1="18" />
+<face v3="4" v2="17" v1="18" />
+<face v3="21" v2="1" v1="2" />
+<face v3="5" v2="17" v1="4" />
+<face v3="21" v2="8" v1="1" />
+<face v3="6" v2="17" v1="5" />
+<face v3="22" v2="8" v1="21" />
+<face v3="6" v2="16" v1="17" />
+<face v3="22" v2="7" v1="8" />
+<face v3="7" v2="16" v1="6" />
+<face v3="23" v2="7" v1="22" />
+<face v3="7" v2="15" v1="16" />
+<face v3="23" v2="15" v1="7" />
+<face v3="24" v2="15" v1="23" />
+<face v3="24" v2="27" v1="15" />
+<face v3="27" v2="14" v1="15" />
+<face v3="24" v2="26" v1="27" />
+<face v3="28" v2="14" v1="27" />
+<face v3="9" v2="26" v1="24" />
+<face v3="28" v2="13" v1="14" />
+<face v3="9" v2="25" v1="26" />
+<face v3="29" v2="13" v1="28" />
+<face v3="9" v2="32" v1="25" />
+<face v3="30" v2="13" v1="29" />
+<face v3="10" v2="32" v1="9" />
+<face v3="30" v2="12" v1="13" />
+<face v3="10" v2="31" v1="32" />
+<face v3="31" v2="12" v1="30" />
+<face v3="10" v2="12" v1="31" />
+<face v3="10" v2="11" v1="12" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-nine-l1">
+<batch id="nine-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="0.0509542" y="0.1099701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="2" x="0.05678435" y="0.1264507" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="3" x="0.0587271" y="0.1442271" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="4" x="0.0409146" y="0.18992779999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="5" x="0.0017270999999999999" y="0.20669719999999997" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="6" x="-0.03994275" y="0.19147535" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="7" x="-0.0587271" y="0.14106075" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="8" x="-0.0439736" y="0.09766285" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="9" x="-0.009787849999999999" y="0.08406074999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="10" x="-0.0017993" y="0.08470865" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="11" x="0.00575795" y="0.0866514" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="12" x="0.00633365" y="0.0866514" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="13" x="-0.0368486" y="0" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="14" x="-0.0040299" y="0" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="15" x="0" y="0.1099701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="16" x="-0.0207271" y="0.1181743" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="17" x="-0.02936355" y="0.1436514" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="18" x="-0.01975525" y="0.1696681" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="19" x="0" y="0.17733364999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="20" x="0.021374999999999998" y="0.1691285" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="21" x="0.02936355" y="0.1436514" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="22" x="0.0207271" y="0.1181743" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<face v3="6" v2="4" v1="5" />
+<face v3="7" v2="18" v1="6" />
+<face v3="18" v2="19" v1="6" />
+<face v3="19" v2="4" v1="6" />
+<face v3="19" v2="20" v1="4" />
+<face v3="20" v2="3" v1="4" />
+<face v3="7" v2="17" v1="18" />
+<face v3="21" v2="3" v1="20" />
+<face v3="21" v2="2" v1="3" />
+<face v3="7" v2="16" v1="17" />
+<face v3="22" v2="2" v1="21" />
+<face v3="8" v2="16" v1="7" />
+<face v3="22" v2="1" v1="2" />
+<face v3="8" v2="15" v1="16" />
+<face v3="15" v2="1" v1="22" />
+<face v3="8" v2="1" v1="15" />
+<face v3="8" v2="12" v1="1" />
+<face v3="12" v2="14" v1="1" />
+<face v3="9" v2="11" v1="8" />
+<face v3="11" v2="12" v1="8" />
+<face v3="9" v2="10" v1="11" />
+<face v3="13" v2="14" v1="12" />
+</batch>
+</3dmodel>
+
+<3dmodel id="font-nine-r1">
+<batch id="nine-r" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" x="-0.0509542" y="0.1099701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="2" x="-0.05678435" y="0.1264507" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="3" x="-0.0587271" y="0.1442271" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="4" x="-0.0409146" y="0.18992779999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="5" x="-0.0017270999999999999" y="0.20669719999999997" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="6" x="0.03994275" y="0.19147535" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="7" x="0.0587271" y="0.14106075" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="8" x="0.0439736" y="0.09766285" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="9" x="0.009787849999999999" y="0.08406074999999999" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="10" x="0.0017993" y="0.08470865" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="11" x="-0.00575795" y="0.0866514" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="12" x="-0.00633365" y="0.0866514" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="13" x="0.0368486" y="0" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="14" x="0.0040299" y="0" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="15" x="0" y="0.1099701" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="16" x="0.0207271" y="0.1181743" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="17" x="0.02936355" y="0.1436514" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="18" x="0.01975525" y="0.1696681" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="19" x="0" y="0.17733364999999998" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="20" x="-0.021374999999999998" y="0.1691285" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<vertex id="21" x="-0.02936355" y="0.1436514" z="0" u1="0" v1="0" diffuse="0xffffffff" /> 
+<vertex id="22" x="-0.0207271" y="0.1181743" z="0" u1="0" v1="0" diffuse="0xffffffff" />
+<face v3="6" v2="4" v1="5" />
+<face v3="7" v2="18" v1="6" />
+<face v3="18" v2="19" v1="6" />
+<face v3="19" v2="4" v1="6" />
+<face v3="19" v2="20" v1="4" />
+<face v3="20" v2="3" v1="4" />
+<face v3="7" v2="17" v1="18" />
+<face v3="21" v2="3" v1="20" />
+<face v3="21" v2="2" v1="3" />
+<face v3="7" v2="16" v1="17" />
+<face v3="22" v2="2" v1="21" />
+<face v3="8" v2="16" v1="7" />
+<face v3="22" v2="1" v1="2" />
+<face v3="8" v2="15" v1="16" />
+<face v3="15" v2="1" v1="22" />
+<face v3="8" v2="1" v1="15" />
+<face v3="8" v2="12" v1="1" />
+<face v3="12" v2="14" v1="1" />
+<face v3="9" v2="11" v1="8" />
+<face v3="11" v2="12" v1="8" />
+<face v3="9" v2="10" v1="11" />
+<face v3="13" v2="14" v1="12" />
+</batch>
+</3dmodel>
+
+<!-- Distance markers -->
+<!-- 60 m - right -->
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="56.2446" y="-19.1214" z="-8.3342"/>
+<3dmodel-instance id="font-six-r1" refx="dhill" x="56.3871" y="-19.1214" z="-8.3342"/>
+<beam refx="dhill" refy="dhill-top" x="56.3158" y="0.4950" z1="-8.3402" z2="-8.3502" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 61 m - right -->
+<3dmodel-instance id="font-one-r1" refx="dhill" x="57.1178" y="-19.6087" z="-8.3911"/>
+<3dmodel-instance id="font-six-r1" refx="dhill" x="57.2603" y="-19.6087" z="-8.3911"/>
+<beam refx="dhill" refy="dhill-top" x="57.1890" y="0.4950" z1="-8.3971" z2="-8.4071" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 62 m - right -->
+<3dmodel-instance id="font-two-r1" refx="dhill" x="57.9860" y="-20.1048" z="-8.4477"/>
+<3dmodel-instance id="font-six-r1" refx="dhill" x="58.1285" y="-20.1048" z="-8.4477"/>
+<beam refx="dhill" refy="dhill-top" x="58.0573" y="0.4950" z1="-8.4537" z2="-8.4637" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 63 m - right -->
+<3dmodel-instance id="font-three-r1" refx="dhill" x="58.8543" y="-20.6010" z="-8.5043"/>
+<3dmodel-instance id="font-six-r1" refx="dhill" x="58.9968" y="-20.6010" z="-8.5043"/>
+<beam refx="dhill" refy="dhill-top" x="58.9255" y="0.4950" z1="-8.5103" z2="-8.5203" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 64 m - right -->
+<3dmodel-instance id="font-four-r1" refx="dhill" x="59.7211" y="-21.0996" z="-8.5608"/>
+<3dmodel-instance id="font-six-r1" refx="dhill" x="59.8636" y="-21.0996" z="-8.5608"/>
+<beam refx="dhill" refy="dhill-top" x="59.7923" y="0.4950" z1="-8.5668" z2="-8.5768" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 65 m - right -->
+<3dmodel-instance id="font-five-r1" refx="dhill" x="60.5830" y="-21.6067" z="-8.6170"/>
+<3dmodel-instance id="font-six-r1" refx="dhill" x="60.7255" y="-21.6067" z="-8.6170"/>
+<beam refx="dhill" refy="dhill-top" x="60.6542" y="0.4950" z1="-8.6230" z2="-8.6330" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 66 m - right -->
+<3dmodel-instance id="font-six-r1" refx="dhill" x="61.4449" y="-22.1138" z="-8.6732"/>
+<3dmodel-instance id="font-six-r1" refx="dhill" x="61.5874" y="-22.1138" z="-8.6732"/>
+<beam refx="dhill" refy="dhill-top" x="61.5161" y="0.4950" z1="-8.6792" z2="-8.6892" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 67 m - right -->
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="62.3054" y="-22.6232" z="-8.7292"/>
+<3dmodel-instance id="font-six-r1" refx="dhill" x="62.4479" y="-22.6232" z="-8.7292"/>
+<beam refx="dhill" refy="dhill-top" x="62.3766" y="0.4950" z1="-8.7352" z2="-8.7452" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 68 m - right -->
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="63.1610" y="-23.1407" z="-8.7850"/>
+<3dmodel-instance id="font-six-r1" refx="dhill" x="63.3035" y="-23.1407" z="-8.7850"/>
+<beam refx="dhill" refy="dhill-top" x="63.2323" y="0.4950" z1="-8.7910" z2="-8.8010" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 69 m - right -->
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="64.0167" y="-23.6583" z="-8.8408"/>
+<3dmodel-instance id="font-six-r1" refx="dhill" x="64.1592" y="-23.6583" z="-8.8408"/>
+<beam refx="dhill" refy="dhill-top" x="64.0879" y="0.4950" z1="-8.8468" z2="-8.8568" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 70 m - right -->
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="64.8711" y="-24.1779" z="-8.8965"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="65.0136" y="-24.1779" z="-8.8965"/>
+<beam refx="dhill" refy="dhill-top" x="64.9423" y="0.4950" z1="-8.9025" z2="-8.9125" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 71 m - right -->
+<3dmodel-instance id="font-one-r1" refx="dhill" x="65.7206" y="-24.7054" z="-8.9518"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="65.8631" y="-24.7054" z="-8.9518"/>
+<beam refx="dhill" refy="dhill-top" x="65.7919" y="0.4950" z1="-8.9578" z2="-8.9678" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 72 m - right -->
+<3dmodel-instance id="font-two-r1" refx="dhill" x="66.5701" y="-25.2329" z="-9.0072"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="66.7126" y="-25.2329" z="-9.0072"/>
+<beam refx="dhill" refy="dhill-top" x="66.6414" y="0.4950" z1="-9.0132" z2="-9.0232" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 73 m - right -->
+<3dmodel-instance id="font-three-r1" refx="dhill" x="67.4185" y="-25.7623" z="-9.0625"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="67.5610" y="-25.7623" z="-9.0625"/>
+<beam refx="dhill" refy="dhill-top" x="67.4898" y="0.4950" z1="-9.0685" z2="-9.0785" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 74 m - right -->
+<3dmodel-instance id="font-four-r1" refx="dhill" x="68.2621" y="-26.2994" z="-9.1175"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="68.4046" y="-26.2994" z="-9.1175"/>
+<beam refx="dhill" refy="dhill-top" x="68.3333" y="0.4950" z1="-9.1235" z2="-9.1335" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 75 m - right -->
+<3dmodel-instance id="font-five-r1" refx="dhill" x="69.1056" y="-26.8364" z="-9.1724"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="69.2481" y="-26.8364" z="-9.1724"/>
+<beam refx="dhill" refy="dhill-top" x="69.1769" y="0.4950" z1="-9.1784" z2="-9.1884" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 76 m - right -->
+<3dmodel-instance id="font-six-r1" refx="dhill" x="69.9481" y="-27.3751" z="-9.2273"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="70.0906" y="-27.3751" z="-9.2273"/>
+<beam refx="dhill" refy="dhill-top" x="70.0193" y="0.4950" z1="-9.2333" z2="-9.2433" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 77 m - right -->
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="70.7858" y="-27.9212" z="-9.2819"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="70.9283" y="-27.9212" z="-9.2819"/>
+<beam refx="dhill" refy="dhill-top" x="70.8571" y="0.4950" z1="-9.2879" z2="-9.2979" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 78 m - right -->
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="71.6235" y="-28.4673" z="-9.3365"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="71.7660" y="-28.4673" z="-9.3365"/>
+<beam refx="dhill" refy="dhill-top" x="71.6948" y="0.4950" z1="-9.3425" z2="-9.3525" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 79 m - right -->
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="72.4602" y="-29.0150" z="-9.3911"/>
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="72.6027" y="-29.0150" z="-9.3911"/>
+<beam refx="dhill" refy="dhill-top" x="72.5315" y="0.4950" z1="-9.3971" z2="-9.4071" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 80 m - right -->
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="73.2923" y="-29.5697" z="-9.4453"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="73.4348" y="-29.5697" z="-9.4453"/>
+<beam refx="dhill" refy="dhill-top" x="73.3635" y="0.4950" z1="-9.4513" z2="-9.4613" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 81 m - right -->
+<3dmodel-instance id="font-one-r1" refx="dhill" x="74.1243" y="-30.1245" z="-9.4995"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="74.2668" y="-30.1245" z="-9.4995"/>
+<beam refx="dhill" refy="dhill-top" x="74.1955" y="0.4950" z1="-9.5055" z2="-9.5155" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 82 m - right -->
+<3dmodel-instance id="font-two-r1" refx="dhill" x="74.9554" y="-30.6806" z="-9.5537"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="75.0979" y="-30.6806" z="-9.5537"/>
+<beam refx="dhill" refy="dhill-top" x="75.0266" y="0.4950" z1="-9.5597" z2="-9.5697" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 83 m - right -->
+<3dmodel-instance id="font-three-r1" refx="dhill" x="75.7818" y="-31.2436" z="-9.6075"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="75.9243" y="-31.2436" z="-9.6075"/>
+<beam refx="dhill" refy="dhill-top" x="75.8531" y="0.4950" z1="-9.6135" z2="-9.6235" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 84 m - right -->
+<3dmodel-instance id="font-four-r1" refx="dhill" x="76.6083" y="-31.8066" z="-9.6614"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="76.7508" y="-31.8066" z="-9.6614"/>
+<beam refx="dhill" refy="dhill-top" x="76.6795" y="0.4950" z1="-9.6674" z2="-9.6774" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 85 m - right -->
+<3dmodel-instance id="font-five-r1" refx="dhill" x="77.4339" y="-32.3709" z="-9.7152"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="77.5764" y="-32.3709" z="-9.7152"/>
+<beam refx="dhill" refy="dhill-top" x="77.5051" y="0.4950" z1="-9.7212" z2="-9.7312" r="0.2" edges="49" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 86 m - right -->
+<3dmodel-instance id="font-six-r1" refx="dhill" x="78.2549" y="-32.9417" z="-9.7687"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="78.3974" y="-32.9417" z="-9.7687"/>
+<beam refx="dhill" refy="dhill-top" x="78.3261" y="0.4950" z1="-9.7747" z2="-9.7847" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 87 m - right -->
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="79.0759" y="-33.5126" z="-9.8222"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="79.2184" y="-33.5126" z="-9.8222"/>
+<beam refx="dhill" refy="dhill-top" x="79.1472" y="0.4950" z1="-9.8282" z2="-9.8382" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 88 m - right -->
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="79.8962" y="-34.0846" z="-9.8757"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="80.0387" y="-34.0846" z="-9.8757"/>
+<beam refx="dhill" refy="dhill-top" x="79.9674" y="0.4950" z1="-9.8817" z2="-9.8917" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 89 m - right -->
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="80.7119" y="-34.6630" z="-9.9288"/>
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="80.8544" y="-34.6630" z="-9.9288"/>
+<beam refx="dhill" refy="dhill-top" x="80.7832" y="0.4950" z1="-9.9348" z2="-9.9448" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 90 m - right -->
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="81.5277" y="-35.2414" z="-9.9820"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="81.6702" y="-35.2414" z="-9.9820"/>
+<beam refx="dhill" refy="dhill-top" x="81.5989" y="0.4950" z1="-9.9880" z2="-9.9980" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 91 m - right -->
+<3dmodel-instance id="font-one-r1" refx="dhill" x="82.3427" y="-35.8208" z="-10.0351"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="82.4852" y="-35.8208" z="-10.0351"/>
+<beam refx="dhill" refy="dhill-top" x="82.4140" y="0.4950" z1="-10.0411" z2="-10.0511" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 92 m - right -->
+<3dmodel-instance id="font-two-r1" refx="dhill" x="83.1533" y="-36.4064" z="-10.0879"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="83.2958" y="-36.4064" z="-10.0879"/>
+<beam refx="dhill" refy="dhill-top" x="83.2246" y="0.4950" z1="-10.0939" z2="-10.1039" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 93 m - right -->
+<3dmodel-instance id="font-three-r1" refx="dhill" x="83.9639" y="-36.9920" z="-10.1408"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="84.1064" y="-36.9920" z="-10.1408"/>
+<beam refx="dhill" refy="dhill-top" x="84.0352" y="0.4950" z1="-10.1468" z2="-10.1568" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 94 m - right -->
+<3dmodel-instance id="font-four-r1" refx="dhill" x="84.7739" y="-37.5785" z="-10.1936"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="84.9164" y="-37.5785" z="-10.1936"/>
+<beam refx="dhill" refy="dhill-top" x="84.8451" y="0.4950" z1="-10.1996" z2="-10.2096" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 95 m - right -->
+<3dmodel-instance id="font-five-r1" refx="dhill" x="85.5795" y="-38.1709" z="-10.2461"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="85.7220" y="-38.1709" z="-10.2461"/>
+<beam refx="dhill" refy="dhill-top" x="85.6508" y="0.4950" z1="-10.2521" z2="-10.2621" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 96 m - right -->
+<3dmodel-instance id="font-six-r1" refx="dhill" x="86.3851" y="-38.7634" z="-10.2986"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="86.5276" y="-38.7634" z="-10.2986"/>
+<beam refx="dhill" refy="dhill-top" x="86.4564" y="0.4950" z1="-10.3046" z2="-10.3146" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 97 m - right -->
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="87.1901" y="-39.3566" z="-10.3510"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="87.3326" y="-39.3566" z="-10.3510"/>
+<beam refx="dhill" refy="dhill-top" x="87.2614" y="0.4950" z1="-10.3570" z2="-10.3670" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 98 m - right -->
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="87.9909" y="-39.9556" z="-10.4032"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="88.1334" y="-39.9556" z="-10.4032"/>
+<beam refx="dhill" refy="dhill-top" x="88.0621" y="0.4950" z1="-10.4092" z2="-10.4192" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 99 m - right -->
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="88.7916" y="-40.5546" z="-10.4554"/>
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="88.9341" y="-40.5546" z="-10.4554"/>
+<beam refx="dhill" refy="dhill-top" x="88.8629" y="0.4950" z1="-10.4614" z2="-10.4714" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 100 m - right -->
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="89.5301" y="-41.1543" z="-10.5076"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="89.6631" y="-41.1543" z="-10.5076"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="89.7961" y="-41.1543" z="-10.5076"/>
+<beam refx="dhill" refy="dhill-top" x="89.6631" y="0.4950" z1="-10.5136" z2="-10.5236" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 101 m - right -->
+<3dmodel-instance id="font-one-r1" refx="dhill" x="90.3261" y="-41.7596" z="-10.5594"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="90.4591" y="-41.7596" z="-10.5594"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="90.5921" y="-41.7596" z="-10.5594"/>
+<beam refx="dhill" refy="dhill-top" x="90.4591" y="0.4950" z1="-10.5654" z2="-10.5754" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 102 m - right -->
+<3dmodel-instance id="font-two-r1" refx="dhill" x="91.1222" y="-42.3648" z="-10.6113"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="91.2552" y="-42.3648" z="-10.6113"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="91.3882" y="-42.3648" z="-10.6113"/>
+<beam refx="dhill" refy="dhill-top" x="91.2552" y="0.4950" z1="-10.6173" z2="-10.6273" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 103 m - right -->
+<3dmodel-instance id="font-three-r1" refx="dhill" x="91.9178" y="-42.9706" z="-10.6632"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="92.0508" y="-42.9706" z="-10.6632"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="92.1838" y="-42.9706" z="-10.6632"/>
+<beam refx="dhill" refy="dhill-top" x="92.0508" y="0.4950" z1="-10.6692" z2="-10.6792" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 104 m - right -->
+<3dmodel-instance id="font-four-r1" refx="dhill" x="92.7103" y="-43.5805" z="-10.7148"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="92.8433" y="-43.5805" z="-10.7148"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="92.9763" y="-43.5805" z="-10.7148"/>
+<beam refx="dhill" refy="dhill-top" x="92.8433" y="0.4950" z1="-10.7208" z2="-10.7308" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 105 m - right -->
+<3dmodel-instance id="font-five-r1" refx="dhill" x="93.5045" y="-44.1882" z="-10.7666"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="93.6375" y="-44.1882" z="-10.7666"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="93.7705" y="-44.1882" z="-10.7666"/>
+<beam refx="dhill" refy="dhill-top" x="93.6375" y="0.4950" z1="-10.7726" z2="-10.7826" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 106 m - right -->
+<3dmodel-instance id="font-six-r1" refx="dhill" x="94.3007" y="-44.7932" z="-10.8185"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="94.4337" y="-44.7932" z="-10.8185"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="94.5667" y="-44.7932" z="-10.8185"/>
+<beam refx="dhill" refy="dhill-top" x="94.4337" y="0.4950" z1="-10.8245" z2="-10.8345" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 107 m - right -->
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="95.0968" y="-45.3983" z="-10.8704"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="95.2298" y="-45.3983" z="-10.8704"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="95.3628" y="-45.3983" z="-10.8704"/>
+<beam refx="dhill" refy="dhill-top" x="95.2298" y="0.4950" z1="-10.8764" z2="-10.8864" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 108 m - right -->
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="95.9023" y="-45.9910" z="-10.9229"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="96.0353" y="-45.9910" z="-10.9229"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="96.1683" y="-45.9910" z="-10.9229"/>
+<beam refx="dhill" refy="dhill-top" x="96.0353" y="0.4950" z1="-10.9289" z2="-10.9389" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 109 m - right -->
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="96.7081" y="-46.5830" z="-10.9754"/>
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="96.8411" y="-46.5830" z="-10.9754"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="96.9741" y="-46.5830" z="-10.9754"/>
+<beam refx="dhill" refy="dhill-top" x="96.8411" y="0.4950" z1="-10.9814" z2="-10.9914" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 110 m - right -->
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="97.5172" y="-47.1707" z="-11.0281"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="97.6502" y="-47.1707" z="-11.0281"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="97.7832" y="-47.1707" z="-11.0281"/>
+<beam refx="dhill" refy="dhill-top" x="97.6502" y="0.4950" z1="-11.0341" z2="-11.0441" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 111 m - right -->
+<3dmodel-instance id="font-one-r1" refx="dhill" x="98.3325" y="-47.7498" z="-11.0812"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="98.4655" y="-47.7498" z="-11.0812"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="98.5985" y="-47.7498" z="-11.0812"/>
+<beam refx="dhill" refy="dhill-top" x="98.4655" y="0.4950" z1="-11.0872" z2="-11.0972" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 112 m - right -->
+<3dmodel-instance id="font-two-r1" refx="dhill" x="99.1478" y="-48.3288" z="-11.1344"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="99.2808" y="-48.3288" z="-11.1344"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="99.4138" y="-48.3288" z="-11.1344"/>
+<beam refx="dhill" refy="dhill-top" x="99.2808" y="0.4950" z1="-11.1404" z2="-11.1504" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 113 m - right -->
+<3dmodel-instance id="font-three-r1" refx="dhill" x="99.9683" y="-48.9004" z="-11.1878"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="100.1013" y="-48.9004" z="-11.1878"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="100.2343" y="-48.9004" z="-11.1878"/>
+<beam refx="dhill" refy="dhill-top" x="100.1013" y="0.4950" z1="-11.1938" z2="-11.2038" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 114 m - right -->
+<3dmodel-instance id="font-four-r1" refx="dhill" x="100.7927" y="-49.4664" z="-11.2416"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="100.9257" y="-49.4664" z="-11.2416"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="101.0587" y="-49.4664" z="-11.2416"/>
+<beam refx="dhill" refy="dhill-top" x="100.9257" y="0.4950" z1="-11.2476" z2="-11.2576" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 115 m - right -->
+<3dmodel-instance id="font-five-r1" refx="dhill" x="101.6171" y="-50.0324" z="-11.2953"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="101.7501" y="-50.0324" z="-11.2953"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="101.8831" y="-50.0324" z="-11.2953"/>
+<beam refx="dhill" refy="dhill-top" x="101.7501" y="0.4950" z1="-11.3013" z2="-11.3113" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 116 m - right -->
+<3dmodel-instance id="font-six-r1" refx="dhill" x="102.4464" y="-50.5912" z="-11.3494"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="102.5794" y="-50.5912" z="-11.3494"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="102.7124" y="-50.5912" z="-11.3494"/>
+<beam refx="dhill" refy="dhill-top" x="102.5794" y="0.4950" z1="-11.3554" z2="-11.3654" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 117 m - right -->
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="103.2792" y="-51.1448" z="-11.4036"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="103.4122" y="-51.1448" z="-11.4036"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="103.5452" y="-51.1448" z="-11.4036"/>
+<beam refx="dhill" refy="dhill-top" x="103.4122" y="0.4950" z1="-11.4096" z2="-11.4196" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 118 m - right -->
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="104.1119" y="-51.6984" z="-11.4579"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="104.2449" y="-51.6984" z="-11.4579"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="104.3779" y="-51.6984" z="-11.4579"/>
+<beam refx="dhill" refy="dhill-top" x="104.2449" y="0.4950" z1="-11.4639" z2="-11.4739" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 119 m - right -->
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="104.9485" y="-52.2462" z="-11.5124"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="105.0815" y="-52.2462" z="-11.5124"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="105.2145" y="-52.2462" z="-11.5124"/>
+<beam refx="dhill" refy="dhill-top" x="105.0815" y="0.4950" z1="-11.5184" z2="-11.5284" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 120 m - right -->
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="105.7876" y="-52.7902" z="-11.5671"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="105.9206" y="-52.7902" z="-11.5671"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="106.0536" y="-52.7902" z="-11.5671"/>
+<beam refx="dhill" refy="dhill-top" x="105.9206" y="0.4950" z1="-11.5731" z2="-11.5831" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 121 m - right -->
+<3dmodel-instance id="font-one-r1" refx="dhill" x="106.6290" y="-53.3305" z="-11.6086"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="106.7620" y="-53.3305" z="-11.6086"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="106.8950" y="-53.3305" z="-11.6086"/>
+<beam refx="dhill" refy="dhill-top" x="106.7620" y="0.4950" z1="-11.6146" z2="-11.6246" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 122 m - right -->
+<3dmodel-instance id="font-two-r1" refx="dhill" x="107.4738" y="-53.8657" z="-11.6316"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="107.6068" y="-53.8657" z="-11.6316"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="107.7398" y="-53.8657" z="-11.6316"/>
+<beam refx="dhill" refy="dhill-top" x="107.6068" y="0.4950" z1="-11.6376" z2="-11.6476" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 123 m - right -->
+<3dmodel-instance id="font-three-r1" refx="dhill" x="108.3185" y="-54.4010" z="-11.6546"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="108.4515" y="-54.4010" z="-11.6546"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="108.5845" y="-54.4010" z="-11.6546"/>
+<beam refx="dhill" refy="dhill-top" x="108.4515" y="0.4950" z1="-11.6606" z2="-11.6706" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 124 m - right -->
+<3dmodel-instance id="font-four-r1" refx="dhill" x="109.1658" y="-54.9321" z="-11.6777"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="109.2988" y="-54.9321" z="-11.6777"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="109.4318" y="-54.9321" z="-11.6777"/>
+<beam refx="dhill" refy="dhill-top" x="109.2988" y="0.4950" z1="-11.6837" z2="-11.6937" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 125 m - right -->
+<3dmodel-instance id="font-five-r1" refx="dhill" x="110.0164" y="-55.4578" z="-11.7009"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="110.1494" y="-55.4578" z="-11.7009"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="110.2824" y="-55.4578" z="-11.7009"/>
+<beam refx="dhill" refy="dhill-top" x="110.1494" y="0.4950" z1="-11.7069" z2="-11.7169" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 126 m - right -->
+<3dmodel-instance id="font-six-r1" refx="dhill" x="110.8671" y="-55.9835" z="-11.7241"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="111.0001" y="-55.9835" z="-11.7241"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="111.1331" y="-55.9835" z="-11.7241"/>
+<beam refx="dhill" refy="dhill-top" x="111.0001" y="0.4950" z1="-11.7301" z2="-11.7401" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 127 m - right -->
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="111.7201" y="-56.5054" z="-11.7473"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="111.8531" y="-56.5054" z="-11.7473"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="111.9861" y="-56.5054" z="-11.7473"/>
+<beam refx="dhill" refy="dhill-top" x="111.8531" y="0.4950" z1="-11.7533" z2="-11.7633" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 128 m - right -->
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="112.5760" y="-57.0225" z="-11.7706"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="112.7090" y="-57.0225" z="-11.7706"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="112.8420" y="-57.0225" z="-11.7706"/>
+<beam refx="dhill" refy="dhill-top" x="112.7090" y="0.4950" z1="-11.7766" z2="-11.7866" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 129 m - right -->
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="113.4320" y="-57.5396" z="-11.7940"/>
+<3dmodel-instance id="font-two-r1" refx="dhill" x="113.5650" y="-57.5396" z="-11.7940"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="113.6980" y="-57.5396" z="-11.7940"/>
+<beam refx="dhill" refy="dhill-top" x="113.5650" y="0.4950" z1="-11.8000" z2="-11.8100" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 130 m - right -->
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="114.2899" y="-58.0532" z="-11.8173"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="114.4229" y="-58.0532" z="-11.8173"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="114.5559" y="-58.0532" z="-11.8173"/>
+<beam refx="dhill" refy="dhill-top" x="114.4229" y="0.4950" z1="-11.8233" z2="-11.8333" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 131 m - right -->
+<3dmodel-instance id="font-one-r1" refx="dhill" x="115.1504" y="-58.5627" z="-11.8408"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="115.2834" y="-58.5627" z="-11.8408"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="115.4164" y="-58.5627" z="-11.8408"/>
+<beam refx="dhill" refy="dhill-top" x="115.2834" y="0.4950" z1="-11.8468" z2="-11.8568" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 132 m - right -->
+<3dmodel-instance id="font-two-r1" refx="dhill" x="116.0109" y="-59.0721" z="-11.8642"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="116.1439" y="-59.0721" z="-11.8642"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="116.2769" y="-59.0721" z="-11.8642"/>
+<beam refx="dhill" refy="dhill-top" x="116.1439" y="0.4950" z1="-11.8702" z2="-11.8802" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 133 m - right -->
+<3dmodel-instance id="font-three-r1" refx="dhill" x="116.8728" y="-59.5793" z="-11.8877"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="117.0058" y="-59.5793" z="-11.8877"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="117.1388" y="-59.5793" z="-11.8877"/>
+<beam refx="dhill" refy="dhill-top" x="117.0058" y="0.4950" z1="-11.8937" z2="-11.9037" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 134 m - right -->
+<3dmodel-instance id="font-four-r1" refx="dhill" x="117.7364" y="-60.0835" z="-11.9113"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="117.8694" y="-60.0835" z="-11.9113"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="118.0024" y="-60.0835" z="-11.9113"/>
+<beam refx="dhill" refy="dhill-top" x="117.8694" y="0.4950" z1="-11.9173" z2="-11.9273" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 135 m - right -->
+<3dmodel-instance id="font-five-r1" refx="dhill" x="118.6048" y="-60.5793" z="-11.9349"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="118.7378" y="-60.5793" z="-11.9349"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="118.8708" y="-60.5793" z="-11.9349"/>
+<beam refx="dhill" refy="dhill-top" x="118.7378" y="0.4950" z1="-11.9409" z2="-11.9509" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 136 m - right -->
+<3dmodel-instance id="font-six-r1" refx="dhill" x="119.4790" y="-61.0648" z="-11.9587"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="119.6120" y="-61.0648" z="-11.9587"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="119.7450" y="-61.0648" z="-11.9587"/>
+<beam refx="dhill" refy="dhill-top" x="119.6120" y="0.4950" z1="-11.9647" z2="-11.9747" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 137 m - right -->
+<3dmodel-instance id="font-seven-r1" refx="dhill" x="120.3587" y="-61.5403" z="-11.9827"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="120.4917" y="-61.5403" z="-11.9827"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="120.6247" y="-61.5403" z="-11.9827"/>
+<beam refx="dhill" refy="dhill-top" x="120.4917" y="0.4950" z1="-11.9887" z2="-11.9987" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 138 m - right -->
+<3dmodel-instance id="font-eight-r1" refx="dhill" x="121.2440" y="-62.0053" z="-12.0068"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="121.3770" y="-62.0053" z="-12.0068"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="121.5100" y="-62.0053" z="-12.0068"/>
+<beam refx="dhill" refy="dhill-top" x="121.3770" y="0.4950" z1="-12.0128" z2="-12.0228" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 139 m - right -->
+<3dmodel-instance id="font-nine-r1" refx="dhill" x="122.1362" y="-62.4569" z="-12.0311"/>
+<3dmodel-instance id="font-three-r1" refx="dhill" x="122.2692" y="-62.4569" z="-12.0311"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="122.4022" y="-62.4569" z="-12.0311"/>
+<beam refx="dhill" refy="dhill-top" x="122.2692" y="0.4950" z1="-12.0371" z2="-12.0471" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="2" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+<!-- 140 m - right -->
+<3dmodel-instance id="font-zero-r1" refx="dhill" x="123.0346" y="-62.8961" z="-12.0556"/>
+<3dmodel-instance id="font-four-r1" refx="dhill" x="123.1676" y="-62.8961" z="-12.0556"/>
+<3dmodel-instance id="font-one-r1" refx="dhill" x="123.3006" y="-62.8961" z="-12.0556"/>
+<beam refx="dhill" refy="dhill-top" x="123.1676" y="0.4950" z1="-12.0616" z2="-12.0716" r="0.2" edges="40" rect="true" end1="true" end2="true" zbias="0" smooth="true" t="Textures\metal.png" m="Materials\metal.xml" c="0xe90000"/>
+</hill>
