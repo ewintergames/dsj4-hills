@@ -1,0 +1,1750 @@
+<hill version="DSJ4-1.10.0" author="Ant3xiQ">
+  <location latitude="50.579722" longitude="12.706944" orientation="11" timezone="1" altitude="482"/>
+    <weather  pollution="0.0" firstsnow="300" lastsnow="90" maxsnow="1.5" precipitationprobability="0.1" fogprobability="0.1" />
+	<time minhour="9" maxhour="14"/>
+    <inrun>
+        <profile e="82" es="19" t="6.11" gamma="35" alpha="11" r1="82" s="2.54" b1="2.4" z0="0" l="5" f="0" />
+        <guardrail z1="-1.75" z2="1.75" x="10" />
+        <startgate default="2" max="30" step="0.5" wind="1.2" z1="-2.1" z2="2.1" pz1="-1.9" pz2="1.9" t1="Textures\metal.png" m1="Materials\material1.xml" c1="0xaaaaaa" t2="Textures\metal.png" m2="Materials\material1.xml" c2="0x999999" t3="Textures\metal.png" m3="Materials\material1.xml" c3="0xdcdcdc" />
+        <startbanner z="0" text="AUE" textsize="0.1" />
+        <frame bh="1.7" by="-20" bdlz="1.5" bdrz="-1.5" snow="true" t="Textures\wood4b.png" m="Materials\material1.xml" c0="0x94908b" c1="0xB2ABA0" c="0x504941" c2="0xB2ABA0" />
+        <flag x="21.03" z="5.2" hf="1.4" pf="1.667" hp="8" rb="0.05" rt="0.04" tf="Textures\flag-ger.png" mf="Materials\flag.xml" tp="Textures\wood5.png" mp="Materials\wood.xml" cp="0x94908b" />
+        <twigs lz="0.77" rz="-0.77" />
+    </inrun>
+    <dhill>
+        <profile x0="0" alpha="6" h="46" n="82" l1="13" l2="10" a="125" beta-p="36" beta="36" beta-l="33.8" rl="220" r2="93" b0="10" bk="19" ba="24" hr="0" nr="0" ar="4" k="95" hs="108" />
+        <fence t="Textures\fenceback.png" m="Materials\material1.xml" c="0xffffff" d0="166.9" />
+        <judgetower d="68.5" q="25.4" h="+4" t1="Textures\wood3.png" m1="Materials\wood.xml" c1="0x94908b" t2="Textures\wood3.png" m2="Materials\wood.xml" c2="0x94908b" />
+        <windflags h="4" l="4.1" d="0.6" count="0" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999" />
+        <measurers c1="0x578ad1" c2="0xeeeeee" />
+        <plastic c="0x769391" />
+		
+        <lines summer-min="60" summer-max="110" winter-min="60" winter-max="110" />
+        <numbers min="50" max="100" h1="0" h2="0"/>
+        <distance-marker refz="dhill-left" refy="dhill-top" distances="60-115" skip-distances="60-115@10,107,76,77,89,66,69,92,108,98" r1="0.1625" r2="0.1825" edges="20" smooth="true" thickness="0.005" dx="0" dy="0.6" dz="-0.04" nz="0" ny="0.0" font-size="0.25" font-color="0x000000" rear="true" front-color="0xf1c232" rear-color="0x333333" side-color="0x333333" />
+        <distance-marker refz="dhill-left" refy="dhill-top" distances="60-115@10,80" r1="0.2125" r2="0.2325" edges="20" smooth="true" thickness="0.005" dx="0" dy="0.6" dz="-0.04" nz="0" ny="0.0" font-size="0.35" font-color="0x000000" rear="true" front-color="0xf1c232" rear-color="0x333333" side-color="0x333333" />
+        <distance-marker refz="dhill-right" refy="dhill-top" distances="60-115" skip-distances="60-115@10,88,72,107,106,79,82,65,111,69,81" r1="0.1625" r2="0.1825" edges="20" smooth="true" thickness="0.005" dx="0" dy="0.6" dz="0.04" nz="0" ny="0.0" font-size="0.25" font-color="0x000000" rear="true" front-color="0xf1c232" rear-color="0x333333" side-color="0x333333" />
+        <distance-marker refz="dhill-right" refy="dhill-top" distances="60-115@10,70" r1="0.2125" r2="0.2325" edges="20" smooth="true" thickness="0.005" dx="0" dy="0.6" dz="0.04" nz="0" ny="0.0" font-size="0.35" font-color="0x000000" rear="true" front-color="0xf1c232" rear-color="0x333333" side-color="0x333333" />
+       <custom-markings>
+      <summer>
+    
+
+
+  <!--grass-->
+    <grass d1="0" d2="0" refd2="p" side="both" w="3" margin="0" />
+	<grass d1="0" d2="0" refd1="p" refd2="hs" side="both" w="3" margin="0" />
+    <grass d1="0" d2="20" refd1="hs" refd2="f" side="both" w="3" margin="0" />
+
+    <!--banners-->
+    <banner d1="0" d2="9" refd1="k" refd2="hs" side="both" w=".7" margin="3" c="0x937676"/>
+    <banner d1="0" d2="0" refd1="p" refd2="k" side="both" w=".7" margin="3" c="0x767893"/>
+     <banner d1="9" d2="0" refd1="hs" refd2="f" side="both" w=".7" margin="3" c="0x405247"/>
+    <!--K, HS, P point lines-->
+    	<line refd="k" z1="-3" z2="-5.7" d="0" w="0.25" c="0x937676" refz1="left" refz2="left"/> 
+        <line refd="hs" z1="-3.7" z2="3.7" d="0" w="0.15" c="0x937676" refz1="left" refz2="right"/> 
+        <line refd="k" z1="3" z2="5.7" d="0" w="0.25" c="0x937676" refz1="right" refz2="right"/> 
+    <!--white lines-->
+    	<line  z1="-3" z2="3" d="60" w="0.25" c="0x959596" step="10" count="3" refz1="left" refz2="right"/> 
+        <line  z1="-3" z2="3" d="0" refd="f" w="0.25" c="0x959596" refz1="left" refz2="right"/> 
+        <line  z1="-3.7" z2="3.7" d="90" w="0.25" c="0x959596" step="10" count="3" refz1="left" refz2="right"/> 
+    	<line  z1="-3" z2="-5.7" d="65" w="0.25" c="0x959596" step="10" count="2" refz1="left" refz2="left"/>
+        <line  z1="-3.7" z2="-5.7" d="85" w="0.25" c="0x959596" refz1="left" refz2="left"/> 
+        <line  z1="-3.7" z2="-5.7" d="105" w="0.25" c="0x959596" step="10" count="2" refz1="left" refz2="left" /> 
+        <line  z1="3" z2="5.7" d="65" w="0.25" c="0x959596" step="10" count="2" refz1="right" refz2="right"/>
+        <line  z1="3.7" z2="5.7" d="85" w="0.25" c="0x959596" refz1="right" refz2="right"/> 
+        <line  z1="3.7" z2="5.7" d="105" w="0.25" c="0x959596" step="10" count="2" refz1="right" refz2="right" /> 
+       </summer>	
+<winter>
+    <banner d1="0" d2="0" refd1="k" refd2="hs" side="both" w=".4" margin="0" c="0xbf1d1d"/>
+    <banner d1="0" d2="5" refd1="p" refd2="p"  side="both" w=".4" margin="0" c="0xffe449"/>
+    <banner d1="5" d2="0" refd1="p" refd2="k"  side="both" w=".4" margin="0" c="0x19357e"/>
+    <banner d1="0" d2="-10" refd1="hs" refd2="f" side="both" w=".4" margin="0" c="0xffe449"/>
+
+    <!--twigsy-->
+
+    <twigs space="0.3" size="0.09" step="10" count="6" d="60" refz1="right" refz2="left" z1="3.45" z2="-3.45"/>
+    <twigs space="0.25" size="0.15" step="10" count="6" d="60" refz1="left" refz2="left" z1="-0.45" z2="-3.45"/>
+    <twigs space="0.25" size="0.15" step="10" count="6" d="60" refz1="right" refz2="right" z1="0.45" z2="3.45"/>
+
+    <twigs space="0.25" size="0.15" step="10" count="5" d="65" refz1="left" refz2="left" z1="-0.45" z2="-3.45"/>
+    <twigs space="0.25" size="0.15" step="10" count="5" d="65" refz1="right" refz2="right" z1="0.45" z2="3.45"/>
+
+  
+
+    <twigs space="0.3" refd="f" size="0.09" d="0" refz1="right" refz2="left" z1="0.45" z2="-0.45"/>
+
+    		 <banner refd1="f" refd2="f" d1="-10" d2="0" side="both" w="0.4" margin="0" c="0x006307"/>
+
+             	                <twigs space="0.3" size="0.09" d1="2" d2="20.5" refz1="left" refz2="left" z1="0.03" z2="0.03"/>
+                                              	                <twigs space="0.3" size="0.09" d1="2" d2="20.5" refz1="right" refz2="right" z1="-0.03" z2="-0.03"/>
+<!--spray-->
+ <spray d="95" refz1="left" refz2="right" step="0" count="2" z1="-0.4" z2="0.4" w="0.3" c="0xb10000"/>
+
+</winter>
+ </custom-markings>
+
+    
+      
+    </dhill>
+
+	<profile id="inrun-terrain">
+		<start x="-120" y="0"/>
+		<line x="-86" y="2.4"/>
+		<line x="-80" y="2.4"/>
+		<line x="-55" y="2.4"/>
+		<line x="-10" y="2.4"/>
+		<line x="-6" y="2.5"/>
+		<line x="-2" y="0"/>
+		<line x="0" y="0"/>
+	</profile>
+	
+
+	<profile id="inrun-left" side="left" maxstep="1000">-
+		<start x="0" y="1.75" refx="inrun"/>
+		<line x="0" y="1.75" refx="dhill"/>
+	</profile>
+
+	<profile id="inrun-right" side="right" maxstep="1000">
+		<start x="0" y="-1.75" refx="inrun"/>
+		<line x="0" y="-1.75" refx="dhill"/>
+	</profile>
+
+
+
+
+ <terrain>
+        <profile in="1" y0="-100" sd="520" fd="100" sc="1.3" sm="1.4" rs="6335" c1="0x443920" c2="0x5D603A" tsc="1" tsm="2"/>
+        <trees count="10000" minheight="10" maxheight="22" fractalthreshold="0.99" maxaltitude="2000" normalaltitude="1850" seed="9999"/>
+        <houses count="1000" minsaturation="0.0" maxsaturation="0.2" minfloors="1" maxfloors="3" maxaltitude="220" normalaltitude="100" fractalthreshold="0.3" seed="542"/>
+        <audience count="5000" d="20" x0="0" seed="500"/>
+    </terrain>
+<!-- custom bandy -->
+
+
+<pillar refx="dhill" refy="dhill-top" refz="dhill-right" x1="20" x2="150.06"  lz="0.01" rz="-0.22" ntop="1.05" nbottom="1" t="Textures\wood5.png" m="Materials\wood.xml" c="0x94908b"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-left" x1="20" x2="150.06" lz="0.22" rz="-0.01" ntop="1.05" nbottom="1" t="Textures\wood5.png" m="Materials\wood.xml" c="0x94908b"/>
+
+<pillar refx="dhill" refy="dhill-top" refz="dhill-right" x1="20" x2="20.06" step="1" count="131" lz="-0.16" rz="-0.22" ntop="1" nbottom="-0.05" t="Textures\wood5.png" m="Materials\wood.xml" c="0x94908b"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-left" x1="20" x2="20.06" step="1" count="131" lz="0.22" rz="0.16" ntop="1" nbottom="-0.05" t="Textures\wood5.png" m="Materials\wood.xml" c="0x94908b"/>
+
+
+<pillar refx="dhill" refy="dhill-top" refz="dhill-right" x1="20" x2="150.06" lz="0.01" rz="-0.16" ntop="1" nbottom="0.8" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x94908b"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-right" x1="20" x2="150.06" lz="0.01" rz="-0.16" ntop="0.79" nbottom="0.59" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x94908b"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-right" x1="20" x2="150.06" lz="0.01" rz="-0.16" ntop="0.58" nbottom="0.38" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x94908b"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-right" x1="20" x2="150.06" lz="0.01" rz="-0.16" ntop="0.37" nbottom="0.17" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x94908b"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-right" x1="20" x2="150.06" lz="0.01" rz="-0.16" ntop="0.16" nbottom="0" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x94908b"/>
+
+<pillar refx="dhill" refy="dhill-top" refz="dhill-left" x1="20" x2="150.06" rz="-0.01" lz="0.16" ntop="1" nbottom="0.8" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x94908b"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-left" x1="20" x2="150.06" rz="-0.01" lz="0.16" ntop="0.79" nbottom="0.59" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x94908b"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-left" x1="20" x2="150.06" rz="-0.01" lz="0.16" ntop="0.58" nbottom="0.38" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x94908b"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-left" x1="20" x2="150.06" rz="-0.01" lz="0.16" ntop="0.37" nbottom="0.17" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x94908b"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-left" x1="20" x2="150.06" rz="-0.01" lz="0.16" ntop="0.16" nbottom="0" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x94908b"/>
+
+<!--schodki-->
+
+<profile id="inrun-stairs" refx="inrun">
+	<start x="0.000" y="0.00" refy="inrun-top"/>
+	<line x="0.490" y="0.00" refyx="0.000"  refy="inrun-top"/>
+	<line x="0.500" y="0.00" refy="inrun-top"/>
+	<line x="0.990" y="0.00" refyx="0.500"  refy="inrun-top"/>
+	<line x="1.000" y="0.00" refy="inrun-top"/>
+	<line x="1.490" y="0.00" refyx="1.000"  refy="inrun-top"/>
+	<line x="1.500" y="0.00" refy="inrun-top"/>
+	<line x="1.990" y="0.00" refyx="1.500"  refy="inrun-top"/>
+	<line x="2.000" y="0.00" refy="inrun-top"/>
+	<line x="2.490" y="0.00" refyx="2.000"  refy="inrun-top"/>
+	<line x="2.500" y="0.00" refy="inrun-top"/>
+	<line x="2.990" y="0.00" refyx="2.500"  refy="inrun-top"/>
+	<line x="3.000" y="0.00" refy="inrun-top"/>
+	<line x="3.490" y="0.00" refyx="3.000"  refy="inrun-top"/>
+	<line x="3.500" y="0.00" refy="inrun-top"/>
+	<line x="3.990" y="0.00" refyx="3.500"  refy="inrun-top"/>
+	<line x="4.000" y="0.00" refy="inrun-top"/>
+	<line x="4.490" y="0.00" refyx="4.000"  refy="inrun-top"/>
+	<line x="4.500" y="0.00" refy="inrun-top"/>
+	<line x="4.990" y="0.00" refyx="4.500"  refy="inrun-top"/>
+	<line x="5.000" y="0.00" refy="inrun-top"/>
+	<line x="5.490" y="0.00" refyx="5.000"  refy="inrun-top"/>
+	<line x="5.500" y="0.00" refy="inrun-top"/>
+	<line x="5.990" y="0.00" refyx="5.500"  refy="inrun-top"/>
+	<line x="6.000" y="0.00" refy="inrun-top"/>
+	<line x="6.490" y="0.00" refyx="6.000"  refy="inrun-top"/>
+	<line x="6.500" y="0.00" refy="inrun-top"/>
+	<line x="6.990" y="0.00" refyx="6.500"  refy="inrun-top"/>
+	<line x="7.000" y="0.00" refy="inrun-top"/>
+	<line x="7.490" y="0.00" refyx="7.000"  refy="inrun-top"/>
+	<line x="7.500" y="0.00" refy="inrun-top"/>
+	<line x="7.990" y="0.00" refyx="7.500"  refy="inrun-top"/>
+	<line x="8.000" y="0.00" refy="inrun-top"/>
+	<line x="8.490" y="0.00" refyx="8.000"  refy="inrun-top"/>
+	<line x="8.500" y="0.00" refy="inrun-top"/>
+	<line x="8.990" y="0.00" refyx="8.500"  refy="inrun-top"/>
+	<line x="9.000" y="0.00" refy="inrun-top"/>
+	<line x="9.490" y="0.00" refyx="9.000"  refy="inrun-top"/>
+	<line x="9.500" y="0.00" refy="inrun-top"/>
+	<line x="9.990" y="0.00" refyx="9.500"  refy="inrun-top"/>
+	<line x="10.000" y="0.00" refy="inrun-top"/>
+	<line x="10.490" y="0.00" refyx="10.000"  refy="inrun-top"/>
+	<line x="10.500" y="0.00" refy="inrun-top"/>
+	<line x="10.990" y="0.00" refyx="10.500"  refy="inrun-top"/>
+	<line x="11.000" y="0.00" refy="inrun-top"/>
+	<line x="11.490" y="0.00" refyx="11.000"  refy="inrun-top"/>
+	<line x="11.500" y="0.00" refy="inrun-top"/>
+	<line x="11.990" y="0.00" refyx="11.500"  refy="inrun-top"/>
+	<line x="12.000" y="0.00" refy="inrun-top"/>
+	<line x="12.490" y="0.00" refyx="12.000"  refy="inrun-top"/>
+	<line x="12.500" y="0.00" refy="inrun-top"/>
+	<line x="12.990" y="0.00" refyx="12.500"  refy="inrun-top"/>
+	<line x="13.000" y="0.00" refy="inrun-top"/>
+	<line x="13.490" y="0.00" refyx="13.000"  refy="inrun-top"/>
+	<line x="13.500" y="0.00" refy="inrun-top"/>
+	<line x="13.990" y="0.00" refyx="13.500"  refy="inrun-top"/>
+	<line x="14.000" y="0.00" refy="inrun-top"/>
+	<line x="14.490" y="0.00" refyx="14.000"  refy="inrun-top"/>
+	<line x="14.500" y="0.00" refy="inrun-top"/>
+	<line x="14.990" y="0.00" refyx="14.500"  refy="inrun-top"/>
+	<line x="15.000" y="0.00" refy="inrun-top"/>
+	<line x="15.490" y="0.00" refyx="15.000"  refy="inrun-top"/>
+	<line x="15.500" y="0.00" refy="inrun-top"/>
+	<line x="15.990" y="0.00" refyx="15.500"  refy="inrun-top"/>
+	<line x="16.000" y="0.00" refy="inrun-top"/>
+	<line x="16.490" y="0.00" refyx="16.000"  refy="inrun-top"/>
+	<line x="16.500" y="0.00" refy="inrun-top"/>
+	<line x="16.990" y="0.00" refyx="16.500"  refy="inrun-top"/>
+	<line x="17.000" y="0.00" refy="inrun-top"/>
+	<line x="17.490" y="0.00" refyx="17.000"  refy="inrun-top"/>
+	<line x="17.500" y="0.00" refy="inrun-top"/>
+	<line x="17.990" y="0.00" refyx="17.500"  refy="inrun-top"/>
+	<line x="18.000" y="0.00" refy="inrun-top"/>
+	<line x="18.490" y="0.00" refyx="18.000"  refy="inrun-top"/>
+	<line x="18.500" y="0.00" refy="inrun-top"/>
+	<line x="18.990" y="0.00" refyx="18.500"  refy="inrun-top"/>
+	<line x="19.000" y="0.00" refy="inrun-top"/>
+	<line x="19.490" y="0.00" refyx="19.000"  refy="inrun-top"/>
+	<line x="19.500" y="0.00" refy="inrun-top"/>
+	<line x="19.990" y="0.00" refyx="19.500"  refy="inrun-top"/>
+	<line x="20.000" y="0.00" refy="inrun-top"/>
+	<line x="20.490" y="0.00" refyx="20.000"  refy="inrun-top"/>
+	<line x="20.500" y="0.00" refy="inrun-top"/>
+	
+</profile>
+    
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="0.1" rz="0" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="0.21" rz="0.11" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="0.32" rz="0.22" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="0.43" rz="0.33" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="0.54" rz="0.44" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="0.65" rz="0.55" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="0.76" rz="0.66" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="0.87" rz="0.77" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+		
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="0.98" rz="0.88" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+			
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="1.09" rz="0.99" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+		
+		
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="1.2" rz="1.1" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="1.31" rz="1.21" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="1.42" rz="1.32" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="1.53" rz="1.43" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="1.64" rz="1.54" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="1.75" rz="1.65" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="1.86" rz="1.76" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="1.97" rz="1.87" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="2.08" rz="1.98" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+		
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="2.19" rz="2.09" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="2.3" rz="2.20" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="2.41" rz="2.31" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="2.52" rz="2.42" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="2.63" rz="2.53" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="2.74" rz="2.64" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="2.85" rz="2.75" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" top="true"
+	x1="0.000" x2="0.490" ty=".05" lz="2.9" rz="2.86" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left"
+	x1="0.000" x2="0.445" ty="0" by="-0.04" lz="0.14" rz="0.1" step="0.500" count="41"
+	t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+
+<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left"
+	x1="0.000" x2="0.445" ty="0" by="-0.04" lz="2.8" rz="2.76" step="0.500" count="41"
+	t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+
+<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left"
+	x1="0.000" x2="0.445" ty="0" by="-0.04" lz="1.47" rz="1.43" step="0.500" count="41"
+	t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+	<pillar refx="inrun" trefy="inrun-stairs" brefy="inrun-top" refz="inrun-left"
+	x1="0.415" x2="0.445" ty="-0.04" by="-2" lz="1.47" rz="1.43" step="0.500" count="41"
+	t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+
+<pillar refx="inrun" refy="inrun-stairs"  refz="inrun-left"
+	x1="0.445" x2="0.490" by="-0.105" ty="-0.005" lz="2.9" rz="0" step="0.500" count="41"
+t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+<pillar refx="inrun" refy="inrun-stairs"  refz="inrun-left"
+	x1="0.445" x2="0.490" by="-0.215" ty="-0.115" lz="2.9" rz="0" step="0.500" count="41"
+t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+ 
+<pillar refx="inrun" refy="inrun-stairs"  refz="inrun-left"
+	x1="0.445" x2="0.490" by="-0.325" ty="-0.225" lz="2.9" rz="0" step="0.500" count="41"
+t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+
+<pillar refx="inrun" trefy="inrun-stairs" brefy="inrun-top" refz="inrun-left"
+	x1="0.415" x2="0.445" ty="-0.04" by="-2" lz="0.14" rz="0.1" step="0.500" count="41"
+	t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+<pillar refx="inrun" trefy="inrun-stairs" brefy="inrun-top" refz="inrun-left"
+	x1="0.415" x2="0.445" ty="-0.04" by="-2" lz="2.8" rz="2.76" step="0.500" count="41"
+	t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+    <!--prawo-->
+    
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-right" top="true"
+	x1="0.000" x2="0.490" ty=".05" rz="-0.1" lz="-0" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-right" top="true"
+	x1="0.000" x2="0.490" ty=".05" rz="-0.21" lz="-0.11" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-right" top="true"
+	x1="0.000" x2="0.490" ty=".05" rz="-0.32" lz="-0.22" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-right" top="true"
+	x1="0.000" x2="0.490" ty=".05" rz="-0.43" lz="-0.33" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-right" top="true"
+	x1="0.000" x2="0.490" ty=".05" rz="-0.54" lz="-0.44" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-right" top="true"
+	x1="0.000" x2="0.490" ty=".05" rz="-0.65" lz="-0.55" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-right" top="true"
+	x1="0.000" x2="0.490" ty=".05" rz="-0.76" lz="-0.66" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-right" top="true"
+	x1="0.000" x2="0.490" ty=".05" rz="-0.87" lz="-0.77" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+		
+	<pillar refx="inrun" refy="inrun-stairs" refz="inrun-right" top="true"
+	x1="0.000" x2="0.490" ty=".05" rz="-0.98" lz="-0.88" step="0.500" count="41"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+
+<pillar refx="inrun" refy="inrun-stairs" refz="inrun-right"
+	x1="0.000" x2="0.445" ty="0" by="-0.04" rz="-0.14" lz="-0.1" step="0.500" count="41"
+	t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+
+<pillar refx="inrun" refy="inrun-stairs" refz="inrun-right"
+	x1="0.000" x2="0.445" ty="0" by="-0.04" rz="-0.8" lz="-0.76" step="0.500" count="41"
+	t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+
+
+<pillar refx="inrun" refy="inrun-stairs"  refz="inrun-right"
+	x1="0.445" x2="0.490" by="-0.105" ty="-0.005" rz="-0.98" lz="0" step="0.500" count="41"
+t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+<pillar refx="inrun" refy="inrun-stairs"  refz="inrun-right"
+	x1="0.445" x2="0.490" by="-0.215" ty="-0.115" rz="-0.98" lz="0" step="0.500" count="41"
+t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+ 
+<pillar refx="inrun" refy="inrun-stairs"  refz="inrun-right"
+	x1="0.445" x2="0.490" by="-0.325" ty="-0.225" rz="-0.98" lz="0" step="0.500" count="41"
+t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+
+<pillar refx="inrun" trefy="inrun-stairs" brefy="inrun-top" refz="inrun-right"
+	x1="0.415" x2="0.445" ty="-0.04" by="-2" rz="-0.14" lz="-0.1" step="0.500" count="41"
+	t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+<pillar refx="inrun" trefy="inrun-stairs" brefy="inrun-top" refz="inrun-right"
+	x1="0.415" x2="0.445" ty="-0.04" by="-2" rz="-0.8" lz="-0.76" step="0.500" count="41"
+	t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+<!--rollo-->
+<pillar refx="inrun" trefy="inrun-stairs" brefy="inrun-top"
+	x1="2.005" x2="2.065" ty="1.2" by="-2" rz="-1.67" lz="-1.61"
+	t="Textures\rust1.png" m="Materials\material1.xml" c="0x555e50"/>
+
+<pillar refx="inrun" trefy="inrun-stairs" brefy="inrun-top"
+	x1="2.005" x2="2.065" ty="1.2" by="-2" rz="1.61" lz="1.67"
+	t="Textures\rust1.png" m="Materials\material1.xml" c="0x555e50"/>
+
+
+<beam refx="inrun" refy="inrun-stairs" rect="true" x="2.035" z1="-1.58" z2="1.58" fitstep="true" y="1.12" r="0.15" edges="64" smooth="true" t="Textures\plate1.png" m="Materials\material1.xml" c="0xc79f1a" end1="true" end2="true"/>
+<beam refx="inrun" refy="inrun-stairs" rect="true" x="2.035" z1="1.58" z2="1.61" fitstep="true" y="1.12" r="0.19" edges="64" smooth="true" t="Textures\rust1.png" m="Materials\material1.xml" c="0x57694f" end1="true" end2="true"/>
+<beam refx="inrun" refy="inrun-stairs" rect="true" x="2.035" z1="-1.58" z2="-1.61" fitstep="true" y="1.12" r="0.19" edges="64" smooth="true" t="Textures\rust1.png" m="Materials\material1.xml" c="0x57694f" end1="true" end2="true"/>
+<beam refx="inrun" refy="inrun-stairs" rect="true" x="2.035" z1="-1.71" z2="1.71" fitstep="true" y="1.12" r="0.01" edges="64" smooth="true" t="Textures\rust1.png" m="Materials\material1.xml" c="0x57694f" end1="true" end2="true"/>
+
+<!--barierki-->
+<pillar refx1="inrun" refx2="dhill" refy="inrun-top"  refz="inrun-right"
+	x1="30" x2="-6.6" ntop="0.16" nbottom="0" lz="0.05" rz="0" 
+t="Textures\wood2b.png" top="true" m="Materials\material1.xml" c="0x94908b"/>
+
+<pillar refx1="inrun" refx2="dhill" refy="inrun-top"  refz="inrun-right"
+	x1="30" x2="-6.6" ntop="0.33" nbottom="0.17" lz="0.05" rz="0" 
+t="Textures\wood2b.png" top="true" m="Materials\material1.xml" c="0x94908b"/>
+
+<pillar refx1="inrun" refx2="dhill" refy="inrun-top"  refz="inrun-right"
+	x1="30" x2="-6.6" ntop="0.50" nbottom="0.34" lz="0.05" rz="0" 
+t="Textures\wood2b.png" top="true" m="Materials\material1.xml" c="0x94908b"/>
+
+<pillar refx1="inrun" refx2="dhill" refy="inrun-top"  refz="inrun-right"
+	x1="30" x2="-6.6" ntop="0.67" nbottom="0.51" lz="0.05" rz="0" 
+t="Textures\wood2b.png" top="true" m="Materials\material1.xml" c="0x94908b"/>
+
+<pillar refx="dhill" refy="inrun-top"  refz="inrun-right"
+	x1="-6.6" x2="0" ntop="0.67" nbottom="0" lz="0.05" rz="0" 
+t="Textures\railing-glass-cut.png" top="true" m="Materials\window.xml" c="0xffebda96" type="blend"/>
+
+<pillar refx1="inrun" refx2="dhill" refy="inrun-top"  refz="inrun-right"
+	x1="30" x2="0" ntop="0.68" nbottom="0.67" lz="0.06" rz="-0.04" 
+t="Textures\wood5.png" top="true" m="Materials\material1.xml" c="0x94908b"/>
+
+
+<beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" refz="inrun-left" last="true" rect="true" x1="31" x2="-1" dz="-0.01" step="1" stepper="3" fitstep="true" ny1="0.77" ny2="0.67" r1="0.01" r2="0.01" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+<beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" refz="inrun-right" last="true" rect="true" x1="31" x2="-1" dz="0.01" step="1" stepper="3" fitstep="true" ny1="0.77" ny2="0.67" r1="0.01" r2="0.01" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+
+<beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" refz="inrun-left" last="true" rect="true" x1="31" x2="-1" dz="-0.01" step="1" stepper="3" fitstep="true" ny1="0.685" ny2="0.67" r1="0.015" r2="0.015" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+<beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" refz="inrun-right" last="true" rect="true" x1="31" x2="-1" dz="0.01" step="1" stepper="3" fitstep="true" ny1="0.685" ny2="0.67" r1="0.015" r2="0.015" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+
+<beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" refz="inrun-right" last="true" rect="true" x1="30" x2="-1" dx1="0" dx2="1" dz="0.01" step="1" stepper="3" fitstep="true" ny1="0.77" ny2="0.77" r1="0.012" r2="0.012" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+<beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" refz="inrun-left" last="true" rect="true" x1="30" x2="-1" dx1="0" dx2="1" dz="-0.01" step="1" stepper="3" fitstep="true" ny1="0.77" ny2="0.77" r1="0.012" r2="0.012" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+
+<pillar refx="inrun" refy="inrun-top"  refz="inrun-right"
+	x1="30" x2="30.04" ntop="0.67" nbottom="0" lz="0" rz="-0.04" step="1" count="50"
+t="Textures\wood5.png" top="true" m="Materials\material1.xml" c="0x94908b"/>
+<beam refx="inrun" refy="inrun-top" refz="inrun-right" rect="true" x="30" z="0.0" fitstep="true" ny2="0.7" ny1="0" r="0.06" edges="64" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xb8431f" end1="true" end2="true"/>
+
+<pillar refx1="inrun" refx2="dhill" refy="inrun-top"  refz="inrun-left"
+	x1="30" x2="0" ntop="0.16" nbottom="0" rz="-0.05" lz="0" 
+t="Textures\wood2b.png" top="true" m="Materials\material1.xml" c="0x94908b"/>
+
+<pillar refx1="inrun" refx2="dhill" refy="inrun-top"  refz="inrun-left"
+	x1="30" x2="0" ntop="0.33" nbottom="0.17" rz="-0.05" lz="0" 
+t="Textures\wood2b.png" top="true" m="Materials\material1.xml" c="0x94908b"/>
+
+<pillar refx1="inrun" refx2="dhill" refy="inrun-top"  refz="inrun-left"
+	x1="30" x2="0" ntop="0.50" nbottom="0.34" rz="-0.05" lz="0" 
+t="Textures\wood2b.png" top="true" m="Materials\material1.xml" c="0x94908b"/>
+
+<pillar refx1="inrun" refx2="dhill" refy="inrun-top"  refz="inrun-left"
+	x1="30" x2="0" ntop="0.67" nbottom="0.51" rz="-0.05" lz="0" 
+t="Textures\wood2b.png" top="true" m="Materials\material1.xml" c="0x94908b"/>
+
+<pillar refx1="inrun" refx2="dhill" refy="inrun-top"  refz="inrun-left"
+	x1="30" x2="0" ntop="0.68" nbottom="0.67" rz="-0.06" lz="0.04" 
+t="Textures\wood5.png" top="true" m="Materials\material1.xml" c="0x94908b"/>
+
+
+<pillar refx="inrun" refy="inrun-top"  refz="inrun-left"
+	x1="30" x2="30.04" ntop="0.67" nbottom="0" rz="-0" lz="0.04" step="1" count="50"
+t="Textures\wood5.png" top="true" m="Materials\material1.xml" c="0x94908b"/>
+<beam refx="inrun" refy="inrun-top" refz="inrun-left" rect="true" x="30" z="0.0" fitstep="true" ny2="0.7" ny1="0" r="0.06" edges="64" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xb8431f" end1="true" end2="true"/>
+
+<!--dywanik na najdezdzie-->
+<pillar  refx1="inrun" refx2="dhill" refz="inrun-left" x1="3" x2="0" ty="0.03" lz="-0.05" rz="-0.87" refy="inrun-top" t="Textures\carpet.png" m="Materials\material1.xml" c="0x3f735f"/>
+<pillar refx1="inrun" refx2="dhill" refz="inrun-right" x1="3" x2="0" ty="0.03" lz="0.87" rz="0.05" refy="inrun-top" t="Textures\carpet.png" m="Materials\material1.xml" c="0x3f735f"/>
+<beam refx="inrun" refy="inrun-top" refz="inrun-left" rect="true" x="3" z1="-0.05" z2="-0.87" fitstep="true" ny="0.05" r="0.06" edges="64" smooth="true" t="Textures\carpet.png" m="Materials\material1.xml" c="0x3f735f" end1="true" end2="true"/>
+<beam refx="inrun" refy="inrun-top" refz="inrun-right" rect="true" x="3" z1="0.05" z2="0.87" fitstep="true" ny="0.05" r="0.06" edges="64" smooth="true" t="Textures\carpet.png" m="Materials\material1.xml" c="0x3f735f" end1="true" end2="true"/>
+<!--betom-->
+<pillar refx="inrun" refz="inrun-left" x1="-0.05" x2="20.5" ntop="0.1" nbottom="-2" lz="3" rz="2.9" refy="inrun-top" t="Textures\concrete1.png" m="Materials\material1.xml" c="0xc0c0c0"/>
+<pillar refx="inrun" refz="inrun-left" x1="20.5" x2="20.6" ntop="0.1" nbottom="-2" lz="3" rz="1.1" refy="inrun-top" t="Textures\concrete1.png" m="Materials\material1.xml" c="0xc0c0c0"/>
+
+<pillar refx="inrun" refz="inrun-right" x1="-0.05" x2="73.5" ntop="0.1" nbottom="-2" lz="-1" rz="-1.1" refy="inrun-top" t="Textures\concrete1.png" m="Materials\material1.xml" c="0xc0c0c0"/>
+<pillar refx="inrun" refz="inrun-left" x1="20.5" x2="73.5" ntop="0.1" nbottom="-2" rz="1" lz="1.1" refy="inrun-top" t="Textures\concrete1.png" m="Materials\material1.xml" c="0xc0c0c0"/>
+<!--dach-->
+<pillar refx="inrun" refz="inrun-left" trefy="inrun-stairs" brefy="inrun-top" step="2.5" count="7"
+	x1="5" x2="5.01" ty="3" by="-2" rz="2.92" lz="2.98"
+	t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+
+	<pillar refx="inrun" refz="inrun-left" trefy="inrun-stairs" brefy="inrun-top" step="2.5" count="7"
+	x1="5.01" x2="5.05" ty="2.99" by="-2" rz="2.93" lz="2.97"
+	t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+
+	<pillar refx="inrun" refz="inrun-left" trefy="inrun-stairs" brefy="inrun-top" step="2.5" count="7"
+	x1="5.05" x2="5.06" ty="3" by="-2" rz="2.92" lz="2.98"
+	t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+
+<pillar refx="inrun" refz="inrun-left" refy="inrun-stairs" step="2.5" count="7"
+	x1="5.05" x2="5.06" ty="3" by="2.94" rz="0.92" lz="2.92"
+	t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+
+	<pillar refx="inrun" refz="inrun-left" refy="inrun-stairs" step="2.5" count="7"
+	x1="5" x2="5.01" ty="3" by="2.94" rz="0.93" lz="2.92"
+	t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+
+		<pillar refx="inrun" refz="inrun-left" refy="inrun-stairs" step="2.5" count="7"
+	x1="5.01" x2="5.05" ty="2.99" by="2.95" lz="2.93" rz="0.92"
+	t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+
+<profile id="dhill-fence" refx="inrun">
+	<start x="5.01" y="2.96"  refy="inrun-top" />
+	<line x="5.32" y="2.86"  refy="inrun-top" />
+	<line x="5.63" y="2.78"  refy="inrun-top" />
+	<line x="5.95" y="2.73"  refy="inrun-top" />
+	<line x="6.26" y="2.71"  refy="inrun-top" />
+	<line x="6.57" y="2.73"  refy="inrun-top" />
+	<line x="6.88" y="2.78"  refy="inrun-top" />
+	<line x="7.20" y="2.86"  refy="inrun-top" />
+	<line x="7.51" y="2.96"  refy="inrun-top" />
+	<line x="7.82" y="2.86"  refy="inrun-top" />
+	<line x="8.13" y="2.78"  refy="inrun-top" />
+	<line x="8.45" y="2.73"  refy="inrun-top" />
+	<line x="8.76" y="2.71"  refy="inrun-top" />
+	<line x="9.07" y="2.73"  refy="inrun-top" />
+	<line x="9.38" y="2.78"  refy="inrun-top" />
+	<line x="9.70" y="2.86"  refy="inrun-top" />
+	<line x="10.01" y="2.96"  refy="inrun-top" />
+	<line x="10.32" y="2.86"  refy="inrun-top" />
+	<line x="10.63" y="2.78"  refy="inrun-top" />
+	<line x="10.95" y="2.73"  refy="inrun-top" />
+	<line x="11.26" y="2.71"  refy="inrun-top" />
+	<line x="11.57" y="2.73"  refy="inrun-top" />
+	<line x="11.88" y="2.78"  refy="inrun-top" />
+	<line x="12.20" y="2.86"  refy="inrun-top" />
+	<line x="12.51" y="2.96"  refy="inrun-top" />
+	<line x="12.82" y="2.86"  refy="inrun-top" />
+	<line x="13.13" y="2.78"  refy="inrun-top" />
+	<line x="13.45" y="2.73"  refy="inrun-top" />
+	<line x="13.76" y="2.71"  refy="inrun-top" />
+	<line x="14.07" y="2.73"  refy="inrun-top" />
+	<line x="14.38" y="2.78"  refy="inrun-top" />
+	<line x="14.70" y="2.86"  refy="inrun-top" />
+	<line x="15.01" y="2.96"  refy="inrun-top" />
+	<line x="15.32" y="2.86"  refy="inrun-top" />
+	<line x="15.63" y="2.78"  refy="inrun-top" />
+	<line x="15.95" y="2.73"  refy="inrun-top" />
+	<line x="16.26" y="2.71"  refy="inrun-top" />
+	<line x="16.57" y="2.73"  refy="inrun-top" />
+	<line x="16.88" y="2.78"  refy="inrun-top" />
+	<line x="17.20" y="2.86"  refy="inrun-top" />
+	<line x="17.51" y="2.96"  refy="inrun-top" />
+	<line x="17.82" y="2.86"  refy="inrun-top" />
+	<line x="18.13" y="2.78"  refy="inrun-top" />
+	<line x="18.45" y="2.73"  refy="inrun-top" />
+	<line x="18.76" y="2.71"  refy="inrun-top" />
+	<line x="19.07" y="2.73"  refy="inrun-top" />
+	<line x="19.38" y="2.78"  refy="inrun-top" />
+	<line x="19.70" y="2.86"  refy="inrun-top" />
+	<line x="20.01" y="2.96"  refy="inrun-top" />
+	<line x="20.32" y="2.86"  refy="inrun-top" />
+	<line x="20.63" y="2.78"  refy="inrun-top" />
+	<line x="20.95" y="2.73"  refy="inrun-top" />
+	<line x="21.26" y="2.71"  refy="inrun-top" />
+	<line x="21.57" y="2.73"  refy="inrun-top" />
+	<line x="21.88" y="2.78"  refy="inrun-top" />
+	<line x="22.20" y="2.86"  refy="inrun-top" />
+	<line x="22.51" y="2.96"  refy="inrun-top" />
+	</profile>
+
+<pillar refx="inrun" refz="inrun-left" refy="dhill-fence"
+	x1="5.01" x2="20" ty="0.02" by="-0.02" lz="2.93" rz="0.94"
+	t="Textures\plate2.png" m="Materials\material1.xml" c="0xfefefe"/>
+
+<pillar refx="inrun" refy="inrun-stairs" refz="inrun-left" zbias="1"
+	x1="0.5" x2="0.990" ty=".055" by=".05" lz="2.9" rz="0" step="1.5" count="13"
+t="Textures\carpet.png" top="true" m="Materials\material1.xml" c="0x3f735f"/>
+
+<!--barierki drewniane-->
+
+<pillar refx="inrun" refz="inrun-left" refy="inrun-top" 
+	x1="-0.25" x2="4.25" ntop="1" nbottom="0.9" lz="2.955" rz="2.945"
+t="Textures\wood2b.png" top="true" m="Materials\material1.xml" c="0x94908b"/>
+
+<pillar refx="inrun" refz="inrun-left" refy="inrun-top" 
+	x1="-0.25" x2="4.25" ntop="0.8" nbottom="0.7" lz="2.955" rz="2.945"
+t="Textures\wood2b.png" top="true" m="Materials\material1.xml" c="0x94908b"/>
+
+<pillar refx="inrun" refz="inrun-left" refy="inrun-top" 
+	x1="-0.25" x2="4.25" ntop="0.6" nbottom="0.5" lz="2.955" rz="2.945"
+t="Textures\wood2b.png" top="true" m="Materials\material1.xml" c="0x94908b"/>
+
+<pillar refx="inrun" refz="inrun-left" refy="inrun-top" step="1" count="5"
+	x1="0" x2="0.04" ntop="1" nbottom="0" lz="2.995" rz="2.955"
+t="Textures\wood2b.png" top="true" m="Materials\material1.xml" c="0x94908b"/>
+
+
+<pillar refx="inrun" refz="inrun-right" refy="inrun-top" 
+	x1="-0.25" x2="20.25" ntop="1" nbottom="0.9" rz="-1.055" lz="-1.045"
+t="Textures\wood2b.png" top="true" m="Materials\material1.xml" c="0x94908b"/>
+
+<pillar refx="inrun" refz="inrun-right" refy="inrun-top" 
+	x1="-0.25" x2="20.25" ntop="0.8" nbottom="0.7" rz="-1.055" lz="-1.045"
+t="Textures\wood2b.png" top="true" m="Materials\material1.xml" c="0x94908b"/>
+
+<pillar refx="inrun" refz="inrun-right" refy="inrun-top" 
+	x1="-0.25" x2="20.25" ntop="0.6" nbottom="0.5" rz="-1.055" lz="-1.045"
+t="Textures\wood2b.png" top="true" m="Materials\material1.xml" c="0x94908b"/>
+
+<pillar refx="inrun" refz="inrun-right" refy="inrun-top" step="1" count="21"
+	x1="0" x2="0.04" ntop="1" nbottom="0" rz="-1.095" lz="-1.055"
+t="Textures\wood2b.png" top="true" m="Materials\material1.xml" c="0x94908b"/>
+
+<!--te zagiecie na koncu-->
+	<profile id="xyz">
+        <start x="-1.25" y="2" refx="inrun" refy="inrun-top" refyx="0"/>
+        <line x="0" y="0" refx="inrun" refy="inrun-top" refyx="0"/>
+	</profile>
+
+
+<pillar refx="inrun" refrz="inrun-right" reflz="inrun-left" refy="xyz" 
+	x1="-1.25" x2="0" ty="0.05" by="0" rz="0" lz="0"
+t="Textures\wood5.png" top="true" m="Materials\material1.xml" c="0x94908b"/>
+
+<pillar refx="inrun" refz="inrun-right" refy="xyz" 
+	x1="-1.25" x2="0" ty="0" by="-0.04" rz="0" lz="0.04" top="false"
+t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+<pillar refx="inrun" refz="inrun-left" refy="xyz" 
+	x1="-1.25" x2="0" ty="0" by="-0.04" rz="-0.04" lz="0" top="false"
+t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+<pillar refx="inrun" reflz="inrun-left" refrz="inrun-right" refy="xyz" 
+	x1="-1.25" x2="-1.21" ty="0" by="-0.04" rz="0.04" lz="-0.04" top="false"
+t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+<pillar refx="inrun" reflz="inrun-left" refrz="inrun-right" refy="xyz" 
+	x1="-0.04" x2="0" ty="0" by="-0.04" rz="0.04" lz="-0.04" top="false"
+t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+<pillar refx="inrun" refz="inrun-right" trefy="xyz" brefy="inrun-top"
+	x1="-1.25" x2="-1.21" ty="0" by="-2" rz="0" lz="0.04" top="false"
+t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+<pillar refx="inrun" refz="inrun-left" trefy="xyz" brefy="inrun-top"
+	x1="-1.25" x2="-1.21" ty="0" by="-2" rz="-0.04" lz="0" top="false"
+t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+<pillar refx="inrun" refz="inrun-right" trefy="xyz" brefy="inrun-top"
+	x1="-0.04" x2="0" ty="0" by="-2" rz="0" lz="0.04" top="false"
+t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+<pillar refx="inrun" refz="inrun-left" trefy="xyz" brefy="inrun-top"
+	x1="-0.04" x2="0" ty="0" by="-2" rz="-0.04" lz="0" top="false"
+t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+<!--szyny-->
+<beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" refz="inrun-right" last="true" rect="true" x1="0" x2="-1" dx1="0" dx2="1" dz="0.9" step="1" stepper="3" fitstep="true" ny1="0.05" ny2="0.05" r1="0.01" r2="0.01" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xc0c0c0"/>
+<beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" refz="inrun-left" last="true" rect="true" x1="0" x2="-1" dx1="0" dx2="1" dz="-0.9" step="1" stepper="3" fitstep="true" ny1="0.05" ny2="0.05" r1="0.01" r2="0.01" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xc0c0c0"/>
+
+<beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" refz="inrun-left" last="true" rect="true" x1="0" x2="-0.5" dz="-0.9" step="1" stepper="3" fitstep="true" ny1="0" ny2="0.05" r1="0.005" r2="0.005" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xc0c0c0"/>
+<beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" refz="inrun-right" last="true" rect="true" x1="0" x2="-0.5" dz="0.9" step="1" stepper="3" fitstep="true" ny1="0" ny2="0.05" r1="0.005" r2="0.005" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xc0c0c0"/>
+<beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" refz="inrun-left" last="true" rect="true" x1="0" x2="-0.5" dz="-0.9" step="1" stepper="3" fitstep="true" ny1="0" ny2="0.005" r1="0.015" r2="0.015" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xc0c0c0"/>
+<beamgroup refx1="inrun" refx2="dhill" refy="inrun-top" refz="inrun-right" last="true" rect="true" x1="0" x2="-0.5" dz="0.9" step="1" stepper="3" fitstep="true" ny1="0" ny2="0.005" r1="0.015" r2="0.015" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xc0c0c0"/>
+
+<!--spod dhill-->
+<pillar refx1="inrun" refx2="dhill" reflz="inrun-left" refrz="inrun-right" refy="inrun-top"
+	x1="0" x2="0" ty="0" by="-0.15" rz="0" lz="0" top="false"
+t="Textures\concrete1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+<pillar refx1="inrun" refx2="dhill" refz="inrun-right" refy="inrun-top"
+	x1="0" x2="0" ty="0" by="-0.15" rz="-0.04" lz="0" top="true"
+t="Textures\concrete1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+<pillar refx1="inrun" refx2="dhill" refz="inrun-left" refy="inrun-top"
+	x1="0" x2="0" ty="0" by="-0.15" lz="0.04" rz="0" top="true"
+t="Textures\concrete1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+
+<!--dechy na progu-->
+<pillar refx="dhill" refrz="inrun-right" reflz="inrun-left" refy="inrun-top" step="0.11" count="56"
+	x1="-6.1" x2="-6" ty="-0.15" by="-0.2" rz="-1.5" lz="1.5"
+t="Textures\wood2b.png" top="true" m="Materials\material1.xml" c="0x94908b"/>
+
+
+<pillar refx="dhill" refrz="inrun-right" reflz="inrun-left" refy="inrun-top" step="1.11" count="6"
+	x1="-6.1" x2="-6" ty="-0.2" by="-0.3" rz="-1.5" lz="1.5"
+t="Textures\rust1.png" top="true" m="Materials\material1.xml" c="0xbbbbbb"/>
+
+<pillar refx="dhill" refz="inrun-right"  refy="inrun-top" step="1.11" count="6"
+	x1="-6.1" x2="-6" ty="-0.3" by="-6" rz="0" lz="0.1"
+t="Textures\rust1.png" top="true" m="Materials\material1.xml" c="0xbbbbbb"/>
+
+<pillar refx="dhill" refz="inrun-right"  refy="inrun-top" step="1.11" count="6"
+	x1="-6.1" x2="-6" tly="-1.4" bly="-1.5" try="-0.2" bry="-0.3" rz="-1.2" lz="0"
+t="Textures\rust1.png" top="true" m="Materials\material1.xml" c="0xbbbbbb"/>
+
+
+<pillar refx="dhill" refz="inrun-left"  refy="inrun-top" step="1.11" count="6"
+	x1="-6.1" x2="-6" try="-1.4" bry="-1.5" tly="-0.2" bly="-0.3" rz="0" lz="1.2"
+t="Textures\rust1.png" top="true" m="Materials\material1.xml" c="0xbbbbbb"/>
+
+
+<pillar refx="dhill" refz="inrun-left"  refy="inrun-top" step="1.11" count="6"
+	x1="-6.1" x2="-6" ty="-0.3" by="-6" lz="0" rz="-0.1"
+t="Textures\rust1.png" top="true" m="Materials\material1.xml" c="0xbbbbbb"/>
+
+
+
+
+<beamgroup refx="dhill" refy="inrun-top" refz="inrun-right" last="true" rect="true" x1="-5" x2="0" dz="-1.515" step="1" stepper="3" fitstep="true" ny1="1.25" ny2="-0.2" r1="0.015" r2="0.015" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+
+<beam refx="dhill" refy="inrun-top" refz="inrun-right" last="true" rect="true" x1="-5.05" x2="0" z="-1.515" step="1" stepper="3" fitstep="true" ny="1.25"  r1="0.02" r2="0.02" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+
+<beam refx="dhill" refy="inrun-top" refz="inrun-right" last="true" rect="true" x1="-5.05" x2="0" z="-1.515" step="1" stepper="3" fitstep="true" ny="0.65"  r1="0.02" r2="0.02" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+
+
+<beamgroup refx="dhill" refy="inrun-top" refz="inrun-left" last="true" rect="true" x1="-5" x2="0" dz="1.515" step="1" stepper="3" fitstep="true" ny1="1.25" ny2="-0.2" r1="0.015" r2="0.015" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+
+<beam refx="dhill" refy="inrun-top" refz="inrun-left" last="true" rect="true" x1="-5.05" x2="0" z="1.515" step="1" stepper="3" fitstep="true" ny="1.25"  r1="0.02" r2="0.02" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+
+<beam refx="dhill" refy="inrun-top" refz="inrun-left" last="true" rect="true" x1="-5.05" x2="0" z="1.515" step="1" stepper="3" fitstep="true" ny="0.65"  r1="0.02" r2="0.02" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+<beamgroup refx="dhill" refy="inrun-top" refz="inrun-right" last="true" rect="true" x1="0" x2="0" dz="-0.025" step="1" stepper="3" fitstep="true" ny1="1.25" ny2="-0.2" r1="0.015" r2="0.015" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+<beamgroup refx="dhill" refy="inrun-top" refz="inrun-left" last="true" rect="true" x1="0" x2="0" dz="0.025" step="1" stepper="3" fitstep="true" ny1="1.25" ny2="-0.2" r1="0.015" r2="0.015" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+<beam refx="dhill" refy="inrun-top" refz="inrun-right" last="true" rect="true" x="0" z1="-1.515" z2="-0.015" step="1" stepper="3" fitstep="true" ny="1.25"  r1="0.02" r2="0.02" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+<beam refx="dhill" refy="inrun-top" refz="inrun-right" last="true" rect="true" x="0" z1="-1.515" z2="-0.015"  step="1" stepper="3" fitstep="true" ny="0.65"  r1="0.02" r2="0.02" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+<beam refx="dhill" refy="inrun-top" refz="inrun-left" last="true" rect="true" x="0" z1="1.515" z2="0.015" step="1" stepper="3" fitstep="true" ny="1.25"  r1="0.02" r2="0.02" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+<beam refx="dhill" refy="inrun-top" refz="inrun-left" last="true" rect="true" x="0" z1="1.515" z2="0.015"  step="1" stepper="3" fitstep="true" ny="0.65"  r1="0.02" r2="0.02" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+
+    <profile id="walek" refx="dhill">
+        <start x="-2" refy="dhill-top" y="0" />
+        <line x="1" y="0" refy="dhill-top" refyx="0"/>
+    </profile>
+
+
+<pillar refx="dhill" refy="walek"
+	x1="-2.065" x2="-2.005" ty="1.2" by="-2" rz="-1.67" lz="-1.61"
+	t="Textures\rust1.png" m="Materials\material1.xml" c="0x555e50"/>
+
+<pillar refx="dhill" refy="walek"
+	x1="-2.065" x2="-2.005" ty="1.2" by="-2" rz="1.61" lz="1.67"
+	t="Textures\rust1.png" m="Materials\material1.xml" c="0x555e50"/>
+
+
+<beam refx="dhill" refy="walek" rect="true" x="-2.035" z1="-1.58" z2="1.58" fitstep="true" y="1.12" r="0.15" edges="64" smooth="true" t="Textures\plate1.png" m="Materials\material1.xml" c="0xc79f1a" end1="true" end2="true"/>
+<beam refx="dhill" refy="walek" rect="true" x="-2.035" z1="1.58" z2="1.61" fitstep="true" y="1.12" r="0.19" edges="64" smooth="true" t="Textures\rust1.png" m="Materials\material1.xml" c="0x57694f" end1="true" end2="true"/>
+<beam refx="dhill" refy="walek" rect="true" x="-2.035" z1="-1.58" z2="-1.61" fitstep="true" y="1.12" r="0.19" edges="64" smooth="true" t="Textures\rust1.png" m="Materials\material1.xml" c="0x57694f" end1="true" end2="true"/>
+<beam refx="dhill" refy="walek" rect="true" x="-2.035" z1="-1.71" z2="1.71" fitstep="true" y="1.12" r="0.01" edges="64" smooth="true" t="Textures\rust1.png" m="Materials\material1.xml" c="0x57694f" end1="true" end2="true"/>
+
+
+
+
+
+<!-- Generated with 'Gate Numbers v. 1.2.0' application by Marcin Przybyła -->
+
+<!-- 3D models of numbers -->
+
+<model id="font2-zero">
+<batch id="zero-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" z="0.0151515" y="0.0310605" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="2" z="0.010985" y="0.0188825" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="3" z="0" y="0.0145455" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="4" z="-0.010985" y="0.0188825" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="5" z="-0.0151515" y="0.0310605" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="6" z="-0.0151515" y="0.076818" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="7" z="-0.010985" y="0.088996" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="8" z="0" y="0.0933335" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="9" z="0.010985" y="0.088996" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="10" z="0.0151515" y="0.076818" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="11" z="-0.030606" y="0.0301515" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="12" z="-0.021269" y="0.007178" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="13" z="0" y="-0.000909" x="0" u1="0" v1="0" diffuse="0xff333333" /> 
+<vertex id="14" z="0.021269" y="0.007178" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="15" z="0.030606" y="0.0301515" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="16" z="0.030606" y="0.0777275" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="17" z="0.021269" y="0.1007005" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="18" z="0" y="0.108788" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="19" z="-0.021269" y="0.1007005" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="20" z="-0.030606" y="0.0777275" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<face v3="19" v2="17" v1="18" />
+<face v3="20" v2="7" v1="19" />
+<face v3="7" v2="8" v1="19" />
+<face v3="8" v2="17" v1="19" />
+<face v3="8" v2="9" v1="17" />
+<face v3="9" v2="16" v1="17" />
+<face v3="20" v2="6" v1="7" />
+<face v3="10" v2="16" v1="9" />
+<face v3="11" v2="6" v1="20" />
+<face v3="10" v2="15" v1="16" />
+<face v3="11" v2="5" v1="6" />
+<face v3="1" v2="15" v1="10" />
+<face v3="11" v2="4" v1="5" />
+<face v3="2" v2="15" v1="1" />
+<face v3="12" v2="4" v1="11" />
+<face v3="2" v2="14" v1="15" />
+<face v3="12" v2="3" v1="4" />
+<face v3="3" v2="14" v1="2" />
+<face v3="12" v2="14" v1="3" />
+<face v3="12" v2="13" v1="14" />
+</batch>
+</model>
+
+<model id="font2-one">
+<batch id="one-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" z="-0.0069695" y="0" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="2" z="0.008485" y="0" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="3" z="0.008485" y="0.107879" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="4" z="-0.0069695" y="0.107879" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="5" z="-0.0222725" y="0.0966665" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="6" z="-0.0222725" y="0.080303" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="7" z="-0.0069695" y="0.091515" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<face v3="5" v2="3" v1="4"/>
+<face v3="5" v2="7" v1="3"/>
+<face v3="7" v2="2" v1="3"/>
+<face v3="6" v2="7" v1="5"/>
+<face v3="1" v2="2" v1="7"/>
+</batch>
+</model>
+	 
+<model id="font2-two">
+<batch id="two-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0" staticligthing="true">
+<vertex id="1" z="-0.031515" y="0" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="2" z="0.03" y="0" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="3" z="0.03" y="0.0154545" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="4" z="-0.011212" y="0.0154545" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="5" z="0.023485" y="0.0589395" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="6" z="0.028447" y="0.067841" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="7" z="0.03" y="0.077879" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="8" z="0.021004" y="0.099754" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="9" z="-0.001515" y="0.108788" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="10" z="-0.022538" y="0.0998485" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="11" z="-0.031515" y="0.0777275" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="12" z="-0.0160605" y="0.0777275" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="13" z="-0.0110225" y="0.0891665" x="0" u1="0" v1="0" diffuse="0xff333333" /> 
+<vertex id="14" z="-0.000303" y="0.0933335" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="15" z="0.010587" y="0.0885225" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="16" z="0.0145455" y="0.0780305" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="17" z="0.013826" y="0.073049" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="18" z="0.010606" y="0.0672725" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="19" z="-0.031515" y="0.0145455" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<face v3="10" v2="8" v1="9" />
+<face v3="11" v2="13" v1="10" />
+<face v3="13" v2="14" v1="10" />
+<face v3="14" v2="8" v1="10" />
+<face v3="14" v2="15" v1="8" />
+<face v3="15" v2="7" v1="8" />
+<face v3="11" v2="12" v1="13" />
+<face v3="16" v2="7" v1="15" />
+<face v3="17" v2="7" v1="16" />
+<face v3="17" v2="6" v1="7" />
+<face v3="18" v2="6" v1="17" />
+<face v3="18" v2="5" v1="6" />
+<face v3="19" v2="5" v1="18" />
+<face v3="19" v2="4" v1="5" />
+<face v3="19" v2="3" v1="4" />
+<face v3="19" v2="2" v1="3" />
+<face v3="1" v2="2" v1="19" />
+</batch>
+</model>
+ 
+<model id="font2-three">
+<batch id="three-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" z="-0.009697" y="0.048788" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="2" z="-0.003182" y="0.048788" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="3" z="0.0085605" y="0.0442615" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="4" z="0.013485" y="0.0316665" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="5" z="0.0085415" y="0.019129" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="6" z="-0.002879" y="0.0145455" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="7" z="-0.013125" y="0.0178975" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="8" z="-0.0189395" y="0.026818" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="9" z="-0.034394" y="0.026818" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="10" z="-0.023466" y="0.006193" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="11" z="-0.003788" y="-0.000909" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="12" z="0.019451" y="0.008106" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="13" z="0.0289395" y="0.032121" x="0" u1="0" v1="0" diffuse="0xff333333" /> 
+<vertex id="14" z="0.025985" y="0.045076" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="15" z="0.016212" y="0.0557575" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="16" z="0.025322" y="0.065985" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="17" z="0.0277275" y="0.0780305" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="18" z="0.019034" y="0.099318" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="19" z="-0.004091" y="0.108788" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="20" z="-0.0242235" y="0.100284" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="21" z="-0.033788" y="0.080303" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="22" z="-0.0183335" y="0.080303" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="23" z="-0.0127275" y="0.0901135" x="0" u1="0" v1="0" diffuse="0xff333333" /> 
+<vertex id="24" z="-0.003485" y="0.0933335" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="25" z="0.0076325" y="0.0888255" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="26" z="0.0122725" y="0.0777275" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="27" z="0.007803" y="0.0667805" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="28" z="-0.004394" y="0.062424" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="29" z="-0.009697" y="0.062424" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<face v3="20" v2="18" v1="19" />
+<face v3="21" v2="23" v1="20" />
+<face v3="23" v2="24" v1="20" />
+<face v3="24" v2="18" v1="20" />
+<face v3="24" v2="25" v1="18" />
+<face v3="25" v2="17" v1="18" />
+<face v3="21" v2="22" v1="23" />
+<face v3="26" v2="17" v1="25" />
+<face v3="26" v2="16" v1="17" />
+<face v3="27" v2="16" v1="26" />
+<face v3="28" v2="16" v1="27" />
+<face v3="28" v2="15" v1="16" />
+<face v3="1" v2="28" v1="29" />
+<face v3="1" v2="15" v1="28" />
+<face v3="1" v2="2" v1="15" />
+<face v3="2" v2="14" v1="15" />
+<face v3="3" v2="14" v1="2" />
+<face v3="3" v2="13" v1="14" />
+<face v3="4" v2="13" v1="3" />
+<face v3="4" v2="12" v1="13" />
+<face v3="5" v2="12" v1="4" />
+<face v3="10" v2="8" v1="9" />
+<face v3="10" v2="7" v1="8" />
+<face v3="6" v2="12" v1="5" />
+<face v3="10" v2="6" v1="7" />
+<face v3="10" v2="12" v1="6" />
+<face v3="10" v2="11" v1="12" />
+</batch>
+</model>
+
+<model id="font2-four">
+<batch id="four-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" z="-0.0345455" y="0.0160605" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="2" z="0.0104545" y="0.0160605" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="3" z="0.0104545" y="0" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="4" z="0.025909" y="0" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="5" z="0.025909" y="0.0160605" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="6" z="0.0345455" y="0.0160605" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="7" z="0.0345455" y="0.030606" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="8" z="0.025909" y="0.030606" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="9" z="0.025909" y="0.0616665" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="10" z="0.0104545" y="0.0616665" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="11" z="0.0104545" y="0.030606" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="12" z="-0.0177275" y="0.030606" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="13" z="0.018788" y="0.107879" x="0" u1="0" v1="0" diffuse="0xff333333" /> 
+<vertex id="14" z="0.001515" y="0.107879" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="15" z="-0.0345455" y="0.030606" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<face v3="15" v2="13" v1="14" />
+<face v3="15" v2="12" v1="13" />
+<face v3="11" v2="9" v1="10" />
+<face v3="11" v2="8" v1="9" />
+<face v3="1" v2="12" v1="15" />
+<face v3="1" v2="11" v1="12" />
+<face v3="1" v2="8" v1="11" />
+<face v3="1" v2="7" v1="8" />
+<face v3="1" v2="6" v1="7" />
+<face v3="2" v2="6" v1="1" />
+<face v3="3" v2="5" v1="2" />
+<face v3="5" v2="6" v1="2" />
+<face v3="3" v2="4" v1="5" />
+</batch>
+</model>
+
+<model id="font2-five">
+<batch id="five-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" z="-0.028788" y="0.0495455" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="2" z="-0.0142425" y="0.0495455" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="3" z="-0.008125" y="0.0564585" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="4" z="-0.000303" y="0.058485" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="5" z="0.0122725" y="0.0525945" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="6" z="0.015303" y="0.0377275" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="7" z="0.013409" y="0.0223295" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="8" z="0.0001515" y="0.0145455" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="9" z="-0.0101895" y="0.0179355" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="10" z="-0.015303" y="0.027121" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="11" z="-0.0307575" y="0.027121" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="12" z="-0.019375" y="0.005549" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="13" z="0.0007575" y="-0.000909" x="0" u1="0" v1="0" diffuse="0xff333333" /> 
+<vertex id="14" z="0.0148105" y="0.002746" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="15" z="0.024091" y="0.010606" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="16" z="0.0291855" y="0.020379" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="17" z="0.0307575" y="0.036515" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="18" z="0.028731" y="0.055606" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="19" z="0.0222725" y="0.0660605" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="20" z="0.0142425" y="0.071591" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="21" z="0.0030305" y="0.0739395" x="0" u1="0" v1="0" diffuse="0xff333333" /> 
+<vertex id="22" z="-0.006174" y="0.072519" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="23" z="-0.0142425" y="0.0680305" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="24" z="-0.0142425" y="0.092424" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="25" z="0.0286365" y="0.092424" x="0" u1="0" v1="0" diffuse="0xff333333" /> 
+<vertex id="26" z="0.0286365" y="0.107879" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="27" z="-0.028788" y="0.107879" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<face v3="1" v2="24" v1="27" />
+<face v3="24" v2="26" v1="27" />
+<face v3="24" v2="25" v1="26" />
+<face v3="1" v2="23" v1="24" />
+<face v3="22" v2="20" v1="21" />
+<face v3="23" v2="20" v1="22" />
+<face v3="23" v2="19" v1="20" />
+<face v3="1" v2="3" v1="23" />
+<face v3="3" v2="19" v1="23" />
+<face v3="3" v2="4" v1="19" />
+<face v3="4" v2="18" v1="19" />
+<face v3="5" v2="18" v1="4" />
+<face v3="1" v2="2" v1="3" />
+<face v3="5" v2="17" v1="18" />
+<face v3="6" v2="17" v1="5" />
+<face v3="7" v2="17" v1="6" />
+<face v3="7" v2="16" v1="17" />
+<face v3="12" v2="10" v1="11" />
+<face v3="12" v2="9" v1="10" />
+<face v3="8" v2="16" v1="7" />
+<face v3="8" v2="15" v1="16" />
+<face v3="12" v2="8" v1="9" />
+<face v3="12" v2="15" v1="8" />
+<face v3="12" v2="14" v1="15" />
+<face v3="13" v2="14" v1="12" />
+</batch>
+</model>
+
+<model id="font2-six">
+<batch id="six-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" z="-0.026818" y="0.05" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="2" z="-0.0298865" y="0.041326" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="3" z="-0.030909" y="0.0319695" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="4" z="-0.021534" y="0.0079165" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="5" z="-0.000909" y="-0.000905" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="6" z="0.0210225" y="0.0071025" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="7" z="0.030909" y="0.0336365" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="8" z="0.023144" y="0.0564775" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="9" z="0.0051515" y="0.0636365" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="10" z="0.000947" y="0.0632955" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="11" z="-0.0030305" y="0.0622725" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="12" z="-0.0033335" y="0.0622725" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="13" z="0.019394" y="0.107879" x="0" u1="0" v1="0" diffuse="0xff333333" /> 
+<vertex id="14" z="0.002121" y="0.107879" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="15" z="0" y="0.05" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="16" z="0.010909" y="0.045682" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="17" z="0.0154545" y="0.0322725" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="18" z="0.0103975" y="0.0185795" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="19" z="0" y="0.0145455" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="20" z="-0.01125" y="0.0188635" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="21" z="-0.0154545" y="0.0322725" x="0" u1="0" v1="0" diffuse="0xff333333" /> 
+<vertex id="22" z="-0.010909" y="0.045682" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<face v3="1" v2="13" v1="14" />
+<face v3="1" v2="12" v1="13" />
+<face v3="10" v2="8" v1="9" />
+<face v3="11" v2="8" v1="10" />
+<face v3="1" v2="11" v1="12" />
+<face v3="1" v2="8" v1="11" />
+<face v3="1" v2="15" v1="8" />
+<face v3="15" v2="16" v1="8" />
+<face v3="16" v2="7" v1="8" />
+<face v3="2" v2="15" v1="1" />
+<face v3="2" v2="22" v1="15" />
+<face v3="2" v2="21" v1="22" />
+<face v3="17" v2="7" v1="16" />
+<face v3="3" v2="21" v1="2" />
+<face v3="17" v2="6" v1="7" />
+<face v3="3" v2="20" v1="21" />
+<face v3="18" v2="6" v1="17" />
+<face v3="4" v2="20" v1="3" />
+<face v3="4" v2="19" v1="20" />
+<face v3="19" v2="6" v1="18" />
+<face v3="4" v2="6" v1="19" />
+<face v3="5" v2="6" v1="4" />
+</batch>
+</model>
+
+<model id="font2-seven">
+<batch id="seven-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" z="-0.0286365" y="0.076818" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="2" z="-0.013182" y="0.076818" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="3" z="-0.013182" y="0.092424" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="4" z="0.0154545" y="0.092424" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="5" z="-0.0210605" y="0" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="6" z="-0.003788" y="0" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="7" z="0.0327275" y="0.092424" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="8" z="0.0327275" y="0.107879" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="9" z="-0.0286365" y="0.107879" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<face v3="1" v2="3" v1="9" />
+<face v3="3" v2="8" v1="9" />
+<face v3="3" v2="7" v1="8" />
+<face v3="1" v2="2" v1="3" />
+<face v3="4" v2="7" v1="3" />
+<face v3="5" v2="7" v1="4" />
+<face v3="5" v2="6" v1="7" />
+</batch>
+</model>
+
+<model id="font2-eight">
+<batch id="eight-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" z="-0.0154545" y="0.077879" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="2" z="-0.010682" y="0.089413" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="3" z="0" y="0.0933335" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="4" z="0.010682" y="0.089413" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="5" z="0.0154545" y="0.077879" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="6" z="0.010682" y="0.0663445" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="7" z="0" y="0.062424" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="8" z="-0.010682" y="0.0663445" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="9" z="-0.032879" y="0.031515" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="10" z="-0.023144" y="0.008144" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="11" z="0" y="-0.000909" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="12" z="0.023144" y="0.008144" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="13" z="0.032879" y="0.031515" x="0" u1="0" v1="0" diffuse="0xff333333" /> 
+<vertex id="14" z="0.0295835" y="0.0453975" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="15" z="0.0201515" y="0.0557575" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="16" z="0.0279165" y="0.065303" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="17" z="0.030909" y="0.0775755" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="18" z="0.0219885" y="0.099716" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="19" z="0" y="0.108788" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="20" z="-0.0219885" y="0.099716" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="21" z="-0.030909" y="0.0775755" x="0" u1="0" v1="0" diffuse="0xff333333" /> 
+<vertex id="22" z="-0.0279165" y="0.065303" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="23" z="-0.0201515" y="0.0557575" x="0" u1="0" v1="0" diffuse="0xff333333" /> 
+<vertex id="24" z="-0.0295835" y="0.0453975" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="25" z="-0.017424" y="0.0316665" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="26" z="-0.012178" y="0.0439205" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="27" z="0" y="0.048788" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="28" z="0.012178" y="0.0439205" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="29" z="0.017424" y="0.0316665" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="30" z="0.012178" y="0.019413" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="31" z="0" y="0.0145455" x="0" u1="0" v1="0" diffuse="0xff333333" /> 
+<vertex id="32" z="-0.012178" y="0.019413" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<face v3="20" v2="18" v1="19" />
+<face v3="21" v2="2" v1="20" />
+<face v3="2" v2="3" v1="20" />
+<face v3="3" v2="18" v1="20" />
+<face v3="3" v2="4" v1="18" />
+<face v3="4" v2="17" v1="18" />
+<face v3="21" v2="1" v1="2" />
+<face v3="5" v2="17" v1="4" />
+<face v3="21" v2="8" v1="1" />
+<face v3="6" v2="17" v1="5" />
+<face v3="22" v2="8" v1="21" />
+<face v3="6" v2="16" v1="17" />
+<face v3="22" v2="7" v1="8" />
+<face v3="7" v2="16" v1="6" />
+<face v3="23" v2="7" v1="22" />
+<face v3="7" v2="15" v1="16" />
+<face v3="23" v2="15" v1="7" />
+<face v3="24" v2="15" v1="23" />
+<face v3="24" v2="27" v1="15" />
+<face v3="27" v2="14" v1="15" />
+<face v3="24" v2="26" v1="27" />
+<face v3="28" v2="14" v1="27" />
+<face v3="9" v2="26" v1="24" />
+<face v3="28" v2="13" v1="14" />
+<face v3="9" v2="25" v1="26" />
+<face v3="29" v2="13" v1="28" />
+<face v3="9" v2="32" v1="25" />
+<face v3="30" v2="13" v1="29" />
+<face v3="10" v2="32" v1="9" />
+<face v3="30" v2="12" v1="13" />
+<face v3="10" v2="31" v1="32" />
+<face v3="31" v2="12" v1="30" />
+<face v3="10" v2="12" v1="31" />
+<face v3="10" v2="11" v1="12" />
+</batch>
+</model>
+
+<model id="font2-nine">
+<batch id="nine-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" z="0.026818" y="0.057879" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="2" z="0.0298865" y="0.066553" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="3" z="0.030909" y="0.075909" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="4" z="0.021534" y="0.099962" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="5" z="0.000909" y="0.108788" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="6" z="-0.0210225" y="0.1007765" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="7" z="-0.030909" y="0.0742425" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="8" z="-0.023144" y="0.0514015" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="9" z="-0.0051515" y="0.0442425" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="10" z="-0.000947" y="0.0445835" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="11" z="0.0030305" y="0.045606" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="12" z="0.0033335" y="0.045606" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="13" z="-0.019394" y="0" x="0" u1="0" v1="0" diffuse="0xff333333" /> 
+<vertex id="14" z="-0.002121" y="0" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="15" z="0" y="0.057879" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="16" z="-0.010909" y="0.062197" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="17" z="-0.0154545" y="0.075606" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="18" z="-0.0103975" y="0.089299" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="19" z="0" y="0.0933335" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="20" z="0.01125" y="0.089015" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<vertex id="21" z="0.0154545" y="0.075606" x="0" u1="0" v1="0" diffuse="0xff333333" /> 
+<vertex id="22" z="0.010909" y="0.062197" x="0" u1="0" v1="0" diffuse="0xff333333" />
+<face v3="6" v2="4" v1="5" />
+<face v3="7" v2="18" v1="6" />
+<face v3="18" v2="19" v1="6" />
+<face v3="19" v2="4" v1="6" />
+<face v3="19" v2="20" v1="4" />
+<face v3="20" v2="3" v1="4" />
+<face v3="7" v2="17" v1="18" />
+<face v3="21" v2="3" v1="20" />
+<face v3="21" v2="2" v1="3" />
+<face v3="7" v2="16" v1="17" />
+<face v3="22" v2="2" v1="21" />
+<face v3="8" v2="16" v1="7" />
+<face v3="22" v2="1" v1="2" />
+<face v3="8" v2="15" v1="16" />
+<face v3="15" v2="1" v1="22" />
+<face v3="8" v2="1" v1="15" />
+<face v3="8" v2="12" v1="1" />
+<face v3="12" v2="14" v1="1" />
+<face v3="9" v2="11" v1="8" />
+<face v3="11" v2="12" v1="8" />
+<face v3="9" v2="10" v1="11" />
+<face v3="13" v2="14" v1="12" />
+</batch>
+</model>
+
+<!-- Gate numbers -->
+<!-- Gate 1 - left -->
+<model-instance id="font2-one" x="-60.1429" y="35.6501" z="2.1"/>
+<pillar refx="dhill" x1="-60.1439" x2="-60.1429" ty="35.8040" by="35.6040" lz="2.2" rz="2" t="Textures\metal.png" m="Materials\material1.xml" c="0xf1c232" zbias="2"/>
+<!-- Gate 2 - left -->
+<model-instance id="font2-two" x="-60.6429" y="36.0002" z="2.1"/>
+<pillar refx="dhill" x1="-60.6439" x2="-60.6429" ty="36.1541" by="35.9541" lz="2.2" rz="2" t="Textures\metal.png" m="Materials\material1.xml" c="0xf1c232" zbias="2"/>
+<!-- Gate 3 - left -->
+<model-instance id="font2-three" x="-61.1429" y="36.3503" z="2.1"/>
+<pillar refx="dhill" x1="-61.1439" x2="-61.1429" ty="36.5042" by="36.3042" lz="2.2" rz="2" t="Textures\metal.png" m="Materials\material1.xml" c="0xf1c232" zbias="2"/>
+<!-- Gate 4 - left -->
+<model-instance id="font2-four" x="-61.6429" y="36.7004" z="2.1"/>
+<pillar refx="dhill" x1="-61.6439" x2="-61.6429" ty="36.8543" by="36.6543" lz="2.2" rz="2" t="Textures\metal.png" m="Materials\material1.xml" c="0xf1c232" zbias="2"/>
+<!-- Gate 5 - left -->
+<model-instance id="font2-five" x="-62.1429" y="37.0505" z="2.1"/>
+<pillar refx="dhill" x1="-62.1439" x2="-62.1429" ty="37.2044" by="37.0044" lz="2.2" rz="2" t="Textures\metal.png" m="Materials\material1.xml" c="0xf1c232" zbias="2"/>
+
+<!-- Gate 7 - left -->
+<model-instance id="font2-seven" x="-63.1429" y="37.7507" z="2.1"/>
+<pillar refx="dhill" x1="-63.1439" x2="-63.1429" ty="37.9046" by="37.7046" lz="2.2" rz="2" t="Textures\metal.png" m="Materials\material1.xml" c="0xf1c232" zbias="2"/>
+<!-- Gate 8 - left -->
+<model-instance id="font2-eight" x="-63.6429" y="38.1008" z="2.1"/>
+<pillar refx="dhill" x1="-63.6439" x2="-63.6429" ty="38.2547" by="38.0547" lz="2.2" rz="2" t="Textures\metal.png" m="Materials\material1.xml" c="0xf1c232" zbias="2"/>
+
+<!-- Gate 10 - left -->
+<model-instance id="font2-zero" x="-64.6429" y="38.8010" z="2.1375"/>
+<model-instance id="font2-one" x="-64.6429" y="38.8010" z="2.0625"/>
+<pillar refx="dhill" x1="-64.6439" x2="-64.6429" ty="38.9549" by="38.7549" lz="2.2" rz="2" t="Textures\metal.png" m="Materials\material1.xml" c="0xf1c232" zbias="2"/>
+<!-- Gate 11 - left -->
+<model-instance id="font2-one" x="-65.1429" y="39.1511" z="2.1375"/>
+<model-instance id="font2-one" x="-65.1429" y="39.1511" z="2.0625"/>
+<pillar refx="dhill" x1="-65.1439" x2="-65.1429" ty="39.3050" by="39.1050" lz="2.2" rz="2" t="Textures\metal.png" m="Materials\material1.xml" c="0xf1c232" zbias="2"/>
+<!-- Gate 12 - left -->
+<model-instance id="font2-two" x="-65.6429" y="39.5012" z="2.1375"/>
+<model-instance id="font2-one" x="-65.6429" y="39.5012" z="2.0625"/>
+<pillar refx="dhill" x1="-65.6439" x2="-65.6429" ty="39.6552" by="39.4552" lz="2.2" rz="2" t="Textures\metal.png" m="Materials\material1.xml" c="0xf1c232" zbias="2"/>
+<!-- Gate 13 - left -->
+<model-instance id="font2-three" x="-66.1429" y="39.8513" z="2.1375"/>
+<model-instance id="font2-one" x="-66.1429" y="39.8513" z="2.0625"/>
+<pillar refx="dhill" x1="-66.1439" x2="-66.1429" ty="40.0053" by="39.8053" lz="2.2" rz="2" t="Textures\metal.png" m="Materials\material1.xml" c="0xf1c232" zbias="2"/>
+
+<!-- Gate 15 - left -->
+<model-instance id="font2-five" x="-67.1429" y="40.5515" z="2.1375"/>
+<model-instance id="font2-one" x="-67.1429" y="40.5515" z="2.0625"/>
+<pillar refx="dhill" x1="-67.1439" x2="-67.1429" ty="40.7055" by="40.5055" lz="2.2" rz="2" t="Textures\metal.png" m="Materials\material1.xml" c="0xf1c232" zbias="2"/>
+<!-- Gate 16 - left -->
+<model-instance id="font2-six" x="-67.6429" y="40.9016" z="2.1375"/>
+<model-instance id="font2-one" x="-67.6429" y="40.9016" z="2.0625"/>
+<pillar refx="dhill" x1="-67.6439" x2="-67.6429" ty="41.0556" by="40.8556" lz="2.2" rz="2" t="Textures\metal.png" m="Materials\material1.xml" c="0xf1c232" zbias="2"/>
+
+<!-- Gate 18 - left -->
+<model-instance id="font2-eight" x="-68.6429" y="41.6018" z="2.1375"/>
+<model-instance id="font2-one" x="-68.6429" y="41.6018" z="2.0625"/>
+<pillar refx="dhill" x1="-68.6439" x2="-68.6429" ty="41.7558" by="41.5558" lz="2.2" rz="2" t="Textures\metal.png" m="Materials\material1.xml" c="0xf1c232" zbias="2"/>
+<!-- Gate 19 - left -->
+<model-instance id="font2-nine" x="-69.1429" y="41.9519" z="2.1375"/>
+<model-instance id="font2-one" x="-69.1429" y="41.9519" z="2.0625"/>
+<pillar refx="dhill" x1="-69.1439" x2="-69.1429" ty="42.1059" by="41.9059" lz="2.2" rz="2" t="Textures\metal.png" m="Materials\material1.xml" c="0xf1c232" zbias="2"/>
+<!-- Gate 20 - left -->
+<model-instance id="font2-zero" x="-69.6429" y="42.3020" z="2.1375"/>
+<model-instance id="font2-two" x="-69.6429" y="42.3020" z="2.0625"/>
+<pillar refx="dhill" x1="-69.6439" x2="-69.6429" ty="42.4560" by="42.2560" lz="2.2" rz="2" t="Textures\metal.png" m="Materials\material1.xml" c="0xf1c232" zbias="2"/>
+
+<!-- Gate 22 - left -->
+<model-instance id="font2-two" x="-70.6429" y="43.0023" z="2.1375"/>
+<model-instance id="font2-two" x="-70.6429" y="43.0023" z="2.0625"/>
+<pillar refx="dhill" x1="-70.6439" x2="-70.6429" ty="43.1562" by="42.9562" lz="2.2" rz="2" t="Textures\metal.png" m="Materials\material1.xml" c="0xf1c232" zbias="2"/>
+<!-- Gate 23 - left -->
+<model-instance id="font2-three" x="-71.1429" y="43.3524" z="2.1375"/>
+<model-instance id="font2-two" x="-71.1429" y="43.3524" z="2.0625"/>
+<pillar refx="dhill" x1="-71.1439" x2="-71.1429" ty="43.5063" by="43.3063" lz="2.2" rz="2" t="Textures\metal.png" m="Materials\material1.xml" c="0xf1c232" zbias="2"/>
+<!-- Gate 24 - left -->
+<model-instance id="font2-four" x="-71.6429" y="43.7025" z="2.1375"/>
+<model-instance id="font2-two" x="-71.6429" y="43.7025" z="2.0625"/>
+<pillar refx="dhill" x1="-71.6439" x2="-71.6429" ty="43.8564" by="43.6564" lz="2.2" rz="2" t="Textures\metal.png" m="Materials\material1.xml" c="0xf1c232" zbias="2"/>
+<!-- Gate 25 - left -->
+<model-instance id="font2-five" x="-72.1429" y="44.0526" z="2.1375"/>
+<model-instance id="font2-two" x="-72.1429" y="44.0526" z="2.0625"/>
+<pillar refx="dhill" x1="-72.1439" x2="-72.1429" ty="44.2065" by="44.0065" lz="2.2" rz="2" t="Textures\metal.png" m="Materials\material1.xml" c="0xf1c232" zbias="2"/>
+
+<!-- Gate 27 - left -->
+<model-instance id="font2-seven" x="-73.1429" y="44.7528" z="2.1375"/>
+<model-instance id="font2-two" x="-73.1429" y="44.7528" z="2.0625"/>
+<pillar refx="dhill" x1="-73.1439" x2="-73.1429" ty="44.9067" by="44.7067" lz="2.2" rz="2" t="Textures\metal.png" m="Materials\material1.xml" c="0xf1c232" zbias="2"/>
+
+<model-instance id="font2-nine" x="-74.1429" y="45.4530" z="2.1375"/>
+<model-instance id="font2-two" x="-74.1429" y="45.4530" z="2.0625"/>
+<pillar refx="dhill" x1="-74.1439" x2="-74.1429" ty="45.6069" by="45.4069" lz="2.2" rz="2" t="Textures\metal.png" m="Materials\material1.xml" c="0xf1c232" zbias="2"/>
+
+<!--STAIRS PROFILE-->
+
+<profile id="strs" refx="inrun">
+	<start x="20.500" y="0.000" refy="inrun-top"/>
+	<line x="20.990" y="0.000" refyx="20.500"  refy="inrun-top"/>
+	<line x="21.000" y="0.000" refy="inrun-top"/>
+	<line x="21.490" y="0.000" refyx="21.000"  refy="inrun-top"/>
+	<line x="21.500" y="0.000" refy="inrun-top"/>
+	<line x="21.990" y="0.000" refyx="21.500"  refy="inrun-top"/>
+	<line x="22.000" y="0.000" refy="inrun-top"/>
+	<line x="22.490" y="0.000" refyx="22.000"  refy="inrun-top"/>
+	<line x="22.500" y="0.000" refy="inrun-top"/>
+	<line x="22.990" y="0.000" refyx="22.500"  refy="inrun-top"/>
+	<line x="23.000" y="0.000" refy="inrun-top"/>
+	<line x="23.490" y="0.000" refyx="23.000"  refy="inrun-top"/>
+	<line x="23.500" y="0.000" refy="inrun-top"/>
+	<line x="23.990" y="0.000" refyx="23.500"  refy="inrun-top"/>
+	<line x="24.000" y="0.000" refy="inrun-top"/>
+	<line x="24.490" y="0.000" refyx="24.000"  refy="inrun-top"/>
+	<line x="24.500" y="0.000" refy="inrun-top"/>
+	<line x="24.990" y="0.000" refyx="24.500"  refy="inrun-top"/>
+	<line x="25.000" y="0.000" refy="inrun-top"/>
+	<line x="25.490" y="0.000" refyx="25.000"  refy="inrun-top"/>
+	<line x="25.500" y="0.000" refy="inrun-top"/>
+	<line x="25.990" y="0.000" refyx="25.500"  refy="inrun-top"/>
+	<line x="26.000" y="0.000" refy="inrun-top"/>
+	<line x="26.490" y="0.000" refyx="26.000"  refy="inrun-top"/>
+	<line x="26.500" y="0.000" refy="inrun-top"/>
+	<line x="26.990" y="0.000" refyx="26.500"  refy="inrun-top"/>
+	<line x="27.000" y="0.000" refy="inrun-top"/>
+	<line x="27.490" y="0.000" refyx="27.000"  refy="inrun-top"/>
+	<line x="27.500" y="0.000" refy="inrun-top"/>
+	<line x="27.990" y="0.000" refyx="27.500"  refy="inrun-top"/>
+	<line x="28.000" y="0.000" refy="inrun-top"/>
+	<line x="28.490" y="0.000" refyx="28.000"  refy="inrun-top"/>
+	<line x="28.500" y="0.000" refy="inrun-top"/>
+	<line x="28.990" y="0.000" refyx="28.500"  refy="inrun-top"/>
+	<line x="29.000" y="0.000" refy="inrun-top"/>
+	<line x="29.490" y="0.000" refyx="29.000"  refy="inrun-top"/>
+	<line x="29.500" y="0.000" refy="inrun-top"/>
+	<line x="29.990" y="0.000" refyx="29.500"  refy="inrun-top"/>
+	<line x="30.000" y="0.000" refy="inrun-top"/>
+	<line x="30.490" y="0.000" refyx="30.000"  refy="inrun-top"/>
+	<line x="30.500" y="0.000" refy="inrun-top"/>
+	<line x="30.990" y="0.000" refyx="30.500"  refy="inrun-top"/>
+	<line x="31.000" y="0.000" refy="inrun-top"/>
+	<line x="31.490" y="0.000" refyx="31.000"  refy="inrun-top"/>
+	<line x="31.500" y="0.000" refy="inrun-top"/>
+	<line x="31.990" y="0.000" refyx="31.500"  refy="inrun-top"/>
+	<line x="32.000" y="0.000" refy="inrun-top"/>
+	<line x="32.490" y="0.000" refyx="32.000"  refy="inrun-top"/>
+	<line x="32.500" y="0.000" refy="inrun-top"/>
+	<line x="32.990" y="0.000" refyx="32.500"  refy="inrun-top"/>
+	<line x="33.000" y="0.000" refy="inrun-top"/>
+	<line x="33.490" y="0.000" refyx="33.000"  refy="inrun-top"/>
+	<line x="33.500" y="0.000" refy="inrun-top"/>
+	<line x="33.990" y="0.000" refyx="33.500"  refy="inrun-top"/>
+	<line x="34.000" y="0.000" refy="inrun-top"/>
+	<line x="34.490" y="0.000" refyx="34.000"  refy="inrun-top"/>
+	<line x="34.500" y="0.000" refy="inrun-top"/>
+	<line x="34.990" y="0.000" refyx="34.500"  refy="inrun-top"/>
+	<line x="35.000" y="0.000" refy="inrun-top"/>
+	<line x="35.490" y="0.000" refyx="35.000"  refy="inrun-top"/>
+	<line x="35.500" y="0.000" refy="inrun-top"/>
+	<line x="35.990" y="0.000" refyx="35.500"  refy="inrun-top"/>
+	<line x="36.000" y="0.000" refy="inrun-top"/>
+	<line x="36.490" y="0.000" refyx="36.000"  refy="inrun-top"/>
+	<line x="36.500" y="0.000" refy="inrun-top"/>
+	<line x="36.990" y="0.000" refyx="36.500"  refy="inrun-top"/>
+	<line x="37.000" y="0.000" refy="inrun-top"/>
+	<line x="37.490" y="0.000" refyx="37.000"  refy="inrun-top"/>
+	<line x="37.500" y="0.000" refy="inrun-top"/>
+	<line x="37.990" y="0.000" refyx="37.500"  refy="inrun-top"/>
+	<line x="38.000" y="0.000" refy="inrun-top"/>
+	<line x="38.490" y="0.000" refyx="38.000"  refy="inrun-top"/>
+	<line x="38.500" y="0.000" refy="inrun-top"/>
+	<line x="38.990" y="0.000" refyx="38.500"  refy="inrun-top"/>
+	<line x="39.000" y="0.000" refy="inrun-top"/>
+	<line x="39.490" y="0.000" refyx="39.000"  refy="inrun-top"/>
+	<line x="39.500" y="0.000" refy="inrun-top"/>
+	<line x="39.990" y="0.000" refyx="39.500"  refy="inrun-top"/>
+	<line x="40.000" y="0.000" refy="inrun-top"/>
+	<line x="40.490" y="0.000" refyx="40.000"  refy="inrun-top"/>
+	<line x="40.500" y="0.000" refy="inrun-top"/>
+	<line x="40.990" y="0.000" refyx="40.500"  refy="inrun-top"/>
+	<line x="41.000" y="0.000" refy="inrun-top"/>
+	<line x="41.490" y="0.000" refyx="41.000"  refy="inrun-top"/>
+	<line x="41.500" y="0.000" refy="inrun-top"/>
+	<line x="41.990" y="0.000" refyx="41.500"  refy="inrun-top"/>
+	<line x="42.000" y="0.000" refy="inrun-top"/>
+	<line x="42.490" y="0.000" refyx="42.000"  refy="inrun-top"/>
+	<line x="42.500" y="0.000" refy="inrun-top"/>
+	<line x="42.990" y="0.000" refyx="42.500"  refy="inrun-top"/>
+	<line x="43.000" y="0.000" refy="inrun-top"/>
+	<line x="43.490" y="0.000" refyx="43.000"  refy="inrun-top"/>
+	<line x="43.500" y="0.000" refy="inrun-top"/>
+	<line x="43.990" y="0.000" refyx="43.500"  refy="inrun-top"/>
+	<line x="44.000" y="0.000" refy="inrun-top"/>
+	<line x="44.490" y="0.000" refyx="44.000"  refy="inrun-top"/>
+	<line x="44.500" y="0.000" refy="inrun-top"/>
+	<line x="44.990" y="0.000" refyx="44.500"  refy="inrun-top"/>
+	<line x="45.000" y="0.000" refy="inrun-top"/>
+	<line x="45.490" y="0.000" refyx="45.000"  refy="inrun-top"/>
+	<line x="45.500" y="0.000" refy="inrun-top"/>
+	<line x="45.990" y="0.000" refyx="45.500"  refy="inrun-top"/>
+	<line x="46.000" y="0.000" refy="inrun-top"/>
+	<line x="46.490" y="0.000" refyx="46.000"  refy="inrun-top"/>
+	<line x="46.500" y="0.000" refy="inrun-top"/>
+	<line x="46.990" y="0.000" refyx="46.500"  refy="inrun-top"/>
+	<line x="47.000" y="0.000" refy="inrun-top"/>
+	<line x="47.490" y="0.000" refyx="47.000"  refy="inrun-top"/>
+	<line x="47.500" y="0.000" refy="inrun-top"/>
+	<line x="47.990" y="0.000" refyx="47.500"  refy="inrun-top"/>
+	<line x="48.000" y="0.000" refy="inrun-top"/>
+	<line x="48.490" y="0.000" refyx="48.000"  refy="inrun-top"/>
+	<line x="48.500" y="0.000" refy="inrun-top"/>
+	<line x="48.990" y="0.000" refyx="48.500"  refy="inrun-top"/>
+	<line x="49.000" y="0.000" refy="inrun-top"/>
+	<line x="49.490" y="0.000" refyx="49.000"  refy="inrun-top"/>
+	<line x="49.500" y="0.000" refy="inrun-top"/>
+	<line x="49.990" y="0.000" refyx="49.500"  refy="inrun-top"/>
+	<line x="50.000" y="0.000" refy="inrun-top"/>
+	<line x="50.490" y="0.000" refyx="50.000"  refy="inrun-top"/>
+	<line x="50.500" y="0.000" refy="inrun-top"/>
+	<line x="50.990" y="0.000" refyx="50.500"  refy="inrun-top"/>
+	<line x="51.000" y="0.000" refy="inrun-top"/>
+	<line x="51.490" y="0.000" refyx="51.000"  refy="inrun-top"/>
+	<line x="51.500" y="0.000" refy="inrun-top"/>
+	<line x="51.990" y="0.000" refyx="51.500"  refy="inrun-top"/>
+	<line x="52.000" y="0.000" refy="inrun-top"/>
+	<line x="52.490" y="0.000" refyx="52.000"  refy="inrun-top"/>
+	<line x="52.500" y="0.000" refy="inrun-top"/>
+	<line x="52.990" y="0.000" refyx="52.500"  refy="inrun-top"/>
+	<line x="53.000" y="0.000" refy="inrun-top"/>
+	<line x="53.490" y="0.000" refyx="53.000"  refy="inrun-top"/>
+	<line x="53.500" y="0.000" refy="inrun-top"/>
+	<line x="53.990" y="0.000" refyx="53.500"  refy="inrun-top"/>
+	<line x="54.000" y="0.000" refy="inrun-top"/>
+	<line x="54.490" y="0.000" refyx="54.000"  refy="inrun-top"/>
+	<line x="54.500" y="0.000" refy="inrun-top"/>
+	<line x="54.990" y="0.000" refyx="54.500"  refy="inrun-top"/>
+	<line x="55.000" y="0.000" refy="inrun-top"/>
+	<line x="55.490" y="0.000" refyx="55.000"  refy="inrun-top"/>
+	<line x="55.500" y="0.000" refy="inrun-top"/>
+	<line x="55.990" y="0.000" refyx="55.500"  refy="inrun-top"/>
+	<line x="56.000" y="0.000" refy="inrun-top"/>
+	<line x="56.490" y="0.000" refyx="56.000"  refy="inrun-top"/>
+	<line x="56.500" y="0.000" refy="inrun-top"/>
+	<line x="56.990" y="0.000" refyx="56.500"  refy="inrun-top"/>
+	<line x="57.000" y="0.000" refy="inrun-top"/>
+	<line x="57.490" y="0.000" refyx="57.000"  refy="inrun-top"/>
+	<line x="57.500" y="0.000" refy="inrun-top"/>
+	<line x="57.990" y="0.000" refyx="57.500"  refy="inrun-top"/>
+	<line x="58.000" y="0.000" refy="inrun-top"/>
+	<line x="58.490" y="0.000" refyx="58.000"  refy="inrun-top"/>
+	<line x="58.500" y="0.000" refy="inrun-top"/>
+	<line x="58.990" y="0.000" refyx="58.500"  refy="inrun-top"/>
+	<line x="59.000" y="0.000" refy="inrun-top"/>
+	<line x="59.490" y="0.000" refyx="59.000"  refy="inrun-top"/>
+	<line x="59.500" y="0.000" refy="inrun-top"/>
+	<line x="59.990" y="0.000" refyx="59.500"  refy="inrun-top"/>
+	<line x="60.000" y="0.000" refy="inrun-top"/>
+	<line x="60.490" y="0.000" refyx="60.000"  refy="inrun-top"/>
+	<line x="60.500" y="0.000" refy="inrun-top"/>
+	<line x="60.990" y="0.000" refyx="60.500"  refy="inrun-top"/>
+	<line x="61.000" y="0.000" refy="inrun-top"/>
+	<line x="61.490" y="0.000" refyx="61.000"  refy="inrun-top"/>
+	<line x="61.500" y="0.000" refy="inrun-top"/>
+	<line x="61.990" y="0.000" refyx="61.500"  refy="inrun-top"/>
+	<line x="62.000" y="0.000" refy="inrun-top"/>
+	<line x="62.490" y="0.000" refyx="62.000"  refy="inrun-top"/>
+	<line x="62.500" y="0.000" refy="inrun-top"/>
+	<line x="62.990" y="0.000" refyx="62.500"  refy="inrun-top"/>
+	<line x="63.000" y="0.000" refy="inrun-top"/>
+	<line x="63.490" y="0.000" refyx="63.000"  refy="inrun-top"/>
+	<line x="63.500" y="0.000" refy="inrun-top"/>
+	<line x="63.990" y="0.000" refyx="63.500"  refy="inrun-top"/>
+	<line x="64.000" y="0.000" refy="inrun-top"/>
+	<line x="64.490" y="0.000" refyx="64.000"  refy="inrun-top"/>
+	<line x="64.500" y="0.000" refy="inrun-top"/>
+	<line x="64.990" y="0.000" refyx="64.500"  refy="inrun-top"/>
+	<line x="65.000" y="0.000" refy="inrun-top"/>
+	<line x="65.490" y="0.000" refyx="65.000"  refy="inrun-top"/>
+	<line x="65.500" y="0.000" refy="inrun-top"/>
+	<line x="65.990" y="0.000" refyx="65.500"  refy="inrun-top"/>
+	<line x="66.000" y="0.000" refy="inrun-top"/>
+	<line x="66.490" y="0.000" refyx="66.000"  refy="inrun-top"/>
+	<line x="66.500" y="0.000" refy="inrun-top"/>
+	<line x="66.990" y="0.000" refyx="66.500"  refy="inrun-top"/>
+	<line x="67.000" y="0.000" refy="inrun-top"/>
+	<line x="67.490" y="0.000" refyx="67.000"  refy="inrun-top"/>
+	<line x="67.500" y="0.000" refy="inrun-top"/>
+	<line x="67.990" y="0.000" refyx="67.500"  refy="inrun-top"/>
+	<line x="68.000" y="0.000" refy="inrun-top"/>
+	<line x="68.490" y="0.000" refyx="68.000"  refy="inrun-top"/>
+	<line x="68.500" y="0.000" refy="inrun-top"/>
+	<line x="68.990" y="0.000" refyx="68.500"  refy="inrun-top"/>
+	<line x="69.000" y="0.000" refy="inrun-top"/>
+	<line x="69.490" y="0.000" refyx="69.000"  refy="inrun-top"/>
+	<line x="69.500" y="0.000" refy="inrun-top"/>
+	<line x="69.990" y="0.000" refyx="69.500"  refy="inrun-top"/>
+	<line x="70.000" y="0.000" refy="inrun-top"/>
+	<line x="70.490" y="0.000" refyx="70.000"  refy="inrun-top"/>
+	<line x="70.500" y="0.000" refy="inrun-top"/>
+	<line x="70.990" y="0.000" refyx="70.500"  refy="inrun-top"/>
+	<line x="71.000" y="0.000" refy="inrun-top"/>
+	<line x="71.490" y="0.000" refyx="71.000"  refy="inrun-top"/>
+	<line x="71.500" y="0.000" refy="inrun-top"/>
+	<line x="71.990" y="0.000" refyx="71.500"  refy="inrun-top"/>
+	<line x="72.000" y="0.000" refy="inrun-top"/>
+	<line x="72.490" y="0.000" refyx="72.000"  refy="inrun-top"/>
+	<line x="72.500" y="0.000" refy="inrun-top"/>
+	<line x="72.990" y="0.000" refyx="72.500"  refy="inrun-top"/>
+	<line x="73.000" y="0.000" refy="inrun-top"/>
+	<line x="73.490" y="0.000" refyx="73.000"  refy="inrun-top"/>
+	<line x="73.500" y="0.000" refy="inrun-top"/>
+	
+</profile>
+
+
+	<pillar refx="inrun" refy="strs" refz="inrun-right" top="true"
+	x1="20.5" x2="20.990" ty=".05" rz="-0.1" lz="-0" step="0.500" count="106"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+
+	<pillar refx="inrun" refy="strs" refz="inrun-right" top="true"
+	x1="20.5" x2="20.990" ty=".05" rz="-0.21" lz="-0.11" step="0.500" count="106"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	
+	<pillar refx="inrun" refy="strs" refz="inrun-right" top="true"
+	x1="20.5" x2="20.990" ty=".05" rz="-0.32" lz="-0.22" step="0.500" count="106"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+
+	<pillar refx="inrun" refy="strs" refz="inrun-right" top="true"
+	x1="20.5" x2="20.990" ty=".05" rz="-0.43" lz="-0.33" step="0.500" count="106"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="strs" refz="inrun-right" top="true"
+	x1="20.5" x2="20.990" ty=".05" rz="-0.54" lz="-0.44" step="0.500" count="106"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="strs" refz="inrun-right" top="true"
+	x1="20.5" x2="20.990" ty=".05" rz="-0.65" lz="-0.55" step="0.500" count="106"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="strs" refz="inrun-right" top="true"
+	x1="20.5" x2="20.990" ty=".05" rz="-0.76" lz="-0.66" step="0.500" count="106"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	
+	<pillar refx="inrun" refy="strs" refz="inrun-right" top="true"
+	x1="20.5" x2="20.990" ty=".05" rz="-0.87" lz="-0.77" step="0.500" count="106"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+		
+	<pillar refx="inrun" refy="strs" refz="inrun-right" top="true"
+	x1="20.5" x2="20.990" ty=".05" rz="-0.98" lz="-0.88" step="0.500" count="106"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+
+<pillar refx="inrun" refy="strs" refz="inrun-right"
+	x1="20.5" x2="20.945" ty="0" by="-0.04" rz="-0.14" lz="-0.1" step="0.500" count="106"
+	t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+
+<pillar refx="inrun" refy="strs" refz="inrun-right"
+	x1="20.5" x2="20.945" ty="0" by="-0.04" rz="-0.8" lz="-0.76" step="0.500" count="106"
+	t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+
+
+<pillar refx="inrun" refy="strs"  refz="inrun-right"
+	x1="20.945" x2="20.990" by="-0.105" ty="-0.005" rz="-0.98" lz="0" step="0.500" count="106"
+t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+<pillar refx="inrun" refy="strs"  refz="inrun-right"
+	x1="20.945" x2="20.990" by="-0.215" ty="-0.115" rz="-0.98" lz="0" step="0.500" count="106"
+t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+ 
+<pillar refx="inrun" refy="strs"  refz="inrun-right"
+	x1="20.945" x2="20.990" by="-0.325" ty="-0.225" rz="-0.98" lz="0" step="0.500" count="106"
+t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+
+<pillar refx="inrun" trefy="strs" brefy="inrun-top" refz="inrun-right"
+	x1="20.915" x2="20.945" ty="-0.04" by="-2" rz="-0.14" lz="-0.1" step="0.500" count="106"
+	t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+<pillar refx="inrun" trefy="strs" brefy="inrun-top" refz="inrun-right"
+	x1="20.915" x2="20.945" ty="-0.04" by="-2" rz="-0.8" lz="-0.76" step="0.500" count="106"
+	t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+	
+	<pillar refx="inrun" refy="strs" refz="inrun-left" top="true"
+	x1="20.5" x2="20.990" ty=".05" lz="0.1" rz="0" step="0.500" count="106"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+
+	<pillar refx="inrun" refy="strs" refz="inrun-left" top="true"
+	x1="20.5" x2="20.990" ty=".05" lz="0.21" rz="0.11" step="0.500" count="106"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	
+	<pillar refx="inrun" refy="strs" refz="inrun-left" top="true"
+	x1="20.5" x2="20.990" ty=".05" lz="0.32" rz="0.22" step="0.500" count="106"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+
+	<pillar refx="inrun" refy="strs" refz="inrun-left" top="true"
+	x1="20.5" x2="20.990" ty=".05" lz="0.43" rz="0.33" step="0.500" count="106"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="strs" refz="inrun-left" top="true"
+	x1="20.5" x2="20.990" ty=".05" lz="0.54" rz="0.44" step="0.500" count="106"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="strs" refz="inrun-left" top="true"
+	x1="20.5" x2="20.990" ty=".05" lz="0.65" rz="0.55" step="0.500" count="106"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	<pillar refx="inrun" refy="strs" refz="inrun-left" top="true"
+	x1="20.5" x2="20.990" ty=".05" lz="0.76" rz="0.66" step="0.500" count="106"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+	
+	<pillar refx="inrun" refy="strs" refz="inrun-left" top="true"
+	x1="20.5" x2="20.990" ty=".05" lz="0.87" rz="0.77" step="0.500" count="106"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+		
+	<pillar refx="inrun" refy="strs" refz="inrun-left" top="true"
+	x1="20.5" x2="20.990" ty=".05" lz="0.98" rz="0.88" step="0.500" count="106"
+	t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+
+<pillar refx="inrun" refy="strs" refz="inrun-left"
+	x1="20.5" x2="20.945" ty="0" by="-0.04" lz="0.14" rz="0.1" step="0.500" count="106"
+	t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+
+<pillar refx="inrun" refy="strs" refz="inrun-left"
+	x1="20.5" x2="20.945" ty="0" by="-0.04" lz="0.8" rz="0.76" step="0.500" count="106"
+	t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+
+
+<pillar refx="inrun" refy="strs"  refz="inrun-left"
+	x1="20.945" x2="20.990" by="-0.105" ty="-0.005" lz="0.98" rz="0" step="0.500" count="106"
+t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+<pillar refx="inrun" refy="strs"  refz="inrun-left"
+	x1="20.945" x2="20.990" by="-0.215" ty="-0.115" lz="0.98" rz="0" step="0.500" count="106"
+t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+ 
+<pillar refx="inrun" refy="strs"  refz="inrun-left"
+	x1="20.945" x2="20.990" by="-0.325" ty="-0.225" lz="0.98" rz="0" step="0.500" count="106"
+t="Textures\wood2.png" m="Materials\wood.xml" c="0x94908b"/>
+
+
+<pillar refx="inrun" trefy="strs" brefy="inrun-top" refz="inrun-left"
+	x1="20.915" x2="20.945" ty="-0.04" by="-2" lz="0.14" rz="0.1" step="0.500" count="106"
+	t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+<pillar refx="inrun" trefy="strs" brefy="inrun-top" refz="inrun-left"
+	x1="20.915" x2="20.945" ty="-0.04" by="-2" lz="0.8" rz="0.76" step="0.500" count="106"
+	t="Textures\rust1.png" m="Materials\material1.xml" c="0xdcdcdc"/>
+
+<beamgroup refx="inrun" refy="inrun-top" refz="inrun-right" last="true" rect="true" x1="21" x2="29" dz="0.02" step="1" stepper="3" fitstep="true" ny1="1.25" ny2="-0.2" r1="0.015" r2="0.015" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+
+<beam refx="inrun" refy="inrun-top" refz="inrun-right" last="true" rect="true" x1="20.95" x2="29.05" z="0.02" step="1" stepper="3" fitstep="true" ny="1.25"  r1="0.02" r2="0.02" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+
+<beam refx="inrun" refy="inrun-top" refz="inrun-right" last="true" rect="true" x1="21" x2="29" z="0.02" step="1" stepper="3" fitstep="true" ny="0.65"  r1="0.02" r2="0.02" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+
+
+<beamgroup refx="inrun" refy="inrun-top" refz="inrun-left" last="true" rect="true" x1="21" x2="29" dz="-0.02" step="1" stepper="3" fitstep="true" ny1="1.25" ny2="-0.2" r1="0.015" r2="0.015" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+
+<beam refx="inrun" refy="inrun-top" refz="inrun-left" last="true" rect="true" x1="20.95" x2="29.05" z="-0.02" step="1" stepper="3" fitstep="true" ny="1.25"  r1="0.02" r2="0.02" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+
+<beam refx="inrun" refy="inrun-top" refz="inrun-left" last="true" rect="true" x1="21" x2="29" z="-0.02" step="1" stepper="3" fitstep="true" ny="0.65"  r1="0.02" r2="0.02" edges="8" smooth="true" end1="true" end2="true" t="Textures\metal.png" m="Materials\material1.xml" c="0x678763"/>
+
+
+</hill>
+
+

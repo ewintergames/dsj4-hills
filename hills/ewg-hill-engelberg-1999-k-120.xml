@@ -1,0 +1,1906 @@
+<hill version="DSJ4-1.10.0" author="Ant3xiQ">
+	<location latitude="46.814574" longitude="8.404036" orientation="92" timezone="1" altitude="1091"/>
+	<weather pollution="0.0" firstsnow="300" lastsnow="90" maxsnow="1.5" precipitationprobability="0.1" fogprobability="0.1"/>
+	<time minhour="9" maxhour="12"/>
+	<inrun>
+        <profile e="102" es="32" t="7" gamma="35" alpha="10.5" r1="110" s="3.4" b1="1.6" z0="0" l="1" f="0" />
+        <guardrail z1="-1.31" z2="1.31" x="10" />
+        <startgate default="7" max="31" step="0.57" wind="1.38" z1="-1.541" z2="1.58" pz1="-1.54" pz2="1.58" t1="Textures\wood2b.png" m1="Materials\material1.xml" c1="0xad772e" t2="Textures\wood2.png" m2="Materials\wood.xml" c2="0x565044" t3="Textures\wood2.png" m3="Materials\material1.xml" c3="0x565044" />
+        <startbanner z="0" text="ENGELBERG" textsize="0.1"/>
+        <flag x="30.03" z="5.2" hf="1.5" pf="1" hp="8" rb="0.05" rt="0.04" tf="Textures\flag-sui.png" mf="Materials\flag.xml" tp="Textures\wood4b.png" mp="Materials\material1.xml" cp="0x4f473e" />
+		<frame snow="true" by="-50" bh="0" t0="Textures\wood3b.png" m0="Materials\wood.xml" c0="0x565044" t1="Textures\wood3b.png" m1="Materials\wood.xml" c1="0x565044" t="Textures\wood3b.png" m="Materials\wood.xml" c="0x565044" c2="0x565044"/>zzzzz
+        <twigs lz="1.0" rz="-1.0" />
+        <track type="default" snow="true"/>
+    </inrun>    
+    <dhill>
+        <profile x0="9" alpha="6.3" h="59.98" n="103.24" l1="29" l2="0" a="90" beta-p="38" beta="38" beta-l="38" rl="30" r2x="57.73" r2y="18.17" b0="8" bk="20" ba="23.5" hr="1" nr="110" ar="4" k="120" hs="120"/>
+        <fence t="Textures\fenceback.png" m="Materials\material1.xml" c="0xffffff" d0="200" />
+        <judgetower d="72" q="-28" h="+9" t1="Textures\wood3.png" m1="Materials\wood.xml" c1="0x764b34" t2="Textures\wood3.png" m2="Materials\wood.xml" c2="0x613e2b"/>
+        <windflags count="0" t="Textures\wood2.png" m="Materials\wood.xml" c="0x635743" />
+        <measurers c1="0xff4700" c2="0xff4700" />
+        <plastic c="0x5D603A" />
+        <lines summer-min="75" summer-max="130" winter-min="75" winter-max="130" />
+        <numbers min="10" max="55" h1="0" h2="0"/>
+			<distance-marker refz="dhill-left" refy="dhill-top" distances="70-127" r="0.25" edges="20" smooth="true" thickness="0.005" dx="0" dy="0.7" dz="0" nz="0" ny="0.0" font-size="0.35" font-color="0x363636" rear="true" front-color="0xffe449" rear-color="0xffe449" side-color="0xffe449" pole="true" pole-color="0x565044" pole-r="0.035" pole-dheight="0" />
+						<distance-marker refz="dhill-right" refy="dhill-top" distances="70-127" r="0.25" edges="20" smooth="true" thickness="0.005" dx="0" dy="0.7" dz="0" nz="0" ny="0.0" font-size="0.35" font-color="0x363636" rear="true" front-color="0xffe449" rear-color="0xffe449" side-color="0xffe449" pole="true" pole-color="0x565044" pole-r="0.035" pole-dheight="0" />
+
+	<custom-markings>
+	<winter>
+	    <banner d1="0" d2="5" refd1="k" refd2="k" side="both" w=".4" margin="0.2" c="0xbf1d1d"/>
+			    <banner d1="5" d2="10" refd1="k" refd2="k" side="both" w=".4" margin="0.2" c="0xffe449"/>
+    <banner d1="0" d2="5" refd1="p" refd2="p"  side="both" w=".4" margin="0.2" c="0x19357e"/>
+    <banner d1="5" d2="0" refd1="p" refd2="k"  side="both" w=".4" margin="0.2" c="0xffe449"/>
+    <banner d1="0" d2="5" refd1="f" refd2="f" side="both" w=".4" margin="0.2" c="0x005919"/>
+
+
+
+    <twigs space="0.3" size="0.09" step="5" count="12" d="70" refz1="right" refz2="left" z1="3.65" z2="-3.65"/>
+    <twigs space="0.25" size="0.15" step="5" count="12" d="70" refz1="left" refz2="left" z1="-0.65" z2="-3.65"/>
+    <twigs space="0.25" size="0.15" step="5" count="12" d="70" refz1="right" refz2="right" z1="0.65" z2="3.65"/>
+	    <twigs space="0.3" size="0.09" d="126" refz1="right" refz2="left" z1="3.65" z2="-3.65"/>
+    <twigs space="0.25" size="0.15" d="126" refz1="left" refz2="left" z1="-0.65" z2="-3.65"/>
+    <twigs space="0.25" size="0.15"  d="126" refz1="right" refz2="right" z1="0.65" z2="3.65"/>
+
+		    <twigs space="0.3" size="0.09" d="0" refz1="right" refz2="left" z1="3.65" z2="-3.65" refd="f"/>
+    <twigs space="0.25" size="0.15" d="0" refz1="left" refz2="left" z1="-0.65" z2="-3.65" refd="f"/>
+    <twigs space="0.25" size="0.15"  d="0" refz1="right" refz2="right" z1="0.65" z2="3.65" refd="f"/>
+
+
+	 <twigs space="0.25" size="0.2" d="50" refz1="right" refz2="left" z1="0.65" z2="-0.65"/>
+
+	 
+	 <twigs space="0.25" size="0.2" d1="50" d2="0" refz1="dhill-right" refz2="dhill-right" z1="0.65" z2="0.65" refd2="p"/>
+	 	 <twigs space="0.25" size="0.2" d1="50" d2="0" refz1="dhill-left" refz2="dhill-left" z1="-0.65" z2="-0.65" refd2="p"/>
+
+		  	 <twigs space="0.25" size="0.2" d1="130" d2="0" refz1="dhill-right" refz2="dhill-right" z1="0.65" z2="0.65" refd2="f"/>
+	 	 <twigs space="0.25" size="0.2" d1="130" d2="0" refz1="dhill-left" refz2="dhill-left" z1="-0.65" z2="-0.65" refd2="f"/>
+
+
+	</winter>
+
+	<summer>
+<grass d1="9" d2="29" side="custom"  refz1="dhill-right" z1="0" z2="-5"/>
+<grass  d1="9" d2="29" side="custom"  refz2="dhill-left" z1="5" z2="0"/>
+<grass d1="29" d2="49" side="custom"  refz1="dhill-right" z1="0" z2="-5.8"/>
+<grass  d1="29" d2="49" side="custom"  refz2="dhill-left" z1="5.8" z2="0"/>
+<grass d1="49" d2="69" side="custom"  refz1="dhill-right" z1="0" z2="-6.8"/>
+<grass  d1="49" d2="69" side="custom"  refz2="dhill-left" z1="6.8" z2="0"/>
+<grass d1="69" d2="90" side="custom"  refz1="dhill-right" z1="0" z2="-7.8"/>
+<grass  d1="69" d2="90" side="custom"  refz2="dhill-left" z1="7.8" z2="0"/>
+<grass d1="90" d2="20" refd2="f" side="custom"  refz1="dhill-right" z1="0" z2="-8.6"/>
+<grass  d1="90" d2="20" refd2="f" side="custom"  refz2="dhill-left" z1="8.6" z2="0"/>
+
+<line refd="k" d="0" refz="right" z1="-8.6" z2="0" w="0.3" c="0xa62828" />
+<line refd="k" d="0" refz="left" z1="8.6" z2="0" w="0.3" c="0xa62828" />
+
+<line refd="p" d="0" refz="right" z1="-8.6" z2="0" w="0.3" c="0x19357e" />
+<line refd="p" d="0" refz="left" z1="8.6" z2="0" w="0.3" c="0x19357e" />
+
+<line refd="f" d="0" refz="right" z1="-8.6" z2="0" w="0.15" c="0xfafafa" />
+<line refd="f" d="0" refz="left" z1="8.6" z2="0" w="0.15" c="0xfafafa" />
+
+<line d="70" refz="right" z1="-7.8" z2="0" w="0.15" step="5" count="4" c="0xfafafa" />
+<line d="70" refz="left" z1="7.8" z2="0" w="0.15" step="5" count="4" c="0xfafafa" />
+
+<line d="95" refz="right" z1="-8.6" z2="0" w="0.15" c="0xfafafa" step="5" count="5" />
+<line d="95" refz="left" z1="8.6" z2="0" w="0.15" c="0xfafafa" step="5" count="5"/>
+
+<line d="125" refz="right" z1="-8.6" z2="0" w="0.15" c="0xfafafa"  />
+<line d="125" refz="left" z1="8.6" z2="0" w="0.15" c="0xfafafa"/>
+
+
+
+	</summer>
+	</custom-markings> 
+    </dhill>
+
+    <profile id="inrun-left" side="left" maxstep="1000">
+        <start x="-10" y="1.4" refx="inrun" />
+		<line x="30.09" y="1.4" refx="inrun" />
+        <line x="0" y="1.8" refx="dhill" />
+    </profile>
+
+<profile id="dhill-fence" refx="inrun">
+	<start x="29.38" y="1.20"  refy="inrun-top" />
+	<line x="29.55" y="1.12"  refy="inrun-top" />
+	<line x="29.71" y="1.05"  refy="inrun-top" />
+	<line x="29.88" y="0.99"  refy="inrun-top" />
+	<line x="30.05" y="0.94"  refy="inrun-top" />
+	<line x="30.21" y="0.91"  refy="inrun-top" />
+	<line x="30.38" y="0.90"  refy="inrun-top" />
+	<line x="30.55" y="0.91"  refy="inrun-top" />
+	<line x="30.71" y="0.94"  refy="inrun-top" />
+	<line x="30.88" y="0.99"  refy="inrun-top" />
+	<line x="31.05" y="1.05"  refy="inrun-top" />
+	<line x="31.21" y="1.12"  refy="inrun-top" />
+	<line x="31.38" y="1.20"  refy="inrun-top" />
+	<line x="31.55" y="1.12"  refy="inrun-top" />
+	<line x="31.71" y="1.05"  refy="inrun-top" />
+	<line x="31.88" y="0.99"  refy="inrun-top" />
+	<line x="32.05" y="0.94"  refy="inrun-top" />
+	<line x="32.21" y="0.91"  refy="inrun-top" />
+	<line x="32.38" y="0.90"  refy="inrun-top" />
+	<line x="32.55" y="0.91"  refy="inrun-top" />
+	<line x="32.71" y="0.94"  refy="inrun-top" />
+	<line x="32.88" y="0.99"  refy="inrun-top" />
+	<line x="33.05" y="1.05"  refy="inrun-top" />
+	<line x="33.21" y="1.12"  refy="inrun-top" />
+	<line x="33.38" y="1.20"  refy="inrun-top" />
+	<line x="33.55" y="1.12"  refy="inrun-top" />
+	<line x="33.71" y="1.05"  refy="inrun-top" />
+	<line x="33.88" y="0.99"  refy="inrun-top" />
+	<line x="34.05" y="0.94"  refy="inrun-top" />
+	<line x="34.21" y="0.91"  refy="inrun-top" />
+	<line x="34.38" y="0.90"  refy="inrun-top" />
+	<line x="34.55" y="0.91"  refy="inrun-top" />
+	<line x="34.71" y="0.94"  refy="inrun-top" />
+	<line x="34.88" y="0.99"  refy="inrun-top" />
+	<line x="35.05" y="1.05"  refy="inrun-top" />
+	<line x="35.21" y="1.12"  refy="inrun-top" />
+	<line x="35.38" y="1.20"  refy="inrun-top" />
+	<line x="35.55" y="1.12"  refy="inrun-top" />
+	<line x="35.71" y="1.05"  refy="inrun-top" />
+	<line x="35.88" y="0.99"  refy="inrun-top" />
+	<line x="36.05" y="0.94"  refy="inrun-top" />
+	<line x="36.21" y="0.91"  refy="inrun-top" />
+	<line x="36.38" y="0.90"  refy="inrun-top" />
+	<line x="36.55" y="0.91"  refy="inrun-top" />
+	<line x="36.71" y="0.94"  refy="inrun-top" />
+	<line x="36.88" y="0.99"  refy="inrun-top" />
+	<line x="37.05" y="1.05"  refy="inrun-top" />
+	<line x="37.21" y="1.12"  refy="inrun-top" />
+	<line x="37.38" y="1.20"  refy="inrun-top" />
+	<line x="37.55" y="1.12"  refy="inrun-top" />
+	<line x="37.71" y="1.05"  refy="inrun-top" />
+	<line x="37.88" y="0.99"  refy="inrun-top" />
+	<line x="38.05" y="0.94"  refy="inrun-top" />
+	<line x="38.21" y="0.91"  refy="inrun-top" />
+	<line x="38.38" y="0.90"  refy="inrun-top" />
+	<line x="38.55" y="0.91"  refy="inrun-top" />
+	<line x="38.71" y="0.94"  refy="inrun-top" />
+	<line x="38.88" y="0.99"  refy="inrun-top" />
+	<line x="39.05" y="1.05"  refy="inrun-top" />
+	<line x="39.21" y="1.12"  refy="inrun-top" />
+	<line x="39.38" y="1.20"  refy="inrun-top" />
+	<line x="39.55" y="1.12"  refy="inrun-top" />
+	<line x="39.71" y="1.05"  refy="inrun-top" />
+	<line x="39.88" y="0.99"  refy="inrun-top" />
+	<line x="40.05" y="0.94"  refy="inrun-top" />
+	<line x="40.21" y="0.91"  refy="inrun-top" />
+	<line x="40.38" y="0.90"  refy="inrun-top" />
+	<line x="40.55" y="0.91"  refy="inrun-top" />
+	<line x="40.71" y="0.94"  refy="inrun-top" />
+	<line x="40.88" y="0.99"  refy="inrun-top" />
+	<line x="41.05" y="1.05"  refy="inrun-top" />
+	<line x="41.21" y="1.12"  refy="inrun-top" />
+	<line x="41.38" y="1.20"  refy="inrun-top" />
+	<line x="41.55" y="1.12"  refy="inrun-top" />
+	<line x="41.71" y="1.05"  refy="inrun-top" />
+	<line x="41.88" y="0.99"  refy="inrun-top" />
+	<line x="42.05" y="0.94"  refy="inrun-top" />
+	<line x="42.21" y="0.91"  refy="inrun-top" />
+	<line x="42.38" y="0.90"  refy="inrun-top" />
+	<line x="42.55" y="0.91"  refy="inrun-top" />
+	<line x="42.71" y="0.94"  refy="inrun-top" />
+	<line x="42.88" y="0.99"  refy="inrun-top" />
+	<line x="43.05" y="1.05"  refy="inrun-top" />
+	<line x="43.21" y="1.12"  refy="inrun-top" />
+	<line x="43.38" y="1.20"  refy="inrun-top" />
+	<line x="43.55" y="1.12"  refy="inrun-top" />
+	<line x="43.71" y="1.05"  refy="inrun-top" />
+	<line x="43.88" y="0.99"  refy="inrun-top" />
+	<line x="44.05" y="0.94"  refy="inrun-top" />
+	<line x="44.21" y="0.91"  refy="inrun-top" />
+	<line x="44.38" y="0.90"  refy="inrun-top" />
+	<line x="44.55" y="0.91"  refy="inrun-top" />
+	<line x="44.71" y="0.94"  refy="inrun-top" />
+	<line x="44.88" y="0.99"  refy="inrun-top" />
+	<line x="45.05" y="1.05"  refy="inrun-top" />
+	<line x="45.21" y="1.12"  refy="inrun-top" />
+	<line x="45.38" y="1.20"  refy="inrun-top" />
+	<line x="45.55" y="1.12"  refy="inrun-top" />
+	<line x="45.71" y="1.05"  refy="inrun-top" />
+	<line x="45.88" y="0.99"  refy="inrun-top" />
+	<line x="46.05" y="0.94"  refy="inrun-top" />
+	<line x="46.21" y="0.91"  refy="inrun-top" />
+	<line x="46.38" y="0.90"  refy="inrun-top" />
+	<line x="46.55" y="0.91"  refy="inrun-top" />
+	<line x="46.71" y="0.94"  refy="inrun-top" />
+	<line x="46.88" y="0.99"  refy="inrun-top" />
+	<line x="47.05" y="1.05"  refy="inrun-top" />
+	<line x="47.21" y="1.12"  refy="inrun-top" />
+	<line x="47.38" y="1.20"  refy="inrun-top" />
+	<line x="47.55" y="1.12"  refy="inrun-top" />
+	<line x="47.71" y="1.05"  refy="inrun-top" />
+	<line x="47.88" y="0.99"  refy="inrun-top" />
+	<line x="48.05" y="0.94"  refy="inrun-top" />
+	<line x="48.21" y="0.91"  refy="inrun-top" />
+	<line x="48.38" y="0.90"  refy="inrun-top" />
+	<line x="48.55" y="0.91"  refy="inrun-top" />
+	<line x="48.71" y="0.94"  refy="inrun-top" />
+	<line x="48.88" y="0.99"  refy="inrun-top" />
+	<line x="49.05" y="1.05"  refy="inrun-top" />
+	<line x="49.21" y="1.12"  refy="inrun-top" />
+	<line x="49.38" y="1.20"  refy="inrun-top" />
+	<line x="49.55" y="1.12"  refy="inrun-top" />
+	<line x="49.71" y="1.05"  refy="inrun-top" />
+	<line x="49.88" y="0.99"  refy="inrun-top" />
+	<line x="50.05" y="0.94"  refy="inrun-top" />
+	<line x="50.21" y="0.91"  refy="inrun-top" />
+	<line x="50.38" y="0.90"  refy="inrun-top" />
+	<line x="50.55" y="0.91"  refy="inrun-top" />
+	<line x="50.71" y="0.94"  refy="inrun-top" />
+	<line x="50.88" y="0.99"  refy="inrun-top" />
+	<line x="51.05" y="1.05"  refy="inrun-top" />
+	<line x="51.21" y="1.12"  refy="inrun-top" />
+	<line x="51.38" y="1.20"  refy="inrun-top" />
+	<line x="51.55" y="1.12"  refy="inrun-top" />
+	<line x="51.71" y="1.05"  refy="inrun-top" />
+	<line x="51.88" y="0.99"  refy="inrun-top" />
+	</profile>
+
+<profile id="inrun-stairs" refx="inrun">
+	<start x="0.00" y="0.04" refy="inrun-top"/>
+	<line x="0.56" y="0.04" refyx="0.00"  refy="inrun-top"/>
+	<line x="0.57" y="0.04" refy="inrun-top"/>
+	<line x="1.13" y="0.04" refyx="0.57"  refy="inrun-top"/>
+	<line x="1.14" y="0.04" refy="inrun-top"/>
+	<line x="1.70" y="0.04" refyx="1.14"  refy="inrun-top"/>
+	<line x="1.71" y="0.04" refy="inrun-top"/>
+	<line x="2.27" y="0.04" refyx="1.71"  refy="inrun-top"/>
+	<line x="2.28" y="0.04" refy="inrun-top"/>
+	<line x="2.84" y="0.04" refyx="2.28"  refy="inrun-top"/>
+	<line x="2.85" y="0.04" refy="inrun-top"/>
+	<line x="3.41" y="0.04" refyx="2.85"  refy="inrun-top"/>
+	<line x="3.42" y="0.04" refy="inrun-top"/>
+	<line x="3.98" y="0.04" refyx="3.42"  refy="inrun-top"/>
+	<line x="3.99" y="0.04" refy="inrun-top"/>
+	<line x="4.55" y="0.04" refyx="3.99"  refy="inrun-top"/>
+	<line x="4.56" y="0.04" refy="inrun-top"/>
+	<line x="5.12" y="0.04" refyx="4.56"  refy="inrun-top"/>
+	<line x="5.13" y="0.04" refy="inrun-top"/>
+	<line x="5.69" y="0.04" refyx="5.13"  refy="inrun-top"/>
+	<line x="5.70" y="0.04" refy="inrun-top"/>
+	<line x="6.26" y="0.04" refyx="5.70"  refy="inrun-top"/>
+	<line x="6.27" y="0.04" refy="inrun-top"/>
+	<line x="6.83" y="0.04" refyx="6.27"  refy="inrun-top"/>
+	<line x="6.84" y="0.04" refy="inrun-top"/>
+	<line x="7.40" y="0.04" refyx="6.84"  refy="inrun-top"/>
+	<line x="7.41" y="0.04" refy="inrun-top"/>
+	<line x="7.97" y="0.04" refyx="7.41"  refy="inrun-top"/>
+	<line x="7.98" y="0.04" refy="inrun-top"/>
+	<line x="8.54" y="0.04" refyx="7.98"  refy="inrun-top"/>
+	<line x="8.55" y="0.04" refy="inrun-top"/>
+	<line x="9.11" y="0.04" refyx="8.55"  refy="inrun-top"/>
+	<line x="9.12" y="0.04" refy="inrun-top"/>
+	<line x="9.68" y="0.04" refyx="9.12"  refy="inrun-top"/>
+	<line x="9.69" y="0.04" refy="inrun-top"/>
+	<line x="10.25" y="0.04" refyx="9.69"  refy="inrun-top"/>
+	<line x="10.26" y="0.04" refy="inrun-top"/>
+	<line x="10.82" y="0.04" refyx="10.26"  refy="inrun-top"/>
+	<line x="10.83" y="0.04" refy="inrun-top"/>
+	<line x="11.39" y="0.04" refyx="10.83"  refy="inrun-top"/>
+	<line x="11.40" y="0.04" refy="inrun-top"/>
+	<line x="11.96" y="0.04" refyx="11.40"  refy="inrun-top"/>
+	<line x="11.97" y="0.04" refy="inrun-top"/>
+	<line x="12.53" y="0.04" refyx="11.97"  refy="inrun-top"/>
+	<line x="12.54" y="0.04" refy="inrun-top"/>
+	<line x="13.10" y="0.04" refyx="12.54"  refy="inrun-top"/>
+	<line x="13.11" y="0.04" refy="inrun-top"/>
+	<line x="13.67" y="0.04" refyx="13.11"  refy="inrun-top"/>
+	<line x="13.68" y="0.04" refy="inrun-top"/>
+	<line x="14.24" y="0.04" refyx="13.68"  refy="inrun-top"/>
+	<line x="14.25" y="0.04" refy="inrun-top"/>
+	<line x="14.81" y="0.04" refyx="14.25"  refy="inrun-top"/>
+	<line x="14.82" y="0.04" refy="inrun-top"/>
+	<line x="15.38" y="0.04" refyx="14.82"  refy="inrun-top"/>
+	<line x="15.39" y="0.04" refy="inrun-top"/>
+	<line x="15.95" y="0.04" refyx="15.39"  refy="inrun-top"/>
+	<line x="15.96" y="0.04" refy="inrun-top"/>
+	<line x="16.52" y="0.04" refyx="15.96"  refy="inrun-top"/>
+	<line x="16.53" y="0.04" refy="inrun-top"/>
+	<line x="17.09" y="0.04" refyx="16.53"  refy="inrun-top"/>
+	<line x="17.10" y="0.04" refy="inrun-top"/>
+	<line x="17.66" y="0.04" refyx="17.10"  refy="inrun-top"/>
+	<line x="17.67" y="0.04" refy="inrun-top"/>
+	<line x="18.23" y="0.04" refyx="17.67"  refy="inrun-top"/>
+	<line x="18.24" y="0.04" refy="inrun-top"/>
+	<line x="18.80" y="0.04" refyx="18.24"  refy="inrun-top"/>
+	<line x="18.81" y="0.04" refy="inrun-top"/>
+	<line x="19.37" y="0.04" refyx="18.81"  refy="inrun-top"/>
+	<line x="19.38" y="0.04" refy="inrun-top"/>
+	<line x="19.94" y="0.04" refyx="19.38"  refy="inrun-top"/>
+	<line x="19.95" y="0.04" refy="inrun-top"/>
+	<line x="20.51" y="0.04" refyx="19.95"  refy="inrun-top"/>
+	<line x="20.52" y="0.04" refy="inrun-top"/>
+	<line x="21.08" y="0.04" refyx="20.52"  refy="inrun-top"/>
+	<line x="21.09" y="0.04" refy="inrun-top"/>
+	<line x="21.65" y="0.04" refyx="21.09"  refy="inrun-top"/>
+	<line x="21.66" y="0.04" refy="inrun-top"/>
+	<line x="22.22" y="0.04" refyx="21.66"  refy="inrun-top"/>
+	<line x="22.23" y="0.04" refy="inrun-top"/>
+	<line x="22.79" y="0.04" refyx="22.23"  refy="inrun-top"/>
+	<line x="22.80" y="0.04" refy="inrun-top"/>
+	<line x="23.36" y="0.04" refyx="22.80"  refy="inrun-top"/>
+	<line x="23.37" y="0.04" refy="inrun-top"/>
+	<line x="23.93" y="0.04" refyx="23.37"  refy="inrun-top"/>
+	<line x="23.94" y="0.04" refy="inrun-top"/>
+	<line x="24.50" y="0.04" refyx="23.94"  refy="inrun-top"/>
+	<line x="24.51" y="0.04" refy="inrun-top"/>
+	<line x="25.07" y="0.04" refyx="24.51"  refy="inrun-top"/>
+	<line x="25.08" y="0.04" refy="inrun-top"/>
+	<line x="25.64" y="0.04" refyx="25.08"  refy="inrun-top"/>
+	<line x="25.65" y="0.04" refy="inrun-top"/>
+	<line x="26.21" y="0.04" refyx="25.65"  refy="inrun-top"/>
+	<line x="26.22" y="0.04" refy="inrun-top"/>
+	<line x="26.78" y="0.04" refyx="26.22"  refy="inrun-top"/>
+	<line x="26.79" y="0.04" refy="inrun-top"/>
+	<line x="27.35" y="0.04" refyx="26.79"  refy="inrun-top"/>
+	<line x="27.36" y="0.04" refy="inrun-top"/>
+	<line x="27.92" y="0.04" refyx="27.36"  refy="inrun-top"/>
+	<line x="27.93" y="0.04" refy="inrun-top"/>
+	<line x="28.49" y="0.04" refyx="27.93"  refy="inrun-top"/>
+	<line x="28.50" y="0.04" refy="inrun-top"/>
+	<line x="29.06" y="0.04" refyx="28.50"  refy="inrun-top"/>
+</profile>
+
+  <profile id="inrun-right" side="right" maxstep="1000">
+        <start x="-10" y="-1.4" refx="inrun" />
+		<line x="30.09" y="-1.4" refx="inrun" />
+        <line x="0" y="-1.8" refx="dhill" />
+    </profile>
+
+<profile id="inrun-terrain">
+		<start x="-50" y="50" refx="inrun"/>
+		<line x="-15" y="5.4" refx="inrun"/>
+		<line x="-10" y="4" refx="inrun"/>        
+
+        <line x="-1" y="4.05" refx="inrun"/>
+		<line x="0" y="3.35" refx="inrun"/>
+        <line x="-10" y="3.35"/>
+        <line x="-5" y="3.35"/>
+		<line x="0" y="3.4"/>
+		<line x="0" y="3.35" refx="dhill"/>
+	</profile>
+	
+
+<profile id="inrun-extension">
+    <start x="0" y="2.7" />
+    <line x="1.5" y="2.7" />
+</profile>
+
+	<terrain>
+		<profile in="1" x0="-200" x1="-100" y0="-50.0" sd="20" fd="300" sc="0.1" sm="0.55" rs="4225" c1="0x443920" c2="0x5D603A" tsc="0.01" tsm="0.4"/>
+		<trees count="20000" minheight="10" maxheight="20" fractalthreshold="100" maxaltitude="1500" normalaltitude="1000" seed="3"/>
+		<blocks count="0" minsaturation="0.0" maxsaturation="0.1" minfloors="2" maxfloors="6" maxaltitude="1200" normalaltitude="1000" fractalthreshold="0.3" seed="515"/>
+		<houses count="200" minsaturation="0.0" maxsaturation="0.2" minfloors="1" maxfloors="3" maxaltitude="1200" normalaltitude="1000" fractalthreshold="0.3" seed="542"/>
+		<audience count="5000" d="35" x0="20" seed="423"/>
+	</terrain>
+
+<!--schdoki do belek-->
+<pillar refx="inrun" refy="inrun-stairs" x1="0.000" x2="0.560" ty=".05" lz="5" rz="1.4" step="0.570" count="51" t="Textures\wood4.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="0.000" x2="0.560" ty="0" lz="5" by="-1" rz="4.75" step="0.570" count="51" t="Textures\wood4.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="0.000" x2="0.560" ty="0" lz="1.65" by="-1" rz="1.4" step="0.570" count="51" t="Textures\wood4.png" m="Materials\wood.xml" c="0x565044"/>
+
+<!--barierka schdków dużych-->
+<pillar refx="inrun" refy="inrun-stairs" x1="29.170" x2="29.180" ty="1.3" lz="5" rz="2.4" by="0.3" t="Textures\metal.png" m="Materials\metal.xml" c="0x363636"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="29.110" x2="29.170" ty="0.3" lz="2.5" rz="2.4" by="-1" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="29.110" x2="29.170" ty="0.3" lz="5" rz="4.9" by="-1" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="29.110" x2="29.170" ty="1.3" lz="2.5" rz="2.4" by="0.3" front="false" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="29.110" x2="29.170" ty="1.3" lz="5" rz="4.9" by="0.3" front="false" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="29.110" x2="29.170" ty="0.3" lz="3.75" rz="3.65" by="-1" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="29.110" x2="29.170" ty="1.2" lz="3.75" rz="3.65" by="0.4" front="false" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="29.110" x2="29.170" ty="0.4" lz="4.9" rz="2.5" by="0.3" front="false" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="29.110" x2="29.170" ty="1.3" lz="4.9" rz="2.5" by="1.2" front="false" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x565044"/>
+
+<pillar refx="inrun" refy="inrun-stairs" x1="29.110" x2="29.170" ty="0.85" lz="3.65" rz="2.5" by="0.75" front="false" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="29.110" x2="29.170" ty="0.85" lz="4.9" rz="3.75" by="0.75" front="false" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x565044"/>
+
+<!--barierka schodów małych part 1-->
+<pillar refx="inrun" refy="inrun-stairs" x1="29.010" x2="29.050" ty="0.85" by="0" lz="-2.54" rz="-2.58" t="Textures\wood4b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="29.010" x2="29.050" ty="0.8" by="0" lz="-1.42" rz="-1.46" t="Textures\wood4b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="29.00" x2="29.060" ty="0.84" by="0.8" lz="-1.4" rz="-2.6" t="Textures\wood4.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="28.80" x2="29" ty1="0.04" by1="0" by2="0.8" ty2="0.84" lz="-1.86" rz="-1.9" t="Textures\wood4b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="28.80" x2="29" ty1="0.04" by1="0" by2="0.8" ty2="0.84" lz="-2.1" rz="-2.14" t="Textures\wood4b.png" m="Materials\wood.xml" c="0x565044"/>
+
+<!--monitor=====================================================================================================================================================-->
+<pillar refx="inrun" refy="inrun-stairs" x1="28.95" x2="29.01" ty="0.8" by="0.79" lz="-1.42" rz="-1.82" t="Textures\metal.png" m="Materials\metal.xml" c="0x006CF3"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="28.95" x2="29.01" ty="0.61" by="0.6" lz="-1.42" rz="-1.82" t="Textures\metal.png" m="Materials\metal.xml" c="0x006CF3"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="28.95" x2="29.01" ty="0.79" by="0.61" lz="-1.42" rz="-1.43" t="Textures\metal.png" m="Materials\metal.xml" c="0x006CF3"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="28.95" x2="29.01" ty="0.79" by="0.61" lz="-1.81" rz="-1.82" t="Textures\metal.png" m="Materials\metal.xml" c="0x006CF3"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="29" x2="29.01" ty="0.79" by="0.61" lz="-1.43" rz="-1.82" t="Textures\metal.png" m="Materials\metal.xml" c="0x006CF3"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="28.95" x2="28.96" ty="0.79" by="0.61" lz="-1.43" rz="-1.81" type="blend" t="Textures\railing-glass-cut.png" m="Materials\window.xml" c="0xff000000"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="28.962" x2="29" ty="0.79" by="0.61" lz="-1.43" rz="-1.81" t="Textures\net.png" front="false" left="false" top="false" right="false" bottom="false"  scale="10" m="Materials\metal.xml" c="0x363636"/>
+
+<!--0-->
+<pillar refx="inrun" refy="inrun-stairs" x1="28.96" x2="28.961" ty="0.75" by="0.65" front="false" lz="-1.47" rz="-1.48" t="Textures\metal.png" m="Materials\light.xml" c="0xF9A71A"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="28.96" x2="28.961" ty="0.75" by="0.65" front="false" lz="-1.51" rz="-1.52" t="Textures\metal.png" m="Materials\light.xml" c="0xF9A71A"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="28.96" x2="28.961" ty="0.75" by="0.74" front="false" lz="-1.48" rz="-1.51" t="Textures\metal.png" m="Materials\light.xml" c="0xF9A71A"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="28.96" x2="28.961" ty="0.66" by="0.65" front="false" lz="-1.48" rz="-1.51" t="Textures\metal.png" m="Materials\light.xml" c="0xF9A71A"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="28.96" x2="28.961" ty="0.705" by="0.695" front="false" lz="-1.48" rz="-1.51" t="Textures\metal.png" m="Materials\metal.xml" c="0x303030"/>
+
+<!--1-->
+<pillar refx="inrun" refy="inrun-stairs" x1="28.96" x2="28.961" ty="0.75" by="0.65" front="false" lz="-1.53" rz="-1.54" t="Textures\metal.png" m="Materials\metal.xml" c="0x303030"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="28.96" x2="28.961" ty="0.75" by="0.65" front="false" lz="-1.57" rz="-1.58" t="Textures\metal.png" m="Materials\light.xml" c="0xF9A71A"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="28.96" x2="28.961" ty="0.75" by="0.74" front="false" lz="-1.54" rz="-1.57" t="Textures\metal.png" m="Materials\metal.xml" c="0x303030"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="28.96" x2="28.961" ty="0.66" by="0.65" front="false" lz="-1.54" rz="-1.57" t="Textures\metal.png" m="Materials\metal.xml" c="0x303030"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="28.96" x2="28.961" ty="0.705" by="0.695" front="false" lz="-1.54" rz="-1.57" t="Textures\metal.png" m="Materials\metal.xml" c="0x303030"/>
+
+<!--swiatełka-->
+<pillar refx="inrun" refy="inrun-stairs" x1="28.96" x2="28.961" ty="0.75" by="0.74" front="false" lz="-1.67" rz="-1.7" t="Textures\metal.png" m="Materials\light.xml" c="0xff0000"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="28.96" x2="28.961" ty="0.705" by="0.695" front="false" lz="-1.67" rz="-1.7" t="Textures\metal.png" m="Materials\light.xml" c="0xF9A71A"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="28.96" x2="28.961" ty="0.66" by="0.65" front="false" lz="-1.67" rz="-1.7" t="Textures\metal.png" m="Materials\light.xml" c="0x19FF00"/>
+
+<!--paski podtrzymywujące-->
+<pillar refx="inrun" refy="inrun-stairs" x1="28.99" x2="29" ty="0.84" by="0.8" lz="-1.43" rz="-1.46" t="Textures\metal.png" m="Materials\metal.xml" c="0x363636"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="28.99" x2="29" ty="0.84" by="0.8" lz="-1.78" rz="-1.81" t="Textures\metal.png" m="Materials\metal.xml" c="0x363636"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="28.99" x2="29.06" ty="0.85" by="0.84" lz="-1.43" rz="-1.46" t="Textures\metal.png" m="Materials\metal.xml" c="0x363636"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="28.99" x2="29.06" ty="0.85" by="0.84" lz="-1.78" rz="-1.81" t="Textures\metal.png" m="Materials\metal.xml" c="0x363636"/>
+
+<pillar refx="inrun" refy="inrun-stairs" x1="29.06" x2="29.07" ty="0.85" by="0.8" lz="-1.43" rz="-1.46" t="Textures\metal.png" m="Materials\metal.xml" c="0x363636"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="29.06" x2="29.07" ty="0.85" by="0.8" lz="-1.78" rz="-1.81" t="Textures\metal.png" m="Materials\metal.xml" c="0x363636"/>
+
+<!--============================================================================================================================================================-->
+
+<!--mniejsze schodki-->
+<pillar refx="inrun" refy="inrun-stairs" x1="0" x2="0.56" ty=".05" lz="-1.4" rz="-2.6" step="0.570" count="51" t="Textures\wood4.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="0" x2="0.56" ty="0" by="-1" lz="-1.4" rz="-1.55" step="0.570" count="51" t="Textures\wood4.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="0" x2="0.56" ty="0" by="-1" lz="-2.55" rz="-2.6" step="0.570" count="51" t="Textures\wood4.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="29.06" x2="30.08" ty="-0.35" by="-0.4" lz="-1.4" rz="-2.6" t="Textures\wood4.png" m="Materials\wood.xml" c="0x565044"/>
+
+<!--barierka boczna-->
+<pillar refx="inrun" trefy="inrun-top" brefy="inrun-stairs" x1="0" x2="0.04" ty="1.2" by="0.05" lz="4.98" rz="4.94" step="1" count="30" t="Textures\wood4b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-top" x1="0" x2="29.04" ty="1.2" by="1.05" lz="4.94" rz="4.90" t="Textures\wood4.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-top" x1="0" x2="29.04" ty="0.9" by="0.75" lz="4.94" rz="4.90" t="Textures\wood4.png" m="Materials\wood.xml" c="0x565044"/>
+
+<!--barierka boczna (z)-->
+<pillar refx="inrun" refy="inrun-top" x1="0" x2=".04" ty="1.2" by="1.05" lz="4.90" rz="-2.6" t="Textures\wood4.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-top" x1="0" x2=".04" ty="0.9" by="0.75" lz="4.90" rz="-2.6" t="Textures\wood4.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-top" x1="-.04" x2="0" ty="1.2" by="0" lz="4.6" rz="4.56" t="Textures\wood4b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-top" x1="-.04" x2="0" ty="1.2" by="0" lz="3.6" rz="3.56" t="Textures\wood4b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-top" x1="-.04" x2="0" ty="1.2" by="0" lz="2.6" rz="2.56" t="Textures\wood4b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-top" x1="-.04" x2="0" ty="1.2" by="0" lz="1.6" rz="1.56" t="Textures\wood4b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-top" x1="-.04" x2="0" ty="1.2" by="0" lz="0.6" rz="0.56" t="Textures\wood4b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-top" x1="-.04" x2="0" ty="1.2" by="0" lz="-0.56" rz="-0.6" t="Textures\wood4b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-top" x1="-.04" x2="0" ty="1.2" by="0" lz="-1.56" rz="-1.6" t="Textures\wood4b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-top" x1="-.04" x2="0" ty="1.2" by="0" lz="-2.56" rz="-2.6" t="Textures\wood4b.png" m="Materials\wood.xml" c="0x565044"/>
+
+<!--siateczka-->
+<pillar refx="inrun" refy="dhill-fence" x1="29.38" x2="51.38" ty=".05" by="-0.96" lz="5.01" rz="5.011" type="blend" t="Textures\net.png" m="Materials\wood.xml" c="0xff0000" scale="1"/>
+<pillar refx="inrun" refy="inrun-top" x1="29.36" x2="29.4" ty1="1.25" ty2="1.27" by="-2" lz="5.031" rz="4.989" step="2" count="12" t="Textures\wood4b.png" m="Materials\wood.xml" c="0x565044"/>
+
+<!--barierka małych schodków part 2-->
+<pillar refx="inrun" refy="inrun-stairs" x1="30.010" x2="30.080" ty="-0.4" lz="-1.4" rz="-1.5" by="-1.35" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="30.010" x2="30.080" ty="-0.4" lz="-2.5" rz="-2.6" by="-1.35" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="30.010" x2="30.080" tly="-0.89" try="-0.4" lz="-1.5" rz="-2.5" bly="-0.99" bry="-0.5" t="Textures\wood2b.png" m="Materials\wood.xml" c="0xad772e"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="30.025" x2="30.075" tly="-0.4" try="-0.89" lz="-1.5" rz="-2.5" bly="-0.5" bry="-0.99" t="Textures\wood2b.png" m="Materials\wood.xml" c="0xad772e"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="29.510" x2="29.550" ty="0.6" by="-0.35" lz="-2.54" rz="-2.58" t="Textures\wood4b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="29.510" x2="29.550" ty="0.6" by="-0.35" lz="-1.42" rz="-1.46" t="Textures\wood4b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="29.500" x2="29.560" ty="0.59" by="0.55" lz="-1.4" rz="-2.6" t="Textures\wood4.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="29.00" x2="29.060" ty="0.59" by="0.55" lz="-1.4" rz="-2.6" t="Textures\wood4.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="29.500" x2="29.560" ty="0.38" by="0.34" lz="-1.4" rz="-2.6" t="Textures\wood4.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="29.06" x2="29.5" ty="0.59" by="0.55" lz="-2.54" rz="-2.6" t="Textures\wood4.png" m="Materials\wood.xml" c="0x565044"/>
+
+<pillar refx="inrun" refy="inrun-stairs" x1="30.010" x2="30.080" ty="0.45" lz="-1.4" rz="-1.5" by="-0.35" front="false" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="30.010" x2="30.080" ty="0.45" lz="-2.5" rz="-2.6" by="-0.35" front="false" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="30.010" x2="30.080" ty="0.45" lz="-1.5" rz="-2.5" by="0.35" front="false" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="30.010" x2="30.080" ty="0.05" lz="-1.5" rz="-2.5" by="-0.05" front="false" t="Textures\wood2b.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="30.080" x2="30.090" ty="0.45" lz="-1.4" rz="-2.6" by="-0.35" front="true" t="Textures\metal.png" m="Materials\metal.xml" c="0x363636"/>
+
+<!--inrun bottom-->
+<pillar refx1="inrun" refx2="dhill" refy="inrun-top" x1="0" x2="0" ty="0" lz="0" rz="0" refrz="inrun-right" reflz="inrun-left" by="-0.35" top="false" t="Textures\wood5b.png" m="Materials\wood.xml" c="0x635743"/>
+
+<!--guardrail-->
+<pillar refx="inrun" refy="inrun-top" refz="inrun-left" x1="50" x2="50.04" ty="0.49s" lz="0" rz="-0.04" by="0" step="1" count="42" t="Textures\wood4.png" m="Materials\wood.xml" c="0x635743"/>
+<pillar refx="inrun" refy="inrun-top" refz="inrun-left" x1="92" x2="92.04" ty="0.49s" lz="0" rz="-0.04" by="0" step="1" count="3" t="Textures\metal.png" m="Materials\wood.xml" c="0xbbbbbb"/>
+<pillar refx="inrun" refy="inrun-top" refz="inrun-right" x1="92" x2="92.04" ty="0.49s" rz="0" lz="0.04" by="0" step="1" count="3" t="Textures\metal.png" m="Materials\wood.xml" c="0xbbbbbb"/>
+<pillar refx="inrun" refy="inrun-top" refz="inrun-left" x1="50" x2="91.04" ty="0.24" lz="-0.04" rz="-0.08" by="0" t="Textures\wood4.png" m="Materials\wood.xml" c="0x635743"/>
+<pillar refx="inrun" refy="inrun-top" refz="inrun-left" x1="50" x2="91.04" ty="0.49" lz="-0.04" rz="-0.08" by="0.25" t="Textures\wood4.png" m="Materials\wood.xml" c="0x635743"/>
+
+<pillar refx="inrun" refy="inrun-top" refz="inrun-right" x1="50" x2="50.04" ty="0.49" rz="0" lz="0.04" by="0" step="1" count="42" t="Textures\wood4.png" m="Materials\wood.xml" c="0x635743"/>
+<pillar refx="inrun" refy="inrun-top" refz="inrun-right" x1="50" x2="91.04" ty="0.24" rz="0.04" lz="0.08" by="0" t="Textures\wood4.png" m="Materials\wood.xml" c="0x635743"/>
+<pillar refx="inrun" refy="inrun-top" refz="inrun-right" x1="50" x2="91.04" ty="0.49" rz="0.04" lz="0.08" by="0.25" t="Textures\wood4.png" m="Materials\wood.xml" c="0x635743"/>
+
+<pillar refx1="inrun" refx2="dhill" refy="inrun-top" refz="inrun-right" x1="91.04" x2="0" ty="0.49" rz="0.04" lz="0.08" by="0" t="Textures\railing-glass-cut.png" m="Materials\window.xml" type="blend" c="0xffffffff"/>
+
+<pillar refx1="inrun" refx2="dhill" refy="inrun-top" refz="inrun-left" x1="91.04" x2="0" ty="0.49" rz="-0.08" lz="-0.04" by="0" t="Textures\railing-glass-cut.png" m="Materials\window.xml" type="blend" c="0xffffffff"/>
+
+<!--secondgate--> 
+<pillar refx="inrun" refy="inrun-stairs" x1="6.02" x2="6.12" lz="1.58" rz="-1.54" ty="0.4" by="0.3" t="Textures\wood2b.png" m="Materials\wood.xml" c="0xad772e"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="6.03" x2="6.11" lz="-1.431" rz="-1.531" ty="0.3" by="0" t="Textures\wood2.png" m="Materials\wood.xml" c="0x565044"/>
+<pillar refx="inrun" refy="inrun-stairs" x1="6.03" x2="6.11" lz="1.581" rz="1.481" ty="0.3" by="0" t="Textures\wood2.png" m="Materials\wood.xml" c="0x565044"/>
+
+<!--take off-->
+
+<pillar bottom="true" refx="dhill" refy="dhill-top" x1="-10" x2="1.35" lz="6.4" rz="-6.4" ty1="3.1" by1="0" ty2="2.6" by2="0" t="Textures\wood5b.png" m="Materials\material1.xml" c="0x635743" front="false"/>
+<pillar bottom="true" refx="dhill" refrz="inrun-right" reflz="inrun-left" refy="inrun-top" x1="-10" x2="0" lz="0.4" rz="-0.4" ty="-0.35" by="-1.6" t="Textures\wood5b.png" m="Materials\material1.xml" c="0x635743" pt="true"/>
+
+<pillar bottom="true" refx="dhill" refy="dhill-top" x1="0" x2="1.25" lz="1.2" rz="-1.2" ty1="3.4" by1="3.38" ty2="2.52" by2="2.5" t="Textures\corrugated.png" m="Materials\material1.xml" c="0xbbbbbb" pt="true"/>
+
+<pillar bottom="true" refx="dhill" refy="dhill-top" x1="1.35" x2="1.36" lz="6.4" rz="-6.4" ty="2.6" by="2.56" t="Textures\fbanner.png" m="Materials\material1.xml" c="0x363636" pt="true"/>
+<pillar bottom="true" refx="dhill" refy="dhill-top" x1="1.35" x2="1.36" lz="6.4" rz="-6.4" ty="2.56" by="0" t="Textures\fbanner.png" m="Materials\material1.xml" c="0xffffff" pt="true"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<model id="model">
+	<batch id="SVGMat.001" texture1="Textures\concrete5.png" material="Materials\material1.xml" fvf="322" order="0" zbias="3">
+		<vertex id="88" x="-0.000000" y="1.795703" z="0.311977" diffuse="0x072CA5" />
+		<vertex id="90" x="-0.000000" y="1.821333" z="1.621361" diffuse="0x072CA5" />
+		<vertex id="89" x="-0.000000" y="1.820557" z="0.431033" diffuse="0x072CA5" />
+		<vertex id="1" x="0.000000" y="0.153549" z="7.925480" diffuse="0x072CA5" />
+		<vertex id="2" x="0.000000" y="0.249803" z="7.965379" diffuse="0x072CA5" />
+		<vertex id="3" x="0.000000" y="0.337911" z="7.984996" diffuse="0x072CA5" />
+		<vertex id="87" x="-0.000000" y="1.768554" z="0.243462" diffuse="0x072CA5" />
+		<vertex id="4" x="0.000000" y="0.708263" z="7.987604" diffuse="0x072CA5" />
+		<vertex id="86" x="-0.000000" y="1.721293" z="0.176448" diffuse="0x072CA5" />
+		<vertex id="5" x="0.000000" y="1.631057" z="7.985714" diffuse="0x072CA5" />
+		<vertex id="85" x="-0.000000" y="1.643125" z="0.117032" diffuse="0x072CA5" />
+		<vertex id="6" x="0.000000" y="1.737806" z="7.959496" diffuse="0x072CA5" />
+		<vertex id="84" x="-0.000000" y="1.556293" z="0.090203" diffuse="0x072CA5" />
+		<vertex id="7" x="0.000000" y="1.822224" z="7.916761" diffuse="0x072CA5" />
+		<vertex id="94" x="-0.000000" y="1.541795" z="1.475830" diffuse="0x072CA5" />
+		<vertex id="8" x="0.000000" y="1.819802" z="9.414841" diffuse="0x072CA5" />
+		<vertex id="95" x="-0.000000" y="1.542463" z="0.801176" diffuse="0x072CA5" />
+		<vertex id="9" x="0.000000" y="1.795858" z="9.541380" diffuse="0x072CA5" />
+		<vertex id="96" x="-0.000000" y="1.532770" z="0.756953" diffuse="0x072CA5" />
+		<vertex id="10" x="0.000000" y="1.745725" z="9.640855" diffuse="0x072CA5" />
+		<vertex id="93" x="-0.000000" y="1.529626" z="1.564864" diffuse="0x072CA5" />
+		<vertex id="11" x="0.000000" y="1.662080" z="9.712955" diffuse="0x072CA5" />
+		<vertex id="83" x="-0.000000" y="1.485382" z="0.085671" diffuse="0x072CA5" />
+		<vertex id="12" x="0.000000" y="1.551280" z="9.746850" diffuse="0x072CA5" />
+		<vertex id="97" x="-0.000000" y="1.511095" z="0.731187" diffuse="0x072CA5" />
+		<vertex id="13" x="0.000000" y="1.023791" z="9.748064" diffuse="0x072CA5" />
+		<vertex id="92" x="-0.000000" y="1.499837" z="1.641124" diffuse="0x072CA5" />
+		<vertex id="14" x="0.000000" y="0.940534" z="9.727279" diffuse="0x072CA5" />
+		<vertex id="98" x="-0.000000" y="1.484105" z="0.718154" diffuse="0x072CA5" />
+		<vertex id="15" x="0.000000" y="0.879477" z="9.697307" diffuse="0x072CA5" />
+		<vertex id="91" x="-0.000000" y="1.478716" z="1.680245" diffuse="0x072CA5" />
+		<vertex id="16" x="0.000000" y="0.824302" z="9.645595" diffuse="0x072CA5" />
+		<vertex id="99" x="-0.000000" y="1.354360" z="0.719099" diffuse="0x072CA5" />
+		<vertex id="17" x="0.000000" y="0.787627" z="9.585280" diffuse="0x072CA5" />
+		<vertex id="100" x="-0.000000" y="1.317834" z="0.740027" diffuse="0x072CA5" />
+		<vertex id="18" x="0.000000" y="0.761390" z="9.505948" diffuse="0x072CA5" />
+		<vertex id="82" x="-0.000000" y="1.000099" z="0.084268" diffuse="0x072CA5" />
+		<vertex id="19" x="0.000000" y="0.745777" z="9.405890" diffuse="0x072CA5" />
+		<vertex id="101" x="-0.000000" y="1.301134" z="0.780019" diffuse="0x072CA5" />
+		<vertex id="20" x="0.000000" y="0.743583" z="8.627461" diffuse="0x072CA5" />
+		<vertex id="102" x="-0.000000" y="1.298010" z="1.332533" diffuse="0x072CA5" />
+		<vertex id="21" x="0.000000" y="0.342530" z="8.628744" diffuse="0x072CA5" />
+		<vertex id="103" x="-0.000000" y="1.283909" z="1.460657" diffuse="0x072CA5" />
+		<vertex id="22" x="0.000000" y="0.261907" z="8.643798" diffuse="0x072CA5" />
+		<vertex id="104" x="-0.000000" y="1.248144" z="1.565419" diffuse="0x072CA5" />
+		<vertex id="23" x="0.000000" y="0.180968" z="8.673911" diffuse="0x072CA5" />
+		<vertex id="105" x="-0.000000" y="1.202125" z="1.625807" diffuse="0x072CA5" />
+		<vertex id="24" x="0.000000" y="0.142153" z="8.698489" diffuse="0x072CA5" />
+		<vertex id="106" x="-0.000000" y="1.134908" z="1.675507" diffuse="0x072CA5" />
+		<vertex id="25" x="0.000000" y="0.142153" z="8.307373" diffuse="0x072CA5" />
+		<vertex id="107" x="-0.000000" y="1.018178" z="1.706274" diffuse="0x072CA5" />
+		<vertex id="26" x="0.000000" y="0.142153" z="7.916258" diffuse="0x072CA5" />
+		<vertex id="81" x="-0.000000" y="0.901807" z="0.092987" diffuse="0x072CA5" />
+		<vertex id="27" x="0.000000" y="0.152941" z="7.922965" diffuse="0x072CA5" />
+		<vertex id="80" x="-0.000000" y="0.802486" z="0.128229" diffuse="0x072CA5" />
+		<vertex id="28" x="0.000000" y="0.152941" z="7.922965" diffuse="0x072CA5" />
+		<vertex id="79" x="-0.000000" y="0.734978" z="0.189036" diffuse="0x072CA5" />
+		<vertex id="29" x="0.000000" y="0.152941" z="7.922965" diffuse="0x072CA5" />
+		<vertex id="78" x="-0.000000" y="0.691466" z="0.271820" diffuse="0x072CA5" />
+		<vertex id="30" x="0.000000" y="0.152941" z="7.922965" diffuse="0x072CA5" />
+		<vertex id="77" x="-0.000000" y="0.665724" z="0.399847" diffuse="0x072CA5" />
+		<vertex id="31" x="0.000000" y="0.152941" z="7.922965" diffuse="0x072CA5" />
+		<vertex id="76" x="-0.000000" y="0.660642" z="1.008927" diffuse="0x072CA5" />
+		<vertex id="32" x="0.000000" y="0.152941" z="7.922965" diffuse="0x072CA5" />
+		<vertex id="75" x="-0.000000" y="0.653371" z="1.049789" diffuse="0x072CA5" />
+		<vertex id="33" x="0.000000" y="0.152941" z="7.922965" diffuse="0x072CA5" />
+		<vertex id="108" x="0.000000" y="0.431019" z="1.706322" diffuse="0x072CA5" />
+		<vertex id="34" x="0.000000" y="0.152941" z="7.922965" diffuse="0x072CA5" />
+		<vertex id="74" x="-0.000000" y="0.620142" z="1.074639" diffuse="0x072CA5" />
+		<vertex id="35" x="0.000000" y="0.152941" z="7.922965" diffuse="0x072CA5" />
+		<vertex id="73" x="-0.000000" y="0.467657" z="1.076500" diffuse="0x072CA5" />
+		<vertex id="36" x="0.000000" y="0.152941" z="7.922965" diffuse="0x072CA5" />
+		<vertex id="115" x="-0.000000" y="0.141975" z="0.146755" diffuse="0x072CA5" />
+		<vertex id="69" x="-0.000000" y="0.446688" z="0.166923" diffuse="0x072CA5" />
+		<vertex id="68" x="-0.000000" y="0.480119" z="0.090554" diffuse="0x072CA5" />
+		<vertex id="37" x="0.000000" y="0.152941" z="7.922965" diffuse="0x072CA5" />
+		<vertex id="38" x="0.000000" y="1.044142" z="9.066095" diffuse="0x072CA5" />
+		<vertex id="39" x="0.000000" y="1.071415" z="9.091614" diffuse="0x072CA5" />
+		<vertex id="72" x="-0.000000" y="0.437050" z="1.057070" diffuse="0x072CA5" />
+		<vertex id="40" x="0.000000" y="1.130003" z="9.109506" diffuse="0x072CA5" />
+		<vertex id="70" x="-0.000000" y="0.423345" z="0.278693" diffuse="0x072CA5" />
+		<vertex id="41" x="0.000000" y="1.463888" z="9.106244" diffuse="0x072CA5" />
+		<vertex id="71" x="-0.000000" y="0.422651" z="1.029558" diffuse="0x072CA5" />
+		<vertex id="42" x="0.000000" y="1.512062" z="9.084364" diffuse="0x072CA5" />
+		<vertex id="109" x="0.000000" y="0.364133" z="1.692477" diffuse="0x072CA5" />
+		<vertex id="43" x="0.000000" y="1.533595" z="9.051386" diffuse="0x072CA5" />
+		<vertex id="110" x="0.000000" y="0.286676" z="1.658786" diffuse="0x072CA5" />
+		<vertex id="44" x="0.000000" y="1.541621" z="9.014339" diffuse="0x072CA5" />
+		<vertex id="111" x="0.000000" y="0.224051" z="1.599430" diffuse="0x072CA5" />
+		<vertex id="45" x="0.000000" y="1.543579" z="8.627463" diffuse="0x072CA5" />
+		<vertex id="112" x="0.000000" y="0.186512" z="1.537515" diffuse="0x072CA5" />
+		<vertex id="46" x="0.000000" y="1.022994" z="8.627463" diffuse="0x072CA5" />
+		<vertex id="113" x="0.000000" y="0.160048" z="1.458526" diffuse="0x072CA5" />
+		<vertex id="47" x="0.000000" y="1.024424" z="9.004037" diffuse="0x072CA5" />
+		<vertex id="114" x="0.000000" y="0.145210" z="1.370411" diffuse="0x072CA5" />
+		<vertex id="48" x="0.000000" y="0.201806" z="9.315529" diffuse="0x072CA5" />
+		<vertex id="120" x="-0.000000" y="1.058015" z="1.907107" diffuse="0x072CA5" />
+		<vertex id="122" x="-0.000000" y="1.090605" z="2.331377" diffuse="0x072CA5" />
+		<vertex id="121" x="-0.000000" y="1.091532" z="1.889213" diffuse="0x072CA5" />
+		<vertex id="49" x="0.000000" y="0.258921" z="9.315528" diffuse="0x072CA5" />
+		<vertex id="50" x="0.000000" y="0.258921" z="9.121296" diffuse="0x072CA5" />
+		<vertex id="51" x="0.000000" y="0.258921" z="8.927064" diffuse="0x072CA5" />
+		<vertex id="128" x="-0.000000" y="1.089315" z="2.590250" diffuse="0x072CA5" />
+		<vertex id="130" x="-0.000000" y="1.050195" z="2.846720" diffuse="0x072CA5" />
+		<vertex id="129" x="-0.000000" y="1.090073" z="2.903802" diffuse="0x072CA5" />
+		<vertex id="52" x="0.000000" y="0.305248" z="8.927160" diffuse="0x072CA5" />
+		<vertex id="53" x="0.000000" y="0.351575" z="8.927257" diffuse="0x072CA5" />
+		<vertex id="54" x="0.000000" y="0.629535" z="9.308489" diffuse="0x072CA5" />
+		<vertex id="123" x="-0.000000" y="1.045434" z="2.308007" diffuse="0x072CA5" />
+		<vertex id="55" x="0.000000" y="0.629535" z="9.528805" diffuse="0x072CA5" />
+		<vertex id="127" x="-0.000000" y="1.030159" z="2.591080" diffuse="0x072CA5" />
+		<vertex id="56" x="0.000000" y="0.347767" z="9.528805" diffuse="0x072CA5" />
+		<vertex id="119" x="-0.000000" y="0.992405" z="1.927683" diffuse="0x072CA5" />
+		<vertex id="57" x="0.000000" y="0.347767" z="9.648136" diffuse="0x072CA5" />
+		<vertex id="124" x="-0.000000" y="1.001552" z="2.295202" diffuse="0x072CA5" />
+		<vertex id="58" x="0.000000" y="0.258921" z="9.648136" diffuse="0x072CA5" />
+		<vertex id="131" x="-0.000000" y="0.982545" z="2.775378" diffuse="0x072CA5" />
+		<vertex id="59" x="0.000000" y="0.258921" z="9.588471" diffuse="0x072CA5" />
+		<vertex id="126" x="-0.000000" y="0.980905" z="2.566265" diffuse="0x072CA5" />
+		<vertex id="60" x="0.000000" y="0.258921" z="9.528805" diffuse="0x072CA5" />
+		<vertex id="125" x="-0.000000" y="0.671515" z="2.294157" diffuse="0x072CA5" />
+		<vertex id="61" x="0.000000" y="0.201806" z="9.528805" diffuse="0x072CA5" />
+		<vertex id="132" x="-0.000000" y="0.811906" z="2.625281" diffuse="0x072CA5" />
+		<vertex id="62" x="0.000000" y="0.144691" z="9.528805" diffuse="0x072CA5" />
+		<vertex id="133" x="0.000000" y="0.593930" z="2.751778" diffuse="0x072CA5" />
+		<vertex id="63" x="0.000000" y="0.144691" z="9.422167" diffuse="0x072CA5" />
+		<vertex id="118" x="0.000000" y="0.471521" z="1.929449" diffuse="0x072CA5" />
+		<vertex id="64" x="0.000000" y="0.144691" z="9.315530" diffuse="0x072CA5" />
+		<vertex id="139" x="0.000000" y="0.538632" z="2.381570" diffuse="0x072CA5" />
+		<vertex id="65" x="0.000000" y="0.509060" z="9.313763" diffuse="0x072CA5" />
+		<vertex id="140" x="0.000000" y="0.438883" z="2.292917" diffuse="0x072CA5" />
+		<vertex id="66" x="0.000000" y="0.348598" z="9.093959" diffuse="0x072CA5" />
+		<vertex id="134" x="0.000000" y="0.260836" z="2.949642" diffuse="0x072CA5" />
+		<vertex id="67" x="0.000000" y="0.347772" z="9.315643" diffuse="0x072CA5" />
+		<vertex id="141" x="0.000000" y="0.232459" z="2.295022" diffuse="0x072CA5" />
+		<vertex id="117" x="0.000000" y="0.254830" z="1.927766" diffuse="0x072CA5" />
+		<vertex id="138" x="0.000000" y="0.143422" z="2.596332" diffuse="0x072CA5" />
+		<vertex id="116" x="0.000000" y="0.208612" z="1.919461" diffuse="0x072CA5" />
+		<vertex id="135" x="0.000000" y="0.171767" z="3.014252" diffuse="0x072CA5" />
+		<vertex id="142" x="0.000000" y="0.189843" z="2.306944" diffuse="0x072CA5" />
+		<vertex id="157" x="0.000000" y="0.162492" z="1.901099" diffuse="0x072CA5" />
+		<vertex id="143" x="0.000000" y="0.143107" z="2.331136" diffuse="0x072CA5" />
+		<vertex id="136" x="0.000000" y="0.142125" z="3.039689" diffuse="0x072CA5" />
+		<vertex id="156" x="0.000000" y="0.142153" z="1.889135" diffuse="0x072CA5" />
+		<vertex id="144" x="0.000000" y="0.142153" z="2.109961" diffuse="0x072CA5" />
+		<vertex id="155" x="0.000000" y="0.142153" z="1.893480" diffuse="0x072CA5" />
+		<vertex id="154" x="0.000000" y="0.142153" z="1.905493" diffuse="0x072CA5" />
+		<vertex id="153" x="0.000000" y="0.142153" z="1.923639" diffuse="0x072CA5" />
+		<vertex id="152" x="0.000000" y="0.142153" z="1.946386" diffuse="0x072CA5" />
+		<vertex id="151" x="0.000000" y="0.142153" z="1.972200" diffuse="0x072CA5" />
+		<vertex id="150" x="0.000000" y="0.142153" z="1.999548" diffuse="0x072CA5" />
+		<vertex id="149" x="0.000000" y="0.142153" z="2.026896" diffuse="0x072CA5" />
+		<vertex id="148" x="0.000000" y="0.142153" z="2.052710" diffuse="0x072CA5" />
+		<vertex id="147" x="0.000000" y="0.142153" z="2.075457" diffuse="0x072CA5" />
+		<vertex id="146" x="0.000000" y="0.142153" z="2.093603" diffuse="0x072CA5" />
+		<vertex id="145" x="0.000000" y="0.142153" z="2.105616" diffuse="0x072CA5" />
+		<vertex id="158" x="-0.000000" y="1.355530" z="2.082601" diffuse="0x072CA5" />
+		<vertex id="160" x="0.000000" y="1.302679" z="7.555405" diffuse="0x072CA5" />
+		<vertex id="159" x="0.000000" y="1.355530" z="7.556013" diffuse="0x072CA5" />
+		<vertex id="164" x="-0.000000" y="1.339777" z="2.079649" diffuse="0x072CA5" />
+		<vertex id="163" x="-0.000000" y="1.289531" z="2.079427" diffuse="0x072CA5" />
+		<vertex id="161" x="0.000000" y="1.289531" z="7.552839" diffuse="0x072CA5" />
+		<vertex id="162" x="0.000000" y="1.289531" z="4.816133" diffuse="0x072CA5" />
+		<vertex id="166" x="-0.000000" y="1.933699" z="2.330970" diffuse="0x072CA5" />
+		<vertex id="168" x="-0.000000" y="1.914287" z="2.797218" diffuse="0x072CA5" />
+		<vertex id="167" x="-0.000000" y="1.935423" z="2.745500" diffuse="0x072CA5" />
+		<vertex id="165" x="-0.000000" y="1.878166" z="2.347604" diffuse="0x072CA5" />
+		<vertex id="169" x="-0.000000" y="1.876835" z="2.826429" diffuse="0x072CA5" />
+		<vertex id="183" x="-0.000000" y="1.858143" z="2.528827" diffuse="0x072CA5" />
+		<vertex id="182" x="-0.000000" y="1.857529" z="2.630182" diffuse="0x072CA5" />
+		<vertex id="170" x="-0.000000" y="1.835401" z="2.839058" diffuse="0x072CA5" />
+		<vertex id="181" x="-0.000000" y="1.847854" z="2.652047" diffuse="0x072CA5" />
+		<vertex id="180" x="-0.000000" y="1.824850" z="2.658721" diffuse="0x072CA5" />
+		<vertex id="179" x="-0.000000" y="1.585110" z="2.659157" diffuse="0x072CA5" />
+		<vertex id="171" x="-0.000000" y="1.564924" z="2.839022" diffuse="0x072CA5" />
+		<vertex id="176" x="-0.000000" y="1.494685" z="2.346091" diffuse="0x072CA5" />
+		<vertex id="185" x="-0.000000" y="1.540837" z="2.528827" diffuse="0x072CA5" />
+		<vertex id="178" x="-0.000000" y="1.552058" z="2.653208" diffuse="0x072CA5" />
+		<vertex id="186" x="-0.000000" y="1.541749" z="2.631212" diffuse="0x072CA5" />
+		<vertex id="172" x="-0.000000" y="1.511730" z="2.822253" diffuse="0x072CA5" />
+		<vertex id="173" x="-0.000000" y="1.479612" z="2.789696" diffuse="0x072CA5" />
+		<vertex id="174" x="-0.000000" y="1.463077" z="2.744934" diffuse="0x072CA5" />
+		<vertex id="175" x="-0.000000" y="1.462146" z="2.328605" diffuse="0x072CA5" />
+		<vertex id="201" x="-0.000000" y="1.043568" z="3.178053" diffuse="0x072CA5" />
+		<vertex id="203" x="-0.000000" y="1.090602" z="3.595715" diffuse="0x072CA5" />
+		<vertex id="202" x="-0.000000" y="1.090924" z="3.152742" diffuse="0x072CA5" />
+		<vertex id="204" x="-0.000000" y="1.051825" z="3.574347" diffuse="0x072CA5" />
+		<vertex id="205" x="-0.000000" y="0.976770" z="3.555673" diffuse="0x072CA5" />
+		<vertex id="200" x="-0.000000" y="0.962875" z="3.193310" diffuse="0x072CA5" />
+		<vertex id="206" x="0.000000" y="0.244974" z="3.556970" diffuse="0x072CA5" />
+		<vertex id="199" x="0.000000" y="0.242110" z="3.191097" diffuse="0x072CA5" />
+		<vertex id="207" x="0.000000" y="0.177064" z="3.576447" diffuse="0x072CA5" />
+		<vertex id="198" x="0.000000" y="0.177790" z="3.170810" diffuse="0x072CA5" />
+		<vertex id="210" x="0.000000" y="0.142153" z="3.153343" diffuse="0x072CA5" />
+		<vertex id="208" x="0.000000" y="0.142153" z="3.594894" diffuse="0x072CA5" />
+		<vertex id="209" x="0.000000" y="0.142153" z="3.374119" diffuse="0x072CA5" />
+		<vertex id="228" x="-0.000000" y="1.810104" z="3.402960" diffuse="0x072CA5" />
+		<vertex id="230" x="-0.000000" y="1.806620" z="3.716819" diffuse="0x072CA5" />
+		<vertex id="229" x="-0.000000" y="1.812223" z="3.630920" diffuse="0x072CA5" />
+		<vertex id="227" x="-0.000000" y="1.797787" z="3.368140" diffuse="0x072CA5" />
+		<vertex id="231" x="-0.000000" y="1.781650" z="3.757011" diffuse="0x072CA5" />
+		<vertex id="226" x="-0.000000" y="1.772156" z="3.338585" diffuse="0x072CA5" />
+		<vertex id="232" x="-0.000000" y="1.744107" z="3.775542" diffuse="0x072CA5" />
+		<vertex id="245" x="-0.000000" y="1.746222" z="3.508593" diffuse="0x072CA5" />
+		<vertex id="137" x="0.000000" y="0.142125" z="3.039689" diffuse="0x072CA5" />
+		<vertex id="244" x="-0.000000" y="1.744561" z="3.596244" diffuse="0x072CA5" />
+		<vertex id="225" x="-0.000000" y="1.726897" z="3.323190" diffuse="0x072CA5" />
+		<vertex id="246" x="-0.000000" y="1.733296" z="3.492714" diffuse="0x072CA5" />
+		<vertex id="243" x="-0.000000" y="1.733964" z="3.606657" diffuse="0x072CA5" />
+		<vertex id="233" x="-0.000000" y="1.703377" z="3.779273" diffuse="0x072CA5" />
+		<vertex id="248" x="-0.000000" y="1.670576" z="3.610837" diffuse="0x072CA5" />
+		<vertex id="247" x="-0.000000" y="1.670298" z="3.490688" diffuse="0x072CA5" />
+		<vertex id="224" x="-0.000000" y="1.549515" z="3.322819" diffuse="0x072CA5" />
+		<vertex id="236" x="-0.000000" y="1.604298" z="3.491101" diffuse="0x072CA5" />
+		<vertex id="234" x="-0.000000" y="1.604298" z="3.781106" diffuse="0x072CA5" />
+		<vertex id="237" x="-0.000000" y="1.548068" z="3.493443" diffuse="0x072CA5" />
+		<vertex id="235" x="-0.000000" y="1.604298" z="3.636103" diffuse="0x072CA5" />
+		<vertex id="238" x="-0.000000" y="1.530542" z="3.512285" diffuse="0x072CA5" />
+		<vertex id="239" x="-0.000000" y="1.530175" z="3.736402" diffuse="0x072CA5" />
+		<vertex id="241" x="-0.000000" y="1.462221" z="3.761835" diffuse="0x072CA5" />
+		<vertex id="240" x="-0.000000" y="1.543410" z="3.772084" diffuse="0x072CA5" />
+		<vertex id="223" x="-0.000000" y="1.509283" z="3.335371" diffuse="0x072CA5" />
+		<vertex id="222" x="-0.000000" y="1.478291" z="3.365537" diffuse="0x072CA5" />
+		<vertex id="242" x="-0.000000" y="1.463814" z="3.413369" diffuse="0x072CA5" />
+		<vertex id="257" x="0.000000" y="1.090732" z="4.610583" diffuse="0x072CA5" />
+		<vertex id="259" x="0.000000" y="1.051269" z="5.031950" diffuse="0x072CA5" />
+		<vertex id="258" x="0.000000" y="1.091532" z="5.052824" diffuse="0x072CA5" />
+		<vertex id="256" x="0.000000" y="1.049863" z="4.632637" diffuse="0x072CA5" />
+		<vertex id="260" x="0.000000" y="0.991021" z="5.014674" diffuse="0x072CA5" />
+		<vertex id="255" x="0.000000" y="0.987411" z="4.648041" diffuse="0x072CA5" />
+		<vertex id="254" x="0.000000" y="0.338604" z="4.641814" diffuse="0x072CA5" />
+		<vertex id="261" x="0.000000" y="0.338838" z="5.009208" diffuse="0x072CA5" />
+		<vertex id="253" x="0.000000" y="0.311331" z="4.619419" diffuse="0x072CA5" />
+		<vertex id="262" x="0.000000" y="0.256300" z="4.987748" diffuse="0x072CA5" />
+		<vertex id="266" x="0.000000" y="0.142113" z="4.225743" diffuse="0x072CA5" />
+		<vertex id="250" x="0.000000" y="0.312536" z="4.238632" diffuse="0x072CA5" />
+		<vertex id="249" x="0.000000" y="0.330170" z="4.198491" diffuse="0x072CA5" />
+		<vertex id="252" x="0.000000" y="0.300216" z="4.575383" diffuse="0x072CA5" />
+		<vertex id="251" x="0.000000" y="0.301195" z="4.302961" diffuse="0x072CA5" />
+		<vertex id="263" x="0.000000" y="0.198969" z="4.939403" diffuse="0x072CA5" />
+		<vertex id="264" x="0.000000" y="0.160275" z="4.877439" diffuse="0x072CA5" />
+		<vertex id="265" x="0.000000" y="0.143453" z="4.820258" diffuse="0x072CA5" />
+		<vertex id="271" x="-0.000000" y="1.902753" z="4.270868" diffuse="0x072CA5" />
+		<vertex id="273" x="-0.000000" y="1.936794" z="4.441547" diffuse="0x072CA5" />
+		<vertex id="272" x="-0.000000" y="1.935566" z="4.259559" diffuse="0x072CA5" />
+		<vertex id="177" x="-0.000000" y="1.545648" z="2.642005" diffuse="0x072CA5" />
+		<vertex id="270" x="-0.000000" y="1.694266" z="4.273570" diffuse="0x072CA5" />
+		<vertex id="269" x="-0.000000" y="1.489251" z="4.269508" diffuse="0x072CA5" />
+		<vertex id="274" x="-0.000000" y="1.485271" z="4.446976" diffuse="0x072CA5" />
+		<vertex id="268" x="-0.000000" y="1.468329" z="4.262007" diffuse="0x072CA5" />
+		<vertex id="277" x="-0.000000" y="1.462145" z="4.257768" diffuse="0x072CA5" />
+		<vertex id="275" x="-0.000000" y="1.462145" z="4.457828" diffuse="0x072CA5" />
+		<vertex id="276" x="-0.000000" y="1.462145" z="4.357798" diffuse="0x072CA5" />
+		<vertex id="184" x="-0.000000" y="1.858141" z="2.530058" diffuse="0x072CA5" />
+		<vertex id="282" x="-0.000000" y="1.811152" z="4.937381" diffuse="0x072CA5" />
+		<vertex id="284" x="-0.000000" y="1.555347" z="5.122205" diffuse="0x072CA5" />
+		<vertex id="283" x="-0.000000" y="1.812451" z="5.121128" diffuse="0x072CA5" />
+		<vertex id="187" x="-0.000000" y="1.545648" z="2.642005" diffuse="0x072CA5" />
+		<vertex id="290" x="-0.000000" y="1.811245" z="5.229676" diffuse="0x072CA5" />
+		<vertex id="292" x="-0.000000" y="1.488778" z="5.414381" diffuse="0x072CA5" />
+		<vertex id="291" x="-0.000000" y="1.812451" z="5.412868" diffuse="0x072CA5" />
+		<vertex id="188" x="-0.000000" y="1.545648" z="2.642005" diffuse="0x072CA5" />
+		<vertex id="189" x="-0.000000" y="1.545648" z="2.642005" diffuse="0x072CA5" />
+		<vertex id="190" x="-0.000000" y="1.545648" z="2.642005" diffuse="0x072CA5" />
+		<vertex id="281" x="-0.000000" y="1.762531" z="4.950065" diffuse="0x072CA5" />
+		<vertex id="191" x="-0.000000" y="1.545648" z="2.642005" diffuse="0x072CA5" />
+		<vertex id="289" x="-0.000000" y="1.755621" z="5.242109" diffuse="0x072CA5" />
+		<vertex id="192" x="-0.000000" y="1.545648" z="2.642005" diffuse="0x072CA5" />
+		<vertex id="288" x="-0.000000" y="1.543205" z="5.240222" diffuse="0x072CA5" />
+		<vertex id="193" x="-0.000000" y="1.545648" z="2.642005" diffuse="0x072CA5" />
+		<vertex id="280" x="-0.000000" y="1.583453" z="4.951606" diffuse="0x072CA5" />
+		<vertex id="194" x="-0.000000" y="1.545648" z="2.642005" diffuse="0x072CA5" />
+		<vertex id="279" x="-0.000000" y="1.516693" z="4.958079" diffuse="0x072CA5" />
+		<vertex id="195" x="-0.000000" y="1.545648" z="2.642005" diffuse="0x072CA5" />
+		<vertex id="285" x="-0.000000" y="1.537518" z="5.130208" diffuse="0x072CA5" />
+		<vertex id="196" x="-0.000000" y="1.545648" z="2.642005" diffuse="0x072CA5" />
+		<vertex id="287" x="-0.000000" y="1.530367" z="5.223484" diffuse="0x072CA5" />
+		<vertex id="197" x="-0.000000" y="1.545648" z="2.642005" diffuse="0x072CA5" />
+		<vertex id="286" x="-0.000000" y="1.528839" z="5.147762" diffuse="0x072CA5" />
+		<vertex id="278" x="-0.000000" y="1.480544" z="4.984445" diffuse="0x072CA5" />
+		<vertex id="296" x="-0.000000" y="1.493480" z="5.260119" diffuse="0x072CA5" />
+		<vertex id="297" x="-0.000000" y="1.475227" z="5.246207" diffuse="0x072CA5" />
+		<vertex id="293" x="0.000000" y="1.462145" z="5.427569" diffuse="0x072CA5" />
+		<vertex id="295" x="-0.000000" y="1.462145" z="5.266271" diffuse="0x072CA5" />
+		<vertex id="299" x="-0.000000" y="1.463890" z="5.026658" diffuse="0x072CA5" />
+		<vertex id="298" x="-0.000000" y="1.463414" z="5.226496" diffuse="0x072CA5" />
+		<vertex id="294" x="-0.000000" y="1.462145" z="5.346920" diffuse="0x072CA5" />
+		<vertex id="305" x="0.000000" y="1.090869" z="5.185121" diffuse="0x072CA5" />
+		<vertex id="307" x="0.000000" y="1.050330" z="5.604051" diffuse="0x072CA5" />
+		<vertex id="306" x="0.000000" y="1.090319" z="5.626922" diffuse="0x072CA5" />
+		<vertex id="318" x="0.000000" y="1.091127" z="6.022669" diffuse="0x072CA5" />
+		<vertex id="320" x="0.000000" y="1.051169" z="6.240916" diffuse="0x072CA5" />
+		<vertex id="319" x="0.000000" y="1.090929" z="6.261541" diffuse="0x072CA5" />
+		<vertex id="211" x="0.000000" y="0.157985" z="3.161337" diffuse="0x072CA5" />
+		<vertex id="212" x="0.000000" y="0.157985" z="3.161337" diffuse="0x072CA5" />
+		<vertex id="317" x="0.000000" y="1.043628" z="6.047300" diffuse="0x072CA5" />
+		<vertex id="213" x="0.000000" y="0.157985" z="3.161337" diffuse="0x072CA5" />
+		<vertex id="304" x="0.000000" y="1.006365" z="5.219921" diffuse="0x072CA5" />
+		<vertex id="214" x="0.000000" y="0.157985" z="3.161337" diffuse="0x072CA5" />
+		<vertex id="321" x="0.000000" y="0.991418" z="6.223464" diffuse="0x072CA5" />
+		<vertex id="215" x="0.000000" y="0.157985" z="3.161337" diffuse="0x072CA5" />
+		<vertex id="316" x="0.000000" y="0.993802" z="6.061821" diffuse="0x072CA5" />
+		<vertex id="216" x="0.000000" y="0.157985" z="3.161337" diffuse="0x072CA5" />
+		<vertex id="308" x="0.000000" y="0.975792" z="5.587166" diffuse="0x072CA5" />
+		<vertex id="217" x="0.000000" y="0.157985" z="3.161337" diffuse="0x072CA5" />
+		<vertex id="315" x="0.000000" y="0.355377" z="6.061139" diffuse="0x072CA5" />
+		<vertex id="218" x="0.000000" y="0.157985" z="3.161337" diffuse="0x072CA5" />
+		<vertex id="309" x="0.000000" y="0.361382" z="5.587677" diffuse="0x072CA5" />
+		<vertex id="219" x="0.000000" y="0.157985" z="3.161337" diffuse="0x072CA5" />
+		<vertex id="303" x="0.000000" y="0.357536" z="5.225524" diffuse="0x072CA5" />
+		<vertex id="220" x="0.000000" y="0.157985" z="3.161337" diffuse="0x072CA5" />
+		<vertex id="322" x="0.000000" y="0.333613" z="6.217803" diffuse="0x072CA5" />
+		<vertex id="221" x="0.000000" y="0.157985" z="3.161337" diffuse="0x072CA5" />
+		<vertex id="310" x="0.000000" y="0.322793" z="5.603203" diffuse="0x072CA5" />
+		<vertex id="314" x="0.000000" y="0.322839" z="6.045902" diffuse="0x072CA5" />
+		<vertex id="323" x="0.000000" y="0.264810" z="6.197236" diffuse="0x072CA5" />
+		<vertex id="313" x="0.000000" y="0.306243" z="6.022486" diffuse="0x072CA5" />
+		<vertex id="311" x="0.000000" y="0.301333" z="5.641268" diffuse="0x072CA5" />
+		<vertex id="302" x="0.000000" y="0.263715" z="5.252166" diffuse="0x072CA5" />
+		<vertex id="312" x="0.000000" y="0.301164" z="5.980715" diffuse="0x072CA5" />
+		<vertex id="324" x="0.000000" y="0.202382" z="6.151464" diffuse="0x072CA5" />
+		<vertex id="301" x="0.000000" y="0.197113" z="5.299019" diffuse="0x072CA5" />
+		<vertex id="325" x="0.000000" y="0.158517" z="6.080688" diffuse="0x072CA5" />
+		<vertex id="300" x="0.000000" y="0.159139" z="5.361701" diffuse="0x072CA5" />
+		<vertex id="327" x="0.000000" y="0.144277" z="5.416374" diffuse="0x072CA5" />
+		<vertex id="326" x="0.000000" y="0.143034" z="6.027337" diffuse="0x072CA5" />
+		<vertex id="331" x="-0.000000" y="1.812451" z="5.884921" diffuse="0x072CA5" />
+		<vertex id="333" x="-0.000000" y="1.785135" z="6.137339" diffuse="0x072CA5" />
+		<vertex id="332" x="-0.000000" y="1.812451" z="6.123329" diffuse="0x072CA5" />
+		<vertex id="335" x="-0.000000" y="1.790608" z="6.259596" diffuse="0x072CA5" />
+		<vertex id="337" x="-0.000000" y="1.812219" z="6.388785" diffuse="0x072CA5" />
+		<vertex id="336" x="-0.000000" y="1.812451" z="6.274501" diffuse="0x072CA5" />
+		<vertex id="330" x="-0.000000" y="1.775514" z="5.919158" diffuse="0x072CA5" />
+		<vertex id="334" x="-0.000000" y="1.725572" z="6.184463" diffuse="0x072CA5" />
+		<vertex id="338" x="0.000000" y="1.670911" z="6.229153" diffuse="0x072CA5" />
+		<vertex id="329" x="0.000000" y="1.611180" z="6.051573" diffuse="0x072CA5" />
+		<vertex id="339" x="0.000000" y="1.483329" z="6.380667" diffuse="0x072CA5" />
+		<vertex id="345" x="0.000000" y="1.558640" z="6.095882" diffuse="0x072CA5" />
+		<vertex id="328" x="0.000000" y="1.485226" z="5.906980" diffuse="0x072CA5" />
+		<vertex id="346" x="0.000000" y="1.480566" z="6.007344" diffuse="0x072CA5" />
+		<vertex id="344" x="0.000000" y="1.515317" z="6.133734" diffuse="0x072CA5" />
+		<vertex id="343" x="0.000000" y="1.480444" z="6.155312" diffuse="0x072CA5" />
+		<vertex id="342" x="0.000000" y="1.462145" z="6.160625" diffuse="0x072CA5" />
+		<vertex id="347" x="0.000000" y="1.462276" z="5.998346" diffuse="0x072CA5" />
+		<vertex id="348" x="0.000000" y="1.462145" z="5.871880" diffuse="0x072CA5" />
+		<vertex id="340" x="0.000000" y="1.462145" z="6.409155" diffuse="0x072CA5" />
+		<vertex id="341" x="0.000000" y="1.462145" z="6.284890" diffuse="0x072CA5" />
+		<vertex id="351" x="0.000000" y="1.049758" z="6.412574" diffuse="0x072CA5" />
+		<vertex id="353" x="0.000000" y="1.091531" z="6.880089" diffuse="0x072CA5" />
+		<vertex id="352" x="0.000000" y="1.091532" z="6.390925" diffuse="0x072CA5" />
+		<vertex id="355" x="0.000000" y="1.091531" z="7.244234" diffuse="0x072CA5" />
+		<vertex id="357" x="0.000000" y="1.038027" z="7.706888" diffuse="0x072CA5" />
+		<vertex id="356" x="0.000000" y="1.091086" z="7.732587" diffuse="0x072CA5" />
+		<vertex id="350" x="0.000000" y="0.980114" z="6.430235" diffuse="0x072CA5" />
+		<vertex id="358" x="0.000000" y="0.993801" z="7.694430" diffuse="0x072CA5" />
+		<vertex id="359" x="0.000000" y="0.249546" z="7.694283" diffuse="0x072CA5" />
+		<vertex id="365" x="0.000000" y="0.847272" z="7.328773" diffuse="0x072CA5" />
+		<vertex id="354" x="0.000000" y="0.556058" z="7.060399" diffuse="0x072CA5" />
+		<vertex id="368" x="0.000000" y="0.849111" z="6.591482" diffuse="0x072CA5" />
+		<vertex id="267" x="-0.000000" y="1.468324" z="4.261807" diffuse="0x072CA5" />
+		<vertex id="369" x="0.000000" y="0.248092" z="6.592133" diffuse="0x072CA5" />
+		<vertex id="367" x="0.000000" y="0.142189" z="6.828594" diffuse="0x072CA5" />
+		<vertex id="364" x="0.000000" y="0.248323" z="7.329426" diffuse="0x072CA5" />
+		<vertex id="349" x="0.000000" y="0.235482" z="6.428386" diffuse="0x072CA5" />
+		<vertex id="366" x="0.000000" y="0.142153" z="7.088134" diffuse="0x072CA5" />
+		<vertex id="370" x="0.000000" y="0.195049" z="6.603318" diffuse="0x072CA5" />
+		<vertex id="363" x="0.000000" y="0.176618" z="7.310428" diffuse="0x072CA5" />
+		<vertex id="360" x="0.000000" y="0.192688" z="7.707680" diffuse="0x072CA5" />
+		<vertex id="385" x="0.000000" y="0.176688" z="6.408594" diffuse="0x072CA5" />
+		<vertex id="371" x="0.000000" y="0.142746" z="6.629446" diffuse="0x072CA5" />
+		<vertex id="361" x="0.000000" y="0.144171" z="7.732077" diffuse="0x072CA5" />
+		<vertex id="362" x="0.000000" y="0.142846" z="7.291450" diffuse="0x072CA5" />
+		<vertex id="384" x="0.000000" y="0.142153" z="6.391758" diffuse="0x072CA5" />
+		<vertex id="372" x="0.000000" y="0.142153" z="6.510521" diffuse="0x072CA5" />
+		<vertex id="383" x="0.000000" y="0.142153" z="6.394095" diffuse="0x072CA5" />
+		<vertex id="382" x="0.000000" y="0.142153" z="6.400556" diffuse="0x072CA5" />
+		<vertex id="381" x="0.000000" y="0.142153" z="6.410315" diffuse="0x072CA5" />
+		<vertex id="380" x="0.000000" y="0.142153" z="6.422549" diffuse="0x072CA5" />
+		<vertex id="379" x="0.000000" y="0.142153" z="6.436432" diffuse="0x072CA5" />
+		<vertex id="378" x="0.000000" y="0.142153" z="6.451139" diffuse="0x072CA5" />
+		<vertex id="377" x="0.000000" y="0.142153" z="6.465847" diffuse="0x072CA5" />
+		<vertex id="376" x="0.000000" y="0.142153" z="6.479730" diffuse="0x072CA5" />
+		<vertex id="375" x="0.000000" y="0.142153" z="6.491964" diffuse="0x072CA5" />
+		<vertex id="374" x="0.000000" y="0.142153" z="6.501723" diffuse="0x072CA5" />
+		<vertex id="373" x="0.000000" y="0.142153" z="6.508184" diffuse="0x072CA5" />
+		<vertex id="392" x="0.000000" y="1.810104" z="6.921990" diffuse="0x072CA5" />
+		<vertex id="394" x="0.000000" y="1.806620" z="7.235846" diffuse="0x072CA5" />
+		<vertex id="393" x="0.000000" y="1.812223" z="7.149950" diffuse="0x072CA5" />
+		<vertex id="391" x="0.000000" y="1.797789" z="6.887172" diffuse="0x072CA5" />
+		<vertex id="395" x="0.000000" y="1.781648" z="7.276044" diffuse="0x072CA5" />
+		<vertex id="390" x="0.000000" y="1.772159" z="6.857616" diffuse="0x072CA5" />
+		<vertex id="396" x="0.000000" y="1.749976" z="7.292477" diffuse="0x072CA5" />
+		<vertex id="410" x="0.000000" y="1.746222" z="7.027621" diffuse="0x072CA5" />
+		<vertex id="409" x="0.000000" y="1.744561" z="7.115274" diffuse="0x072CA5" />
+		<vertex id="389" x="0.000000" y="1.726901" z="6.842220" diffuse="0x072CA5" />
+		<vertex id="411" x="0.000000" y="1.733263" z="7.011718" diffuse="0x072CA5" />
+		<vertex id="408" x="0.000000" y="1.733965" z="7.125687" diffuse="0x072CA5" />
+		<vertex id="397" x="0.000000" y="1.718724" z="7.297924" diffuse="0x072CA5" />
+		<vertex id="413" x="0.000000" y="1.670576" z="7.129867" diffuse="0x072CA5" />
+		<vertex id="412" x="0.000000" y="1.670298" z="7.009718" diffuse="0x072CA5" />
+		<vertex id="388" x="0.000000" y="1.549519" z="6.841847" diffuse="0x072CA5" />
+		<vertex id="401" x="0.000000" y="1.604298" z="7.010131" diffuse="0x072CA5" />
+		<vertex id="398" x="0.000000" y="1.604373" z="7.300136" diffuse="0x072CA5" />
+		<vertex id="399" x="0.000000" y="1.604298" z="7.300137" diffuse="0x072CA5" />
+		<vertex id="402" x="0.000000" y="1.548067" z="7.012473" diffuse="0x072CA5" />
+		<vertex id="400" x="0.000000" y="1.604298" z="7.155134" diffuse="0x072CA5" />
+		<vertex id="403" x="0.000000" y="1.530542" z="7.031316" diffuse="0x072CA5" />
+		<vertex id="404" x="0.000000" y="1.530039" z="7.251916" diffuse="0x072CA5" />
+		<vertex id="406" x="0.000000" y="1.462221" z="7.280864" diffuse="0x072CA5" />
+		<vertex id="405" x="0.000000" y="1.542787" z="7.290231" diffuse="0x072CA5" />
+		<vertex id="387" x="0.000000" y="1.509283" z="6.854400" diffuse="0x072CA5" />
+		<vertex id="386" x="0.000000" y="1.478289" z="6.884570" diffuse="0x072CA5" />
+		<vertex id="407" x="0.000000" y="1.463814" z="6.932400" diffuse="0x072CA5" />
+		<face v2="88/1/1" v1="90/2/1" v3="89/3/1" />
+		<face v2="87/4/1" v1="90/2/1" v3="88/1/1" />
+		<face v2="86/5/1" v1="90/2/1" v3="87/4/1" />
+		<face v2="85/6/1" v1="90/2/1" v3="86/5/1" />
+		<face v2="84/7/1" v1="90/2/1" v3="85/6/1" />
+		<face v2="84/7/1" v1="94/8/1" v3="90/2/1" />
+		<face v2="95/9/1" v1="94/8/1" v3="84/7/1" />
+		<face v2="84/7/1" v1="96/10/1" v3="95/9/1" />
+		<face v2="93/11/1" v1="90/2/1" v3="94/8/1" />
+		<face v2="83/12/1" v1="96/10/1" v3="84/7/1" />
+		<face v2="83/12/1" v1="97/13/1" v3="96/10/1" />
+		<face v2="92/14/1" v1="90/2/1" v3="93/11/1" />
+		<face v2="83/12/1" v1="98/15/1" v3="97/13/1" />
+		<face v2="92/14/1" v1="91/16/1" v3="90/2/1" />
+		<face v2="83/12/1" v1="99/17/1" v3="98/15/1" />
+		<face v2="83/12/1" v1="100/18/1" v3="99/17/1" />
+		<face v2="82/19/1" v1="100/18/1" v3="83/12/1" />
+		<face v2="82/19/1" v1="101/20/1" v3="100/18/1" />
+		<face v2="82/19/1" v1="102/21/1" v3="101/20/1" />
+		<face v2="82/19/1" v1="103/22/1" v3="102/21/1" />
+		<face v2="82/19/1" v1="104/23/1" v3="103/22/1" />
+		<face v2="82/19/1" v1="105/24/1" v3="104/23/1" />
+		<face v2="82/19/1" v1="106/25/1" v3="105/24/1" />
+		<face v2="82/19/1" v1="107/26/1" v3="106/25/1" />
+		<face v2="81/27/1" v1="107/26/1" v3="82/19/1" />
+		<face v2="80/28/1" v1="107/26/1" v3="81/27/1" />
+		<face v2="79/29/1" v1="107/26/1" v3="80/28/1" />
+		<face v2="78/30/1" v1="107/26/1" v3="79/29/1" />
+		<face v2="77/31/1" v1="107/26/1" v3="78/30/1" />
+		<face v2="76/32/1" v1="107/26/1" v3="77/31/1" />
+		<face v2="75/33/1" v1="107/26/1" v3="76/32/1" />
+		<face v2="75/33/1" v1="108/34/1" v3="107/26/1" />
+		<face v2="74/35/1" v1="108/34/1" v3="75/33/1" />
+		<face v2="73/36/1" v1="108/34/1" v3="74/35/1" />
+		<face v2="115/37/1" v1="69/38/1" v3="68/39/1" />
+		<face v2="72/40/1" v1="108/34/1" v3="73/36/1" />
+		<face v2="115/37/1" v1="70/41/1" v3="69/38/1" />
+		<face v2="71/42/1" v1="108/34/1" v3="72/40/1" />
+		<face v2="115/37/1" v1="71/42/1" v3="70/41/1" />
+		<face v2="115/37/1" v1="108/34/1" v3="71/42/1" />
+		<face v2="115/37/1" v1="109/43/1" v3="108/34/1" />
+		<face v2="115/37/1" v1="110/44/1" v3="109/43/1" />
+		<face v2="115/37/1" v1="111/45/1" v3="110/44/1" />
+		<face v2="115/37/1" v1="112/46/1" v3="111/45/1" />
+		<face v2="115/37/1" v1="113/47/1" v3="112/46/1" />
+		<face v2="115/37/1" v1="114/48/1" v3="113/47/1" />
+		<face v2="120/49/1" v1="122/50/1" v3="121/51/1" />
+		<face v2="128/52/1" v1="130/53/1" v3="129/54/1" />
+		<face v2="120/49/1" v1="123/55/1" v3="122/50/1" />
+		<face v2="127/56/1" v1="130/53/1" v3="128/52/1" />
+		<face v2="119/57/1" v1="123/55/1" v3="120/49/1" />
+		<face v2="119/57/1" v1="124/58/1" v3="123/55/1" />
+		<face v2="127/56/1" v1="131/59/1" v3="130/53/1" />
+		<face v2="126/60/1" v1="131/59/1" v3="127/56/1" />
+		<face v2="119/57/1" v1="125/61/1" v3="124/58/1" />
+		<face v2="126/60/1" v1="132/62/1" v3="131/59/1" />
+		<face v2="125/61/1" v1="132/62/1" v3="126/60/1" />
+		<face v2="125/61/1" v1="133/63/1" v3="132/62/1" />
+		<face v2="118/64/1" v1="125/61/1" v3="119/57/1" />
+		<face v2="118/64/1" v1="133/63/1" v3="125/61/1" />
+		<face v2="139/65/1" v1="133/63/1" v3="118/64/1" />
+		<face v2="118/64/1" v1="140/66/1" v3="139/65/1" />
+		<face v2="139/65/1" v1="134/67/1" v3="133/63/1" />
+		<face v2="118/64/1" v1="141/68/1" v3="140/66/1" />
+		<face v2="117/69/1" v1="141/68/1" v3="118/64/1" />
+		<face v2="138/70/1" v1="134/67/1" v3="139/65/1" />
+		<face v2="116/71/1" v1="141/68/1" v3="117/69/1" />
+		<face v2="138/70/1" v1="135/72/1" v3="134/67/1" />
+		<face v2="116/71/1" v1="142/73/1" v3="141/68/1" />
+		<face v2="157/74/1" v1="142/73/1" v3="116/71/1" />
+		<face v2="157/74/1" v1="143/75/1" v3="142/73/1" />
+		<face v2="138/70/1" v1="136/76/1" v3="135/72/1" />
+		<face v2="156/77/1" v1="143/75/1" v3="157/74/1" />
+		<face v2="156/77/1" v1="144/78/1" v3="143/75/1" />
+		<face v2="155/79/2" v1="144/78/2" v3="156/77/2" />
+		<face v2="154/80/2" v1="144/78/2" v3="155/79/2" />
+		<face v2="153/81/3" v1="144/78/3" v3="154/80/3" />
+		<face v2="152/82/4" v1="144/78/4" v3="153/81/4" />
+		<face v2="151/83/5" v1="144/78/5" v3="152/82/5" />
+		<face v2="150/84/6" v1="144/78/6" v3="151/83/6" />
+		<face v2="149/85/2" v1="144/78/2" v3="150/84/2" />
+		<face v2="148/86/2" v1="144/78/2" v3="149/85/2" />
+		<face v2="147/87/4" v1="144/78/4" v3="148/86/4" />
+		<face v2="146/88/2" v1="144/78/2" v3="147/87/2" />
+		<face v2="145/89/2" v1="144/78/2" v3="146/88/2" />
+		<face v2="158/90/1" v1="160/91/1" v3="159/92/1" />
+		<face v2="164/93/1" v1="160/91/1" v3="158/90/1" />
+		<face v2="163/94/1" v1="160/91/1" v3="164/93/1" />
+		<face v2="163/94/1" v1="161/95/1" v3="160/91/1" />
+		<face v2="162/96/4" v1="161/95/4" v3="163/94/4" />
+		<face v2="166/97/1" v1="168/98/1" v3="167/99/1" />
+		<face v2="165/100/1" v1="168/98/1" v3="166/97/1" />
+		<face v2="165/100/1" v1="169/101/1" v3="168/98/1" />
+		<face v2="183/102/1" v1="182/103/1" v3="165/100/1" />
+		<face v2="182/103/1" v1="169/101/1" v3="165/100/1" />
+		<face v2="182/103/1" v1="170/104/1" v3="169/101/1" />
+		<face v2="181/105/1" v1="170/104/1" v3="182/103/1" />
+		<face v2="180/106/1" v1="170/104/1" v3="181/105/1" />
+		<face v2="179/107/1" v1="170/104/1" v3="180/106/1" />
+		<face v2="179/107/1" v1="171/108/1" v3="170/104/1" />
+		<face v2="176/109/1" v1="183/102/1" v3="165/100/1" />
+		<face v2="176/109/1" v1="185/110/1" v3="183/102/1" />
+		<face v2="178/111/1" v1="171/108/1" v3="179/107/1" />
+		<face v2="186/112/1" v1="171/108/1" v3="178/111/1" />
+		<face v2="186/112/1" v1="172/113/1" v3="171/108/1" />
+		<face v2="185/110/1" v1="172/113/1" v3="186/112/1" />
+		<face v2="176/109/1" v1="172/113/1" v3="185/110/1" />
+		<face v2="176/109/1" v1="173/114/1" v3="172/113/1" />
+		<face v2="176/109/1" v1="174/115/1" v3="173/114/1" />
+		<face v2="175/116/1" v1="174/115/1" v3="176/109/1" />
+		<face v2="201/117/1" v1="203/118/1" v3="202/119/1" />
+		<face v2="201/117/1" v1="204/120/1" v3="203/118/1" />
+		<face v2="201/117/1" v1="205/121/1" v3="204/120/1" />
+		<face v2="200/122/1" v1="205/121/1" v3="201/117/1" />
+		<face v2="200/122/1" v1="206/123/1" v3="205/121/1" />
+		<face v2="199/124/1" v1="206/123/1" v3="200/122/1" />
+		<face v2="199/124/1" v1="207/125/1" v3="206/123/1" />
+		<face v2="198/126/1" v1="207/125/1" v3="199/124/1" />
+		<face v2="210/127/1" v1="207/125/1" v3="198/126/1" />
+		<face v2="210/127/1" v1="208/128/1" v3="207/125/1" />
+		<face v2="209/129/4" v1="208/128/4" v3="210/127/4" />
+		<face v2="228/130/1" v1="230/131/1" v3="229/132/1" />
+		<face v2="227/133/1" v1="230/131/1" v3="228/130/1" />
+		<face v2="227/133/1" v1="231/134/1" v3="230/131/1" />
+		<face v2="226/135/1" v1="231/134/1" v3="227/133/1" />
+		<face v2="226/135/1" v1="232/136/1" v3="231/134/1" />
+		<face v2="226/135/1" v1="245/137/1" v3="232/136/1" />
+		<face v2="244/138/1" v1="232/136/1" v3="245/137/1" />
+		<face v2="225/139/1" v1="245/137/1" v3="226/135/1" />
+		<face v2="225/139/1" v1="246/140/1" v3="245/137/1" />
+		<face v2="243/141/1" v1="232/136/1" v3="244/138/1" />
+		<face v2="243/141/1" v1="233/142/1" v3="232/136/1" />
+		<face v2="248/143/1" v1="233/142/1" v3="243/141/1" />
+		<face v2="225/139/1" v1="247/144/1" v3="246/140/1" />
+		<face v2="224/145/1" v1="247/144/1" v3="225/139/1" />
+		<face v2="224/145/1" v1="248/143/1" v3="247/144/1" />
+		<face v2="224/145/1" v1="233/142/1" v3="248/143/1" />
+		<face v2="224/145/1" v1="236/146/1" v3="233/142/1" />
+		<face v2="236/146/1" v1="234/147/1" v3="233/142/1" />
+		<face v2="224/145/1" v1="237/148/1" v3="236/146/1" />
+		<face v2="235/149/2" v1="234/147/2" v3="236/146/2" />
+		<face v2="224/145/1" v1="238/150/1" v3="237/148/1" />
+		<face v2="239/151/1" v1="241/152/1" v3="240/153/1" />
+		<face v2="223/154/1" v1="238/150/1" v3="224/145/1" />
+		<face v2="223/154/1" v1="239/151/1" v3="238/150/1" />
+		<face v2="223/154/1" v1="241/152/1" v3="239/151/1" />
+		<face v2="222/155/1" v1="241/152/1" v3="223/154/1" />
+		<face v2="242/156/1" v1="241/152/1" v3="222/155/1" />
+		<face v2="257/157/1" v1="259/158/1" v3="258/159/1" />
+		<face v2="256/160/1" v1="259/158/1" v3="257/157/1" />
+		<face v2="256/160/1" v1="260/161/1" v3="259/158/1" />
+		<face v2="255/162/1" v1="260/161/1" v3="256/160/1" />
+		<face v2="254/163/1" v1="260/161/1" v3="255/162/1" />
+		<face v2="254/163/1" v1="261/164/1" v3="260/161/1" />
+		<face v2="253/165/1" v1="261/164/1" v3="254/163/1" />
+		<face v2="253/165/1" v1="262/166/1" v3="261/164/1" />
+		<face v2="266/167/1" v1="250/168/1" v3="249/169/1" />
+		<face v2="252/170/1" v1="262/166/1" v3="253/165/1" />
+		<face v2="266/167/1" v1="251/171/1" v3="250/168/1" />
+		<face v2="266/167/1" v1="252/170/1" v3="251/171/1" />
+		<face v2="266/167/1" v1="262/166/1" v3="252/170/1" />
+		<face v2="266/167/1" v1="263/172/1" v3="262/166/1" />
+		<face v2="266/167/1" v1="264/173/1" v3="263/172/1" />
+		<face v2="266/167/1" v1="265/174/1" v3="264/173/1" />
+		<face v2="271/175/1" v1="273/176/1" v3="272/177/1" />
+		<face v2="270/178/1" v1="273/176/1" v3="271/175/1" />
+		<face v2="269/179/1" v1="273/176/1" v3="270/178/1" />
+		<face v2="269/179/1" v1="274/180/1" v3="273/176/1" />
+		<face v2="268/181/1" v1="274/180/1" v3="269/179/1" />
+		<face v2="277/182/1" v1="274/180/1" v3="268/181/1" />
+		<face v2="277/182/1" v1="275/183/1" v3="274/180/1" />
+		<face v2="276/184/2" v1="275/183/2" v3="277/182/2" />
+		<face v2="282/185/1" v1="284/186/1" v3="283/187/1" />
+		<face v2="290/188/1" v1="292/189/1" v3="291/190/1" />
+		<face v2="281/191/1" v1="284/186/1" v3="282/185/1" />
+		<face v2="289/192/1" v1="292/189/1" v3="290/188/1" />
+		<face v2="288/193/1" v1="292/189/1" v3="289/192/1" />
+		<face v2="280/194/1" v1="284/186/1" v3="281/191/1" />
+		<face v2="279/195/1" v1="284/186/1" v3="280/194/1" />
+		<face v2="279/195/1" v1="285/196/1" v3="284/186/1" />
+		<face v2="287/197/1" v1="292/189/1" v3="288/193/1" />
+		<face v2="279/195/1" v1="286/198/1" v3="285/196/1" />
+		<face v2="286/198/1" v1="292/189/1" v3="287/197/1" />
+		<face v2="279/195/1" v1="292/189/1" v3="286/198/1" />
+		<face v2="278/199/1" v1="296/200/1" v3="279/195/1" />
+		<face v2="296/200/1" v1="292/189/1" v3="279/195/1" />
+		<face v2="278/199/1" v1="297/201/1" v3="296/200/1" />
+		<face v2="296/200/1" v1="293/202/1" v3="292/189/1" />
+		<face v2="295/203/1" v1="293/202/1" v3="296/200/1" />
+		<face v2="299/204/1" v1="297/201/1" v3="278/199/1" />
+		<face v2="299/204/1" v1="298/205/1" v3="297/201/1" />
+		<face v2="294/206/4" v1="293/202/4" v3="295/203/4" />
+		<face v2="305/207/1" v1="307/208/1" v3="306/209/1" />
+		<face v2="318/210/1" v1="320/211/1" v3="319/212/1" />
+		<face v2="317/213/1" v1="320/211/1" v3="318/210/1" />
+		<face v2="304/214/1" v1="307/208/1" v3="305/207/1" />
+		<face v2="317/213/1" v1="321/215/1" v3="320/211/1" />
+		<face v2="316/216/1" v1="321/215/1" v3="317/213/1" />
+		<face v2="304/214/1" v1="308/217/1" v3="307/208/1" />
+		<face v2="315/218/1" v1="321/215/1" v3="316/216/1" />
+		<face v2="304/214/1" v1="309/219/1" v3="308/217/1" />
+		<face v2="303/220/1" v1="309/219/1" v3="304/214/1" />
+		<face v2="315/218/1" v1="322/221/1" v3="321/215/1" />
+		<face v2="303/220/1" v1="310/222/1" v3="309/219/1" />
+		<face v2="314/223/1" v1="322/221/1" v3="315/218/1" />
+		<face v2="314/223/1" v1="323/224/1" v3="322/221/1" />
+		<face v2="313/225/1" v1="323/224/1" v3="314/223/1" />
+		<face v2="303/220/1" v1="311/226/1" v3="310/222/1" />
+		<face v2="302/227/1" v1="311/226/1" v3="303/220/1" />
+		<face v2="312/228/1" v1="323/224/1" v3="313/225/1" />
+		<face v2="302/227/1" v1="312/228/1" v3="311/226/1" />
+		<face v2="302/227/1" v1="323/224/1" v3="312/228/1" />
+		<face v2="302/227/1" v1="324/229/1" v3="323/224/1" />
+		<face v2="301/230/1" v1="324/229/1" v3="302/227/1" />
+		<face v2="301/230/1" v1="325/231/1" v3="324/229/1" />
+		<face v2="300/232/1" v1="325/231/1" v3="301/230/1" />
+		<face v2="327/233/1" v1="325/231/1" v3="300/232/1" />
+		<face v2="327/233/1" v1="326/234/1" v3="325/231/1" />
+		<face v2="331/235/1" v1="333/236/1" v3="332/237/1" />
+		<face v2="335/238/1" v1="337/239/1" v3="336/240/1" />
+		<face v2="330/241/1" v1="333/236/1" v3="331/235/1" />
+		<face v2="334/242/1" v1="337/239/1" v3="335/238/1" />
+		<face v2="330/241/1" v1="334/242/1" v3="333/236/1" />
+		<face v2="334/242/1" v1="338/243/1" v3="337/239/1" />
+		<face v2="330/241/1" v1="338/243/1" v3="334/242/1" />
+		<face v2="329/244/1" v1="338/243/1" v3="330/241/1" />
+		<face v2="329/244/1" v1="339/245/1" v3="338/243/1" />
+		<face v2="345/246/1" v1="339/245/1" v3="329/244/1" />
+		<face v2="328/247/1" v1="345/246/1" v3="329/244/1" />
+		<face v2="328/247/1" v1="346/248/1" v3="345/246/1" />
+		<face v2="344/249/1" v1="339/245/1" v3="345/246/1" />
+		<face v2="343/250/1" v1="339/245/1" v3="344/249/1" />
+		<face v2="342/251/1" v1="339/245/1" v3="343/250/1" />
+		<face v2="328/247/1" v1="347/252/1" v3="346/248/1" />
+		<face v2="348/253/1" v1="347/252/1" v3="328/247/1" />
+		<face v2="342/251/1" v1="340/254/1" v3="339/245/1" />
+		<face v2="341/255/3" v1="340/254/3" v3="342/251/3" />
+		<face v2="351/256/1" v1="353/257/1" v3="352/258/1" />
+		<face v2="355/259/1" v1="357/260/1" v3="356/261/1" />
+		<face v2="350/262/1" v1="353/257/1" v3="351/256/1" />
+		<face v2="355/259/1" v1="358/263/1" v3="357/260/1" />
+		<face v2="355/259/1" v1="359/264/1" v3="358/263/1" />
+		<face v2="365/265/1" v1="359/264/1" v3="355/259/1" />
+		<face v2="354/266/1" v1="365/265/1" v3="355/259/1" />
+		<face v2="368/267/1" v1="353/257/1" v3="350/262/1" />
+		<face v2="350/262/1" v1="369/268/1" v3="368/267/1" />
+		<face v2="367/269/1" v1="353/257/1" v3="368/267/1" />
+		<face v2="367/269/1" v1="354/266/1" v3="353/257/1" />
+		<face v2="364/270/1" v1="359/264/1" v3="365/265/1" />
+		<face v2="349/271/1" v1="369/268/1" v3="350/262/1" />
+		<face v2="367/269/1" v1="365/265/1" v3="354/266/1" />
+		<face v2="367/269/1" v1="366/272/1" v3="365/265/1" />
+		<face v2="349/271/1" v1="370/273/1" v3="369/268/1" />
+		<face v2="363/274/1" v1="359/264/1" v3="364/270/1" />
+		<face v2="363/274/1" v1="360/275/1" v3="359/264/1" />
+		<face v2="385/276/1" v1="370/273/1" v3="349/271/1" />
+		<face v2="385/276/1" v1="371/277/1" v3="370/273/1" />
+		<face v2="363/274/1" v1="361/278/1" v3="360/275/1" />
+		<face v2="362/279/1" v1="361/278/1" v3="363/274/1" />
+		<face v2="384/280/1" v1="371/277/1" v3="385/276/1" />
+		<face v2="384/280/1" v1="372/281/1" v3="371/277/1" />
+		<face v2="383/282/4" v1="372/281/4" v3="384/280/4" />
+		<face v2="382/283/3" v1="372/281/3" v3="383/282/3" />
+		<face v2="381/284/7" v1="372/281/7" v3="382/283/7" />
+		<face v2="380/285/2" v1="372/281/2" v3="381/284/2" />
+		<face v2="379/286/2" v1="372/281/2" v3="380/285/2" />
+		<face v2="378/287/2" v1="372/281/2" v3="379/286/2" />
+		<face v2="377/288/4" v1="372/281/4" v3="378/287/4" />
+		<face v2="376/289/2" v1="372/281/2" v3="377/288/2" />
+		<face v2="375/290/2" v1="372/281/2" v3="376/289/2" />
+		<face v2="374/291/3" v1="372/281/3" v3="375/290/3" />
+		<face v2="373/292/8" v1="372/281/8" v3="374/291/8" />
+		<face v2="392/293/1" v1="394/294/1" v3="393/295/1" />
+		<face v2="391/296/1" v1="394/294/1" v3="392/293/1" />
+		<face v2="391/296/1" v1="395/297/1" v3="394/294/1" />
+		<face v2="390/298/1" v1="395/297/1" v3="391/296/1" />
+		<face v2="390/298/1" v1="396/299/1" v3="395/297/1" />
+		<face v2="390/298/1" v1="410/300/1" v3="396/299/1" />
+		<face v2="409/301/1" v1="396/299/1" v3="410/300/1" />
+		<face v2="389/302/1" v1="410/300/1" v3="390/298/1" />
+		<face v2="389/302/1" v1="411/303/1" v3="410/300/1" />
+		<face v2="408/304/1" v1="396/299/1" v3="409/301/1" />
+		<face v2="408/304/1" v1="397/305/1" v3="396/299/1" />
+		<face v2="413/306/1" v1="397/305/1" v3="408/304/1" />
+		<face v2="389/302/1" v1="412/307/1" v3="411/303/1" />
+		<face v2="388/308/1" v1="412/307/1" v3="389/302/1" />
+		<face v2="388/308/1" v1="413/306/1" v3="412/307/1" />
+		<face v2="388/308/1" v1="397/305/1" v3="413/306/1" />
+		<face v2="388/308/1" v1="401/309/1" v3="397/305/1" />
+		<face v2="401/309/1" v1="398/310/1" v3="397/305/1" />
+		<face v2="401/309/1" v1="399/311/1" v3="398/310/1" />
+		<face v2="388/308/1" v1="402/312/1" v3="401/309/1" />
+		<face v2="400/313/9" v1="399/311/9" v3="401/309/9" />
+		<face v2="388/308/1" v1="403/314/1" v3="402/312/1" />
+		<face v2="404/315/1" v1="406/316/1" v3="405/317/1" />
+		<face v2="387/318/1" v1="403/314/1" v3="388/308/1" />
+		<face v2="387/318/1" v1="404/315/1" v3="403/314/1" />
+		<face v2="387/318/1" v1="406/316/1" v3="404/315/1" />
+		<face v2="386/319/1" v1="406/316/1" v3="387/318/1" />
+		<face v2="407/320/1" v1="406/316/1" v3="386/319/1" />
+		<face v2="7/321/1" v1="9/322/1" v3="8/323/1" />
+		<face v2="6/324/1" v1="9/322/1" v3="7/321/1" />
+		<face v2="6/324/1" v1="10/325/1" v3="9/322/1" />
+		<face v2="6/324/1" v1="11/326/1" v3="10/325/1" />
+		<face v2="5/327/1" v1="11/326/1" v3="6/324/1" />
+		<face v2="5/327/1" v1="12/328/1" v3="11/326/1" />
+		<face v2="45/329/1" v1="12/328/1" v3="5/327/1" />
+		<face v2="45/329/1" v1="44/330/1" v3="12/328/1" />
+		<face v2="5/327/1" v1="46/331/1" v3="45/329/1" />
+		<face v2="43/332/1" v1="12/328/1" v3="44/330/1" />
+		<face v2="42/333/1" v1="12/328/1" v3="43/332/1" />
+		<face v2="41/334/1" v1="12/328/1" v3="42/333/1" />
+		<face v2="40/335/1" v1="12/328/1" v3="41/334/1" />
+		<face v2="40/335/1" v1="13/336/1" v3="12/328/1" />
+		<face v2="4/337/1" v1="46/331/1" v3="5/327/1" />
+		<face v2="39/338/1" v1="13/336/1" v3="40/335/1" />
+		<face v2="38/339/1" v1="13/336/1" v3="39/338/1" />
+		<face v2="47/340/1" v1="13/336/1" v3="38/339/1" />
+		<face v2="4/337/1" v1="47/340/1" v3="46/331/1" />
+		<face v2="4/337/1" v1="13/336/1" v3="47/340/1" />
+		<face v2="4/337/1" v1="14/341/1" v3="13/336/1" />
+		<face v2="4/337/1" v1="15/342/1" v3="14/341/1" />
+		<face v2="4/337/1" v1="16/343/1" v3="15/342/1" />
+		<face v2="20/344/1" v1="16/343/1" v3="4/337/1" />
+		<face v2="20/344/1" v1="17/345/1" v3="16/343/1" />
+		<face v2="20/344/1" v1="18/346/1" v3="17/345/1" />
+		<face v2="20/344/1" v1="19/347/1" v3="18/346/1" />
+		<face v2="4/337/1" v1="21/348/1" v3="20/344/1" />
+		<face v2="54/349/1" v1="65/350/1" v3="55/351/1" />
+		<face v2="65/350/1" v1="56/352/1" v3="55/351/1" />
+		<face v2="3/353/1" v1="21/348/1" v3="4/337/1" />
+		<face v2="53/354/1" v1="65/350/1" v3="54/349/1" />
+		<face v2="67/355/1" v1="56/352/1" v3="65/350/1" />
+		<face v2="53/354/1" v1="66/356/1" v3="65/350/1" />
+		<face v2="52/357/1" v1="66/356/1" v3="53/354/1" />
+		<face v2="52/357/1" v1="67/355/1" v3="66/356/1" />
+		<face v2="52/357/1" v1="56/352/1" v3="67/355/1" />
+		<face v2="52/357/1" v1="57/358/1" v3="56/352/1" />
+		<face v2="51/359/1" v1="57/358/1" v3="52/357/1" />
+		<face v2="51/359/1" v1="58/360/1" v3="57/358/1" />
+		<face v2="3/353/1" v1="22/361/1" v3="21/348/1" />
+		<face v2="2/362/1" v1="22/361/1" v3="3/353/1" />
+		<face v2="50/363/7" v1="58/360/7" v3="51/359/7" />
+		<face v2="49/364/10" v1="58/360/10" v3="50/363/10" />
+		<face v2="48/365/1" v1="60/366/1" v3="49/364/1" />
+		<face v2="60/366/2" v1="58/360/2" v3="49/364/2" />
+		<face v2="48/365/1" v1="61/367/1" v3="60/366/1" />
+		<face v2="59/368/11" v1="58/360/11" v3="60/366/11" />
+		<face v2="2/362/1" v1="23/369/1" v3="22/361/1" />
+		<face v2="1/370/1" v1="23/369/1" v3="2/362/1" />
+		<face v2="64/371/1" v1="61/367/1" v3="48/365/1" />
+		<face v2="64/371/1" v1="62/372/1" v3="61/367/1" />
+		<face v2="26/373/1" v1="23/369/1" v3="1/370/1" />
+		<face v2="63/374/2" v1="62/372/2" v3="64/371/2" />
+		<face v2="26/373/1" v1="24/375/1" v3="23/369/1" />
+		<face v2="25/376/2" v1="24/375/2" v3="26/373/2" />
+	</batch>
+</model>
+<model-instance id="model" refx="dhill" refy="dhill-top" x="1.36" y="0.2" z="-4.8"/>
+
+
+<!-- Generated with 'Gate Numbers v. 1.2.0' application by Marcin Przybyła -->
+
+<!-- 3D models of numbers -->
+
+<model id="font2-zero">
+<batch id="zero-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" z="0.01363635" y="0.027954450000000002" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="2" z="0.0098865" y="0.01699425" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="3" z="0" y="0.01309095" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="4" z="-0.0098865" y="0.01699425" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="5" z="-0.01363635" y="0.027954450000000002" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="6" z="-0.01363635" y="0.0691362" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="7" z="-0.0098865" y="0.08009640000000001" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="8" z="0" y="0.08400015" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="9" z="0.0098865" y="0.08009640000000001" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="10" z="0.01363635" y="0.0691362" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="11" z="-0.0275454" y="0.02713635" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="12" z="-0.0191421" y="0.0064602" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="13" z="0" y="-0.0008181" x="0" u1="0" v1="0" diffuse="0xff363636" /> 
+<vertex id="14" z="0.0191421" y="0.0064602" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="15" z="0.0275454" y="0.02713635" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="16" z="0.0275454" y="0.06995475000000001" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="17" z="0.0191421" y="0.09063045" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="18" z="0" y="0.0979092" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="19" z="-0.0191421" y="0.09063045" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="20" z="-0.0275454" y="0.06995475000000001" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<face v3="19" v2="17" v1="18" />
+<face v3="20" v2="7" v1="19" />
+<face v3="7" v2="8" v1="19" />
+<face v3="8" v2="17" v1="19" />
+<face v3="8" v2="9" v1="17" />
+<face v3="9" v2="16" v1="17" />
+<face v3="20" v2="6" v1="7" />
+<face v3="10" v2="16" v1="9" />
+<face v3="11" v2="6" v1="20" />
+<face v3="10" v2="15" v1="16" />
+<face v3="11" v2="5" v1="6" />
+<face v3="1" v2="15" v1="10" />
+<face v3="11" v2="4" v1="5" />
+<face v3="2" v2="15" v1="1" />
+<face v3="12" v2="4" v1="11" />
+<face v3="2" v2="14" v1="15" />
+<face v3="12" v2="3" v1="4" />
+<face v3="3" v2="14" v1="2" />
+<face v3="12" v2="14" v1="3" />
+<face v3="12" v2="13" v1="14" />
+</batch>
+</model>
+
+<model id="font2-one">
+<batch id="one-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" z="-0.00627255" y="0" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="2" z="0.0076365" y="0" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="3" z="0.0076365" y="0.0970911" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="4" z="-0.00627255" y="0.0970911" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="5" z="-0.02004525" y="0.08699985" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="6" z="-0.02004525" y="0.0722727" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="7" z="-0.00627255" y="0.0823635" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<face v3="5" v2="3" v1="4"/>
+<face v3="5" v2="7" v1="3"/>
+<face v3="7" v2="2" v1="3"/>
+<face v3="6" v2="7" v1="5"/>
+<face v3="1" v2="2" v1="7"/>
+</batch>
+</model>
+	 
+<model id="font2-two">
+<batch id="two-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0" staticligthing="true">
+<vertex id="1" z="-0.028363500000000003" y="0" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="2" z="0.027" y="0" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="3" z="0.027" y="0.01390905" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="4" z="-0.0100908" y="0.01390905" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="5" z="0.0211365" y="0.05304555" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="6" z="0.0256023" y="0.0610569" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="7" z="0.027" y="0.0700911" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="8" z="0.0189036" y="0.0897786" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="9" z="-0.0013635000000000001" y="0.0979092" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="10" z="-0.0202842" y="0.08986365" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="11" z="-0.028363500000000003" y="0.06995475000000001" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="12" z="-0.014454449999999999" y="0.06995475000000001" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="13" z="-0.00992025" y="0.08024985" x="0" u1="0" v1="0" diffuse="0xff363636" /> 
+<vertex id="14" z="-0.0002727" y="0.08400015" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="15" z="0.0095283" y="0.07967025000000001" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="16" z="0.01309095" y="0.07022745000000001" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="17" z="0.0124434" y="0.0657441" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="18" z="0.0095454" y="0.06054525" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="19" z="-0.028363500000000003" y="0.01309095" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<face v3="10" v2="8" v1="9" />
+<face v3="11" v2="13" v1="10" />
+<face v3="13" v2="14" v1="10" />
+<face v3="14" v2="8" v1="10" />
+<face v3="14" v2="15" v1="8" />
+<face v3="15" v2="7" v1="8" />
+<face v3="11" v2="12" v1="13" />
+<face v3="16" v2="7" v1="15" />
+<face v3="17" v2="7" v1="16" />
+<face v3="17" v2="6" v1="7" />
+<face v3="18" v2="6" v1="17" />
+<face v3="18" v2="5" v1="6" />
+<face v3="19" v2="5" v1="18" />
+<face v3="19" v2="4" v1="5" />
+<face v3="19" v2="3" v1="4" />
+<face v3="19" v2="2" v1="3" />
+<face v3="1" v2="2" v1="19" />
+</batch>
+</model>
+ 
+<model id="font2-three">
+<batch id="three-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" z="-0.0087273" y="0.0439092" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="2" z="-0.0028638" y="0.0439092" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="3" z="0.007704450000000001" y="0.039835350000000005" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="4" z="0.012136500000000001" y="0.02849985" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="5" z="0.007687350000000001" y="0.0172161" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="6" z="-0.0025911000000000003" y="0.01309095" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="7" z="-0.0118125" y="0.01610775" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="8" z="-0.017045550000000003" y="0.024136200000000003" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="9" z="-0.030954600000000002" y="0.024136200000000003" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="10" z="-0.0211194" y="0.0055737" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="11" z="-0.0034092000000000003" y="-0.0008181" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="12" z="0.0175059" y="0.0072954000000000005" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="13" z="0.02604555" y="0.028908899999999998" x="0" u1="0" v1="0" diffuse="0xff363636" /> 
+<vertex id="14" z="0.0233865" y="0.0405684" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="15" z="0.014590800000000001" y="0.050181750000000004" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="16" z="0.022789800000000002" y="0.0593865" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="17" z="0.024954749999999998" y="0.07022745000000001" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="18" z="0.0171306" y="0.0893862" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="19" z="-0.0036819" y="0.0979092" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="20" z="-0.02180115" y="0.0902556" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="21" z="-0.0304092" y="0.0722727" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="22" z="-0.016500149999999998" y="0.0722727" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="23" z="-0.01145475" y="0.08110215" x="0" u1="0" v1="0" diffuse="0xff363636" /> 
+<vertex id="24" z="-0.0031365" y="0.08400015" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="25" z="0.00686925" y="0.07994295" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="26" z="0.011045250000000001" y="0.06995475000000001" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="27" z="0.0070227" y="0.06010245000000001" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="28" z="-0.003954600000000001" y="0.0561816" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="29" z="-0.0087273" y="0.0561816" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<face v3="20" v2="18" v1="19" />
+<face v3="21" v2="23" v1="20" />
+<face v3="23" v2="24" v1="20" />
+<face v3="24" v2="18" v1="20" />
+<face v3="24" v2="25" v1="18" />
+<face v3="25" v2="17" v1="18" />
+<face v3="21" v2="22" v1="23" />
+<face v3="26" v2="17" v1="25" />
+<face v3="26" v2="16" v1="17" />
+<face v3="27" v2="16" v1="26" />
+<face v3="28" v2="16" v1="27" />
+<face v3="28" v2="15" v1="16" />
+<face v3="1" v2="28" v1="29" />
+<face v3="1" v2="15" v1="28" />
+<face v3="1" v2="2" v1="15" />
+<face v3="2" v2="14" v1="15" />
+<face v3="3" v2="14" v1="2" />
+<face v3="3" v2="13" v1="14" />
+<face v3="4" v2="13" v1="3" />
+<face v3="4" v2="12" v1="13" />
+<face v3="5" v2="12" v1="4" />
+<face v3="10" v2="8" v1="9" />
+<face v3="10" v2="7" v1="8" />
+<face v3="6" v2="12" v1="5" />
+<face v3="10" v2="6" v1="7" />
+<face v3="10" v2="12" v1="6" />
+<face v3="10" v2="11" v1="12" />
+</batch>
+</model>
+
+<model id="font2-four">
+<batch id="four-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" z="-0.03109095" y="0.014454449999999999" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="2" z="0.00940905" y="0.014454449999999999" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="3" z="0.00940905" y="0" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="4" z="0.0233181" y="0" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="5" z="0.0233181" y="0.014454449999999999" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="6" z="0.03109095" y="0.014454449999999999" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="7" z="0.03109095" y="0.0275454" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="8" z="0.0233181" y="0.0275454" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="9" z="0.0233181" y="0.05549985" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="10" z="0.00940905" y="0.05549985" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="11" z="0.00940905" y="0.0275454" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="12" z="-0.01595475" y="0.0275454" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="13" z="0.0169092" y="0.0970911" x="0" u1="0" v1="0" diffuse="0xff363636" /> 
+<vertex id="14" z="0.0013635000000000001" y="0.0970911" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="15" z="-0.03109095" y="0.0275454" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<face v3="15" v2="13" v1="14" />
+<face v3="15" v2="12" v1="13" />
+<face v3="11" v2="9" v1="10" />
+<face v3="11" v2="8" v1="9" />
+<face v3="1" v2="12" v1="15" />
+<face v3="1" v2="11" v1="12" />
+<face v3="1" v2="8" v1="11" />
+<face v3="1" v2="7" v1="8" />
+<face v3="1" v2="6" v1="7" />
+<face v3="2" v2="6" v1="1" />
+<face v3="3" v2="5" v1="2" />
+<face v3="5" v2="6" v1="2" />
+<face v3="3" v2="4" v1="5" />
+</batch>
+</model>
+
+<model id="font2-five">
+<batch id="five-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" z="-0.0259092" y="0.04459095" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="2" z="-0.01281825" y="0.04459095" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="3" z="-0.0073125" y="0.05081265" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="4" z="-0.0002727" y="0.0526365" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="5" z="0.011045250000000001" y="0.047335050000000004" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="6" z="0.0137727" y="0.03395475" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="7" z="0.012068100000000002" y="0.020096549999999998" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="8" z="0.00013635" y="0.01309095" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="9" z="-0.009170550000000001" y="0.016141950000000002" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="10" z="-0.0137727" y="0.0244089" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="11" z="-0.02768175" y="0.0244089" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="12" z="-0.0174375" y="0.0049941000000000004" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="13" z="0.0006817500000000001" y="-0.0008181" x="0" u1="0" v1="0" diffuse="0xff363636" /> 
+<vertex id="14" z="0.013329450000000001" y="0.0024714000000000003" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="15" z="0.0216819" y="0.0095454" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="16" z="0.02626695" y="0.018341100000000003" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="17" z="0.02768175" y="0.0328635" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="18" z="0.0258579" y="0.050045400000000004" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="19" z="0.02004525" y="0.05945445" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="20" z="0.01281825" y="0.0644319" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="21" z="0.00272745" y="0.06654555000000001" x="0" u1="0" v1="0" diffuse="0xff363636" /> 
+<vertex id="22" z="-0.0055566" y="0.06526710000000001" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="23" z="-0.01281825" y="0.061227449999999996" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="24" z="-0.01281825" y="0.08318160000000001" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="25" z="0.02577285" y="0.08318160000000001" x="0" u1="0" v1="0" diffuse="0xff363636" /> 
+<vertex id="26" z="0.02577285" y="0.0970911" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="27" z="-0.0259092" y="0.0970911" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<face v3="1" v2="24" v1="27" />
+<face v3="24" v2="26" v1="27" />
+<face v3="24" v2="25" v1="26" />
+<face v3="1" v2="23" v1="24" />
+<face v3="22" v2="20" v1="21" />
+<face v3="23" v2="20" v1="22" />
+<face v3="23" v2="19" v1="20" />
+<face v3="1" v2="3" v1="23" />
+<face v3="3" v2="19" v1="23" />
+<face v3="3" v2="4" v1="19" />
+<face v3="4" v2="18" v1="19" />
+<face v3="5" v2="18" v1="4" />
+<face v3="1" v2="2" v1="3" />
+<face v3="5" v2="17" v1="18" />
+<face v3="6" v2="17" v1="5" />
+<face v3="7" v2="17" v1="6" />
+<face v3="7" v2="16" v1="17" />
+<face v3="12" v2="10" v1="11" />
+<face v3="12" v2="9" v1="10" />
+<face v3="8" v2="16" v1="7" />
+<face v3="8" v2="15" v1="16" />
+<face v3="12" v2="8" v1="9" />
+<face v3="12" v2="15" v1="8" />
+<face v3="12" v2="14" v1="15" />
+<face v3="13" v2="14" v1="12" />
+</batch>
+</model>
+
+<model id="font2-six">
+<batch id="six-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" z="-0.024136200000000003" y="0.045000000000000005" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="2" z="-0.02689785" y="0.0371934" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="3" z="-0.0278181" y="0.028772549999999997" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="4" z="-0.0193806" y="0.00712485" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="5" z="-0.0008181" y="-0.0008145" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="6" z="0.01892025" y="0.00639225" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="7" z="0.0278181" y="0.03027285" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="8" z="0.0208296" y="0.05082975" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="9" z="0.00463635" y="0.05727285" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="10" z="0.0008523000000000001" y="0.05696595000000001" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="11" z="-0.00272745" y="0.056045250000000005" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="12" z="-0.00300015" y="0.056045250000000005" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="13" z="0.0174546" y="0.0970911" x="0" u1="0" v1="0" diffuse="0xff363636" /> 
+<vertex id="14" z="0.0019089" y="0.0970911" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="15" z="0" y="0.045000000000000005" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="16" z="0.0098181" y="0.0411138" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="17" z="0.01390905" y="0.02904525" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="18" z="0.009357750000000001" y="0.016721549999999998" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="19" z="0" y="0.01309095" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="20" z="-0.010125" y="0.01697715" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="21" z="-0.01390905" y="0.02904525" x="0" u1="0" v1="0" diffuse="0xff363636" /> 
+<vertex id="22" z="-0.0098181" y="0.0411138" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<face v3="1" v2="13" v1="14" />
+<face v3="1" v2="12" v1="13" />
+<face v3="10" v2="8" v1="9" />
+<face v3="11" v2="8" v1="10" />
+<face v3="1" v2="11" v1="12" />
+<face v3="1" v2="8" v1="11" />
+<face v3="1" v2="15" v1="8" />
+<face v3="15" v2="16" v1="8" />
+<face v3="16" v2="7" v1="8" />
+<face v3="2" v2="15" v1="1" />
+<face v3="2" v2="22" v1="15" />
+<face v3="2" v2="21" v1="22" />
+<face v3="17" v2="7" v1="16" />
+<face v3="3" v2="21" v1="2" />
+<face v3="17" v2="6" v1="7" />
+<face v3="3" v2="20" v1="21" />
+<face v3="18" v2="6" v1="17" />
+<face v3="4" v2="20" v1="3" />
+<face v3="4" v2="19" v1="20" />
+<face v3="19" v2="6" v1="18" />
+<face v3="4" v2="6" v1="19" />
+<face v3="5" v2="6" v1="4" />
+</batch>
+</model>
+
+<model id="font2-seven">
+<batch id="seven-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" z="-0.02577285" y="0.0691362" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="2" z="-0.011863799999999999" y="0.0691362" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="3" z="-0.011863799999999999" y="0.08318160000000001" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="4" z="0.01390905" y="0.08318160000000001" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="5" z="-0.01895445" y="0" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="6" z="-0.0034092000000000003" y="0" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="7" z="0.029454750000000002" y="0.08318160000000001" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="8" z="0.029454750000000002" y="0.0970911" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="9" z="-0.02577285" y="0.0970911" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<face v3="1" v2="3" v1="9" />
+<face v3="3" v2="8" v1="9" />
+<face v3="3" v2="7" v1="8" />
+<face v3="1" v2="2" v1="3" />
+<face v3="4" v2="7" v1="3" />
+<face v3="5" v2="7" v1="4" />
+<face v3="5" v2="6" v1="7" />
+</batch>
+</model>
+
+<model id="font2-eight">
+<batch id="eight-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" z="-0.01390905" y="0.0700911" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="2" z="-0.0096138" y="0.08047170000000001" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="3" z="0" y="0.08400015" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="4" z="0.0096138" y="0.08047170000000001" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="5" z="0.01390905" y="0.0700911" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="6" z="0.0096138" y="0.05971005" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="7" z="0" y="0.0561816" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="8" z="-0.0096138" y="0.05971005" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="9" z="-0.0295911" y="0.028363500000000003" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="10" z="-0.0208296" y="0.0073296" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="11" z="0" y="-0.0008181" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="12" z="0.0208296" y="0.0073296" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="13" z="0.0295911" y="0.028363500000000003" x="0" u1="0" v1="0" diffuse="0xff363636" /> 
+<vertex id="14" z="0.02662515" y="0.04085775" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="15" z="0.01813635" y="0.050181750000000004" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="16" z="0.02512485" y="0.058772700000000004" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="17" z="0.0278181" y="0.06981795" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="18" z="0.019789650000000002" y="0.0897444" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="19" z="0" y="0.0979092" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="20" z="-0.019789650000000002" y="0.0897444" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="21" z="-0.0278181" y="0.06981795" x="0" u1="0" v1="0" diffuse="0xff363636" /> 
+<vertex id="22" z="-0.02512485" y="0.058772700000000004" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="23" z="-0.01813635" y="0.050181750000000004" x="0" u1="0" v1="0" diffuse="0xff363636" /> 
+<vertex id="24" z="-0.02662515" y="0.04085775" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="25" z="-0.0156816" y="0.02849985" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="26" z="-0.0109602" y="0.03952845" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="27" z="0" y="0.0439092" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="28" z="0.0109602" y="0.03952845" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="29" z="0.0156816" y="0.02849985" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="30" z="0.0109602" y="0.0174717" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="31" z="0" y="0.01309095" x="0" u1="0" v1="0" diffuse="0xff363636" /> 
+<vertex id="32" z="-0.0109602" y="0.0174717" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<face v3="20" v2="18" v1="19" />
+<face v3="21" v2="2" v1="20" />
+<face v3="2" v2="3" v1="20" />
+<face v3="3" v2="18" v1="20" />
+<face v3="3" v2="4" v1="18" />
+<face v3="4" v2="17" v1="18" />
+<face v3="21" v2="1" v1="2" />
+<face v3="5" v2="17" v1="4" />
+<face v3="21" v2="8" v1="1" />
+<face v3="6" v2="17" v1="5" />
+<face v3="22" v2="8" v1="21" />
+<face v3="6" v2="16" v1="17" />
+<face v3="22" v2="7" v1="8" />
+<face v3="7" v2="16" v1="6" />
+<face v3="23" v2="7" v1="22" />
+<face v3="7" v2="15" v1="16" />
+<face v3="23" v2="15" v1="7" />
+<face v3="24" v2="15" v1="23" />
+<face v3="24" v2="27" v1="15" />
+<face v3="27" v2="14" v1="15" />
+<face v3="24" v2="26" v1="27" />
+<face v3="28" v2="14" v1="27" />
+<face v3="9" v2="26" v1="24" />
+<face v3="28" v2="13" v1="14" />
+<face v3="9" v2="25" v1="26" />
+<face v3="29" v2="13" v1="28" />
+<face v3="9" v2="32" v1="25" />
+<face v3="30" v2="13" v1="29" />
+<face v3="10" v2="32" v1="9" />
+<face v3="30" v2="12" v1="13" />
+<face v3="10" v2="31" v1="32" />
+<face v3="31" v2="12" v1="30" />
+<face v3="10" v2="12" v1="31" />
+<face v3="10" v2="11" v1="12" />
+</batch>
+</model>
+
+<model id="font2-nine">
+<batch id="nine-l" zbias="3" texture1="Textures\metal.png" material="Materials\material1.xml" fvf="322" order="0">
+<vertex id="1" z="0.024136200000000003" y="0.0520911" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="2" z="0.02689785" y="0.059897700000000005" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="3" z="0.0278181" y="0.0683181" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="4" z="0.0193806" y="0.0899658" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="5" z="0.0008181" y="0.0979092" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="6" z="-0.01892025" y="0.09069885000000001" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="7" z="-0.0278181" y="0.06681825000000001" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="8" z="-0.0208296" y="0.04626135000000001" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="9" z="-0.00463635" y="0.03981825" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="10" z="-0.0008523000000000001" y="0.04012515" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="11" z="0.00272745" y="0.0410454" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="12" z="0.00300015" y="0.0410454" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="13" z="-0.0174546" y="0" x="0" u1="0" v1="0" diffuse="0xff363636" /> 
+<vertex id="14" z="-0.0019089" y="0" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="15" z="0" y="0.0520911" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="16" z="-0.0098181" y="0.0559773" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="17" z="-0.01390905" y="0.0680454" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="18" z="-0.009357750000000001" y="0.0803691" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="19" z="0" y="0.08400015" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="20" z="0.010125" y="0.0801135" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<vertex id="21" z="0.01390905" y="0.0680454" x="0" u1="0" v1="0" diffuse="0xff363636" /> 
+<vertex id="22" z="0.0098181" y="0.0559773" x="0" u1="0" v1="0" diffuse="0xff363636" />
+<face v3="6" v2="4" v1="5" />
+<face v3="7" v2="18" v1="6" />
+<face v3="18" v2="19" v1="6" />
+<face v3="19" v2="4" v1="6" />
+<face v3="19" v2="20" v1="4" />
+<face v3="20" v2="3" v1="4" />
+<face v3="7" v2="17" v1="18" />
+<face v3="21" v2="3" v1="20" />
+<face v3="21" v2="2" v1="3" />
+<face v3="7" v2="16" v1="17" />
+<face v3="22" v2="2" v1="21" />
+<face v3="8" v2="16" v1="7" />
+<face v3="22" v2="1" v1="2" />
+<face v3="8" v2="15" v1="16" />
+<face v3="15" v2="1" v1="22" />
+<face v3="8" v2="1" v1="15" />
+<face v3="8" v2="12" v1="1" />
+<face v3="12" v2="14" v1="1" />
+<face v3="9" v2="11" v1="8" />
+<face v3="11" v2="12" v1="8" />
+<face v3="9" v2="10" v1="11" />
+<face v3="13" v2="14" v1="12" />
+</batch>
+</model>
+
+<!-- Gate numbers -->
+<!-- Gate 1 - left -->
+<model-instance id="font2-one" x="-67.7781" y="39.0036" z="1.52"/>
+<pillar refx="dhill" x1="-67.7791" x2="-67.7781" ty="39.1272" by="38.9772" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 2 - left -->
+<model-instance id="font2-two" x="-68.3481" y="39.4027" z="1.52"/>
+<pillar refx="dhill" x1="-68.3491" x2="-68.3481" ty="39.5263" by="39.3763" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 3 - left -->
+<model-instance id="font2-three" x="-68.9181" y="39.8019" z="1.52"/>
+<pillar refx="dhill" x1="-68.9191" x2="-68.9181" ty="39.9254" by="39.7754" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 4 - left -->
+<model-instance id="font2-four" x="-69.4881" y="40.2010" z="1.52"/>
+<pillar refx="dhill" x1="-69.4891" x2="-69.4881" ty="40.3245" by="40.1745" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 5 - left -->
+<model-instance id="font2-five" x="-70.0581" y="40.6001" z="1.52"/>
+<pillar refx="dhill" x1="-70.0591" x2="-70.0581" ty="40.7236" by="40.5736" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 6 - left -->
+<model-instance id="font2-six" x="-70.6281" y="40.9992" z="1.52"/>
+<pillar refx="dhill" x1="-70.6291" x2="-70.6281" ty="41.1228" by="40.9728" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 7 - left -->
+<model-instance id="font2-seven" x="-71.1981" y="41.3983" z="1.52"/>
+<pillar refx="dhill" x1="-71.1991" x2="-71.1981" ty="41.5219" by="41.3719" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 8 - left -->
+<model-instance id="font2-eight" x="-71.7681" y="41.7975" z="1.52"/>
+<pillar refx="dhill" x1="-71.7691" x2="-71.7681" ty="41.9210" by="41.7710" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 9 - left -->
+<model-instance id="font2-nine" x="-72.3381" y="42.1966" z="1.52"/>
+<pillar refx="dhill" x1="-72.3391" x2="-72.3381" ty="42.3201" by="42.1701" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 10 - left -->
+<model-instance id="font2-zero" x="-72.9081" y="42.5957" z="1.55375"/>
+<model-instance id="font2-one" x="-72.9081" y="42.5957" z="1.48625"/>
+<pillar refx="dhill" x1="-72.9091" x2="-72.9081" ty="42.7192" by="42.5692" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 11 - left -->
+<model-instance id="font2-one" x="-73.4781" y="42.9948" z="1.55375"/>
+<model-instance id="font2-one" x="-73.4781" y="42.9948" z="1.48625"/>
+<pillar refx="dhill" x1="-73.4791" x2="-73.4781" ty="43.1184" by="42.9684" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 12 - left -->
+<model-instance id="font2-two" x="-74.0481" y="43.3939" z="1.55375"/>
+<model-instance id="font2-one" x="-74.0481" y="43.3939" z="1.48625"/>
+<pillar refx="dhill" x1="-74.0491" x2="-74.0481" ty="43.5175" by="43.3675" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 13 - left -->
+<model-instance id="font2-three" x="-74.6181" y="43.7930" z="1.55375"/>
+<model-instance id="font2-one" x="-74.6181" y="43.7930" z="1.48625"/>
+<pillar refx="dhill" x1="-74.6191" x2="-74.6181" ty="43.9166" by="43.7666" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 14 - left -->
+<model-instance id="font2-four" x="-75.1881" y="44.1922" z="1.55375"/>
+<model-instance id="font2-one" x="-75.1881" y="44.1922" z="1.48625"/>
+<pillar refx="dhill" x1="-75.1891" x2="-75.1881" ty="44.3157" by="44.1657" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 15 - left -->
+<model-instance id="font2-five" x="-75.7581" y="44.5913" z="1.55375"/>
+<model-instance id="font2-one" x="-75.7581" y="44.5913" z="1.48625"/>
+<pillar refx="dhill" x1="-75.7591" x2="-75.7581" ty="44.7148" by="44.5648" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 16 - left -->
+<model-instance id="font2-six" x="-76.3281" y="44.9904" z="1.55375"/>
+<model-instance id="font2-one" x="-76.3281" y="44.9904" z="1.48625"/>
+<pillar refx="dhill" x1="-76.3291" x2="-76.3281" ty="45.1139" by="44.9639" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 17 - left -->
+<model-instance id="font2-seven" x="-76.8981" y="45.3895" z="1.55375"/>
+<model-instance id="font2-one" x="-76.8981" y="45.3895" z="1.48625"/>
+<pillar refx="dhill" x1="-76.8991" x2="-76.8981" ty="45.5131" by="45.3631" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 18 - left -->
+<model-instance id="font2-eight" x="-77.4681" y="45.7886" z="1.55375"/>
+<model-instance id="font2-one" x="-77.4681" y="45.7886" z="1.48625"/>
+<pillar refx="dhill" x1="-77.4691" x2="-77.4681" ty="45.9122" by="45.7622" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 19 - left -->
+<model-instance id="font2-nine" x="-78.0381" y="46.1878" z="1.55375"/>
+<model-instance id="font2-one" x="-78.0381" y="46.1878" z="1.48625"/>
+<pillar refx="dhill" x1="-78.0391" x2="-78.0381" ty="46.3113" by="46.1613" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 20 - left -->
+<model-instance id="font2-zero" x="-78.6081" y="46.5869" z="1.55375"/>
+<model-instance id="font2-two" x="-78.6081" y="46.5869" z="1.48625"/>
+<pillar refx="dhill" x1="-78.6091" x2="-78.6081" ty="46.7104" by="46.5604" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 21 - left -->
+<model-instance id="font2-one" x="-79.1781" y="46.9860" z="1.55375"/>
+<model-instance id="font2-two" x="-79.1781" y="46.9860" z="1.48625"/>
+<pillar refx="dhill" x1="-79.1791" x2="-79.1781" ty="47.1095" by="46.9595" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 22 - left -->
+<model-instance id="font2-two" x="-79.7481" y="47.3851" z="1.55375"/>
+<model-instance id="font2-two" x="-79.7481" y="47.3851" z="1.48625"/>
+<pillar refx="dhill" x1="-79.7491" x2="-79.7481" ty="47.5087" by="47.3587" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 23 - left -->
+<model-instance id="font2-three" x="-80.3181" y="47.7842" z="1.55375"/>
+<model-instance id="font2-two" x="-80.3181" y="47.7842" z="1.48625"/>
+<pillar refx="dhill" x1="-80.3191" x2="-80.3181" ty="47.9078" by="47.7578" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 24 - left -->
+<model-instance id="font2-four" x="-80.8881" y="48.1833" z="1.55375"/>
+<model-instance id="font2-two" x="-80.8881" y="48.1833" z="1.48625"/>
+<pillar refx="dhill" x1="-80.8891" x2="-80.8881" ty="48.3069" by="48.1569" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 25 - left -->
+<model-instance id="font2-five" x="-81.4581" y="48.5825" z="1.55375"/>
+<model-instance id="font2-two" x="-81.4581" y="48.5825" z="1.48625"/>
+<pillar refx="dhill" x1="-81.4591" x2="-81.4581" ty="48.7060" by="48.5560" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 26 - left -->
+<model-instance id="font2-six" x="-82.0281" y="48.9816" z="1.55375"/>
+<model-instance id="font2-two" x="-82.0281" y="48.9816" z="1.48625"/>
+<pillar refx="dhill" x1="-82.0291" x2="-82.0281" ty="49.1051" by="48.9551" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 27 - left -->
+<model-instance id="font2-seven" x="-82.5981" y="49.3807" z="1.55375"/>
+<model-instance id="font2-two" x="-82.5981" y="49.3807" z="1.48625"/>
+<pillar refx="dhill" x1="-82.5991" x2="-82.5981" ty="49.5042" by="49.3542" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 28 - left -->
+<model-instance id="font2-eight" x="-83.1681" y="49.7798" z="1.55375"/>
+<model-instance id="font2-two" x="-83.1681" y="49.7798" z="1.48625"/>
+<pillar refx="dhill" x1="-83.1691" x2="-83.1681" ty="49.9034" by="49.7534" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 29 - left -->
+<model-instance id="font2-nine" x="-83.7381" y="50.1789" z="1.55375"/>
+<model-instance id="font2-two" x="-83.7381" y="50.1789" z="1.48625"/>
+<pillar refx="dhill" x1="-83.7391" x2="-83.7381" ty="50.3025" by="50.1525" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 30 - left -->
+<model-instance id="font2-zero" x="-84.3081" y="50.5781" z="1.55375"/>
+<model-instance id="font2-three" x="-84.3081" y="50.5781" z="1.48625"/>
+<pillar refx="dhill" x1="-84.3091" x2="-84.3081" ty="50.7016" by="50.5516" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+<!-- Gate 31 - left -->
+<model-instance id="font2-one" x="-84.8781" y="50.9772" z="1.55375"/>
+<model-instance id="font2-three" x="-84.8781" y="50.9772" z="1.48625"/>
+<pillar refx="dhill" x1="-84.8791" x2="-84.8781" ty="51.1007" by="50.9507" lz="1.595" rz="1.445" t="Textures\metal.png" m="Materials\material1.xml" c="0xffe449" zbias="2"/>
+</hill>
