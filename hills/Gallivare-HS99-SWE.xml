@@ -1,0 +1,1037 @@
+<hill version="DSJ4-1.7.0" author="Xinitiao">
+<camera type="startgate" refx="inrun" x="22" z="-2" y="1.5" refz="inrun-right" refy="inrun"/>
+<camera type="takeoff" refx="dhill" x="10" z="-10" y="3.5" refz="inrun-right" refy="inrun-top"/>
+<!--camera type="judge" x="45" z="-5" y="9" refz="dhill-right" refy="terrain"/-->
+<camera type="audience" refx="dhill" x="223" z="0" y="1.75" refy="dhill-top"/>
+    <location latitude="67.11491" longitude="20.61389" orientation="55" timezone="1" altitude="480" />
+    <weather pollution="0.0" firstsnow="300" lastsnow="90" maxsnow="1.5" precipitationprobability="0.1" fogprobability="0.1" />
+    <inrun>
+        <profile e="88" es="23" t="6.33" gamma="34" alpha="10.5" r1="95" s="2.34" b1="4.0" z0="0" l="0" f="0.0" />
+        <guardrail z1="-2.0" z2="2.0" x="30" />
+        <startgate default="3" max="25" step="0.75" wind="1.20" z1="-2.55" z2="2.55" pz1="-2.25" pz2="2.25" t1="Textures\wood1.png" m1="Materials\wood.xml" c1="0x5c4832" t2="Textures\wood1.png" m2="Materials\wood.xml" c2="0x5c4832" t3="Textures\wood1.png" m3="Materials\wood.xml" c3="0xc2c2c2" />
+		<gatenumbers z="-1.90" y="0.25" c1="0xffdddd00" c2="0xff37aaff" size="0.1"/>
+        <startbanner z="0" text="GALLIVARE" textsize="0.1" />
+        <frame bh="2.34" bdrz="-1.0" bdlz="1.0" snow="true" t="Textures\snow.png" m="Materials\snow.xml" c0="0x93948f" c1="0xc2c2c2" c2="0xc2c2c2" c3="0xc2c2c2" />
+        <flag x="22.5" z="4.55" hf="1.4" pf="1.5" hp="4.0" rb="0.07" rt="0.05" tf="Textures\flag-swe.png" mf="Materials\flag.xml" tp="Textures\wood1.png" mp="Materials\material1.xml" cp="0xffffff" />
+        <twigs forcedetailed="true" lz="1.4" rz="-1.4" />
+    </inrun>
+    <dhill>
+        <profile alpha="6.28" h="42.66" n="79.12" l1="21" l2="0" a="96" beta-p="35.6" beta="35.6" beta-l="35.6" rl="306.15" r2="95" b0="8" bk="18" ba="18" hr="0" nr="0" ar="0" k="90" hs="99" x0="5" />
+        <fence h="0.03" t="Textures\fenceback.png" m="Materials\material1.xml" c="0xffffff" />
+        <judgetower d="46.74" q="-18" h="+4" t1="Textures\wood3.png" m1="Materials\wood.xml" c1="0x450d0a" t2="Textures\wood3.png" m2="Materials\wood.xml" c2="0x959183" />
+<lights side="right" x0="-60" step="60" size="3" h="18" d="10" r="0.70" g="0.65" b="0.60" attn="0.0005" range="200" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999" />
+        <windflags h="3" l="4.1" d="0.6" t="Textures\rust1.png" m="Materials\metal.xml" c="0x999999" />
+        <measurers c1="0x578ad1" c2="0xeeee00" />
+		<label  season="summer" d="98" text="99" textsize="1.8" c="0x5DBDDD" alignment="right" z="-1" refz="dhill-left"/>
+		<label  season="summer" d="89" text="90" textsize="1.8" c="0x5DBDDD" alignment="right" z="-1" refz="dhill-left"/>
+		<label  season="summer" d="79" text="80" textsize="1.8" c="0x5DBDDD" alignment="right" z="-1" refz="dhill-left"/>
+		<label  season="summer" d="69" text="70" textsize="1.8" c="0x5DBDDD" alignment="right" z="-1" refz="dhill-left"/>
+		<label  season="summer" d="59" text="60" textsize="1.8" c="0x5DBDDD" alignment="right" z="-1" refz="dhill-left"/>
+
+
+		<label  season="summer" d="98" text="HS" textsize="1.8" c="0x5DBDDD" alignment="left" z="1" refz="dhill-right"/>
+		<label  season="summer" d="89" text="K" textsize="1.8" c="0x5DBDDD" alignment="left" z="1" refz="dhill-right"/>
+		<label  season="summer" d="69" text="P" textsize="1.8" c="0x5DBDDD" alignment="left" z="1" refz="dhill-right"/>
+
+        <plastic c="0x93948f" />
+        <!--lines summer-min="50" summer-max="95" winter-min="50" winter-max="95" /-->
+<custom-markings>
+  <summer>
+    <banner d1="44.26" d2="44.28" z1="-2.91" z2="-2.7" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.26" d2="44.28" z1="-2.61" z2="-2.4" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.28" d2="44.3" z1="-2.91" z2="-2.7" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.28" d2="44.3" z1="-2.61" z2="-2.4" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.3" d2="44.31" z1="-2.91" z2="-2.7" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.3" d2="44.31" z1="-2.61" z2="-2.4" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.31" d2="44.32" z1="-2.91" z2="-2.7" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.31" d2="44.32" z1="-2.61" z2="-2.4" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.32" d2="44.34" z1="-2.91" z2="-2.7" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.32" d2="44.34" z1="-2.61" z2="-2.4" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.34" d2="44.36" z1="-2.91" z2="-2.7" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.34" d2="44.36" z1="-2.61" z2="-2.4" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.36" d2="44.37" z1="-2.91" z2="-2.7" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.36" d2="44.37" z1="-2.61" z2="-2.4" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.37" d2="44.39" z1="-2.91" z2="-2.7" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.37" d2="44.39" z1="-2.61" z2="-2.4" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.39" d2="44.4" z1="-2.91" z2="-2.7" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.39" d2="44.4" z1="-2.61" z2="-2.4" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.4" d2="44.42" z1="-2.91" z2="-2.7" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.4" d2="44.42" z1="-2.61" z2="-2.4" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.42" d2="44.43" z1="-2.91" z2="-2.7" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.42" d2="44.43" z1="-2.61" z2="-2.4" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.43" d2="44.45" z1="-2.91" z2="-2.7" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.43" d2="44.45" z1="-2.61" z2="-2.4" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.45" d2="44.46" z1="-2.91" z2="-2.7" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.45" d2="44.46" z1="-2.61" z2="-2.4" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.51" d2="44.52" z1="-3.78" z2="-3.63" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.52" d2="44.54" z1="-3.87" z2="-3.53" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.54" d2="44.55" z1="-3.93" z2="-3.46" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.54" d2="44.55" z1="-2.79" z2="-2.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.54" d2="44.55" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.54" d2="44.55" z1="-1.15" z2="-0.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.54" d2="44.55" z1="0.08" z2="0.38" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.54" d2="44.55" z1="0.84" z2="1.12" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.54" d2="44.55" z1="1.36" z2="1.64" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.54" d2="44.55" z1="2.1" z2="2.72" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.54" d2="44.55" z1="3.24" z2="3.94" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.55" d2="44.57" z1="-3.98" z2="-3.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.55" d2="44.57" z1="-2.79" z2="-2.5" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.55" d2="44.57" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.55" d2="44.57" z1="-1.15" z2="-0.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.55" d2="44.57" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.55" d2="44.57" z1="0.08" z2="0.39" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.55" d2="44.57" z1="0.84" z2="1.14" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.55" d2="44.57" z1="1.35" z2="1.65" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.55" d2="44.57" z1="2.1" z2="2.8" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.55" d2="44.57" z1="3.24" z2="3.96" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.57" d2="44.58" z1="-4" z2="-3.39" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.57" d2="44.58" z1="-2.8" z2="-2.5" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.57" d2="44.58" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.57" d2="44.58" z1="-1.15" z2="-0.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.57" d2="44.58" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.57" d2="44.58" z1="0.09" z2="0.39" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.57" d2="44.58" z1="0.84" z2="1.14" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.57" d2="44.58" z1="1.35" z2="1.65" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.57" d2="44.58" z1="2.1" z2="2.86" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.57" d2="44.58" z1="3.24" z2="3.96" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.58" d2="44.6" z1="-4.04" z2="-3.36" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.58" d2="44.6" z1="-2.81" z2="-2.51" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.58" d2="44.6" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.58" d2="44.6" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.58" d2="44.6" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.58" d2="44.6" z1="0.09" z2="0.39" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.58" d2="44.6" z1="0.84" z2="1.12" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.58" d2="44.6" z1="1.35" z2="1.66" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.58" d2="44.6" z1="2.1" z2="2.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.58" d2="44.6" z1="3.24" z2="3.96" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.6" d2="44.61" z1="-4.06" z2="-3.33" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.6" d2="44.61" z1="-2.8" z2="-2.49" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.6" d2="44.61" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.6" d2="44.61" z1="-1.15" z2="-0.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.6" d2="44.61" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.6" d2="44.61" z1="0.09" z2="0.39" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.6" d2="44.61" z1="0.83" z2="1.13" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.6" d2="44.61" z1="1.34" z2="1.66" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.6" d2="44.61" z1="2.1" z2="2.92" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.6" d2="44.61" z1="3.24" z2="3.96" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.61" d2="44.63" z1="-4.1" z2="-3.3" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.61" d2="44.63" z1="-2.82" z2="-2.49" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.61" d2="44.63" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.61" d2="44.63" z1="-1.15" z2="-0.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.61" d2="44.63" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.61" d2="44.63" z1="0.11" z2="0.41" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.61" d2="44.63" z1="0.83" z2="1.13" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.61" d2="44.63" z1="1.34" z2="1.66" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.61" d2="44.63" z1="2.1" z2="2.94" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.61" d2="44.63" z1="3.24" z2="3.96" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.63" d2="44.64" z1="-4.11" z2="-3.28" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.63" d2="44.64" z1="-2.82" z2="-2.49" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.63" d2="44.64" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.63" d2="44.64" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.63" d2="44.64" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.63" d2="44.64" z1="0.1" z2="0.4" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.63" d2="44.64" z1="0.82" z2="1.11" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.63" d2="44.64" z1="1.33" z2="1.68" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.63" d2="44.64" z1="2.1" z2="2.95" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.63" d2="44.64" z1="3.24" z2="3.96" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.64" d2="44.66" z1="-4.12" z2="-3.27" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.64" d2="44.66" z1="-2.84" z2="-2.48" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.64" d2="44.66" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.64" d2="44.66" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.64" d2="44.66" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.64" d2="44.66" z1="0.1" z2="0.4" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.64" d2="44.66" z1="0.81" z2="1.11" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.64" d2="44.66" z1="1.32" z2="1.68" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.64" d2="44.66" z1="2.1" z2="2.97" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.64" d2="44.66" z1="3.24" z2="3.96" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.66" d2="44.67" z1="-4.14" z2="-3.26" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.66" d2="44.67" z1="-2.84" z2="-2.48" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.66" d2="44.67" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.66" d2="44.67" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.66" d2="44.67" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.66" d2="44.67" z1="0.12" z2="0.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.66" d2="44.67" z1="0.81" z2="1.11" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.66" d2="44.67" z1="1.32" z2="1.68" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.66" d2="44.67" z1="2.1" z2="2.98" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.66" d2="44.67" z1="3.24" z2="3.96" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.67" d2="44.69" z1="-4.16" z2="-3.27" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.67" d2="44.69" z1="-2.84" z2="-2.48" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.67" d2="44.69" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.67" d2="44.69" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.67" d2="44.69" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.67" d2="44.69" z1="0.12" z2="0.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.67" d2="44.69" z1="0.81" z2="1.09" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.67" d2="44.69" z1="1.32" z2="1.69" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.67" d2="44.69" z1="2.1" z2="3" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.67" d2="44.69" z1="3.24" z2="3.96" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.69" d2="44.7" z1="-4.17" z2="-3.28" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.69" d2="44.7" z1="-2.85" z2="-2.46" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.69" d2="44.7" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.69" d2="44.7" z1="-1.15" z2="-0.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.69" d2="44.7" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.69" d2="44.7" z1="0.12" z2="0.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.69" d2="44.7" z1="0.8" z2="1.1" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.69" d2="44.7" z1="1.31" z2="1.7" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.69" d2="44.7" z1="2.1" z2="3.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.69" d2="44.7" z1="3.24" z2="3.96" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.7" d2="44.72" z1="-4.18" z2="-3.3" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.7" d2="44.72" z1="-2.85" z2="-2.46" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.7" d2="44.72" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.7" d2="44.72" z1="-1.15" z2="-0.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.7" d2="44.72" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.7" d2="44.72" z1="0.14" z2="0.44" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.7" d2="44.72" z1="0.8" z2="1.1" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.7" d2="44.72" z1="1.31" z2="1.7" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.7" d2="44.72" z1="2.1" z2="3.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.7" d2="44.72" z1="3.24" z2="3.96" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.72" d2="44.73" z1="-4.2" z2="-3.32" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.72" d2="44.73" z1="-2.85" z2="-2.46" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.72" d2="44.73" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.72" d2="44.73" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.72" d2="44.73" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.72" d2="44.73" z1="0.13" z2="0.43" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.72" d2="44.73" z1="0.79" z2="1.08" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.72" d2="44.73" z1="1.29" z2="1.71" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.72" d2="44.73" z1="2.1" z2="3.03" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.72" d2="44.73" z1="3.24" z2="3.96" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.73" d2="44.75" z1="-4.22" z2="-3.33" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.73" d2="44.75" z1="-2.86" z2="-2.45" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.73" d2="44.75" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.73" d2="44.75" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.73" d2="44.75" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.73" d2="44.75" z1="0.13" z2="0.43" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.73" d2="44.75" z1="0.79" z2="1.08" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.73" d2="44.75" z1="1.29" z2="1.71" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.73" d2="44.75" z1="2.1" z2="3.03" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.73" d2="44.75" z1="3.24" z2="3.96" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.75" d2="44.76" z1="-4.23" z2="-3.33" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.75" d2="44.76" z1="-2.86" z2="-2.44" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.75" d2="44.76" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.75" d2="44.76" z1="-1.15" z2="-0.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.75" d2="44.76" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.75" d2="44.76" z1="0.15" z2="0.44" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.75" d2="44.76" z1="0.78" z2="1.07" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.75" d2="44.76" z1="1.29" z2="1.71" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.75" d2="44.76" z1="2.1" z2="3.04" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.75" d2="44.76" z1="3.24" z2="3.96" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.76" d2="44.78" z1="-4.23" z2="-3.81" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.76" d2="44.78" z1="-3.6" z2="-3.34" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.76" d2="44.78" z1="-2.86" z2="-2.44" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.76" d2="44.78" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.76" d2="44.78" z1="-1.15" z2="-0.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.76" d2="44.78" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.76" d2="44.78" z1="0.15" z2="0.45" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.76" d2="44.78" z1="0.78" z2="1.07" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.76" d2="44.78" z1="1.28" z2="1.72" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.76" d2="44.78" z1="2.1" z2="3.04" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.76" d2="44.78" z1="3.24" z2="3.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.78" d2="44.79" z1="-4.24" z2="-3.86" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.78" d2="44.79" z1="-3.56" z2="-3.36" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.78" d2="44.79" z1="-2.88" z2="-2.43" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.78" d2="44.79" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.78" d2="44.79" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.78" d2="44.79" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.78" d2="44.79" z1="0.15" z2="0.45" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.78" d2="44.79" z1="0.78" z2="1.06" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.78" d2="44.79" z1="1.27" z2="1.72" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.78" d2="44.79" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.78" d2="44.79" z1="2.74" z2="3.04" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.78" d2="44.79" z1="3.24" z2="3.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.79" d2="44.81" z1="-4.24" z2="-3.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.79" d2="44.81" z1="-3.53" z2="-3.38" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.79" d2="44.81" z1="-2.88" z2="-2.43" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.79" d2="44.81" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.79" d2="44.81" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.79" d2="44.81" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.79" d2="44.81" z1="0.16" z2="0.45" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.79" d2="44.81" z1="0.76" z2="1.05" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.79" d2="44.81" z1="1.27" z2="1.72" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.79" d2="44.81" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.79" d2="44.81" z1="2.77" z2="3.04" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.79" d2="44.81" z1="3.24" z2="3.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.81" d2="44.82" z1="-4.26" z2="-3.9" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.81" d2="44.82" z1="-3.51" z2="-3.39" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.81" d2="44.82" z1="-2.88" z2="-2.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.81" d2="44.82" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.81" d2="44.82" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.81" d2="44.82" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.81" d2="44.82" z1="0.16" z2="0.46" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.81" d2="44.82" z1="0.76" z2="1.05" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.81" d2="44.82" z1="1.26" z2="1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.81" d2="44.82" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.81" d2="44.82" z1="2.79" z2="3.04" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.81" d2="44.82" z1="3.24" z2="3.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.82" d2="44.84" z1="-4.28" z2="-3.93" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.82" d2="44.84" z1="-3.48" z2="-3.4" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.82" d2="44.84" z1="-2.9" z2="-2.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.82" d2="44.84" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.82" d2="44.84" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.82" d2="44.84" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.82" d2="44.84" z1="0.16" z2="0.46" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.82" d2="44.84" z1="0.76" z2="1.05" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.82" d2="44.84" z1="1.26" z2="1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.82" d2="44.84" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.82" d2="44.84" z1="2.79" z2="3.06" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.82" d2="44.84" z1="3.24" z2="3.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.84" d2="44.85" z1="-4.28" z2="-3.94" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.84" d2="44.85" z1="-3.47" z2="-3.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.84" d2="44.85" z1="-2.9" z2="-2.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.84" d2="44.85" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.84" d2="44.85" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.84" d2="44.85" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.84" d2="44.85" z1="0.18" z2="0.46" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.84" d2="44.85" z1="0.75" z2="1.03" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.84" d2="44.85" z1="1.26" z2="1.75" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.84" d2="44.85" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.84" d2="44.85" z1="2.79" z2="3.06" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.84" d2="44.85" z1="3.24" z2="3.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.85" d2="44.87" z1="-4.28" z2="-3.96" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.85" d2="44.87" z1="-3.45" z2="-3.44" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.85" d2="44.87" z1="-2.91" z2="-2.4" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.85" d2="44.87" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.85" d2="44.87" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.85" d2="44.87" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.85" d2="44.87" z1="0.18" z2="0.46" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.85" d2="44.87" z1="0.75" z2="1.03" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.85" d2="44.87" z1="1.24" z2="1.75" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.85" d2="44.87" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.85" d2="44.87" z1="2.8" z2="3.06" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.85" d2="44.87" z1="3.24" z2="3.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.87" d2="44.88" z1="-4.29" z2="-3.98" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.87" d2="44.88" z1="-2.91" z2="-2.67" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.87" d2="44.88" z1="-2.64" z2="-2.4" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.87" d2="44.88" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.87" d2="44.88" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.87" d2="44.88" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.87" d2="44.88" z1="0.18" z2="0.48" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.87" d2="44.88" z1="0.75" z2="1.03" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.87" d2="44.88" z1="1.24" z2="1.48" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.87" d2="44.88" z1="1.5" z2="1.75" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.87" d2="44.88" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.87" d2="44.88" z1="2.8" z2="3.06" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.87" d2="44.88" z1="3.24" z2="3.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.88" d2="44.9" z1="-4.29" z2="-3.99" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.88" d2="44.9" z1="-2.91" z2="-2.67" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.88" d2="44.9" z1="-2.64" z2="-2.4" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.88" d2="44.9" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.88" d2="44.9" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.88" d2="44.9" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.88" d2="44.9" z1="0.19" z2="0.48" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.88" d2="44.9" z1="0.75" z2="1.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.88" d2="44.9" z1="1.24" z2="1.48" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.88" d2="44.9" z1="1.51" z2="1.77" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.88" d2="44.9" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.88" d2="44.9" z1="2.8" z2="3.06" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.88" d2="44.9" z1="3.24" z2="3.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.9" d2="44.91" z1="-4.29" z2="-3.99" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.9" d2="44.91" z1="-2.92" z2="-2.67" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.9" d2="44.91" z1="-2.64" z2="-2.39" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.9" d2="44.91" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.9" d2="44.91" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.9" d2="44.91" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.9" d2="44.91" z1="0.19" z2="0.48" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.9" d2="44.91" z1="0.73" z2="1.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.9" d2="44.91" z1="1.23" z2="1.48" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.9" d2="44.91" z1="1.51" z2="1.77" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.9" d2="44.91" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.9" d2="44.91" z1="2.8" z2="3.06" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.9" d2="44.91" z1="3.24" z2="3.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.91" d2="44.93" z1="-4.3" z2="-4" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.91" d2="44.93" z1="-2.92" z2="-2.68" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.91" d2="44.93" z1="-2.62" z2="-2.38" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.91" d2="44.93" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.91" d2="44.93" z1="-1.15" z2="-0.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.91" d2="44.93" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.91" d2="44.93" z1="0.2" z2="0.5" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.91" d2="44.93" z1="0.74" z2="1.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.91" d2="44.93" z1="1.23" z2="1.47" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.91" d2="44.93" z1="1.52" z2="1.77" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.91" d2="44.93" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.91" d2="44.93" z1="2.79" z2="3.06" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.91" d2="44.93" z1="3.24" z2="3.53" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.93" d2="44.94" z1="-4.3" z2="-4.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.93" d2="44.94" z1="-2.92" z2="-2.68" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.93" d2="44.94" z1="-2.62" z2="-2.38" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.93" d2="44.94" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.93" d2="44.94" z1="-1.15" z2="-0.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.93" d2="44.94" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.93" d2="44.94" z1="0.2" z2="0.5" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.93" d2="44.94" z1="0.74" z2="1.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.93" d2="44.94" z1="1.22" z2="1.47" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.93" d2="44.94" z1="1.53" z2="1.78" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.93" d2="44.94" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.93" d2="44.94" z1="2.79" z2="3.04" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.93" d2="44.94" z1="3.24" z2="3.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.94" d2="44.96" z1="-4.3" z2="-4.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.94" d2="44.96" z1="-2.94" z2="-2.68" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.94" d2="44.96" z1="-2.62" z2="-2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.94" d2="44.96" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.94" d2="44.96" z1="-1.15" z2="-0.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.94" d2="44.96" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.94" d2="44.96" z1="0.21" z2="0.5" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.94" d2="44.96" z1="0.72" z2="1.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.94" d2="44.96" z1="1.22" z2="1.47" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.94" d2="44.96" z1="1.53" z2="1.78" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.94" d2="44.96" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.94" d2="44.96" z1="2.78" z2="3.04" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.94" d2="44.96" z1="3.24" z2="3.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.96" d2="44.97" z1="-4.3" z2="-4.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.96" d2="44.97" z1="-2.94" z2="-2.7" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.96" d2="44.97" z1="-2.61" z2="-2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.96" d2="44.97" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.96" d2="44.97" z1="-1.15" z2="-0.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.96" d2="44.97" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.96" d2="44.97" z1="0.21" z2="0.5" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.96" d2="44.97" z1="0.72" z2="1.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.96" d2="44.97" z1="1.22" z2="1.47" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.96" d2="44.97" z1="1.53" z2="1.79" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.96" d2="44.97" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.96" d2="44.97" z1="2.76" z2="3.05" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.96" d2="44.97" z1="3.24" z2="3.53" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.97" d2="44.99" z1="-4.32" z2="-4.04" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.97" d2="44.99" z1="-2.94" z2="-2.7" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.97" d2="44.99" z1="-2.61" z2="-2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.97" d2="44.99" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.97" d2="44.99" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.97" d2="44.99" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.97" d2="44.99" z1="0.21" z2="0.51" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.97" d2="44.99" z1="0.72" z2="0.99" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.97" d2="44.99" z1="1.2" z2="1.45" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.97" d2="44.99" z1="1.54" z2="1.8" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.97" d2="44.99" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.97" d2="44.99" z1="2.7" z2="3.04" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.97" d2="44.99" z1="3.24" z2="3.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.99" d2="45" z1="-4.32" z2="-4.04" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.99" d2="45" z1="-3.69" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.99" d2="45" z1="-2.96" z2="-2.7" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.99" d2="45" z1="-2.61" z2="-2.36" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.99" d2="45" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.99" d2="45" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.99" d2="45" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.99" d2="45" z1="0.22" z2="0.51" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.99" d2="45" z1="0.72" z2="0.99" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.99" d2="45" z1="1.2" z2="1.45" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.99" d2="45" z1="1.54" z2="1.78" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.99" d2="45" z1="2.1" z2="3.04" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.99" d2="45" z1="3.24" z2="3.93" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="44.99" d2="45" z1="4.14" z2="4.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45" d2="45.02" z1="-4.32" z2="-4.04" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45" d2="45.02" z1="-3.69" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45" d2="45.02" z1="-2.61" z2="-2.36" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45" d2="45.02" z1="-2.01" z2="-1.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45" d2="45.02" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45" d2="45.02" z1="0.22" z2="0.51" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45" d2="45.02" z1="1.2" z2="1.45" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45" d2="45.02" z1="2.1" z2="3.04" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45" d2="45.02" z1="3.24" z2="3.93" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45" d2="45.02" z1="4.14" z2="4.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.02" d2="45.03" z1="-4.32" z2="-4.05" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.02" d2="45.03" z1="-3.69" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.02" d2="45.03" z1="-2.6" z2="-2.36" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.02" d2="45.03" z1="-2.01" z2="-1.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.02" d2="45.03" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.02" d2="45.03" z1="0.22" z2="0.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.02" d2="45.03" z1="1.18" z2="1.44" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.02" d2="45.03" z1="2.1" z2="3.03" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.02" d2="45.03" z1="3.24" z2="3.93" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.02" d2="45.03" z1="4.14" z2="4.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.03" d2="45.05" z1="-4.32" z2="-4.05" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.03" d2="45.05" z1="-3.69" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.03" d2="45.05" z1="-2.6" z2="-2.34" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.03" d2="45.05" z1="-2.01" z2="-1.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.03" d2="45.05" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.03" d2="45.05" z1="0.24" z2="0.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.03" d2="45.05" z1="1.18" z2="1.44" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.03" d2="45.05" z1="2.1" z2="3.03" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.03" d2="45.05" z1="3.24" z2="3.93" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.03" d2="45.05" z1="4.14" z2="4.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.05" d2="45.06" z1="-4.32" z2="-4.05" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.05" d2="45.06" z1="-3.69" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.05" d2="45.06" z1="-2.6" z2="-2.34" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.05" d2="45.06" z1="-2.01" z2="-1.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.05" d2="45.06" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.05" d2="45.06" z1="0.24" z2="0.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.05" d2="45.06" z1="1.18" z2="1.44" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.05" d2="45.06" z1="2.1" z2="3.03" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.05" d2="45.06" z1="3.24" z2="3.93" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.05" d2="45.06" z1="4.14" z2="4.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.06" d2="45.08" z1="-4.32" z2="-4.05" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.06" d2="45.08" z1="-3.69" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.06" d2="45.08" z1="-2.58" z2="-2.33" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.06" d2="45.08" z1="-2.01" z2="-1.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.06" d2="45.08" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.06" d2="45.08" z1="0.24" z2="0.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.06" d2="45.08" z1="1.17" z2="1.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.06" d2="45.08" z1="2.1" z2="3.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.06" d2="45.08" z1="3.24" z2="3.93" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.06" d2="45.08" z1="4.14" z2="4.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.08" d2="45.09" z1="-4.32" z2="-4.05" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.08" d2="45.09" z1="-3.69" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.08" d2="45.09" z1="-2.58" z2="-2.33" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.08" d2="45.09" z1="-2.01" z2="-1.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.08" d2="45.09" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.08" d2="45.09" z1="0.25" z2="0.54" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.08" d2="45.09" z1="1.17" z2="1.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.08" d2="45.09" z1="2.1" z2="3.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.08" d2="45.09" z1="3.24" z2="3.93" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.08" d2="45.09" z1="4.14" z2="4.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.09" d2="45.11" z1="-4.32" z2="-4.05" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.09" d2="45.11" z1="-3.69" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.09" d2="45.11" z1="-2.58" z2="-2.33" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.09" d2="45.11" z1="-2.01" z2="-1.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.09" d2="45.11" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.09" d2="45.11" z1="0.25" z2="0.54" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.09" d2="45.11" z1="1.17" z2="1.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.09" d2="45.11" z1="2.1" z2="3" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.09" d2="45.11" z1="3.24" z2="3.93" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.09" d2="45.11" z1="4.14" z2="4.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.11" d2="45.12" z1="-4.32" z2="-4.05" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.11" d2="45.12" z1="-3.69" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.11" d2="45.12" z1="-2.57" z2="-2.31" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.11" d2="45.12" z1="-2.01" z2="-1.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.11" d2="45.12" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.11" d2="45.12" z1="0.25" z2="0.54" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.11" d2="45.12" z1="1.15" z2="1.41" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.11" d2="45.12" z1="2.1" z2="2.98" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.11" d2="45.12" z1="3.24" z2="3.93" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.11" d2="45.12" z1="4.14" z2="4.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.12" d2="45.14" z1="-4.32" z2="-4.05" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.12" d2="45.14" z1="-3.69" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.12" d2="45.14" z1="-2.57" z2="-2.31" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.12" d2="45.14" z1="-2.01" z2="-1.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.12" d2="45.14" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.12" d2="45.14" z1="0.27" z2="0.55" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.12" d2="45.14" z1="1.15" z2="1.41" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.12" d2="45.14" z1="2.1" z2="2.97" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.12" d2="45.14" z1="3.24" z2="3.93" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.12" d2="45.14" z1="4.14" z2="4.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.14" d2="45.15" z1="-4.32" z2="-4.05" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.14" d2="45.15" z1="-3.69" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.14" d2="45.15" z1="-2.57" z2="-2.31" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.14" d2="45.15" z1="-2.01" z2="-1.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.14" d2="45.15" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.14" d2="45.15" z1="0.27" z2="0.55" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.14" d2="45.15" z1="1.14" z2="1.41" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.14" d2="45.15" z1="2.1" z2="2.95" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.14" d2="45.15" z1="3.24" z2="3.93" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.14" d2="45.15" z1="4.14" z2="4.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.15" d2="45.17" z1="-4.32" z2="-4.05" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.15" d2="45.17" z1="-3.69" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.15" d2="45.17" z1="-2.55" z2="-2.3" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.15" d2="45.17" z1="-2.01" z2="-1.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.15" d2="45.17" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.15" d2="45.17" z1="0.27" z2="0.55" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.15" d2="45.17" z1="1.14" z2="1.39" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.15" d2="45.17" z1="2.1" z2="2.94" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.15" d2="45.17" z1="3.24" z2="3.93" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.15" d2="45.17" z1="4.14" z2="4.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.17" d2="45.18" z1="-4.32" z2="-4.05" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.17" d2="45.18" z1="-3.69" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.17" d2="45.18" z1="-2.55" z2="-2.3" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.17" d2="45.18" z1="-2.01" z2="-1.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.17" d2="45.18" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.17" d2="45.18" z1="0.28" z2="0.55" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.17" d2="45.18" z1="1.14" z2="1.39" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.17" d2="45.18" z1="2.1" z2="2.91" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.17" d2="45.18" z1="3.24" z2="3.93" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.17" d2="45.18" z1="4.14" z2="4.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.18" d2="45.2" z1="-4.32" z2="-4.05" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.18" d2="45.2" z1="-3.69" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.18" d2="45.2" z1="-2.55" z2="-2.3" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.18" d2="45.2" z1="-2.01" z2="-1.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.18" d2="45.2" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.18" d2="45.2" z1="0.28" z2="0.57" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.18" d2="45.2" z1="1.12" z2="1.39" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.18" d2="45.2" z1="2.1" z2="2.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.18" d2="45.2" z1="3.24" z2="3.93" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.18" d2="45.2" z1="4.14" z2="4.42" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.2" d2="45.21" z1="-4.32" z2="-4.04" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.2" d2="45.21" z1="-3.69" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.2" d2="45.21" z1="-3.03" z2="-2.28" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.2" d2="45.21" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.2" d2="45.21" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.2" d2="45.21" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.2" d2="45.21" z1="0.28" z2="0.57" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.2" d2="45.21" z1="0.66" z2="0.91" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.2" d2="45.21" z1="1.12" z2="1.87" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.2" d2="45.21" z1="2.1" z2="2.82" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.2" d2="45.21" z1="3.24" z2="3.91" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.21" d2="45.23" z1="-4.32" z2="-4.04" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.21" d2="45.23" z1="-3.5" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.21" d2="45.23" z1="-3.03" z2="-2.28" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.21" d2="45.23" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.21" d2="45.23" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.21" d2="45.23" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.21" d2="45.23" z1="0.3" z2="0.57" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.21" d2="45.23" z1="0.64" z2="0.91" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.21" d2="45.23" z1="1.12" z2="1.87" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.21" d2="45.23" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.21" d2="45.23" z1="2.55" z2="2.84" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.21" d2="45.23" z1="3.24" z2="3.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.23" d2="45.24" z1="-4.32" z2="-4.04" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.23" d2="45.24" z1="-3.5" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.23" d2="45.24" z1="-3.03" z2="-2.28" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.23" d2="45.24" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.23" d2="45.24" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.23" d2="45.24" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.23" d2="45.24" z1="0.3" z2="0.57" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.23" d2="45.24" z1="0.64" z2="0.91" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.23" d2="45.24" z1="1.11" z2="1.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.23" d2="45.24" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.23" d2="45.24" z1="2.55" z2="2.84" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.23" d2="45.24" z1="3.24" z2="3.53" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.24" d2="45.26" z1="-4.3" z2="-4.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.24" d2="45.26" z1="-3.49" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.24" d2="45.26" z1="-3.04" z2="-2.26" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.24" d2="45.26" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.24" d2="45.26" z1="-1.15" z2="-0.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.24" d2="45.26" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.24" d2="45.26" z1="0.3" z2="0.59" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.24" d2="45.26" z1="0.65" z2="0.9" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.24" d2="45.26" z1="1.11" z2="1.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.24" d2="45.26" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.24" d2="45.26" z1="2.57" z2="2.85" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.24" d2="45.26" z1="3.24" z2="3.53" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.26" d2="45.27" z1="-4.3" z2="-4.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.26" d2="45.27" z1="-3.49" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.26" d2="45.27" z1="-3.04" z2="-2.26" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.26" d2="45.27" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.26" d2="45.27" z1="-1.15" z2="-0.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.26" d2="45.27" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.26" d2="45.27" z1="0.32" z2="0.59" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.26" d2="45.27" z1="0.65" z2="0.9" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.26" d2="45.27" z1="1.11" z2="1.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.26" d2="45.27" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.26" d2="45.27" z1="2.57" z2="2.85" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.26" d2="45.27" z1="3.24" z2="3.53" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.27" d2="45.29" z1="-4.3" z2="-4.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.27" d2="45.29" z1="-3.49" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.27" d2="45.29" z1="-3.04" z2="-2.26" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.27" d2="45.29" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.27" d2="45.29" z1="-1.15" z2="-0.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.27" d2="45.29" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.27" d2="45.29" z1="0.32" z2="0.59" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.27" d2="45.29" z1="0.63" z2="0.9" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.27" d2="45.29" z1="1.1" z2="1.91" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.27" d2="45.29" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.27" d2="45.29" z1="2.58" z2="2.86" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.27" d2="45.29" z1="3.24" z2="3.53" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.29" d2="45.3" z1="-4.3" z2="-4" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.29" d2="45.3" z1="-3.5" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.29" d2="45.3" z1="-3.06" z2="-2.25" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.29" d2="45.3" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.29" d2="45.3" z1="-1.15" z2="-0.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.29" d2="45.3" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.29" d2="45.3" z1="0.32" z2="0.59" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.29" d2="45.3" z1="0.63" z2="0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.29" d2="45.3" z1="1.1" z2="1.91" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.29" d2="45.3" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.29" d2="45.3" z1="2.58" z2="2.86" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.29" d2="45.3" z1="3.24" z2="3.53" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.3" d2="45.32" z1="-4.29" z2="-3.99" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.3" d2="45.32" z1="-3.5" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.3" d2="45.32" z1="-3.06" z2="-2.25" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.3" d2="45.32" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.3" d2="45.32" z1="-1.15" z2="-0.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.3" d2="45.32" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.3" d2="45.32" z1="0.33" z2="0.6" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.3" d2="45.32" z1="0.63" z2="0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.3" d2="45.32" z1="1.1" z2="1.92" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.3" d2="45.32" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.3" d2="45.32" z1="2.6" z2="2.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.3" d2="45.32" z1="3.24" z2="3.53" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.32" d2="45.33" z1="-4.29" z2="-3.99" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.32" d2="45.33" z1="-3.5" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.32" d2="45.33" z1="-3.08" z2="-2.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.32" d2="45.33" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.32" d2="45.33" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.32" d2="45.33" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.32" d2="45.33" z1="0.33" z2="0.6" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.32" d2="45.33" z1="0.63" z2="0.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.32" d2="45.33" z1="1.08" z2="1.92" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.32" d2="45.33" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.32" d2="45.33" z1="2.6" z2="2.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.32" d2="45.33" z1="3.24" z2="3.53" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.33" d2="45.35" z1="-4.29" z2="-3.98" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.33" d2="45.35" z1="-3.5" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.33" d2="45.35" z1="-3.08" z2="-2.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.33" d2="45.35" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.33" d2="45.35" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.33" d2="45.35" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.33" d2="45.35" z1="0.33" z2="0.6" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.33" d2="45.35" z1="0.61" z2="0.87" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.33" d2="45.35" z1="1.08" z2="1.92" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.33" d2="45.35" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.33" d2="45.35" z1="2.61" z2="2.9" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.33" d2="45.35" z1="3.24" z2="3.53" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.35" d2="45.36" z1="-4.28" z2="-3.96" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.35" d2="45.36" z1="-3.5" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.35" d2="45.36" z1="-3.08" z2="-2.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.35" d2="45.36" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.35" d2="45.36" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.35" d2="45.36" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.35" d2="45.36" z1="0.33" z2="0.6" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.35" d2="45.36" z1="0.61" z2="0.87" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.35" d2="45.36" z1="1.06" z2="1.93" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.35" d2="45.36" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.35" d2="45.36" z1="2.61" z2="2.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.35" d2="45.36" z1="3.24" z2="3.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.36" d2="45.38" z1="-4.28" z2="-3.94" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.36" d2="45.38" z1="-3.5" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.36" d2="45.38" z1="-3.09" z2="-2.22" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.36" d2="45.38" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.36" d2="45.38" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.36" d2="45.38" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.36" d2="45.38" z1="0.34" z2="0.6" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.36" d2="45.38" z1="0.61" z2="0.87" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.36" d2="45.38" z1="1.06" z2="1.93" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.36" d2="45.38" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.36" d2="45.38" z1="2.62" z2="2.91" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.36" d2="45.38" z1="3.24" z2="3.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.38" d2="45.39" z1="-4.28" z2="-3.93" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.38" d2="45.39" z1="-3.5" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.38" d2="45.39" z1="-3.09" z2="-2.84" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.38" d2="45.39" z1="-2.48" z2="-2.22" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.38" d2="45.39" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.38" d2="45.39" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.38" d2="45.39" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.38" d2="45.39" z1="0.34" z2="0.85" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.38" d2="45.39" z1="1.06" z2="1.32" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.38" d2="45.39" z1="1.66" z2="1.93" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.38" d2="45.39" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.38" d2="45.39" z1="2.62" z2="2.91" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.38" d2="45.39" z1="3.24" z2="3.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.39" d2="45.41" z1="-4.26" z2="-3.92" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.39" d2="45.41" z1="-3.5" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.39" d2="45.41" z1="-3.09" z2="-2.84" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.39" d2="45.41" z1="-2.48" z2="-2.22" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.39" d2="45.41" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.39" d2="45.41" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.39" d2="45.41" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.39" d2="45.41" z1="0.34" z2="0.85" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.39" d2="45.41" z1="1.05" z2="1.32" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.39" d2="45.41" z1="1.68" z2="1.95" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.39" d2="45.41" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.39" d2="45.41" z1="2.64" z2="2.92" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.39" d2="45.41" z1="3.24" z2="3.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.41" d2="45.42" z1="-4.26" z2="-3.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.41" d2="45.42" z1="-3.51" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.41" d2="45.42" z1="-3.1" z2="-2.85" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.41" d2="45.42" z1="-2.47" z2="-2.2" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.41" d2="45.42" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.41" d2="45.42" z1="-1.15" z2="-0.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.41" d2="45.42" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.41" d2="45.42" z1="0.36" z2="0.86" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.41" d2="45.42" z1="1.05" z2="1.32" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.41" d2="45.42" z1="1.68" z2="1.95" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.41" d2="45.42" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.41" d2="45.42" z1="2.64" z2="2.92" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.41" d2="45.42" z1="3.24" z2="3.53" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.42" d2="45.44" z1="-4.24" z2="-3.86" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.42" d2="45.44" z1="-3.54" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.42" d2="45.44" z1="-3.11" z2="-2.85" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.42" d2="45.44" z1="-2.48" z2="-2.21" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.42" d2="45.44" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.42" d2="45.44" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.42" d2="45.44" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.42" d2="45.44" z1="0.36" z2="0.84" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.42" d2="45.44" z1="1.05" z2="1.3" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.42" d2="45.44" z1="1.68" z2="1.95" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.42" d2="45.44" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.42" d2="45.44" z1="2.65" z2="2.94" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.42" d2="45.44" z1="3.24" z2="3.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.44" d2="45.45" z1="-4.23" z2="-3.82" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.44" d2="45.45" z1="-3.58" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.44" d2="45.45" z1="-3.11" z2="-2.85" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.44" d2="45.45" z1="-2.46" z2="-2.21" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.44" d2="45.45" z1="-2.01" z2="-1.74" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.44" d2="45.45" z1="-1.16" z2="-0.89" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.44" d2="45.45" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.44" d2="45.45" z1="0.36" z2="0.84" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.44" d2="45.45" z1="1.03" z2="1.3" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.44" d2="45.45" z1="1.69" z2="1.96" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.44" d2="45.45" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.44" d2="45.45" z1="2.66" z2="2.94" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.44" d2="45.45" z1="3.24" z2="3.52" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.45" d2="45.47" z1="-4.23" z2="-3.75" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.45" d2="45.47" z1="-3.67" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.45" d2="45.47" z1="-3.12" z2="-2.86" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.45" d2="45.47" z1="-2.46" z2="-2.19" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.45" d2="45.47" z1="-2.01" z2="-1.29" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.45" d2="45.47" z1="-1.15" z2="-0.43" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.45" d2="45.47" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.45" d2="45.47" z1="0.38" z2="0.84" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.45" d2="45.47" z1="1.04" z2="1.31" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.45" d2="45.47" z1="1.7" z2="1.97" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.45" d2="45.47" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.45" d2="45.47" z1="2.67" z2="2.96" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.45" d2="45.47" z1="3.24" z2="3.98" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.47" d2="45.48" z1="-4.22" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.47" d2="45.48" z1="-3.12" z2="-2.86" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.47" d2="45.48" z1="-2.46" z2="-2.19" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.47" d2="45.48" z1="-2.01" z2="-1.29" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.47" d2="45.48" z1="-1.15" z2="-0.43" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.47" d2="45.48" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.47" d2="45.48" z1="0.38" z2="0.83" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.47" d2="45.48" z1="1.04" z2="1.29" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.47" d2="45.48" z1="1.7" z2="1.96" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.47" d2="45.48" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.47" d2="45.48" z1="2.67" z2="2.96" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.47" d2="45.48" z1="3.24" z2="3.98" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.48" d2="45.5" z1="-4.2" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.48" d2="45.5" z1="-3.14" z2="-2.86" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.48" d2="45.5" z1="-2.45" z2="-2.19" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.48" d2="45.5" z1="-2.01" z2="-1.29" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.48" d2="45.5" z1="-1.16" z2="-0.44" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.48" d2="45.5" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.48" d2="45.5" z1="0.37" z2="0.82" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.48" d2="45.5" z1="1.02" z2="1.29" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.48" d2="45.5" z1="1.71" z2="1.98" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.48" d2="45.5" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.48" d2="45.5" z1="2.68" z2="2.97" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.48" d2="45.5" z1="3.24" z2="3.97" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.5" d2="45.51" z1="-4.18" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.5" d2="45.51" z1="-3.14" z2="-2.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.5" d2="45.51" z1="-2.44" z2="-2.17" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.5" d2="45.51" z1="-2.01" z2="-1.29" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.5" d2="45.51" z1="-1.15" z2="-0.43" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.5" d2="45.51" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.5" d2="45.51" z1="0.39" z2="0.83" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.5" d2="45.51" z1="1.02" z2="1.29" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.5" d2="45.51" z1="1.71" z2="1.98" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.5" d2="45.51" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.5" d2="45.51" z1="2.68" z2="2.97" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.5" d2="45.51" z1="3.24" z2="3.98" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.51" d2="45.53" z1="-4.18" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.51" d2="45.53" z1="-3.14" z2="-2.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.51" d2="45.53" z1="-2.44" z2="-2.17" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.51" d2="45.53" z1="-2.01" z2="-1.29" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.51" d2="45.53" z1="-1.15" z2="-0.43" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.51" d2="45.53" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.51" d2="45.53" z1="0.39" z2="0.81" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.51" d2="45.53" z1="1.02" z2="1.28" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.51" d2="45.53" z1="1.71" z2="1.98" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.51" d2="45.53" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.51" d2="45.53" z1="2.69" z2="2.99" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.51" d2="45.53" z1="3.24" z2="3.98" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.53" d2="45.54" z1="-4.17" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.53" d2="45.54" z1="-3.15" z2="-2.88" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.53" d2="45.54" z1="-2.43" z2="-2.18" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.53" d2="45.54" z1="-2.01" z2="-1.29" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.53" d2="45.54" z1="-1.16" z2="-0.44" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.53" d2="45.54" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.53" d2="45.54" z1="0.39" z2="0.81" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.53" d2="45.54" z1="1" z2="1.27" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.53" d2="45.54" z1="1.71" z2="1.99" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.53" d2="45.54" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.53" d2="45.54" z1="2.7" z2="2.98" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.53" d2="45.54" z1="3.24" z2="3.97" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.54" d2="45.56" z1="-4.16" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.54" d2="45.56" z1="-3.15" z2="-2.9" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.54" d2="45.56" z1="-2.43" z2="-2.16" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.54" d2="45.56" z1="-2.01" z2="-1.29" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.54" d2="45.56" z1="-1.16" z2="-0.44" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.54" d2="45.56" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.54" d2="45.56" z1="0.4" z2="0.81" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.54" d2="45.56" z1="1" z2="1.27" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.54" d2="45.56" z1="1.72" z2="1.99" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.54" d2="45.56" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.54" d2="45.56" z1="2.7" z2="3" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.54" d2="45.56" z1="3.24" z2="3.97" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.56" d2="45.57" z1="-4.12" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.56" d2="45.57" z1="-3.15" z2="-2.9" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.56" d2="45.57" z1="-2.43" z2="-2.16" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.56" d2="45.57" z1="-2.01" z2="-1.29" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.56" d2="45.57" z1="-1.16" z2="-0.44" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.56" d2="45.57" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.56" d2="45.57" z1="0.4" z2="0.79" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.56" d2="45.57" z1="0.99" z2="1.26" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.56" d2="45.57" z1="1.72" z2="2.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.56" d2="45.57" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.56" d2="45.57" z1="2.71" z2="3" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.56" d2="45.57" z1="3.24" z2="3.97" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.57" d2="45.59" z1="-4.11" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.57" d2="45.59" z1="-3.16" z2="-2.9" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.57" d2="45.59" z1="-2.42" z2="-2.14" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.57" d2="45.59" z1="-2.01" z2="-1.29" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.57" d2="45.59" z1="-1.15" z2="-0.43" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.57" d2="45.59" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.57" d2="45.59" z1="0.41" z2="0.8" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.57" d2="45.59" z1="0.99" z2="1.26" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.57" d2="45.59" z1="1.72" z2="2.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.57" d2="45.59" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.57" d2="45.59" z1="2.72" z2="3.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.57" d2="45.59" z1="3.24" z2="3.97" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.59" d2="45.6" z1="-4.1" z2="-3.24" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.59" d2="45.6" z1="-3.16" z2="-2.91" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.59" d2="45.6" z1="-2.41" z2="-2.14" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.59" d2="45.6" z1="-2.01" z2="-1.29" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.59" d2="45.6" z1="-1.15" z2="-0.43" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.59" d2="45.6" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.59" d2="45.6" z1="0.42" z2="0.8" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.59" d2="45.6" z1="0.99" z2="1.26" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.59" d2="45.6" z1="1.74" z2="2.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.59" d2="45.6" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.59" d2="45.6" z1="2.73" z2="3.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.59" d2="45.6" z1="3.24" z2="3.98" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.6" d2="45.62" z1="-4.06" z2="-3.27" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.6" d2="45.62" z1="-3.16" z2="-2.91" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.6" d2="45.62" z1="-2.41" z2="-2.14" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.6" d2="45.62" z1="-2.01" z2="-1.29" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.6" d2="45.62" z1="-1.15" z2="-0.43" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.6" d2="45.62" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.6" d2="45.62" z1="0.42" z2="0.78" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.6" d2="45.62" z1="0.98" z2="1.25" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.6" d2="45.62" z1="1.74" z2="2.03" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.6" d2="45.62" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.6" d2="45.62" z1="2.73" z2="3.03" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.6" d2="45.62" z1="3.24" z2="3.98" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.62" d2="45.63" z1="-4.05" z2="-3.3" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.62" d2="45.63" z1="-3.18" z2="-2.91" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.62" d2="45.63" z1="-2.4" z2="-2.13" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.62" d2="45.63" z1="-2.01" z2="-1.29" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.62" d2="45.63" z1="-1.15" z2="-0.43" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.62" d2="45.63" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.62" d2="45.63" z1="0.42" z2="0.78" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.62" d2="45.63" z1="0.98" z2="1.25" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.62" d2="45.63" z1="1.74" z2="2.03" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.62" d2="45.63" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.62" d2="45.63" z1="2.75" z2="3.03" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.62" d2="45.63" z1="3.24" z2="3.98" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.63" d2="45.65" z1="-4.02" z2="-3.33" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.63" d2="45.65" z1="-3.18" z2="-2.92" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.63" d2="45.65" z1="-2.4" z2="-2.13" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.63" d2="45.65" z1="-2.01" z2="-1.29" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.63" d2="45.65" z1="-1.15" z2="-0.43" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.63" d2="45.65" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.63" d2="45.65" z1="0.44" z2="0.78" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.63" d2="45.65" z1="0.98" z2="1.25" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.63" d2="45.65" z1="1.76" z2="2.03" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.63" d2="45.65" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.63" d2="45.65" z1="2.75" z2="3.05" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.63" d2="45.65" z1="3.24" z2="3.98" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.65" d2="45.66" z1="-3.99" z2="-3.38" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.65" d2="45.66" z1="-3.18" z2="-2.92" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.65" d2="45.66" z1="-2.4" z2="-2.13" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.65" d2="45.66" z1="-2.01" z2="-1.29" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.65" d2="45.66" z1="-1.16" z2="-0.44" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.65" d2="45.66" z1="-0.29" z2="-0.02" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.65" d2="45.66" z1="0.43" z2="0.76" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.65" d2="45.66" z1="0.96" z2="1.23" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.65" d2="45.66" z1="1.76" z2="2.04" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.65" d2="45.66" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.65" d2="45.66" z1="2.76" z2="3.05" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.65" d2="45.66" z1="3.24" z2="3.98" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.66" d2="45.68" z1="-3.94" z2="-3.43" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.66" d2="45.68" z1="-3.19" z2="-2.92" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.66" d2="45.68" z1="-2.38" z2="-2.11" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.66" d2="45.68" z1="-2.01" z2="-1.29" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.66" d2="45.68" z1="-1.15" z2="-0.43" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.66" d2="45.68" z1="-0.28" z2="-0.01" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.66" d2="45.68" z1="0.44" z2="0.77" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.66" d2="45.68" z1="0.96" z2="1.23" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.66" d2="45.68" z1="1.76" z2="2.04" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.66" d2="45.68" z1="2.1" z2="2.37" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.66" d2="45.68" z1="2.76" z2="3.06" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.66" d2="45.68" z1="3.24" z2="3.98" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.68" d2="45.69" z1="-3.88" z2="-3.49" c="0x5DBDDD" w="0.015" side="custom" />
+    <banner d1="45.69" d2="45.71" z1="-3.81" z2="-3.62" c="0x5DBDDD" w="0.015" side="custom" />
+	
+	
+ <line d="55" refz1="left" refz2="left" z1="-1" z2="-5" w="0.5" c="0x5DBDDD" step="10" count="4"/>
+ <line d="55" refz1="right" refz2="right" z1="5" z2="1" w="0.5" c="0x5DBDDD" step="10" count="4"/>
+
+ <line d="60" refz1="left" refz2="right" z1="-1" z2="1" w="0.5" c="0x5DBDDD" step="10" count="3"/>
+
+
+
+ <line refd="k" d="0"  z1="8" z2="-8" w="0.5" c="0x5DBDDD"/>
+ <line refd="hs" d="0"  z1="8" z2="-8" w="0.5" c="0x5DBDDD"/>
+ <line refd="f" d="0"  z1="8" z2="-8" w="0.5" c="0x5DBDDD" />
+
+ <line refd1="k" d1="0" refd2="hs" d2="0" z1="-3" z2="-5" w="0.5" c="0x5DBDDD"/> 
+ <line refd1="k" d1="0" refd2="hs" d2="0" z1="3" z2="5" w="0.5" c="0x5DBDDD"/> 
+
+ <line refd="k" d="5"  z1="4" z2="-4" w="0.5" c="0x5DBDDD"/>
+ <line refd="k" d="10"  z1="9" z2="4" w="0.5" c="0x5DBDDD"/>
+ <line refd="k" d="10"  z1="-4" z2="-9" w="0.5" c="0x5DBDDD"/>
+
+    <banner d1="69.75" d2="89.75" c="0xf5a700" w="1" side="both" />
+    <banner d1="89.75" d2="99.25" c="0xd9518b" w="1" side="both" />
+    <banner refd1="f" refd2="f" d1="-8" d2="0.25" c="0xaac100" w="1" side="both" />
+
+  </summer>
+<winter>
+    <twigs forcedetailed="true" refd="k" d1="0" d2="0" z1="-6" z2="-2" />
+	<twigs forcedetailed="true" refd="k" d1="0" d2="0" z1="2" z2="6" />
+    <twigs forcedetailed="true" refd="hs" d1="0" d2="0" z1="-6" z2="-2" />
+	<twigs forcedetailed="true" refd="hs" d1="0" d2="0" z1="2" z2="6" />
+    <twigs forcedetailed="true" refd="f" d1="0" d2="0" z1="-6" z2="-2" />
+	<twigs forcedetailed="true" refd="f" d1="0" d2="0" z1="2" z2="6" />
+</winter>
+</custom-markings>     
+	   <numbers min="40" max="105" h1="0" h2="0" />
+    </dhill>
+
+    <profile id="inrun-left" side="left" maxstep="1000">
+        <start x="-10" y="1.0" refx="inrun" />
+        <line x="0" y="1.0" refx="dhill" />
+    </profile>
+
+    <profile id="inrun-right" side="right" maxstep="1000">
+        <start x="-10" y="-1.0" refx="inrun" />
+        <line x="0" y="-1.0" refx="dhill" />
+    </profile>
+
+ <profile id="inrun-terrain">
+        <start x="-90" y="2.2"/>
+        <line x="-30" y="2.2"/>
+        <line x="-10" y="2.2"/>
+        <line x="0" y="0"/>
+    </profile>
+
+    <terrain>
+        <profile in="1" a0="5.0" l0="50.0" y0="-55.0" hd="13.5" dd="75.0" sd="12" fd="300" sc="0.07" sm="0.47" rs="1820" c1="0x778c31" c2="0x63502f" tsc="0.008" tsm="0.4" />
+        <trees count="120000" minheight="15" maxheight="22" fractalthreshold="0.8" maxaltitude="800" normalaltitude="530" seed="142" />
+        <blocks count="10" minsaturation="0.0" maxsaturation="0.1" minfloors="1" maxfloors="4" maxaltitude="600" normalaltitude="480" fractalthreshold="0.3" seed="258" />
+        <houses count="50" minsaturation="0.0" maxsaturation="0.2" minfloors="1" maxfloors="3" maxaltitude="600" normalaltitude="480" fractalthreshold="0.5" seed="156" />
+        <audience count="5000" d="20" x0="26" seed="413" />
+    </terrain>
+	
+	
+	<!--gora-->
+	<pillar refx="inrun" refy="inrun-top" refz="inrun-right" x1="0" x2="19.5" lz="-1" rz="-3.8" ty="0" by="-0.35" t="Textures\wood4.png" m="Materials\wood.xml" c="0xc2c2c2"/>
+	<stairs refx="inrun" refy="inrun-top" refz="inrun-right" y="-0.0" x1="0.0" x2="19.5" lz="-0.8" rz="-3.8" s="0.75" t1="Textures\wood4.png" m1="Materials\wood.xml" c1="0xc2c2c2" t2="Textures\wood4.png" m2="Materials\wood.xml" c2="0xc2c2c2"/>
+	<pillar count="25" step="0.75" refx="inrun" refy="inrun-top" refz="inrun-left" x1="0.77" x2="0.92" lz="1.27" rz="1.13" ty="0.25" by="-0.35" scale="0.75" t="Textures\wood4.png" m="Materials\wood.xml" c="0xc2c2c2" zbias="2"/>
+	<pillar count="25" step="0.75" refx="inrun" refy="inrun-top" refz="inrun-left" x1="0.85" x2="0.92" lz="1.27" rz="1.13" ty1="0.25" ty2="0.34" by="0.25" scale="0.75" t="Textures\wood4.png" m="Materials\wood.xml" c="0xc2c2c2" zbias="2"/>
+<!--schods-->
+	<pillar step="0.25" count="130" refx="inrun" refy="terrain" refz="inrun-right" x1="19.5" x2="19.75" lz="-1.1" rz="-2.1" ty1="0.15" by1="0.05" ty2="0.32" by2="0.22" t="Textures\wood4.png" m="Materials\wood.xml" c="0xc2c2c2"/>
+	<pillar refx="inrun" refy="terrain" refz="inrun-right" x1="19.5" x2="81.75" lz="-1.0" rz="-1.1" ty="0.32" by="0.05" t="Textures\wood4.png" m="Materials\wood.xml" c="0xc2c2c2"/>
+	<pillar refx="inrun" refy="terrain" refz="inrun-right" x1="19.5" x2="81.75" lz="-2.1" rz="-2.2" ty="0.32" by="0.05" t="Textures\wood4.png" m="Materials\wood.xml" c="0xc2c2c2"/>
+	<pillar step="1.0" count="62" refx="inrun" refy="terrain" refz="inrun-right" x1="20" x2="20.2" lz="-1.0" rz="-3" ty="0.05" by="-0.35" t="Textures\wood4.png" m="Materials\wood.xml" c="0xc2c2c2"/>
+	<stairs refx="inrun" refy="terrain" refz="inrun-right" y="0.15" x1="52" x2="81.75" lz="-1.1" rz="-2.1" s="0.25" t1="Textures\wood4.png" m1="Materials\wood.xml" c1="0xc2c2c2" t2="Textures\wood4.png" m2="Materials\wood.xml" c2="0xc2c2c2"/>
+	<pillar refx="inrun" refy="terrain" refz="inrun-right" x1="52" x2="81.75" lz="-1.1" rz="-2.1" ty="0.13" by="0.1" t="Textures\wood4.png" m="Materials\wood.xml" c="0xc2c2c2"/>
+	
+	<!--spod-->
+	<pillar top="false" refx1="inrun" refx2="dhill" x1="0.0" x2="-0.0" rz="-2.0" lz="2.00" trefy="inrun-top" brefy="terrain" ty="0.0"  by="0.0"  t="Textures\wood4.png" m="Materials\wood.xml" c="0xc2c2c2"/>
+	<!--tory-->
+	<pillar refx1="inrun" refx2="dhill" x1="0.0" x2="0.0" rz="1.45" lz="1.5" trefy="inrun-top" brefy="inrun-top" ty="0.1"  by="0.07" t="Textures\metal.png" m="Materials\metal.xml" c="0x7c6852"/>
+	<pillar refx1="inrun" refx2="dhill" x1="0.0" x2="0.0" rz="-1.5" lz="-1.45" trefy="inrun-top" brefy="inrun-top" ty="0.1"  by="0.07"  t="Textures\metal.png" m="Materials\metal.xml"  c="0x7c6852"/>
+	<pillar refx1="inrun" refx2="dhill" x1="0.0" x2="0.0" rz="1.47" lz="1.48" trefy="inrun-top" brefy="inrun-top" ty="0.07"  by="0.00"  t="Textures\metal.png" m="Materials\metal.xml"  c="0x5c4832"/>
+	<pillar refx1="inrun" refx2="dhill" x1="0.0" x2="0.0" rz="-1.48" lz="-1.47" trefy="inrun-top" brefy="inrun-top" ty="0.07"  by="0.00"  t="Textures\metal.png" m="Materials\metal.xml"  c="0x5c4832"/>
+	
+	<!--bandy-->
+	<pillar refx="dhill" refy="dhill-top" refz="dhill-right" x1="5" x2="100" lz="0.03" rz="-0.03" ty="1" by="-0.05" scale="0.75" t="Textures\wood4.png" m="Materials\wood.xml" c="0xc2c2c2"/>
+	<pillar refx="dhill" refy="dhill-top" refz="dhill-right" x1="100" x2="135" lz="-0.97" rz="-1.03" ty="1" by="-0.05" scale="0.75" t="Textures\wood4.png" m="Materials\wood.xml" c="0xc2c2c2"/>
+	<stairs refx="dhill" refy="dhill-top" refz="dhill-right" y="0.12" x1="5" x2="100" lz="-0.03" rz="-0.55" s="0.3" t1="Textures\wood4b.png" m1="Materials\wood.xml" c1="0xc2c2c2" t2="Textures\wood4.png" m2="Materials\wood.xml" c2="0xc2c2c2"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-right" x1="5" x2="100" lz="-0.05" rz="-0.55" ty="0.12" by="-0.35" scale="0.75" t="Textures\wood4.png" m="Materials\wood.xml" c="0xc2c2c2"/>
+	<pillar refx="dhill" refy="dhill-top" refz="dhill-left" x1="5" x2="100" lz="0.03" rz="-0.03" ty="1" by="-0.05" scale="0.75" t="Textures\wood4.png" m="Materials\wood.xml" c="0xc2c2c2"/>
+	<pillar refx="dhill" refy="dhill-top" refz="dhill-left" x1="100" x2="135" lz="1.03" rz="0.97" ty="1" by="-0.05" scale="0.75" t="Textures\wood4.png" m="Materials\wood.xml" c="0xc2c2c2"/>
+
+	<stairs refx="dhill" refy="dhill-top" refz="dhill-left" y="0.12" x1="5" x2="75" lz="0.55" rz="0.03" s="0.3" t1="Textures\wood4b.png" m1="Materials\wood.xml" c1="0xc2c2c2" t2="Textures\wood4.png" m2="Materials\wood.xml" c2="0xc2c2c2"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-left" x1="5" x2="75" lz="0.55" rz="0.03" ty="0.12" by="-0.35" scale="0.75" t="Textures\wood4.png" m="Materials\wood.xml" c="0xc2c2c2"/>
+	<stairs refx="dhill" refy="dhill-top" refz="dhill-left" y="0.32" x1="75" x2="100" lz="0.55" rz="0.03" s="0.3" t1="Textures\wood4b.png" m1="Materials\wood.xml" c1="0xc2c2c2" t2="Textures\wood4.png" m2="Materials\wood.xml" c2="0xc2c2c2"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-left" x1="75" x2="100" lz="0.55" rz="0.03" ty="0.32" by="-0.35" scale="0.75" t="Textures\wood4.png" m="Materials\wood.xml" c="0xc2c2c2"/>
+
+
+</hill>
