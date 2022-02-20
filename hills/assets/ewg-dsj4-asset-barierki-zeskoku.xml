@@ -1,0 +1,4 @@
+<pillar refx="dhill" refy="dhill-top" refz="dhill-left" x1="0" x2="134" lz="1.02" rz="0.97" ty="1.2" by="1.15" scale="1.25" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6"/>
+<pillar refx="dhill" refy="dhill-top" refz="dhill-right" x1="0" x2="134" lz="-0.97" rz="-1.02" ty="1.2" by="1.15" scale="1.25" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6"/>
+<pillar top="false" bottom="false" count="68" step="2" refx="dhill" refy="dhill-top" refz="dhill-left" x1="0" x2="0.05" lz="1.02" rz="0.97" ty="1.2" by="0" scale="1.25" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6"/>
+<pillar top="false" bottom="false" count="68" step="2" refx="dhill" refy="dhill-top" refz="dhill-right" x1="0" x2="0.05" lz="-0.97" rz="-1.02" ty="1.2" by="0" scale="1.25" t="Textures\metal.png" m="Materials\metal.xml" c="0xc6c6c6"/>
