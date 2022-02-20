@@ -1,0 +1,14 @@
+    <profile id="walek" refx="dhill">
+        <start x="0" refy="dhill-top" y="0" />
+        <line x="1" y="0" refy="dhill-top" refyx="0"/>
+    </profile>
+
+<beam refx="dhill" refy="walek" rect="true" x="0.02" z1="-1.2" z2="1.2" fitstep="true" y="1.32" r="0.005" edges="64" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xbbbbbb" end1="true" end2="true"/>
+<beam refx="dhill" refy="walek" rect="true" x="0.02" z1="-1.09" z2="1.09" fitstep="true" y="1.32" r="0.1" edges="64" smooth="true" t="Textures\plate1.png" m="Materials\material1.xml" c="0xffffff" end1="true" end2="true"/>
+<beam refx="dhill" refy="walek" rect="true" x="0.02" z1="-1.1" z2="-1.09" fitstep="true" y="1.32" r="0.15" edges="64" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xbbbbbb" end1="true" end2="true"/>
+<beam refx="dhill" refy="walek" rect="true" x="0.02" z1="1.1" z2="1.09" fitstep="true" y="1.32" r="0.15" edges="64" smooth="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xbbbbbb" end1="true" end2="true"/>
+
+<pillar refx="dhill" refy="walek" x1="-1" x2="0.12" lz="1.11" rz="1.09" ty1="2.62" by1="1.32" ty2="1.32" by2="1.32" top="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xbbbbbb"/>
+<pillar refx="dhill" refy="walek" x1="-1" x2="0.12" lz="1.11" rz="1.09" ty1="1.32" by1="0.62" ty2="1.32" by2="1.32" top="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xbbbbbb"/>
+<pillar refx="dhill" refy="walek" x1="-1" x2="0.12" rz="-1.11" lz="-1.09" ty1="2.62" by2="1.32" ty2="1.32" by="1.32" top="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xbbbbbb"/>
+<pillar refx="dhill" refy="walek" x1="-1" x2="0.12" rz="-1.11" lz="-1.09" ty1="1.32" by1="0.62" ty2="1.32" by2="1.32" top="true" t="Textures\metal.png" m="Materials\material1.xml" c="0xbbbbbb"/>

@@ -1,0 +1,4 @@
+<!--materace-->
+<pillar  refx="dhill" brefy="dhill-top" trefy="dhill-top" rz="1.15" lz="3.15" x1="0.55" x2="4.95" ty="0.07" by="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x3242a8"/>
+<pillar  refx="dhill" brefy="dhill-top" trefy="dhill-top" lz="-1.15" rz="-3.15" x1="0.55" x2="4.95" ty="0.07" by="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x3242a8"/>
+<pillar  refx="dhill" brefy="dhill-top" trefy="dhill-top" lz="1.1" rz="-1.1" x1="0.55" x2="4.95" ty="0.07" by="0" t="Textures\metal.png" m="Materials\material1.xml" c="0x3242a8"/>
