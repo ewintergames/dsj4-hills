@@ -1,0 +1,27 @@
+ 		       <custom-markings>
+            <summer>
+                <line refd="f" d="0" refz1="right" refz2="left" w="0.2" z1="0" z2="-0" c="0xffffff" />
+	                 
+                <line step="5" count="18" refd="k" d="-60" refz1="right" refz2="left" w="0.2" z1="0.8" z2="-0.8" c="0xffffff" />
+	 
+                <line refd="k" d="0" refz1="right" refz2="left" z1="0.8" z2="-0.8" w="0.2" c="0xca0202"/>
+                <line refd="hs" d="0" refz1="right" refz2="left" z1="0.8" z2="-0.8" w="0.2" c="0xca0202"/>
+
+				 <banner refd1="k" refd2="k" d1="-60" d2="0" side="both" w="0.8" margin="0" c="0x001466"/>   
+				 <banner refd1="k" refd2="hs" d1="0" d2="0" side="both" w="0.8" margin="0" c="0xdb0000"/>
+            </summer>
+
+            <winter>
+				<twigs refd="f" d="0" refz1="right" refz2="left" z1="0" z2="0"/>  
+              
+                <spray refd="k" d="0" refz1="right" refz2="left" z1="0.2" z2="-0.2" w="0.2" c="0xca0202"/>
+                <spray refd="hs" d="0" refz1="right" refz2="left" z1="0.2" z2="-0.2" w="0.2" c="0xca0202"/>
+
+				
+				
+				<twigs step="5" count="18" refd="k" d="-60" refz1="right" refz2="left" z1="0.8" z2="-0.8"/>  
+
+                <banner refd1="k" refd2="k" d1="-60" d2="0" side="both" w="0.8" margin="0" c="0x001466"/>
+                <banner refd1="k" refd2="hs" d1="0" d2="0" side="both" w="0.8" margin="0" c="0xdb0000"/>
+            </winter>
+        </custom-markings>
